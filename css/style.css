@@ -1,0 +1,42 @@
+/*
+* HackTX IV CSS File
+* http://bit.ly/1ywfhq7
+*/
+
+/* Nunito Google Font */
+@import url(http://fonts.googleapis.com/css?family=Nunito);
+
+/* Open Sans Google Font */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+body {
+  background: #fbedd5;
+  height: 100%;
+}
+
+h2, h3 {
+  font-family: 'Nunito', sans-serif;
+}
+
+.subtitle {
+  color: #1da8be;
+}
+
+.title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 10em;
+  font-weight: 700;
+}
+
+.date {
+  color: #f06b69;
+}
+
+#hero {
+  width: 70%;
+  height: 100%;
+  border: 1px solid red;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
