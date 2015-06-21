@@ -12,6 +12,7 @@
 @import url(http://fonts.googleapis.com/css?family=Gudea:400,700);
 
 body {
+  z-index: 0;
   background: #fbedd5;
   height: 100%;
 }
@@ -32,15 +33,17 @@ h2, h3 {
 
 .subtitle {
   color: #1da8be;
-  font-size: 3em;
+  font-size: 2em;
   font-weight: 700;
   font-family: 'Lato', sans-serif;
   letter-spacing: -.5px;
 }
 
 .title {
-  font-size: 10em;
+  font-size: 6em;
   font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color: #1da8be;
 }
 
 .date {
@@ -54,7 +57,7 @@ h2, h3 {
 }
 
 .button {
-  margin: 3em .5em 1em .5em;
+  margin: 1.5em .5em 1em .5em;
   width: 175px;
   height: 60px;
   font-size: 2em;
@@ -100,4 +103,12 @@ h2, h3 {
 
 #gh-btn {
   background: black;
+}
+
+.large-header {
+  height:100%;
+  width:100%;
+  background: #333;
+  border: 2px solid green;
+  z-index: 1;
 }
