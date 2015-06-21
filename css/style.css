@@ -26,7 +26,7 @@ h2, h3 {
 
 #hero {
   width: 100%;
-  border: 1px solid red;
+  /*border: 1px solid red;*/
   text-align: center;
 }
 
@@ -71,4 +71,32 @@ h2, h3 {
   background-color: #1da8be;
   color: #fbedd5;
   border-color: #1da8be;
+}
+
+.social-buttons {
+  position: absolute;
+  right: 0;
+  top:0;
+}
+
+.social-buttons li {
+  list-style: none;
+  padding: 10px;
+}
+
+.social-buttons a {
+  text-decoration: none;
+  color: #fbedd5;
+}
+
+#fb-btn {
+  background: #5d75b2;
+}
+
+#tw-btn {
+  background: #55acee;
+}
+
+#gh-btn {
+  background: black;
 }
