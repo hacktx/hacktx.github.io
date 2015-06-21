@@ -46,6 +46,7 @@ h2, h3 {
 .date {
   color: #f06b69;
   font-size: 2em;
+  letter-spacing: -1.5px;
 }
 
 #texas {
