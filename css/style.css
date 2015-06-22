@@ -76,6 +76,10 @@ h2, h3 {
   border-color: #1da8be;
 }
 
+.button:focus {
+  color: #1da8be;
+}
+
 .social-buttons {
   position: absolute;
   right: 0;
@@ -91,6 +95,10 @@ h2, h3 {
 .social-buttons a {
   text-decoration: none;
   color: #fbedd5;
+}
+
+.social-buttons a:hover {
+  color: white;
 }
 
 #fb-btn {
