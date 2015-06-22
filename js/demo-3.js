@@ -4,7 +4,7 @@
     var colors = ['72,35,68', '43,81,102', '66,152,103', '250,178,67', '224,33,48'];
 
     // Main
-    // initHeader();
+    initHeader();
     addListeners();
     initAnimation();
 
@@ -56,6 +56,7 @@
 
     // Event handling
     function addListeners() {
+        window.addEventListener('load', resize);
         window.addEventListener('scroll', scrollCheck);
         window.addEventListener('resize', resize);
     }

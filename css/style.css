@@ -9,20 +9,16 @@
 /* Open Sans Google Font */
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
 
+/* Guidea Google Font */
 @import url(http://fonts.googleapis.com/css?family=Gudea:400,700);
-
-body {
-  z-index: 0;
-  background: #fbedd5;
-  height: 100%;
-}
 
 * {
   font-family: 'Lato', sans-serif;
 }
 
-h2, h3 {
-  /*font-family: 'Nunito', sans-serif;*/
+body {
+  background: #fbedd5;
+  height: 100%;
 }
 
 #hero {
@@ -31,25 +27,16 @@ h2, h3 {
   text-align: center;
 }
 
-.subtitle {
-  color: #1da8be;
-  font-size: 2em;
-  font-weight: 700;
-  font-family: 'Lato', sans-serif;
-  letter-spacing: -.5px;
+#fb-btn {
+  background: #5d75b2;
 }
 
-.title {
-  font-size: 6em;
-  font-weight: 700;
-  font-family: 'Lato', sans-serif;
-  color: #1da8be;
+#gh-btn {
+  background: black;
 }
 
-.date {
-  color: #f06b69;
-  font-size: 2em;
-  letter-spacing: -1.5px;
+#tw-btn {
+  background: #55acee;
 }
 
 #texas {
@@ -80,6 +67,12 @@ h2, h3 {
   color: #1da8be;
 }
 
+.date {
+  color: #f06b69;
+  font-size: 2em;
+  letter-spacing: -1.5px;
+}
+
 .social-buttons {
   position: absolute;
   right: 0;
@@ -101,22 +94,17 @@ h2, h3 {
   color: white;
 }
 
-#fb-btn {
-  background: #5d75b2;
+.subtitle {
+  color: #1da8be;
+  font-size: 2em;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  letter-spacing: -.5px;
 }
 
-#tw-btn {
-  background: #55acee;
-}
-
-#gh-btn {
-  background: black;
-}
-
-.large-header {
-  height:100%;
-  width:100%;
-  background: #333;
-  border: 2px solid green;
-  z-index: 1;
+.title {
+  font-size: 6em;
+  font-weight: 700;
+  font-family: 'Lato', sans-serif;
+  color: #1da8be;
 }
