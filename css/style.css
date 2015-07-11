@@ -17,14 +17,8 @@
 }
 
 body {
-  background: #fbedd5;
+  background: #7ED3F2;
   height: 100%;
-}
-
-#hero {
-  width: 100%;
-  /*border: 1px solid red;*/
-  text-align: center;
 }
 
 #fb-btn {
@@ -37,10 +31,6 @@ body {
 
 #tw-btn {
   background: #55acee;
-}
-
-#texas {
-  max-width: 40em;
 }
 
 .button {
@@ -71,6 +61,10 @@ body {
   color: #f06b69;
   font-size: 2em;
   letter-spacing: -1.5px;
+}
+
+.registration-prompt {
+  font-size: .9em;
 }
 
 .social-buttons {
