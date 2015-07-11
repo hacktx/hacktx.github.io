@@ -59,6 +59,17 @@ h2.date {
   bottom: 120px;
 }
 
+.clouds {
+  height: 0;
+}
+
+.cloud1 {
+  position: relative;
+
+  top: 200px;
+  left: 20px;
+}
+
 @media (max-width: 768px) {
   .hack-title {
     margin:auto;
