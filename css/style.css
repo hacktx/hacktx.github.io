@@ -110,13 +110,13 @@ h2.date {
 }
 
 .kayak {
-  left: 50%;
-  top: 50%;
-  margin: 0 auto;
-  height: 0px;
+  position: relative;
+  left: 45%;
+  height: 0;
 }
 
 .kayak img {
+  padding-top: 25%;
   width: 10%;
 }
 
@@ -160,7 +160,7 @@ h2.date {
 }
 
 .hills img,
-.bridge img, 
+.bridge img,
 .skyline img {
   width: 100%;
 }
