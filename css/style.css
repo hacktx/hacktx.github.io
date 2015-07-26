@@ -36,7 +36,8 @@ body {
 }
 
 .hero {
-  height: 100%;
+  display: block;
+  position: relative;
 }
 
 .hero .container {
@@ -115,28 +116,28 @@ h2.date {
 .about .container,
 .schedule .container,
 .questions .container {
-  padding-top: 100px;
+  padding-top: 0px;
   padding-bottom: 400px;
 }
 
 .skyline,
 .bridge,
 .hills {
-  height: 0;
   position: relative;
   z-index: 0;
 }
 
 .skyline {
-  bottom: 330px;
+  padding-top: 10%;
+  bottom: 0;
 }
 
 .bridge {
-  bottom: 280px;
+  bottom: 0;
 }
 
 .hills {
-  bottom: 360px;
+  bottom: 0;
 }
 
 .hills img,
