@@ -30,7 +30,7 @@ h1, h2, h3 {
 
 h2 {
   margin: 0;
-  padding: 0;
+  padding: 0px 0px 50px 0px;
   font-size: 50px;
 }
 
@@ -50,6 +50,10 @@ body {
 
 .hero .container {
   padding-top: 200px;
+}
+
+.hacktx-title {
+  /*width: 100%;*/
 }
 
 .hero-info {
@@ -119,25 +123,46 @@ h3.date {
 
 .kayak {
   position: relative;
-  padding-left: 45%;
+  padding-left: 43%;
   height: 0;
 }
 
 .kayak img {
-  padding-top: 40%;
+  padding-top: 34%;
   width: 20%;
+  transform: rotate(350deg);
 }
 
 .schedule-text {
-  text-align: center;
+  text-align: left;
+  color: darkslategray;
   font-size: 40px;
 }
+
+.schedule-time {
+  text-align: right;
+  color: darkslategray;
+  font-size: 25px;
+}
+
 .schedule-detail {
-  text-align: center;
+  text-align: left;
   font-size: 25px;
 }
 .questions {
   background: #5AD286;
+}
+
+.faq-question {
+  text-align: center;
+  color: antiquewhite;
+  font-size: 35px;
+}
+
+.faq-answer {
+  text-align: center;
+  color: white;
+  font-size: 25px;
 }
 
 .about .container,
@@ -155,6 +180,7 @@ h3.date {
 }
 
 .skyline {
+  width: 100%;
   padding-top: 10%;
   bottom: 0;
 }
