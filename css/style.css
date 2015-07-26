@@ -111,13 +111,13 @@ h2.date {
 
 .kayak {
   position: relative;
-  left: 45%;
+  padding-left: 45%;
   height: 0;
 }
 
 .kayak img {
-  padding-top: 25%;
-  width: 10%;
+  padding-top: 40%;
+  width: 20%;
 }
 
 .schedule-text {
