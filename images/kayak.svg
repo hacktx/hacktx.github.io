@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="395px" height="376px" viewBox="0 0 395 376" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.2 (12043) - http://www.bohemiancoding.com/sketch -->
+    <title>kayak</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path id="path-1" d="M61.1650176,374.393618 C59.5274836,376.606282 56.9231969,376.556208 55.3877955,374.254671 C55.3877955,374.254671 0.3,297.9 0.3,198.5 C0.3,141.3 10.6,97.9 22.9,62.1 C33,32.6 55.6033192,2.06908303 55.6033192,2.06908303 C57.2031118,-0.178209473 59.7376511,-0.145213062 61.2512574,2.17099798 C61.2512574,2.17099798 82.6,33.4 93,63.4 C103.8,94.2 112.9,141.6 116.1,198.5 C121.7,297.7 61.1650176,374.393618 61.1650176,374.393618 Z"></path>
+        <rect id="path-3" x="1" y="1.36424205e-12" width="248" height="11"></rect>
+    </defs>
+    <g id="Welcome" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="Desktop-HD" sketch:type="MSArtboardGroup" transform="translate(-982.000000, -2764.000000)">
+            <g id="kayak" sketch:type="MSLayerGroup" transform="translate(978.000000, 2764.000000)">
+                <g id="Rectangle-20" transform="translate(142.000000, 0.000000)">
+                    <mask id="mask-2" sketch:name="Mask" fill="white">
+                        <use xlink:href="#path-1"></use>
+                    </mask>
+                    <use id="Mask" fill="#F7931E" sketch:type="MSShapeGroup" xlink:href="#path-1"></use>
+                    <rect fill="#F48A0B" sketch:type="MSShapeGroup" mask="url(#mask-2)" x="58" y="-2" width="69" height="387"></rect>
+                </g>
+                <ellipse id="Oval" fill="#000000" sketch:type="MSShapeGroup" cx="200.9" cy="208.1" rx="33.9" ry="64.5"></ellipse>
+                <ellipse id="Oval" fill="#232323" sketch:type="MSShapeGroup" cx="195" cy="211.9" rx="27.9" ry="55.1"></ellipse>
+                <g id="Rectangle-17-+-Rectangle-18-+-Rectangle-18-Copy" transform="translate(201.009186, 128.051739) rotate(-11.000000) translate(-201.009186, -128.051739) translate(0.509186, 107.551739)">
+                    <g id="Rectangle-21" transform="translate(73.000000, 15.000000)">
+                        <mask id="mask-4" sketch:name="Mask" fill="white">
+                            <use xlink:href="#path-3"></use>
+                        </mask>
+                        <use id="Mask" fill="#000000" sketch:type="MSShapeGroup" xlink:href="#path-3"></use>
+                        <rect fill="#232323" sketch:type="MSShapeGroup" mask="url(#mask-4)" x="-5.34813289" y="-20.2992858" width="131.289993" height="44.9364592">
+                            <g transform="translate(60.296864, 2.168944) rotate(11.000000) translate(-60.296864, -2.168944) "></g>
+                        </rect>
+                    </g>
+                    <path d="M4.51021167,4 C4.51021167,4 55.2453222,-4.13112392 71.8336662,4 C88.4220102,12.1311239 88.6645299,28.75 71.8336662,37 C55.0028026,45.25 4.51021167,37 4.51021167,37 C4.51021167,37 -3.38776459,20.5264164 4.51021167,4 Z" id="Rectangle-18" fill="#F48A0B" sketch:type="MSShapeGroup"></path>
+                    <rect id="Rectangle-22" fill="#D07508" sketch:type="MSShapeGroup" x="10.5" y="17.5436658" width="69" height="6"></rect>
+                    <path d="M320.510212,4 C320.510212,4 371.245322,-4.13112392 387.833666,4 C404.42201,12.1311239 404.66453,28.75 387.833666,37 C371.002803,45.25 320.510212,37 320.510212,37 C320.510212,37 312.612235,20.5264164 320.510212,4 Z" id="Rectangle-18-Copy" fill="#F48A0B" sketch:type="MSShapeGroup" transform="translate(358.683017, 20.526417) scale(-1, -1) translate(-358.683017, -20.526417) "></path>
+                    <rect id="Rectangle-22-Copy" fill="#D07508" sketch:type="MSShapeGroup" transform="translate(361.000000, 20.543666) scale(-1, -1) translate(-361.000000, -20.543666) " x="326.5" y="17.5436658" width="69" height="6"></rect>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

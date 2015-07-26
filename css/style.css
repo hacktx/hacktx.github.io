@@ -23,7 +23,7 @@
 h2 {
   margin: 0;
   padding: 0;
-  font-size: 32px;
+  font-size: 64px;
 }
 
 p {
@@ -109,6 +109,25 @@ h2.date {
   background: #1C67CA;
 }
 
+.kayak {
+  left: 50%;
+  top: 50%;
+  margin: 0 auto;
+  height: 0px;
+}
+
+.kayak img {
+  width: 10%;
+}
+
+.schedule-text {
+  text-align: center;
+  font-size: 40px;
+}
+.schedule-detail {
+  text-align: center;
+  font-size: 25px;
+}
 .questions {
   background: #5AD286;
 }
@@ -116,7 +135,7 @@ h2.date {
 .about .container,
 .schedule .container,
 .questions .container {
-  padding-top: 0px;
+  padding-top: 100px;
   padding-bottom: 400px;
 }
 
