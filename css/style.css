@@ -13,17 +13,25 @@
 @import url(http://fonts.googleapis.com/css?family=Gudea:400,700);
 
 
-@import url(http://fonts.googleapis.com/css?family=Oleo+Script:400,700);
+/* Oswald Google Font */
+@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+
+/* Bitter Google Font */
+@import url(http://fonts.googleapis.com/css?family=Bitter:400,700,400italic);
 
 * {
-  font-family: 'Lato', sans-serif;
+  font-family: 'Bitter', sans-serif;
   color: #f7f7f7;
+}
+
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
 }
 
 h2 {
   margin: 0;
   padding: 0;
-  font-size: 64px;
+  font-size: 50px;
 }
 
 p {
@@ -48,11 +56,11 @@ body {
   margin-top: 15px;
 }
 
-h2.location {
+h3.location {
   float: left;
 }
 
-h2.date {
+h3.date {
   float: right;
 }
 
@@ -136,7 +144,7 @@ h2.date {
 .schedule .container,
 .questions .container {
   padding-top: 100px;
-  padding-bottom: 400px;
+  padding-bottom: 200px;
 }
 
 .skyline,
