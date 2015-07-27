@@ -79,6 +79,7 @@ body {
   width: 60%;
   margin: 20px;
   color: whitesmoke;
+  border-style: solid;
   border-color: whitesmoke;
   border-top-color: whitesmoke;
   background: rgb(126,211,242);
