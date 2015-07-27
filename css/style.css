@@ -149,6 +149,7 @@ h3.date {
   text-align: left;
   font-size: 25px;
 }
+
 .questions {
   background: #5AD286;
 }
@@ -165,9 +166,35 @@ h3.date {
   font-size: 25px;
 }
 
+.sponsors {
+  background: #ffffff;
+}
+
+.sponsors-info h2 {
+  color: rgb(81,80,78);
+}
+
+.sponsors-info .row {
+  min-height: 10em;
+  vertical-align: middle;
+  padding-bottom: 50px;
+}
+.sponsors-info .row img {
+  display: inline-block;
+  vertical-align: middle;
+  height: 25%;
+
+}
+
+.contact {
+  background: #51504e;
+}
+
 .about .container,
 .schedule .container,
-.questions .container {
+.questions .container,
+.sponsors .container,
+.contact .container {
   padding-top: 100px;
   padding-bottom: 200px;
 }
@@ -201,7 +228,9 @@ h3.date {
 
 .about-info h2,
 .schedule-info h2,
-.questions-info h2 {
+.questions-info h2,
+.sponsors-info h2,
+.contact-info h2{
   width: 100%;
   text-align: center;
 }
