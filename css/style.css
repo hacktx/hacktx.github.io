@@ -19,6 +19,25 @@
 /* Bitter Google Font */
 @import url(http://fonts.googleapis.com/css?family=Bitter:400,700,400italic);
 
+/* Montserrat Google Font*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat);
+
+::-webkit-input-placeholder {
+  color: whitesmoke;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: whitesmoke;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: whitesmoke;
+}
+
+:-ms-input-placeholder {
+  color: whitesmoke;
+}
+
 * {
   font-family: 'Bitter', sans-serif;
   color: #f7f7f7;
@@ -43,7 +62,7 @@ body {
 }
 
 .hero {
-  background: #7ED3F2;
+  background: rgb(126,211,242);
   display: block;
   position: relative;
 }
@@ -56,15 +75,39 @@ body {
   /*width: 100%;*/
 }
 
+.email {
+  width: 60%;
+  margin: 20px;
+  color: whitesmoke;
+  border-color: whitesmoke;
+  border-top-color: whitesmoke;
+  background: rgb(126,211,242);
+  padding: 15px 5px 15px 5px;
+}
+
+.submit {
+  width: 20%;
+  background: rgb(233, 239, 242);
+  border: 0;
+  padding: 17px 5px 17px 5px;
+}
+
+.form {
+  margin: 10px;
+  color: rgb(126,211,242);
+}
+
 .hero-info {
   margin-top: 15px;
 }
 
 h3.location {
+  font-family: 'Montserrat', sans-serif;
   float: left;
 }
 
 h3.date {
+  font-family: 'Montserrat', sans-serif;
   float: right;
 }
 
@@ -118,7 +161,7 @@ h3.date {
 }
 
 .schedule {
-  background: #1C67CA;
+  background: rgb(34, 106, 199);
 }
 
 .kayak {
