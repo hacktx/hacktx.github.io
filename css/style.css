@@ -39,11 +39,11 @@ p {
 }
 
 body {
-  background: #7ED3F2;
   height: 100vh;
 }
 
 .hero {
+  background: #7ED3F2;
   display: block;
   position: relative;
 }
@@ -95,13 +95,13 @@ h3.date {
 
 #cloud2 {
   top: 180px;
-  right: -3vw;
+  right: 10vw;
   width: 90px;
 }
 
 #cloud3 {
   top: 80px;
-  right: 17vw;
+  right: 25vw;
   width: 68px;
   opacity: .95;
 }
