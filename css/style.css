@@ -90,12 +90,10 @@ body {
 .submit {
   width: 37%;
   background: rgb(233, 239, 242);
-  color: rgb(126,211,242);;
-  border: rgb(126,211,242);s;
+  color: rgb(126,211,242);
+  border: rgb(126,211,242);;
   margin-left: 3%;
   padding: 17px 5px 17px 5px;
-  color: ;
-}
 }
 
 .form {
@@ -162,6 +160,10 @@ h3.hero-info{
   background: #f04650;
 }
 
+.about-text {
+  color: rgb(148, 34, 31);
+}
+
 .schedule {
   background: rgb(34, 106, 199);
 }
@@ -200,13 +202,13 @@ h3.hero-info{
 }
 
 .faq-question {
-  text-align: center;
+  text-align: left;
   color: antiquewhite;
-  font-size: 35px;
+  font-size: 40px;
 }
 
 .faq-answer {
-  text-align: center;
+  text-align: left;
   color: white;
   font-size: 25px;
 }
@@ -232,7 +234,17 @@ h3.hero-info{
 }
 
 .contact {
-  background: #51504e;
+  background: rgb(168, 232, 165);
+}
+
+.contact-love {
+  text-align: center;
+  font-size: 30px;
+}
+
+.contact-detail {
+  text-align: center;
+  color: darkslategray;
 }
 
 .about .container,
@@ -246,7 +258,8 @@ h3.hero-info{
 
 .skyline,
 .bridge,
-.hills {
+.hills,
+.grass {
   position: relative;
   z-index: 0;
 }
@@ -265,9 +278,14 @@ h3.hero-info{
   bottom: 0;
 }
 
+.grass {
+  bottom: 0;
+}
+
 .hills img,
 .bridge img,
-.skyline img {
+.skyline img,
+.grass img {
   width: 100%;
 }
 
