@@ -250,10 +250,14 @@ h3.hero-info{
 .about .container,
 .schedule .container,
 .questions .container,
-.sponsors .container,
-.contact .container {
+.sponsors .container {
   padding-top: 100px;
   padding-bottom: 200px;
+}
+
+.contact .container {
+  padding-top: 50px;
+  padding-bottom: 100px;
 }
 
 .skyline,
