@@ -3,21 +3,11 @@
 * http://bit.ly/1ywfhq7
 */
 
-/* Lato Google Font */
-@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900,300italic);
-
 /* Open Sans Google Font */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,700);
-
-/* Guidea Google Font */
-@import url(http://fonts.googleapis.com/css?family=Gudea:400,700);
-
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 
 /* Oswald Google Font */
 @import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
-
-/* Bitter Google Font */
-@import url(http://fonts.googleapis.com/css?family=Bitter:400,700,400italic);
 
 /* Montserrat Google Font*/
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
@@ -205,8 +195,8 @@ h3.hero-info{
   text-align: left;
 }
 
-.left-side .row,
-.right-side .row {
+.schedule .left-side .row,
+.schedule .right-side .row {
   padding: 10px;
 }
 
@@ -217,14 +207,24 @@ h3.hero-info{
 }
 
 .faq-question {
-  font-weight: bold;
+  font-weight: 600;
+  margin-top: 20px;
   text-align: left;
 }
 
 .faq-answer {
-  text-align: left;
-  font-size: 25px;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 25px;
+  text-align: justify;
 }
+
+.questions .left-side,
+.questions .right-side {
+  padding: 0px 40px;
+}
+
+/* SPONSOR SECTION */
 
 .sponsors {
   background: #ffffff;
