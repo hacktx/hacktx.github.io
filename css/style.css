@@ -41,7 +41,7 @@
 * {
   font-family: 'Open Sans', sans-serif;
   color: #f7f7f7;
-  letter-spacing: -1.1px;
+  letter-spacing: -0.5px;
 }
 
 h1, h2 {
@@ -164,9 +164,13 @@ h3.hero-info{
   color: rgb(148, 34, 31);
 }
 
+/* SCHEDULE SECTION */
+
 .schedule {
   background: rgb(34, 106, 199);
+  line-height: 50px;
 }
+
 
 .kayak {
   position: relative;
@@ -180,22 +184,30 @@ h3.hero-info{
   transform: rotate(350deg);
 }
 
-.schedule-text {
+.schedule h4 {
+  color: #15323C;
+  font-size: 31px;
+  font-weight: bold;
+  margin: 30px;
   text-align: center;
-  color: #15323C;
-  font-size: 40px;
 }
 
-.schedule-time {
+.schedule-time p {
+  color: #15323C;
+  font-weight: bold;
   text-align: right;
-  color: #15323C;
-  font-size: 25px;
 }
 
-.schedule-detail {
+.schedule-detail p {
   text-align: left;
-  font-size: 25px;
 }
+
+.left-side .row,
+.right-side .row {
+  padding: 10px;
+}
+
+/* FAQ SECTION */
 
 .questions {
   background: #5AD286;
@@ -312,7 +324,7 @@ h3.hero-info{
   }
 
   h2 {
-    font-size: 28px;
+    font-size: 34px;
   }
 }
 
