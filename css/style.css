@@ -217,14 +217,12 @@ h3.hero-info{
 }
 
 .faq-question {
+  font-weight: bold;
   text-align: left;
-  color: antiquewhite;
-  font-size: 40px;
 }
 
 .faq-answer {
   text-align: left;
-  color: white;
   font-size: 25px;
 }
 
