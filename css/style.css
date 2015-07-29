@@ -156,12 +156,16 @@ h3.hero-info{
   opacity: .90;
 }
 
+/* ABOUT SECTION */
+
 .about {
   background: #f04650;
 }
 
-.about-text {
+.about-info p {
   color: rgb(148, 34, 31);
+  line-height: 45px;
+  text-align: justify;
 }
 
 /* SCHEDULE SECTION */
@@ -170,7 +174,6 @@ h3.hero-info{
   background: rgb(34, 106, 199);
   line-height: 50px;
 }
-
 
 .kayak {
   position: relative;
@@ -311,10 +314,6 @@ h3.hero-info{
 .sponsors-info h2,
 .contact-info h2{
   width: 100%;
-  text-align: center;
-}
-
-.about-info p {
   text-align: center;
 }
 
