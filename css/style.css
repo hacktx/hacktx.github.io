@@ -32,6 +32,8 @@
 .typed-cursor{
   opacity: 1;
   font-size: 45px;
+  color: rgb(148, 34, 31);
+  font-family: 'Oswald', sans-serif;
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
