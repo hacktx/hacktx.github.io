@@ -28,6 +28,32 @@
   color: whitesmoke;
 }
 
+/* TYPED FOR HACKTX */
+.typed-cursor{
+  opacity: 1;
+  font-size: 45px;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+}
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+/* GENERAL STYLE */
+
 * {
   font-family: 'Open Sans', sans-serif;
   color: #f7f7f7;
@@ -152,10 +178,20 @@ h3.hero-info{
   background: #f04650;
 }
 
+.about-info {
+  text-align:center;
+}
+
 .about-info p {
   color: rgb(148, 34, 31);
+  padding-top: 10px;
   line-height: 45px;
   text-align: justify;
+}
+
+.about-info h2 {
+  display: inline;
+/*   margin: auto; */
 }
 
 /* SCHEDULE SECTION */
