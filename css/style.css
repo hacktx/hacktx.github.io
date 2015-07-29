@@ -181,14 +181,14 @@ h3.hero-info{
 }
 
 .schedule-text {
-  text-align: left;
-  color: darkslategray;
+  text-align: center;
+  color: #15323C;
   font-size: 40px;
 }
 
 .schedule-time {
   text-align: right;
-  color: darkslategray;
+  color: #15323C;
   font-size: 25px;
 }
 
@@ -244,7 +244,7 @@ h3.hero-info{
 
 .contact-detail {
   text-align: center;
-  color: darkslategray;
+  color: #15323C;
 }
 
 .about .container,
