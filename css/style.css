@@ -90,10 +90,6 @@ body {
   padding-top: 200px;
 }
 
-.hacktx-title {
-  /*width: 100%;*/
-}
-
 .email {
   background: none;
   border: 3px solid #f7f7f7;
@@ -184,7 +180,7 @@ h3.hero-info{
 }
 
 .about-info p {
-  color: rgb(148, 34, 31);
+  color: #96211A;
   padding-top: 10px;
   line-height: 45px;
   text-align: justify;
@@ -192,7 +188,10 @@ h3.hero-info{
 
 .about-info h2 {
   display: inline;
-/*   margin: auto; */
+}
+
+.typed-title {
+  color: #96211A;
 }
 
 /* SCHEDULE SECTION */
