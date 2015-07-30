@@ -275,27 +275,30 @@ h3.hero-info{
 .sponsors-info .row {
   min-height: 10em;
   vertical-align: middle;
-  padding-bottom: 50px;
 }
+
 .sponsors-info .row img {
   display: inline-block;
   vertical-align: middle;
   height: 25%;
-
+  padding: 20px;
 }
 
+/* CONTACT SECTION */
+
 .contact {
-  background: rgb(168, 232, 165);
+  background: #186A46;
 }
 
 .contact-love {
   text-align: center;
-  font-size: 30px;
+  font-size: 17px;
 }
 
 .contact-detail {
   text-align: center;
-  color: #15323C;
+  color: #0F422C;
+  font-size: 15px;
 }
 
 .about .container,
@@ -307,8 +310,8 @@ h3.hero-info{
 }
 
 .contact .container {
-  padding-top: 50px;
-  padding-bottom: 100px;
+  padding-top: 45px;
+  padding-bottom: 50px;
 }
 
 .skyline,
