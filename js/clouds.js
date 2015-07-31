@@ -104,7 +104,7 @@ function animateCloud4_2() {
     //100000
     el: '#cloud4',
     translateX: '10vw',
-    duration: 5000,
+    duration: 50000,
     easing: 'linear',
     complete: function() {
       animateCloud4_1();

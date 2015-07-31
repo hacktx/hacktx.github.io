@@ -207,6 +207,7 @@ h3.hero-info{
   padding-top: 34%;
   width: 20%;
   transform: rotate(350deg);
+  transform: scale(2,2);
 }
 
 .schedule h4 {
