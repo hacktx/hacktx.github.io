@@ -25,7 +25,86 @@
 }
 
 :-ms-input-placeholder {
-  color: #;
+  color: #F5F5F5;
+}
+
+/* Parallax */
+
+.parallax {
+  height: 500px; /* fallback for older browsers */
+  height: 100vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  -webkit-perspective: 300px;
+  perspective: 300px;
+}
+
+.parallax__group {
+  position: relative;
+  height: 500px; /* fallback for older browsers */
+  height: 100vh;
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.parallax__layer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.parallax__layer--fore {
+  -webkit-transform: translateZ(90px) scale(.7);
+  transform: translateZ(90px) scale(.7);
+  z-index: 1;
+}
+
+.parallax__layer--base {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  z-index: 4;
+}
+
+.parallax__layer--back {
+  -webkit-transform: translateZ(-300px) scale(2);
+  transform: translateZ(-300px) scale(2);
+  z-index: 3;
+}
+
+.parallax__layer--deep {
+  -webkit-transform: translateZ(-600px) scale(3);
+  transform: translateZ(-600px) scale(3);
+  z-index: 2;
+}
+
+#group1 {
+  z-index: 5; /* slide over group 2 */
+}
+
+#group2 {
+  z-index: 3; /* slide under groups 1 and 3 */
+}
+
+#group3 {
+  z-index: 4; /* slide over group 2 and 4 */
+}
+
+#group4 {
+  z-index: 2; /* slide under group 3 and 5 */
+}
+
+#group5 {
+  z-index: 3; /* slide over group 4 and 6 */
+}
+
+#group6 {
+  z-index: 2; /* slide under group 5 and 7 */
+}
+
+#group7 {
+  z-index: 3; /* slide over group 7 */
 }
 
 /* TYPED FOR HACKTX */
@@ -140,27 +219,27 @@ h3.hero-info{
 }
 
 #cloud1 {
-  top: 220px;
-  left: 4vw;
+  top: 20%;
+  left: 4%;
   width: 100px;
 }
 
 #cloud2 {
-  top: 180px;
-  right: 10vw;
+  top: 20%;
+  right: 10%;
   width: 90px;
 }
 
 #cloud3 {
-  top: 80px;
-  right: 25vw;
+  top: 10%;
+  right: 25%;
   width: 68px;
   opacity: .95;
 }
 
 #cloud4 {
-  top: 40px;
-  left: 21vw;
+  top: 5%;
+  left: 21%;
   width: 46px;
   opacity: .90;
 }
@@ -207,7 +286,6 @@ h3.hero-info{
   padding-top: 34%;
   width: 20%;
   transform: rotate(350deg);
-  transform: scale(2,2);
 }
 
 .schedule h4 {
