@@ -13,15 +13,15 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 
 ::-webkit-input-placeholder {
-  color: whitesmoke;
+  color: #F5F5F5;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-  color: whitesmoke;
+  color: #F5F5F5;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-  color: whitesmoke;
+  color: #F5F5F5;
 }
 
 :-ms-input-placeholder {
@@ -81,7 +81,7 @@ body {
 }
 
 .hero {
-  background: rgb(126,211,242);
+  background: #7ED3F2;
   display: block;
   position: relative;
 }
@@ -93,7 +93,7 @@ body {
 .email {
   background: none;
   border: 3px solid #f7f7f7;
-  color: whitesmoke;
+  color: #F5F5F5;
   font-size: 14px;
   padding: 16px;
 }
@@ -193,7 +193,7 @@ h3.hero-info{
 /* SCHEDULE SECTION */
 
 .schedule {
-  background: rgb(34, 106, 199);
+  background: rgb(28, 106, 199);
   line-height: 50px;
 }
 
@@ -299,8 +299,8 @@ h3.hero-info{
 .schedule .container,
 .questions .container,
 .sponsors .container {
-  padding-top: 100px;
-  padding-bottom: 200px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .contact .container {
