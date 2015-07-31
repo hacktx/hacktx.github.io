@@ -28,84 +28,234 @@
   color: #F5F5F5;
 }
 
-/* Parallax */
+/* Clouds */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
-.parallax {
-  height: 500px; /* fallback for older browsers */
-  height: 100vh;
+body {
   overflow-x: hidden;
-  overflow-y: auto;
-  -webkit-perspective: 300px;
-  perspective: 300px;
 }
 
-.parallax__group {
+.cloud {
+  -webkit-animation: clouds 60s infinite linear;
+  -moz-animation: clouds 60s infinite linear;
+  -ms-animation: clouds 60s infinite linear;
+  -o-animation: clouds 60s infinite linear;
+  animation: clouds 60s infinite linear;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
   position: relative;
-  height: 500px; /* fallback for older browsers */
-  height: 100vh;
-  -webkit-transform-style: preserve-3d;
-  transform-style: preserve-3d;
+  margin: 33px 0 0 0;
+  width: 54px;
+  height: 5px;
+  background: #f5f5f5;
 }
-
-.parallax__layer {
+.cloud.tiny {
+  -moz-transform: scale(0.5, 0.5);
+  -ms-transform: scale(0.5, 0.5);
+  -webkit-transform: scale(0.5, 0.5);
+  transform: scale(0.5, 0.5);
+}
+.cloud.small {
+  -moz-transform: scale(1, 1);
+  -ms-transform: scale(1, 1);
+  -webkit-transform: scale(1, 1);
+  transform: scale(1, 1);
+}
+.cloud.normal {
+  -moz-transform: scale(2, 2);
+  -ms-transform: scale(2, 2);
+  -webkit-transform: scale(2, 2);
+  transform: scale(2, 2);
+}
+.cloud.large {
+  -moz-transform: scale(4, 4);
+  -ms-transform: scale(4, 4);
+  -webkit-transform: scale(4, 4);
+  transform: scale(4, 4);
+}
+.cloud div {
+  -moz-box-shadow: inset -2px -3px 0 0 #f5f5f5;
+  -webkit-box-shadow: inset -2px -3px 0 0 #f5f5f5;
+  box-shadow: inset -2px -3px 0 0 #f5f5f5;
   position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
+  border-radius: 50%;
+  width: 12px;
+  height: 12px;
+  left: -3px;
   bottom: 0;
+  background: #fafbf0;
+  z-index: -1;
+}
+.cloud div:first-child + div {
+  -moz-transform: scale(1.6, 1.6);
+  -ms-transform: scale(1.6, 1.6);
+  -webkit-transform: scale(1.6, 1.6);
+  transform: scale(1.6, 1.6);
+  margin: 0 0 4px 13px;
+  z-index: -2;
+}
+.cloud div:first-child + div + div {
+  -moz-transform: scale(2.4, 2.4);
+  -ms-transform: scale(2.4, 2.4);
+  -webkit-transform: scale(2.4, 2.4);
+  transform: scale(2.4, 2.4);
+  margin: 0 0 9px 32px;
+  z-index: -3;
+}
+.cloud div:first-child + div + div + div {
+  -moz-transform: scale(1.3, 1.3);
+  -ms-transform: scale(1.3, 1.3);
+  -webkit-transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3);
+  margin: 0 0 2px 50px;
+  z-index: -4;
 }
 
-.parallax__layer--fore {
-  -webkit-transform: translateZ(90px) scale(.7);
-  transform: translateZ(90px) scale(.7);
-  z-index: 1;
+@-webkit-keyframes clouds {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+@-moz-keyframes clouds {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+@-ms-keyframes clouds {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+@keyframes clouds {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 120%;
+  }
+}
+.cloud-1 {
+  -webkit-animation-duration: 263s;
+  -moz-animation-duration: 263s;
+  -ms-animation-duration: 263s;
+  -o-animation-duration: 263s;
+  animation-duration: 263s;
+  margin-left: 20%;
 }
 
-.parallax__layer--base {
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
-  z-index: 4;
+.cloud-2 {
+  -webkit-animation-duration: 99s;
+  -moz-animation-duration: 99s;
+  -ms-animation-duration: 99s;
+  -o-animation-duration: 99s;
+  animation-duration: 99s;
+  margin-left: 90%;
 }
 
-.parallax__layer--back {
-  -webkit-transform: translateZ(-300px) scale(2);
-  transform: translateZ(-300px) scale(2);
-  z-index: 3;
+.cloud-3 {
+  -webkit-animation-duration: 142s;
+  -moz-animation-duration: 142s;
+  -ms-animation-duration: 142s;
+  -o-animation-duration: 142s;
+  animation-duration: 142s;
+  margin-left: 50%;
 }
 
-.parallax__layer--deep {
-  -webkit-transform: translateZ(-600px) scale(3);
-  transform: translateZ(-600px) scale(3);
-  z-index: 2;
+.cloud-4 {
+  -webkit-animation-duration: 152s;
+  -moz-animation-duration: 152s;
+  -ms-animation-duration: 152s;
+  -o-animation-duration: 152s;
+  animation-duration: 152s;
+  margin-left: 43%;
 }
 
-#group1 {
-  z-index: 5; /* slide over group 2 */
+.cloud-5 {
+  -webkit-animation-duration: 215s;
+  -moz-animation-duration: 215s;
+  -ms-animation-duration: 215s;
+  -o-animation-duration: 215s;
+  animation-duration: 215s;
+  margin-left: 83%;
 }
 
-#group2 {
-  z-index: 3; /* slide under groups 1 and 3 */
+.cloud-6 {
+  -webkit-animation-duration: 139s;
+  -moz-animation-duration: 139s;
+  -ms-animation-duration: 139s;
+  -o-animation-duration: 139s;
+  animation-duration: 139s;
+  margin-left: 73%;
 }
 
-#group3 {
-  z-index: 4; /* slide over group 2 and 4 */
+.cloud-7 {
+  -webkit-animation-duration: 109s;
+  -moz-animation-duration: 109s;
+  -ms-animation-duration: 109s;
+  -o-animation-duration: 109s;
+  animation-duration: 109s;
+  margin-left: 69%;
 }
 
-#group4 {
-  z-index: 2; /* slide under group 3 and 5 */
+.cloud-8 {
+  -webkit-animation-duration: 121s;
+  -moz-animation-duration: 121s;
+  -ms-animation-duration: 121s;
+  -o-animation-duration: 121s;
+  animation-duration: 121s;
+  margin-left: 100%;
 }
 
-#group5 {
-  z-index: 3; /* slide over group 4 and 6 */
+.cloud-9 {
+  -webkit-animation-duration: 101s;
+  -moz-animation-duration: 101s;
+  -ms-animation-duration: 101s;
+  -o-animation-duration: 101s;
+  animation-duration: 101s;
+  margin-left: 10%;
 }
 
-#group6 {
-  z-index: 2; /* slide under group 5 and 7 */
+.cloud-10 {
+  -webkit-animation-duration: 126s;
+  -moz-animation-duration: 126s;
+  -ms-animation-duration: 126s;
+  -o-animation-duration: 126s;
+  animation-duration: 126s;
+  margin-left: 14%;
 }
 
-#group7 {
-  z-index: 3; /* slide over group 7 */
+.cloud-11 {
+  -webkit-animation-duration: 96s;
+  -moz-animation-duration: 96s;
+  -ms-animation-duration: 96s;
+  -o-animation-duration: 96s;
+  animation-duration: 96s;
+  margin-left: 73%;
 }
+
+.cloud-12 {
+  -webkit-animation-duration: 83s;
+  -moz-animation-duration: 83s;
+  -ms-animation-duration: 83s;
+  -o-animation-duration: 83s;
+  animation-duration: 83s;
+  margin-left: 51%;
+}
+
 
 /* TYPED FOR HACKTX */
 .typed-cursor{
@@ -200,6 +350,7 @@ h3.hero-info{
 }
 
 .clouds {
+  margin-top: -4vh;
   height: 0;
   width: 100vw;
 }
