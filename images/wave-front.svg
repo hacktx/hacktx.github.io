@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1000px" height="140px" viewBox="0 0 1000 140" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>Slice 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <rect id="Rectangle-1" fill="#1C67CA" sketch:type="MSShapeGroup" x="0" y="87" width="1000" height="88"></rect>
+        <path d="M762.075667,1.97266 C680.994592,1.97266 653.549685,23.192689 578.148753,35.800004 C502.747821,48.40732 445.585738,46.105456 350.32269,15.482173 C255.059645,-15.141109 154.403467,7.901052 110.482321,20.383483 C69.1074898,32.14225 50.8188968,35.800005 0,35.800005 L0,139.000009 L1000,139.000009 L1000,35.800005 C873.044706,35.800005 843.156741,1.97266 762.075667,1.97266 L762.075667,1.97266 L762.075667,1.97266 Z" id="front" fill="#1C67CA" sketch:type="MSShapeGroup"></path>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1000px" height="201px" viewBox="0 0 1000 201" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>back</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="water-waves" sketch:type="MSLayerGroup" transform="translate(-16.000000, 0.000000)" fill="#7FC9FF">
+            <g id="Page-1" sketch:type="MSShapeGroup">
+                <g id="Artboard">
+                    <g id="water-waves">
+                        <path d="M439.862619,47.3897268 C357.508274,47.3897251 294.142854,0.348525552 181.318007,0.348524362 C90.9192472,0.348523408 63.3561553,34 16,34.0000012 L16,201.000007 L1016,201.000009 L1016,34.0000012 C938.187508,34 872.536917,0.348523824 736.151227,0.348524094 C599.765536,0.348524363 522.216963,47.3897285 439.862619,47.3897268 L439.862619,47.3897268 L439.862619,47.3897268 Z" id="back"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
