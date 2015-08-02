@@ -28,6 +28,34 @@
   color: #F5F5F5;
 }
 
+/* Kayak Shake */
+@-ms-keyframes wiggle{
+  0%{-ms-transform:rotate(3deg);}
+  50%{-ms-transform:rotate(-3deg);}
+  100%{-ms-transform:rotate(3deg);}
+}
+@-moz-keyframes wiggle{
+  0%{-moz-transform:rotate(3deg);}
+  50%{-moz-transform:rotate(-3deg);}
+  100%{-moz-transform:rotate(3deg);}
+}
+@-webkit-keyframes wiggle{
+  0%{-webkit-transform:rotate(3deg);}
+  50%{-webkit-transform:rotate(-3deg);}
+  100%{-webkit-transform:rotate(3deg);}
+}
+@keyframes wiggle{
+  0%{transform:rotate(3deg);}
+  50%{transform:rotate(-3deg);}
+  100%{transform:rotate(3deg);}
+}
+a.wiggle-me:hover{
+  -ms-animation:wiggle .3s 2;
+  -moz-animation:wiggle .3s 2;
+  -webkit-animation:wiggle .3s 2;
+  animation:wiggle .3s 2;
+}
+
 /* Clouds */
 * {
   -webkit-box-sizing: border-box;
@@ -316,7 +344,8 @@ body {
 }
 
 .hero .container {
-  padding-top: 200px;
+  /*padding-top: 200px;*/
+  height: 100vh;
 }
 
 .email {
@@ -339,6 +368,10 @@ body {
   margin-top: 100px;
 }
 
+.hero-image {
+  margin-top: 25vh;
+}
+
 .hero-info {
   margin-top: 15px;
 }
@@ -350,7 +383,6 @@ h3.hero-info{
 }
 
 .clouds {
-  margin-top: -4vh;
   height: 0;
   width: 100vw;
 }
@@ -527,10 +559,14 @@ h3.hero-info{
 
 .about .container,
 .schedule .container,
-.questions .container,
-.sponsors .container {
+.questions .container {
   padding-top: 25px;
   padding-bottom: 25px;
+}
+
+.sponsors .container {
+  padding-top: 100px;
+  padding-bottom: 50px;
 }
 
 .contact .container {
