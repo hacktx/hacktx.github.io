@@ -335,6 +335,17 @@ h3.hero-info{
   bottom: 0;
 }
 
+.bats {
+  position: relative;
+  bottom: 0;
+  left: 70%;
+}
+
+.bats img {
+  width: 12vw;
+  padding-bottom: 2vh;
+}
+
 .bridge {
   padding-top: 30%;
   position: relative;
