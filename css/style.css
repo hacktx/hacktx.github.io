@@ -452,11 +452,100 @@ h3.hero-info{
   animation-duration: 5s;
 }
 
+@-webkit-keyframes wave-middle-anim {
+  0% {
+    left: -6%;
+  }
+  25% {
+    left: -3%;
+  }
+  50% {
+    left: 0%;
+  }
+  75% {
+    left: -3%;
+  }
+  100% {
+    left: -6%;
+  }
+}
+@-moz-keyframes wave-middle-anim {
+  0% {
+    left: -6%;
+  }
+  25% {
+    left: -3%;
+  }
+  50% {
+    left: 0%;
+  }
+  75% {
+    left: -3%;
+  }
+  100% {
+    left: -6%;
+  }
+}
+@-ms-keyframes wave-middle-anim {
+  0% {
+    left: -6%;
+  }
+  25% {
+    left: -3%;
+  }
+  50% {
+    left: 0%;
+  }
+  75% {
+    left: -3%;
+  }
+  100% {
+    left: -6%;
+  }
+}
+@keyframes wave-middle-anim {
+  0% {
+    left: -6%;
+  }
+  25% {
+    left: -3%;
+  }
+  50% {
+    left: 0%;
+  }
+  75% {
+    left: -3%;
+  }
+  100% {
+    left: -6%;
+  }
+}
+
+#wave-mid {
+  -webkit-animation: wave-middle-anim 60s infinite linear;
+  -moz-animation: wave-middle-anim 60s infinite linear;
+  -ms-animation: wave-middle-anim 60s infinite linear;
+  -o-animation: wave-middle-anim 60s infinite linear;
+  animation: wave-middle-anim 60s infinite linear;
+  -webkit-animation-duration: 7s;
+  -moz-animation-duration: 7s;
+  -ms-animation-duration: 7s;
+  -o-animation-duration: 7s;
+  animation-duration: 7s;
+}
+
 .bridge-wave {
   position: absolute;
   bottom: 0;
   left: 0;
   width:100%;
+}
+
+.bridge-middle-wave {
+  position: absolute;
+  bottom: 0;
+  left: 10%;
+  width:106%;
 }
 
 .bridge-white {
