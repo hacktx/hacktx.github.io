@@ -280,7 +280,7 @@ h3.hero-info{
 }
 
 .sponsors-info h2 {
-  color: rgb(81,80,78);
+  color: #51504E;
 }
 
 .sponsors-info .row {
@@ -376,6 +376,12 @@ h3.hero-info{
 
 .sponsors-info .row img {
   max-height: 20vh;
+}
+
+.sponsors-info .row p {
+  padding-top: 20px;
+  color: #51504E;
+  text-align: center;
 }
 
 .grass img {
