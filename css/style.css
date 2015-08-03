@@ -418,11 +418,11 @@ h3.hero-info{
   -ms-animation: wave-middle-anim 60s infinite linear;
   -o-animation: wave-middle-anim 60s infinite linear;
   animation: wave-middle-anim 60s infinite linear;
-  -webkit-animation-duration: 35s;
-  -moz-animation-duration: 35s;
-  -ms-animation-duration: 35s;
-  -o-animation-duration: 35s;
-  animation-duration: 35s;
+  -webkit-animation-duration: 105s;
+  -moz-animation-duration: 105s;
+  -ms-animation-duration: 105s;
+  -o-animation-duration: 105s;
+  animation-duration: 105s;
 }
 
 @-webkit-keyframes wave-front-anim {
@@ -482,11 +482,11 @@ h3.hero-info{
   -ms-animation: wave-front-anim 60s infinite linear;
   -o-animation: wave-front-anim 60s infinite linear;
   animation: wave-front-anim 60s infinite linear;
-  -webkit-animation-duration: 20s;
-  -moz-animation-duration: 20s;
-  -ms-animation-duration: 20s;
-  -o-animation-duration: 20s;
-  animation-duration: 20s;
+  -webkit-animation-duration: 60s;
+  -moz-animation-duration: 60s;
+  -ms-animation-duration: 60s;
+  -o-animation-duration: 60s;
+  animation-duration: 60s;
 }
 
 #wave-back {
@@ -495,11 +495,11 @@ h3.hero-info{
   -ms-animation: wave-front-anim 60s infinite linear;
   -o-animation: wave-front-anim 60s infinite linear;
   animation: wave-front-anim 60s infinite linear;
-  -webkit-animation-duration: 50s;
-  -moz-animation-duration: 50s;
-  -ms-animation-duration: 50s;
-  -o-animation-duration: 50s;
-  animation-duration: 50s;
+  -webkit-animation-duration: 150s;
+  -moz-animation-duration: 150s;
+  -ms-animation-duration: 150s;
+  -o-animation-duration: 150s;
+  animation-duration: 150s;
 }
 
 .bridge-wave {
