@@ -4,9 +4,10 @@
 $( document ).ready(function() {
 
     var s = skrollr.init({
-        render: function(data) {
-            //Debugging - Log the current scroll position.
-            //console.log(data.curTop);
+        mobileCheck: function() {
+            //hack - forces mobile version to be off
+            return false;
         }
+
     });
 });

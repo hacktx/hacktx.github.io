@@ -80,6 +80,10 @@ p {
   overflow-x: hidden;
 }
 
+#skrollr-body {
+  height: auto;
+}
+
 body {
   /*height: 100vh;*/
 }
