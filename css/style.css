@@ -374,6 +374,10 @@ h3.hero-info{
   width: 100%;
 }
 
+.sponsors-info .row img {
+  max-height: 20vh;
+}
+
 .grass img {
   position: absolute;
   bottom: 0;
