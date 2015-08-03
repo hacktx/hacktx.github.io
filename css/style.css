@@ -189,7 +189,7 @@ h3.hero-info{
 }
 
 .about-info p {
-  color: #96211A;
+  color: #ffffff;
   padding-top: 10px;
   line-height: 45px;
   text-align: justify;
@@ -249,6 +249,10 @@ h3.hero-info{
 
 .questions {
   background: #5AD286;
+}
+
+.questions-info {
+  margin-bottom: 100px;
 }
 
 .faq-question {
@@ -311,13 +315,13 @@ h3.hero-info{
 .about .container,
 .schedule .container,
 .questions .container {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .sponsors .container {
   padding-top: 100px;
-  padding-bottom: 50px;
+  padding-bottom: 150px;
 }
 
 .contact .container {
