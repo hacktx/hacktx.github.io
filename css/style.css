@@ -367,6 +367,7 @@ h3.hero-info{
 }
 
 .grass img {
+  position: absolute;
   bottom: 0;
 }
 
