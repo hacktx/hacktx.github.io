@@ -357,8 +357,7 @@ h3.hero-info{
 .chair {
   position: relative;
   display: inline-block;
-  left: 0;
-  bottom: 0;
+
 }
 .chair img {
   width: 40%;
