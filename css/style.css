@@ -393,7 +393,7 @@ h3.hero-info{
     left: 0%;
   }
   100% {
-    left: -50%;
+    left: -100%;
   }
 }
 @-moz-keyframes wave-middle-anim {
@@ -401,7 +401,7 @@ h3.hero-info{
     left: 0%;
   }
   100% {
-    left: -50%;
+    left: -100%;
   }
 }
 @-ms-keyframes wave-middle-anim {
@@ -409,7 +409,7 @@ h3.hero-info{
     left: 0%;
   }
   100% {
-    left: -50%;
+    left: -100%;
   }
 }
 @keyframes wave-middle-anim {
@@ -417,7 +417,7 @@ h3.hero-info{
     left: 0%;
   }
   100% {
-    left: -50%;
+    left: -100%;
   }
 }
 
@@ -436,7 +436,7 @@ h3.hero-info{
 
 @-webkit-keyframes wave-front-anim {
   0% {
-    left: -50%;
+    left: -100%;
   }
   100% {
     left: 0%;
@@ -444,36 +444,18 @@ h3.hero-info{
 }
 @-moz-keyframes wave-front-anim {
   0% {
-    left: -6%;
-  }
-  25% {
-    left: -3%;
-  }
-  50% {
-    left: 0%;
-  }
-  75% {
-    left: -3%;
+    left: -100%;
   }
   100% {
-    left: -6%;
+    left: 0%;
   }
 }
 @-ms-keyframes wave-front-anim {
   0% {
-    left: -6%;
-  }
-  25% {
-    left: -3%;
-  }
-  50% {
-    left: 0%;
-  }
-  75% {
-    left: -3%;
+    left: -100%;
   }
   100% {
-    left: -6%;
+    left: 0%;
   }
 }
 @keyframes wave-front-anim {
