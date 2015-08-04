@@ -121,7 +121,7 @@ body {
 }
 
 .form {
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .hero-image {
@@ -131,13 +131,14 @@ body {
 .hero-info {
   color: #ececec;
   text-shadow: 1px 1px #000000;
-  margin-top: 15px;
+  margin-top: 24px;
 }
 
 h3.hero-info{
   font-family: 'Montserrat', sans-serif;
   letter-spacing: -1.13px;
   text-align: center;
+  font-size: 32px;
 }
 
 .clouds {
