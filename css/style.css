@@ -360,18 +360,17 @@ h3.hero-info{
   padding-bottom: 100px;
 }
 
-
 .chair {
   position: relative;
   display: inline-block;
 
 }
+
 .chair img {
   width: 40%;
   margin-top: -300px;
   display: block;
 }
-
 
 .contact .container {
   padding-top: 20px;
