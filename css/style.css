@@ -273,6 +273,15 @@ h3.hero-info{
   padding: 0px 40px;
 }
 
+.code-of-conduct {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.code-of-conduct:hover {
+  color: #ffffff;
+  text-decoration: none;
+}
 /* SPONSOR SECTION */
 
 .sponsors {
