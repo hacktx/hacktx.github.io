@@ -101,18 +101,18 @@ body {
 
 .email {
   background: none;
-  border: 3px solid #f7f7f7;
+  border: 4px solid #f7f7f7;
   color: #F5F5F5;
-  font-size: 14px;
-  padding: 16px;
+  font-size: 18px;
+  padding: 14px;
 }
 
 .submit {
   background: #f7f7f7;
-  border: 1px solid #f7f7f7;
+  border: none;
   color: rgb(126,211,242);
-  font-size: 17px;
-  padding: 16px 5px;
+  font-size: 18px;
+  padding: 18px 5px;
 }
 
 .form {
