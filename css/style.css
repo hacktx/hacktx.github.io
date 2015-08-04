@@ -319,6 +319,14 @@ h3.hero-info{
   font-size: 12px;
 }
 
+.contact-social {
+  text-align: center;
+}
+
+.contact-social i {
+  padding: 5px;
+}
+
 .about .container,
 .schedule .container,
 .questions .container, 
