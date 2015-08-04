@@ -14,18 +14,22 @@
 
 ::-webkit-input-placeholder {
   color: #ECECEC;
+  text-shadow: 1px 1px #000000;
 }
 
 :-moz-placeholder { /* Firefox 18- */
   color: #ECECEC;
+  text-shadow: 1px 1px #000000;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
   color: #ECECEC;
+  text-shadow: 1px 1px #000000;
 }
 
 :-ms-input-placeholder {
   color: #ECECEC;
+  text-shadow: 1px 1px #000000;
 }
 
 /* TYPED FOR HACKTX */
@@ -111,6 +115,7 @@ body {
   background: #ECECEC;
   border: none;
   color: rgb(126,211,242);
+  text-shadow: 1px 1px #000000;
   font-size: 16px;
   padding: 18px 5px;
 }
@@ -125,6 +130,7 @@ body {
 
 .hero-info {
   color: #ececec;
+  text-shadow: 1px 1px #000000;
   margin-top: 15px;
 }
 
@@ -275,12 +281,12 @@ h3.hero-info{
   padding: 0px 40px;
 }
 
-.code-of-conduct {
+.faq-answer a {
   color: #ffffff;
   text-decoration: underline;
 }
 
-.code-of-conduct:hover {
+.faq-answer a:hover {
   color: #ffffff;
   text-decoration: none;
 }
