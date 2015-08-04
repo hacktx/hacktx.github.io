@@ -305,7 +305,7 @@ h3.hero-info{
 /* CONTACT SECTION */
 
 .contact {
-  background: #186A46;
+  background: rgb(37,37,37);
 }
 
 .contact-love {
@@ -315,8 +315,8 @@ h3.hero-info{
 
 .contact-detail {
   text-align: center;
-  color: #0F422C;
-  font-size: 15px;
+  color: rgb(126,126,126);
+  font-size: 12px;
 }
 
 .about .container,
@@ -328,8 +328,8 @@ h3.hero-info{
 }
 
 .contact .container {
-  padding-top: 45px;
-  padding-bottom: 50px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .skyline,
