@@ -374,10 +374,6 @@ h3.hero-info{
   width: 100%;
 }
 
-.sponsors-info .row img {
-  max-height: 20vh;
-}
-
 .sponsors-info .row p {
   padding-top: 20px;
   color: #51504E;
