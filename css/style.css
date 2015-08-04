@@ -342,7 +342,11 @@ h3.hero-info{
   padding: 5px;
 }
 
-.about .container,
+.about .container {
+  padding-top: 80px;
+  padding-bottom: 200px;
+}
+
 .schedule .container,
 .questions .container, 
 .sponsors .container {
