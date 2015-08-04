@@ -13,19 +13,19 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 
 ::-webkit-input-placeholder {
-  color: #F5F5F5;
+  color: #ECECEC;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-  color: #F5F5F5;
+  color: #ECECEC;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-  color: #F5F5F5;
+  color: #ECECEC;
 }
 
 :-ms-input-placeholder {
-  color: #F5F5F5;
+  color: #ECECEC;
 }
 
 /* TYPED FOR HACKTX */
@@ -101,17 +101,17 @@ body {
 
 .email {
   background: none;
-  border: 4px solid #f7f7f7;
-  color: #F5F5F5;
-  font-size: 18px;
+  border: 4px solid #ECECEC;
+  color: #ECECEC;
+  font-size: 16px;
   padding: 14px;
 }
 
 .submit {
-  background: #f7f7f7;
+  background: #ECECEC;
   border: none;
   color: rgb(126,211,242);
-  font-size: 18px;
+  font-size: 16px;
   padding: 18px 5px;
 }
 
@@ -124,6 +124,7 @@ body {
 }
 
 .hero-info {
+  color: #ececec;
   margin-top: 15px;
 }
 
@@ -192,7 +193,7 @@ h3.hero-info{
   color: #ffffff;
   padding-top: 10px;
   line-height: 45px;
-  text-align: justify;
+  text-align: left;
 }
 
 .about-info h2 {
@@ -237,6 +238,7 @@ h3.hero-info{
 }
 
 .schedule-detail p {
+  font-size: 19px;
   text-align: left;
 }
 
@@ -265,7 +267,7 @@ h3.hero-info{
   font-size: 20px;
   font-weight: 300;
   line-height: 25px;
-  text-align: justify;
+  text-align: left;
 }
 
 .questions .left-side,
