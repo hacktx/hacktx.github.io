@@ -295,6 +295,13 @@ h3.hero-info{
   padding: 20px;
 }
 
+.sponsors-info .row p {
+  color: #51504E;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+
 /* CONTACT SECTION */
 
 .contact {
@@ -321,7 +328,7 @@ h3.hero-info{
 
 .sponsors .container {
   padding-top: 100px;
-  padding-bottom: 150px;
+  padding-bottom: 100px;
 }
 
 .contact .container {
@@ -374,11 +381,7 @@ h3.hero-info{
   width: 100%;
 }
 
-.sponsors-info .row p {
-  padding-top: 20px;
-  color: #51504E;
-  text-align: center;
-}
+
 
 .grass img {
   position: absolute;
