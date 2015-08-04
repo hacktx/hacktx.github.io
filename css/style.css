@@ -116,7 +116,7 @@ body {
 }
 
 .form {
-  margin-top: 100px;
+  margin-top: 70px;
 }
 
 .hero-image {
@@ -124,14 +124,21 @@ body {
 }
 
 .hero-info {
+<<<<<<< HEAD
   color: #ECECEC;
   margin-top: 15px;
+=======
+  color: #ececec;
+  text-shadow: 1px 1px #000000;
+  margin-top: 24px;
+>>>>>>> 7c452bd... fixed text above subscribe
 }
 
 h3.hero-info{
   font-family: 'Montserrat', sans-serif;
   letter-spacing: -1.13px;
   text-align: center;
+  font-size: 32px;
 }
 
 .clouds {
