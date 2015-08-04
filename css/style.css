@@ -319,7 +319,7 @@ h3.hero-info{
 /* CONTACT SECTION */
 
 .contact {
-  background: rgb(37,37,37);
+  background: #47b871;
 }
 
 .contact-love {
@@ -354,6 +354,18 @@ h3.hero-info{
 }
 
 
+.chair {
+  position: relative;
+  display: inline-block;
+  left: 0;
+  bottom: 0;
+}
+.chair img {
+  width: 40%;
+  margin-top: -300px;
+  display: block;
+}
+
 
 .contact .container {
   padding-top: 20px;
@@ -364,7 +376,6 @@ h3.hero-info{
 .bridge,
 .hills,
 .grass {
-  position: relative;
   z-index: 0;
 }
 
@@ -383,6 +394,7 @@ h3.hero-info{
   width: 12vw;
   padding-bottom: 2vh;
 }
+
 
 .bridge {
   padding-top: 30%;
