@@ -287,14 +287,16 @@ h3.hero-info{
 }
 
 .faq-answer a {
-  color: #ffffff;
+  color: #2C7447;
+  font-weight: bold;
   text-decoration: underline;
 }
 
 .faq-answer a:hover {
-  color: #ffffff;
+  color: #2C7447;
   text-decoration: none;
 }
+
 /* SPONSOR SECTION */
 
 .sponsors {
