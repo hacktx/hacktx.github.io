@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Layer_1" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns"
+	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="3826px" height="135px"
+	 viewBox="0 0 3826 135" enable-background="new 0 0 3826 135" xml:space="preserve">
+<title>wave-front-lg</title>
+<desc>Created with Sketch.</desc>
+<g id="Page-1" sketch:type="MSPage">
+	<g id="Desktop-HD" transform="translate(0.000000, -2325.000000)" sketch:type="MSArtboardGroup">
+		<g id="website-mock" transform="translate(-138.000000, 0.000000)" sketch:type="MSLayerGroup">
+			<g id="schedule-section" transform="translate(0.000000, 1899.000000)" sketch:type="MSShapeGroup">
+				<g id="water-waves" transform="translate(0.000000, 260.000000)">
+					<g id="wave-front-lg" transform="translate(0.000000, 166.000000)">
+						<path id="front" fill="#1C67CA" d="M1762.076,1.973c-81.082,0-108.526,21.22-183.928,33.827
+							c-75.4,12.607-132.562,10.306-227.826-20.317c-95.263-30.624-195.919-7.582-239.84,4.901
+							C1069.107,32.142,1050.818,35.8,1000,35.8V139h1000V35.8C1873.045,35.8,1843.156,1.973,1762.076,1.973L1762.076,1.973
+							L1762.076,1.973z"/>
+						<path id="front_1_" fill="#1C67CA" d="M762.076,1.973c-81.082,0-108.526,21.22-183.928,33.827
+							c-75.4,12.607-132.562,10.306-227.826-20.317c-95.263-30.624-195.919-7.582-239.84,4.901C69.107,32.142,50.819,35.8,0,35.8
+							C0,44.401,0,139,0,139h1000V35.8C873.045,35.8,843.156,1.973,762.076,1.973L762.076,1.973L762.076,1.973z"/>
+						<path id="front-copy-2" fill="#1C67CA" d="M3760.076,1.973c-81.082,0-108.526,21.22-183.928,33.827
+							c-75.4,12.607-132.562,10.306-227.826-20.317c-95.263-30.624-195.919-7.582-239.84,4.901
+							C3067.107,32.142,3048.818,35.8,2998,35.8V139h1000V35.8C3871.045,35.8,3841.156,1.973,3760.076,1.973L3760.076,1.973
+							L3760.076,1.973z"/>
+						<path id="front-copy" fill="#1C67CA" d="M2761.076,1.973c-81.082,0-108.526,21.22-183.928,33.827
+							c-75.4,12.607-132.562,10.306-227.826-20.317c-95.263-30.624-195.919-7.582-239.84,4.901
+							C2068.107,32.142,2049.818,35.8,1999,35.8c0,8.601,0,103.2,0,103.2h1000V35.8C2872.045,35.8,2842.156,1.973,2761.076,1.973
+							L2761.076,1.973L2761.076,1.973z"/>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

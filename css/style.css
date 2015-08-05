@@ -270,14 +270,15 @@ h3.hero-info{
   font-weight: 600;
   margin-top: 20px;
   text-align: left;
+  text-shadow: 1px 1px rgba(0,0,0,.2);
 }
 
 .faq-answer {
+  color: #2C7447;
   font-size: 20px;
   font-weight: 300;
   line-height: 25px;
   text-align: left;
-  text-shadow: 1px 1px rgba(0,0,0,.1);
 }
 
 .questions .left-side,
@@ -542,7 +543,7 @@ h3.hero-info{
 .bridge-white {
   position: absolute;
   left: 0;
-  bottom: 0;
+  bottom: 10%;
   width:100%;
 }
 
