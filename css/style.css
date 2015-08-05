@@ -95,7 +95,6 @@ body {
 }
 
 .hero .container {
-  /*padding-top: 200px;*/
   height: 100vh;
 }
 
@@ -201,6 +200,11 @@ h3.hero-info{
   font-weight: 300;
 }
 
+.about-info p,
+.schedule-detail p {
+  text-shadow: 1px 1px rgba(0,0,0,.1);
+}
+
 .about-info h2 {
   display: inline;
 }
@@ -273,6 +277,7 @@ h3.hero-info{
   font-weight: 300;
   line-height: 25px;
   text-align: left;
+  text-shadow: 1px 1px rgba(0,0,0,.1);
 }
 
 .questions .left-side,
@@ -550,6 +555,7 @@ h3.hero-info{
 .contact-info h2{
   width: 100%;
   text-align: center;
+  text-shadow: 1px 1px rgba(0,0,0,.1);
 }
 
 @media (max-width: 768px) {
