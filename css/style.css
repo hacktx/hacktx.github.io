@@ -13,19 +13,19 @@
 @import url(http://fonts.googleapis.com/css?family=Montserrat);
 
 ::-webkit-input-placeholder {
-  color: #ECECEC;
+  color: #f7f7f7;
 }
 
 :-moz-placeholder { /* Firefox 18- */
-  color: #ECECEC;
+  color: #f7f7f7;
 }
 
 ::-moz-placeholder {  /* Firefox 19+ */
-  color: #ECECEC;
+  color: #f7f7f7;
 }
 
 :-ms-input-placeholder {
-  color: #ECECEC;
+  color: #f7f7f7;
 }
 
 /* TYPED FOR HACKTX */
@@ -101,14 +101,15 @@ body {
 
 .email {
   background: none;
-  border: 4px solid #ECECEC;
-  color: #ECECEC;
+  border: 4px solid #f7f7f7;
+  color: #f7f7f7;
+  text-shadow: 1px 1px rgba(0,0,0,.1);
   font-size: 16px;
   padding: 14px;
 }
 
 .submit {
-  background: #ECECEC;
+  background: #f7f7f7;
   border: none;
   color: rgb(126,211,242);
   font-size: 16px;
@@ -117,6 +118,7 @@ body {
 
 .form {
   margin-top: 70px;
+  padding: 0 38px;
 }
 
 .hero-image {
@@ -124,14 +126,9 @@ body {
 }
 
 .hero-info {
-<<<<<<< HEAD
-  color: #ECECEC;
-  margin-top: 15px;
-=======
-  color: #ececec;
-  text-shadow: 1px 1px #000000;
+  color: #f7f7f7;
+  text-shadow: 1px 1px rgba(0,0,0,.2);
   margin-top: 24px;
->>>>>>> 7c452bd... fixed text above subscribe
 }
 
 h3.hero-info{
