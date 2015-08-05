@@ -118,7 +118,7 @@ body {
 }
 
 .form {
-  margin-top: 70px;
+  margin-top: 100px;
   padding: 0 38px;
 }
 
@@ -129,7 +129,7 @@ body {
 .hero-info {
   color: #f7f7f7;
   text-shadow: 1px 1px rgba(0,0,0,.2);
-  margin-top: 24px;
+  margin-top: 20px;
 }
 
 h3.hero-info{
