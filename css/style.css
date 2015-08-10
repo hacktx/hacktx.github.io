@@ -37,6 +37,8 @@
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
+  float: left;
+  margin-top: -2%;
 }
 @keyframes blink{
   0% { opacity:1; }
@@ -212,6 +214,10 @@ h3.hero-info{
 
 .align-right {
   text-align: right;
+}
+
+.align-left {
+  text-align: left;
 }
 
 .about-info p {
