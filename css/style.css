@@ -62,7 +62,7 @@
   letter-spacing: -0.5px;
 }
 
-h1, h2 {
+h1, h2, h3{
   font-family: 'Oswald', sans-serif;
 }
 
@@ -70,6 +70,13 @@ h2 {
   margin: 0;
   padding: 0px 0px 50px 0px;
   font-size: 50px;
+}
+
+h3 {
+  margin: 0;
+  padding: 0px 0px 35px 0px;
+  font-size: 35px;
+  text-align: center;
 }
 
 p {
@@ -113,6 +120,10 @@ body {
   color: rgb(126,211,242);
   font-size: 16px;
   padding: 18px 5px;
+}
+
+input:focus {
+  outline-width: 0;
 }
 
 .form {
