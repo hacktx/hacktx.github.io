@@ -8,6 +8,9 @@
   <link href="css/bootstrap.min.css" rel="stylesheet">
   <link href="css/cloud-style.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
   <link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
   <!-- 
     ██╗  ██╗ █████╗  ██████╗██╗  ██╗████████╗██╗  ██╗    ██╗  ██╗    ██████╗ 
@@ -19,7 +22,7 @@
   -->
 </head>
 <body>
-<div id="skrollr-body" class="body-div">
+<div class="body-div">
   <a name="newsletter"></a>
   <section id="skyContainer" class="hero">
 
@@ -64,24 +67,22 @@
       </div>
 
       <div class="hero-image row">
-        <img class="hacktx-title col-xs-8 col-xs-offset-2" src="images/HACKTX.svg"/>
+        <img class="hacktx-title col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1" src="images/HACKTX.svg"/>
       </div>
 
       <div class="hero-info row">
-        <div class="col-sm-8 col-sm-offset-2 col-xs-8 col-xs-offset-2">
+        <div class="col-sm-8 col-sm-offset-2 col-xs-12  ">
           <h3 class="hero-info">Austin, TX  |  Sept. 26-27</h3>
         </div>
         <form action="//hacktx.us9.list-manage.com/subscribe/post?u=2223f514d2936adc9fa7cd1b8&amp;id=2c734287c5" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate form row" target="_blank" novalidate>
-          <input type="email" value="" name="EMAIL" class="email col-sm-6 col-sm-offset-2 col-xs-8 col-xs-offset-2" id="mce-EMAIL" placeholder="Sign up for our newsletter..." required>
+          <input type="email" value="" name="EMAIL" class="email col-sm-6 col-sm-offset-2 col-xs-12" id="mce-EMAIL" placeholder="Sign up for more details..." required>
           <div style="position: absolute; left: -5000px;"><input type="text" name="b_2223f514d2936adc9fa7cd1b8_2c734287c5" tabindex="-1" value=""></div>
-          <input class="submit col-sm-2 col-sm-offset-0 col-xs-8 col-xs-offset-2" id="mc-embedded-subscribe" type="submit" value="SUBSCRIBE">
+          <input class="submit col-sm-2 col-xs-12" id="mc-embedded-subscribe" type="submit" value="SUBSCRIBE">
         </form>
       </div>
     </div>
 
-  <div class="skyline"
-       data-100-bottom="opacity: 1"
-       data-bottom-top="opacity: 0">
+  <div class="skyline">
     <img src="images/skyline.svg"/>
   </div>
 
@@ -91,8 +92,13 @@
 
     <div class="container">
       <div class="about-info row">
-        <h2>HACKTX IS FOR </h2><h2 class="typed-title"></h2>
-        <p class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">HackTX is a place to grow. Challenge yourself to learn something, break something, or create something awesome. Whether you are computer prodigy or complete beginner, HackTX is for you. Join us for one intense weekend where you will push the limits, make new friends, and build something great!</p>
+        <h3 class="">HACKTX IS FOR </h3>
+      </div>
+      <div class="about-info row" style="height: 50px;">
+        <h3 class="typed-title"></h3>
+      </div>
+      <div class="about-info row">
+        <p class="col-sm-8 col-sm-offset-2 col-xs-10 col-xs-offset-1">HackTX is a place to grow. Challenge yourself to learn something, break something, or create something. Whether you are a computer prodigy or a complete beginner, HackTX is for you. Join us for one intense weekend where you will push the limits, make new friends, and build great things!</p>
       </div>
     </div>
 
@@ -106,14 +112,18 @@
   </section>
 
   <section class="schedule">
-    <div class="kayak">
-      <img src="images/kayak.svg"/>
-    </div>
 
     <div class="container">
 
       <div class="schedule-info">
         <h2>SCHEDULE</h2>
+
+        <div class="row">
+          <div class="kayak">
+            <img src="images/kayak.svg"/>
+          </div>
+        </div>
+
         <div class="row">
 
           <div class="left-side col-sm-6 col-xs-12">
@@ -183,26 +193,26 @@
         <div class="row">
           <div class="left-side col-md-6 col-sm-12">
             <p class="faq-question">What is HackTX?</p>
-            <p class="faq-answer">HackTX is a 24 hour student hackathon at The University of Texas at Austin in the <a href="http://www.utexas.edu/universityunions/student-activity-center">SAC building</a>. It's mission is to give students the opportunity to be sufficiently awesome.</p>
+            <p class="faq-answer">HackTX is a 24 hour student hackathon at The University of Texas at Austin in the <a href="http://www.utexas.edu/universityunions/student-activity-center">Student Activity Center (SAC)</a>. Its mission is to enable awesome students around Texas.</p>
             <p class="faq-question">What is a hackathon?</p>
-            <p class="faq-answer">A hackathon is a magical event where students spend hours and hours building an idea into reality. It's about learning new things and coming up with creative solutions to problems using technology.</p>
+            <p class="faq-answer">A hackathon is a magical event where students spend hours and hours building an idea into reality. It's about learning new things and coming up with creative solutions with technology.</p>
             <p class="faq-question">Who can attend?</p>
-            <p class="faq-answer">If you are currently a student (undergraduate, graduate, or high school student at least 18 years old), you may attend. No other requirements necessary.</p>
+            <p class="faq-answer">HackTX only accepts current students (undergraduates, graduates, or high school students at least 18 years old). No other requirements necessary.</p>
             <p class="faq-question">When does registration open?</p>
-            <p class="faq-answer">Registration will open on Sept. 1st 12:00pm CST. If you are accepted, you’ll have seven days to confirm your attendance. <a href="#newsletter">Sign up for our newsletter</a> and we will let you know a day before it opens.</p>
+            <p class="faq-answer">Registration will open on Sept. 1st 12:00pm CST. If you are accepted, you’ll have seven days to confirm your attendance. Sign up for <a href="#newsletter">our newsletter</a> and we will send you a reminder before registration.</p>
             <p class="faq-question">What are the rules?</p>
             <p class="faq-answer">All code must be written at the event. You can't demo something you didn't build. Don't talk about Fight Club. All attendees (hackers, supporters, mentors, volunteers, etc)  must abide by the <a href="http://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code of Conduct.</a></p>
           </div>
 
           <div class="right-side col-md-6 col-sm-12">
             <p class="faq-question">What should I bring?</p>
-            <p class="faq-answer">Yourself, your valid university ID (or driver's license if in high school), a laptop, chargers, or anything else you might need within the 24 hours. Firearms or other weapons, alcohol, illegal drugs, power tools, are not allowed. Smiles and awesomeness are welcome.</p>
+            <p class="faq-answer">Yourself, your valid university ID (or driver's license if in high school), a laptop, chargers, or anything else you might need within the 24 hours. Firearms,  weapons,  alcohol,  illegal drugs,  or power tools are not allowed. Smiles and awesomeness are welcome.</p>
             <p class="faq-question">Do you give travel reimbursements?</p>
-            <p class="faq-answer">We provide buses from nearby schools. If you want a bus from your school? Email us at <a href="mailto:hello@hacktx.com">hello@hacktx.com</a>. We do not provide reimbursements for those who fly in, but we will provide some awesome high fives.</p>
+            <p class="faq-answer">We provide buses from nearby schools. If you want a bus from your school? Fill out our <a href="http://goo.gl/forms/6e4acm6VDv">bus request form</a>. We do not provide reimbursements for those who fly in, but we will provide some awesome high fives.</p>
             <p class="faq-question">How much money will this cost me?</p>
-            <p class="faq-answer">Zero. Zip. Zilch. Nada. Nothing. Gratis. It's free. HackTX provides students with food, WiFi, meals, swag, workspace, and prizes for the entire event.</p>
+            <p class="faq-answer">Zero. Zip. Zilch. Nada. Nothing. Gratis. It's free. HackTX provides students with WiFi, meals, swag, workspace, and prizes for the entire event.</p>
             <p class="faq-question">How do teams work?</p>
-            <p class="faq-answer">Teams can be up to 5 members. Joining a team of new friends is the best part of a hackathon. If you don't have a team, check out our Facebook group for attendees.</p>
+            <p class="faq-answer">Teams can be up to 5 members. If you don't have a team, check out our Facebook group for attendees. Joining a team of new friends is the best part of a hackathon.</p>
             <p class="faq-question">What if this FAQ didn’t answer my questions?</p>
             <p class="faq-answer">Please email us at <a href="mailto:hello@hacktx.com">hello@hacktx.com</a> if you still have any questions! We will be happy to answer them.</p>
           </div>
@@ -252,6 +262,9 @@
         </div>
       </div>
     </div>
+    <div class="chair">
+      <img src="images/chair.png"/>
+    </div>
   </section>
 
   <section class="contact">
@@ -261,13 +274,10 @@
         <p class="contact-detail col-xs-8 col-xs-offset-2">HackTX is a student event. Our supporters are supporters of the event and not of the University of Texas.
           There is no implied endorsement of these companies by the University.</p>
         <div class="contact-social col-xs-8 col-xs-offset-2">
-          <a href="https://www.facebook.com/HackTX"><i class="fa fa-facebook-official fa-4x"></i></a>
-          <a href="https://twitter.com/hacktx"><i class="fa fa-twitter-square fa-4x"></i></a>
-          <a href="https://github.com/hacktx"><i class="fa fa-github-square fa-4x"></i></a>
+          <a href="https://www.facebook.com/HackTX"><i class="fa fa-facebook-official fa-3x"></i></a>
+          <a href="https://twitter.com/hacktx"><i class="fa fa-twitter-square fa-3x"></i></a>
+          <a href="https://github.com/hacktx"><i class="fa fa-github-square fa-3x"></i></a>
         </div>
-      </div>
-      <div class="chair"> 
-          <img src="images/chair.png"/>
       </div>
     </div>
   </section>
