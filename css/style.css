@@ -623,6 +623,10 @@ h3.hero-info{
     font-size: 34px;
   }
 
+  .questions-info h2 a {
+    font-size: 34px;
+  }
+
   .hackTxFor {
     /*width: 65vw;*/
     width: 208px;
