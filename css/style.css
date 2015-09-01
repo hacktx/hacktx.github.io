@@ -658,3 +658,12 @@ h3.hero-info{
     line-height: 35px;
   }
 }
+
+.register-now {
+  text-decoration: none !important;
+  text-shadow:0 0 0;
+}
+
+.register-now:hover {
+  color: rgb(126,211,242) !important;
+}
