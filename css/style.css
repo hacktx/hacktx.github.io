@@ -353,15 +353,15 @@ h3.hero-info{
 }
 
 .sponsors-info .row {
-  min-height: 10em;
+  /*min-height: 1em;*/
   vertical-align: middle;
 }
 
 .sponsors-info .row img {
-  -moz-transform: scale(.75, .75);
-  -ms-transform: scale(.75, .75);
-  -webkit-transform: scale(.75, .75);
-  transform: scale(.75, .75);
+  -moz-transform: scale(.5, .5);
+  -ms-transform: scale(.5, .5);
+  -webkit-transform: scale(.5, .5);
+  transform: scale(.5, .5);
 
   padding: 10px;
 }
