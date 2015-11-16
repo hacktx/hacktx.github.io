@@ -243,17 +243,17 @@ h3.hero-info{
   z-index: -10;
   width: 100vw;
   left: 0%;
-  bottom: -4%;
+  bottom: 0px;
 }
 
 .night-bats {
   /*display: inline;*/
   position: fixed;
   z-index: -11;
-  bottom: 20vh;
+  bottom: 0;
   left: 45vw;
   width: 16vw;
-  /*margin-bottom: -10vh; /!* Half the height *!/*/
+  margin-bottom: 20px; /* Half the height */
   /*margin-left: 18vw; /!* Half the width *!/*/
 }
 
