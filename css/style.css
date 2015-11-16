@@ -86,6 +86,8 @@ p {
 
 .body-div {
   overflow-x: hidden;
+  /*overflow-y: hidden;*/
+  /*height: 100vh;*/
 }
 
 #skrollr-body {
@@ -94,10 +96,11 @@ p {
 
 body {
   /*height: 100vh;*/
+  background:url("../images/bgwithstars.png") center center;
 }
 
 .hero {
-  background: #7ED3F2;
+  /*background: #7ED3F2;*/
   display: block;
   position: relative;
 }
@@ -123,10 +126,13 @@ input[type="email"], textarea {
 }
 
 .submit {
-  background: #f7f7f7;
-  border: none;
-  border-radius: 0;
-  color: rgb(126,211,242);
+  /*background: #ffffff;*/
+  z-index: 100 !important;
+  color: #ffffff;
+  border: solid;
+  border-radius: 2px;
+  border-color: #ffffff;
+  /*color: rgb(126,211,242);*/
   font-size: 16px;
   padding: 18px 5px;
 }
@@ -141,7 +147,7 @@ input:focus {
 }
 
 .hero-image {
-  margin-top: 15vh;
+  margin-top: 5vh;
 }
 
 .hero-info {
@@ -200,6 +206,96 @@ h3.hero-info{
   left: 21%;
   width: 46px;
   opacity: .90;
+}
+
+#skyContainer {
+  z-index: 0;
+}
+
+.wrapper-buttons {
+  z-index: 0;
+  top: 33vh;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+.wrapper {
+  z-index: -5;
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+}
+
+.moon {
+  position: fixed;
+  z-index: -12;
+  bottom: -2%;
+  left: 50%;
+  width: 40vw;
+  height: auto;
+  /*margin-bottom: -250px; /!* Half the height *!/*/
+  margin-left: -20vw; /* Half the width */
+}
+
+.night-bridge {
+  position: fixed;
+  z-index: -10;
+  width: 100vw;
+  left: 0%;
+  bottom: -4%;
+}
+
+.night-bats {
+  /*display: inline;*/
+  position: fixed;
+  z-index: -11;
+  bottom: 20vh;
+  left: 45vw;
+  width: 16vw;
+  /*margin-bottom: -10vh; /!* Half the height *!/*/
+  /*margin-left: 18vw; /!* Half the width *!/*/
+}
+
+.night-city1 {
+  position: fixed;
+  z-index: -12;
+  bottom: 0vh;
+  left: 0vw;
+  width: 38vw;
+}
+
+.night-city2 {
+  position: fixed;
+  z-index: -11;
+  bottom: 0vh;
+  left: 0vw;
+  width: 42vw;
+}
+
+.night-cloud1 {
+  position: fixed;
+  z-index: -12;
+  bottom: 0vh;
+  right: 0vw;
+  width: 46vw;
+}
+
+.night-cloud2 {
+  position: fixed;
+  z-index: -11;
+  bottom: 0vh;
+  right: 0vw;
+  width: 40vw;
+}
+
+.night-overlay {
+  position: fixed;
+  z-index: 0;
+  bottom: 0vh;
+  right: 0vw;
+  width: 100vw;
+  height: 100vh;
 }
 
 /* ABOUT SECTION */
