@@ -96,7 +96,7 @@ p {
 
 body {
   /*height: 100vh;*/
-  background:url("../images/bgwithstars.png") center center;
+  background:url("../images/bgwithstars.png") center center #041534;
 }
 
 .hero {
@@ -761,7 +761,8 @@ h3.hero-info{
 }
 
 .register-now:hover {
-  color: rgb(126,211,242) !important;
+  color: #041534 !important;
+  background: #ffffff;
 }
 
 /* centered columns styles */
