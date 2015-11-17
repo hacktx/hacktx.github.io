@@ -132,9 +132,13 @@ input[type="email"], textarea {
   border: solid;
   border-radius: 2px;
   border-color: #ffffff;
+  background: #041534;
   /*color: rgb(126,211,242);*/
   font-size: 16px;
   padding: 18px 5px;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 input:focus {
@@ -154,6 +158,7 @@ input:focus {
   color: #f7f7f7;
   text-shadow: 1px 1px rgba(0,0,0,.2);
   margin-top: 20px;
+  text-align: center;
 }
 
 h3.hero-info{
