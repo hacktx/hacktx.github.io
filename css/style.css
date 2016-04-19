@@ -41,6 +41,22 @@
   text-align: center;
 }
 
+@media (max-width: 660px) {
+  .teaser-text {
+    font-size: 1.5em;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    width: 100px;
+    margin: 0 auto;
+    margin-top: -5px;
+    margin-bottom: 24px;
+  }
+}
+
 @-webkit-keyframes BackgroundGradient {
     0% { background-position: 0% 50% }
     50% { background-position: 100% 50% }
