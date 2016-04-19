@@ -3,14 +3,8 @@
 * http://bit.ly/1ywfhq7
 */
 
-/* Open Sans Google Font */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
-
-/* Oswald Google Font */
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
-
-/* Montserrat Google Font*/
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
+/* Josefin San Google Font */
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic);
 
 ::-webkit-input-placeholder {
   color: #f7f7f7;
@@ -33,7 +27,7 @@
   opacity: 1;
   font-size: 38px;
   color: rgb(148, 34, 31);
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   -webkit-animation: blink 0.7s infinite;
   -moz-animation: blink 0.7s infinite;
   animation: blink 0.7s infinite;
@@ -59,13 +53,13 @@
 /* GENERAL STYLE */
 
 * {
-  font-family: 'Open Sans', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   color: #f7f7f7;
   letter-spacing: -0.5px;
 }
 
 h1, h2, h3{
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
 }
 
 h2 {
@@ -162,7 +156,7 @@ input:focus {
 }
 
 h3.hero-info{
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   letter-spacing: -1.13px;
   text-align: center;
   font-size: 24px;
@@ -396,7 +390,7 @@ h3.hero-info{
 
 .questions-info h2 a {
   color: #2C7447;
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Josefin Sans', sans-serif;
   margin: 0;
   padding: 0px 0px 50px 0px;
   font-size: 50px;
