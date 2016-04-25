@@ -4,7 +4,7 @@
 
 .bg {
   height: 100vh;
-  background: linear-gradient(230deg, #cd8500, #00004c, #000035);
+  background: linear-gradient(230deg, #124E78, #E45243, #124E78);
   background-size: 400% 400%;
 
   -webkit-animation: BackgroundGradient 60s ease infinite;
