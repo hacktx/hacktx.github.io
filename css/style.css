@@ -1,76 +1,68 @@
 * {
-  color: white;
-}
+  color: white; }
 
 .bg {
   height: 100vh;
-  background: linear-gradient(230deg, #124E78, #E45243, #124E78);
+  background: linear-gradient(230deg, #124e78, #e45243, #124e78);
   background-size: 400% 400%;
-
   -webkit-animation: BackgroundGradient 60s ease infinite;
   -moz-animation: BackgroundGradient 60s ease infinite;
-  animation: BackgroundGradient 60s ease infinite;
-}
+  animation: BackgroundGradient 60s ease infinite; }
 
 .header {
-  margin-bottom: -161px;
-}
+  margin-bottom: -161px; }
 
 .logo {
   width: 15%;
   height: auto;
-  margin-top: -10px;
-}
+  margin-top: -10px; }
 
 .content {
   top: 50%;
   left: 50%;
-  transform: translate3d(-50%,-50%, 0);
-  position: absolute;
-}
+  transform: translate3d(-50%, -50%, 0);
+  position: absolute; }
 
 .hacktx-logo {
   width: 100%;
   display: block;
   margin: auto;
-  padding-bottom: 20px;
-}
+  padding-bottom: 20px; }
 
 .teaser-text {
   font-size: 3em;
-  text-align: center;
-}
+  text-align: center; }
 
 @media (max-width: 660px) {
   .teaser-text {
     font-size: 1.5em;
-    text-align: center;
-  }
-}
-
+    text-align: center; } }
 @media (max-width: 480px) {
   .logo {
     width: 100px;
     margin: 0 auto;
     margin-top: -5px;
-    margin-bottom: 24px;
-  }
-}
-
+    margin-bottom: 24px; } }
 @-webkit-keyframes BackgroundGradient {
-    0% { background-position: 0% 50% }
-    50% { background-position: 100% 50% }
-    100% { background-position: 0% 50% }
-}
-
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
 @-moz-keyframes BackgroundGradient {
-    0% { background-position: 0% 50% }
-    50% { background-position: 100% 50% }
-    100% { background-position: 0% 50% }
-}
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+@keyframes BackgroundGradient {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
 
-@keyframes BackgroundGradient { 
-    0% { background-position: 0% 50% }
-    50% { background-position: 100% 50% }
-    100% { background-position: 0% 50% }
-}
+/*# sourceMappingURL=style.css.map */
