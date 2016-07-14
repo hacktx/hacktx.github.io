@@ -36,6 +36,14 @@
   font-size: 3em;
   text-align: center; }
 
+#location {
+  font-size: 1.5em;
+  text-align: center; }
+  @media (max-width: 660px) {
+    #location {
+      font-size: 1em;
+      text-align: center; } }
+
 @media (max-width: 660px) {
   .teaser-text {
     font-size: 1.5em;
@@ -67,5 +75,3 @@
     background-position: 100% 50%; }
   100% {
     background-position: 0% 50%; } }
-
-/*# sourceMappingURL=style.css.map */

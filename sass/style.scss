@@ -47,6 +47,16 @@ $freetail-red: #e45243;
   text-align: center;
 }
 
+#location {
+    font-size: 1.5em;
+    text-align: center;
+    
+    @media (max-width: 660px) {
+        font-size: 1em;
+        text-align: center;
+    }
+}
+
 @media (max-width: 660px) {
   .teaser-text {
     font-size: 1.5em;
