@@ -6,9 +6,8 @@
 
 .bg {
   height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/cover.png) no-repeat fixed center; 
-  background-size: 100% 100%;
-  }
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/cover.png) no-repeat fixed center;
+  background-size: 100% 100%; }
 
 .header {
   margin-bottom: -161px; }
@@ -55,7 +54,11 @@
   .teaser-text {
     font-size: 2em;
     text-align: center;
-    margin-bottom: 20px; } }
+    margin-bottom: 20px; }
+
+  .bg {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/cover.png) no-repeat fixed center; } }
 @media (max-width: 480px) {
   .logo {
     width: 100px;
