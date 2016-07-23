@@ -32,8 +32,7 @@
 .teaser-text {
   font-size: 3em;
   text-align: center;
-  font-weight: bold;
-  padding-bottom: 20px; }
+  font-weight: bold; }
   .teaser-text p {
     text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black; }
 
@@ -55,8 +54,7 @@
 @media (max-width: 660px) {
   .teaser-text {
     font-size: 2em;
-    text-align: center;
-    margin-bottom: 20px; }
+    text-align: center; }
 
   .bg {
     height: 100vh;
