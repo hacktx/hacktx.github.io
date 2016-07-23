@@ -35,7 +35,7 @@
   font-weight: bold;
   padding-bottom: 20px; }
   .teaser-text p {
-    text-shadow: -1px 0 black, 0 4px black, 4px 0 black, 0 -1px black; }
+    text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black; }
 
 .title-buttons {
   background: #CE0019;
