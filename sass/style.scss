@@ -44,6 +44,10 @@ $freetail-red: #e45243;
 	text-align: center;
 	font-weight: bold;
 	padding-bottom: 20px;
+
+	p {
+		text-shadow: -1px 0 black, 0 4px black, 4px 0 black, 0 -1px black;
+	}
 }
 
 .title-buttons {
