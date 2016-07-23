@@ -1,7 +1,7 @@
 /* Josefin San Google Font */
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic);
 * {
-  color: white;
+  color: #EAF0CE;
   font-family: 'Josefin Sans', sans-serif; }
 
 .bg {
@@ -30,15 +30,23 @@
 
 .teaser-text {
   font-size: 3em;
-  text-align: center; }
+  text-align: center;
+  font-weight: bold; }
 
-#location {
-  font-size: 1.5em;
-  text-align: center; }
-  @media (max-width: 660px) {
-    #location {
-      font-size: 1em;
-      text-align: center; } }
+.title-buttons {
+  background: #CE0019;
+  transition: all 0.5s ease;
+  border: none;
+  border-radius: 3px;
+  color: #EAF0CE;
+  font-size: 24px;
+  padding: 18px 5px;
+  text-decoration: none !important;
+  text-shadow: 0 0 0; }
+  .title-buttons:hover {
+    background: #e6001b;
+    text-decoration: none;
+    color: #EAF0CE; }
 
 @media (max-width: 660px) {
   .teaser-text {
