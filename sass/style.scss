@@ -11,7 +11,7 @@ $freetail-red: #e45243;
 
 .bg {
 	height: 100vh;
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/cover.png);
+	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/cover.png) no-repeat fixed center;
 }
 
 .header {
@@ -42,6 +42,7 @@ $freetail-red: #e45243;
 	font-size: 3em;
 	text-align: center;
 	font-weight: bold;
+	padding-bottom: 20px;
 }
 
 .title-buttons {
@@ -50,7 +51,7 @@ $freetail-red: #e45243;
 	border: none;
 	border-radius: 3px;
 	color: #EAF0CE;
-	font-size: 24px;
+	font-size: 2em;
 	padding: 18px 5px;
 	text-decoration: none !important;
 	text-shadow: 0 0 0;
@@ -63,8 +64,9 @@ $freetail-red: #e45243;
 
 @media (max-width: 660px) {
 	.teaser-text {
-		font-size: 1.5em;
+		font-size: 2em;
 		text-align: center;
+		margin-bottom: 20px;
 	}
 }
 
