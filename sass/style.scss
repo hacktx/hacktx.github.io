@@ -1,6 +1,8 @@
 $freetail-blue: #124e78;
 $freetail-red: #e45243;
 
+$bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0, 0.3);
+
 /* Josefin San Google Font */
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,100,100italic,300,300italic,400italic,600,600italic,700,700italic);
 
@@ -11,7 +13,7 @@ $freetail-red: #e45243;
 
 .bg {
 	height: 100vh;
-	background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/cover.png) no-repeat fixed center;
+	background: radial-gradient($bg-gradient-stops), url(../images/cover-min.png) no-repeat fixed center;
 	background-size: 100% 100%;
 }
 
@@ -43,10 +45,6 @@ $freetail-red: #e45243;
 	font-size: 3em;
 	text-align: center;
 	font-weight: bold;
-
-	p {
-		text-shadow: -1px 0 black, 0 2px black, 2px 0 black, 0 -1px black;
-	}
 }
 
 .title-buttons {
@@ -74,7 +72,7 @@ $freetail-red: #e45243;
 
 	.bg {
 		height: 100vh;
-		background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../images/cover.png) no-repeat fixed center;
+		background: radial-gradient($bg-gradient-stops), url(../images/cover-min.png) no-repeat fixed center;
 	}
 }
 
@@ -84,49 +82,5 @@ $freetail-red: #e45243;
 		margin: 0 auto;
 		margin-top: -5px;
 		margin-bottom: 24px;
-	}
-}
-
-@-webkit-keyframes BackgroundGradient {
-	0% {
-		background-position: 0% 50%;
-	}
-
-	50% {
-		background-position: 100% 50%;
-	}
-
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-
-@-moz-keyframes BackgroundGradient {
-	0% {
-		background-position: 0% 50%;
-	}
-
-	50% {
-		background-position: 100% 50%;
-	}
-
-	100% {
-		background-position: 0% 50%;
-	}
-}
-
-
-@keyframes BackgroundGradient {
-	0% {
-		background-position: 0% 50%;
-	}
-
-	50% {
-		background-position: 100% 50%;
-	}
-
-	100% {
-		background-position: 0% 50%;
 	}
 }
