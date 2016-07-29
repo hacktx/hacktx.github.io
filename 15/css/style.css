@@ -4,13 +4,13 @@
 */
 
 /* Open Sans Google Font */
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
 
 /* Oswald Google Font */
-@import url(http://fonts.googleapis.com/css?family=Oswald:400,700);
+@import url(//fonts.googleapis.com/css?family=Oswald:400,700);
 
 /* Montserrat Google Font*/
-@import url(http://fonts.googleapis.com/css?family=Montserrat);
+@import url(//fonts.googleapis.com/css?family=Montserrat);
 
 ::-webkit-input-placeholder {
   color: #f7f7f7;
