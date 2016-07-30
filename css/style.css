@@ -4,6 +4,11 @@
   color: #EAF0CE;
   font-family: 'Josefin Sans', sans-serif; }
 
+body .content {
+  top: 50%;
+  left: 50%;
+  transform: translate3d(-50%, -50%, 0);
+  position: absolute; }
 body .bg {
   height: 100vh;
   background: radial-gradient(rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0, 0.3)), url(../images/cover-min.png) no-repeat fixed center;
@@ -55,5 +60,21 @@ body .bg {
       margin: 0 auto;
       margin-top: -5px;
       margin-bottom: 24px; } }
+body .about {
+  height: 70vh;
+  width: 100%;
+  position: absolute;
+  background-size: 100% 100%;
+  background: #E7F3FB; }
+  body .about .transition {
+    height: 10vh; }
+  body .about h1 {
+    color: #e45243;
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center; }
+  body .about p {
+    color: #4E4E4E;
+    font-size: 2em; }
 
 /*# sourceMappingURL=style.css.map */

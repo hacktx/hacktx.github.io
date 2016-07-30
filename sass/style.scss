@@ -14,6 +14,13 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 
 body {
 
+	.content {
+		top: 50%;
+		left: 50%;
+		transform: translate3d(-50%, -50%, 0);
+		position: absolute;
+	}
+
 	.bg {
 		height: 100vh;
 		background: radial-gradient($bg-gradient-stops), url(../images/cover-min.png) no-repeat fixed center;
@@ -85,6 +92,29 @@ body {
 				margin-top: -5px;
 				margin-bottom: 24px;
 			}
+		}
+	}
+
+	.about {
+		height: 70vh;
+		width: 100%;
+		position: absolute;
+		background-size: 100% 100%;
+		background: $light-blue;
+		.transition {
+			height: 10vh;
+		}
+
+		h1 {
+			color: $freetail-red;
+			font-size: 5em;
+			font-weight: bold;
+			text-align: center;
+		}
+
+		p {
+			color: #4E4E4E;
+			font-size: 2em;
 		}
 	}
 }
