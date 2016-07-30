@@ -102,5 +102,29 @@
     text-shadow: 1.5px 1.5px 1.5px #CB0922; }
   .faq .faq-content .faq-info {
     text-align: center; }
+    .faq .faq-content .faq-info .top-dark-blue {
+      background-image: url("../images/textbox1.png");
+      background-size: 100% 100%;
+      height: 10em;
+      background-repeat: no-repeat;
+      background-position: left top;
+      position: relative; }
+      .faq .faq-content .faq-info .top-dark-blue p {
+        transform: translate3d(-25%, 100%, 0);
+        font-weight: bold;
+        font-size: 2em;
+        color: #E6E6E6; }
+    .faq .faq-content .faq-info .bot-light-blue {
+      background-image: url("../images/textbox2.png");
+      background-size: 100% 100%;
+      height: 10em;
+      background-repeat: no-repeat;
+      background-position: left top;
+      margin-top: -2em; }
+      .faq .faq-content .faq-info .bot-light-blue p {
+        transform: translate3d(0%, 30%, 0);
+        font-weight: bold;
+        font-size: 1.3em;
+        color: #4E4E4E; }
 
 /*# sourceMappingURL=style.css.map */
