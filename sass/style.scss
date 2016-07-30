@@ -1,6 +1,7 @@
 $freetail-blue: #124e78;
 $freetail-red: #e45243;
 $light-blue: #E7F3FB;
+$about-red: #CB0922;
 
 $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0, 0.3);
 
@@ -96,7 +97,7 @@ body {
 	}
 
 	.about {
-		height: 70vh;
+		height: 100vh;
 		width: 100%;
 		position: absolute;
 		background-size: 100% 100%;
@@ -106,7 +107,7 @@ body {
 		}
 
 		h1 {
-			color: $freetail-red;
+			color: $about-red;
 			font-size: 5em;
 			font-weight: bold;
 			text-align: center;
@@ -115,6 +116,14 @@ body {
 		p {
 			color: #4E4E4E;
 			font-size: 2em;
+		}
+
+		.hype-video {
+			margin-top: 2em;
+			height: 50vh;
+			width: 100%;
+			background-size: 70% 70%;
+			background: #E6E6E6;
 		}
 	}
 }

@@ -61,7 +61,7 @@ body .bg {
       margin-top: -5px;
       margin-bottom: 24px; } }
 body .about {
-  height: 70vh;
+  height: 100vh;
   width: 100%;
   position: absolute;
   background-size: 100% 100%;
@@ -69,12 +69,18 @@ body .about {
   body .about .transition {
     height: 10vh; }
   body .about h1 {
-    color: #e45243;
+    color: #CB0922;
     font-size: 5em;
     font-weight: bold;
     text-align: center; }
   body .about p {
     color: #4E4E4E;
     font-size: 2em; }
+  body .about .hype-video {
+    margin-top: 2em;
+    height: 50vh;
+    width: 100%;
+    background-size: 70% 70%;
+    background: #E6E6E6; }
 
 /*# sourceMappingURL=style.css.map */
