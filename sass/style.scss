@@ -136,8 +136,13 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 		h1 {
 			text-align: center;
 			font-size: 5em;
+			//text-weight: bold;
 			//-webkit-text-stroke: 1px $freetail-red;
-			text-shadow: 2px 2px 2px $about-red;
+			text-shadow: 1.5px 1.5px 1.5px $about-red;
+		}
+
+		.faq-info {
+			text-align: center;
 		}
 	}
 }
