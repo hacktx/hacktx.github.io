@@ -118,10 +118,14 @@
         font-weight: bold;
         font-size: 2em;
         color: #E6E6E6; }
+    .faq .faq-content .faq-info .faq-entry {
+      margin-bottom: 1em; }
     .faq .faq-content .faq-info .huge-text {
       height: 25em !important; }
       .faq .faq-content .faq-info .huge-text p {
         top: 31% !important; }
+    .faq .faq-content .faq-info .medium-text {
+      height: 18em !important; }
     .faq .faq-content .faq-info .opposite-direction-bot {
       background-image: url("../images/textbox2reversed.png") !important; }
     .faq .faq-content .faq-info .opposite-direction-top {

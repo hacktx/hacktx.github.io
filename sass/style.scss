@@ -162,11 +162,19 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 		        }
 			}
 
+			.faq-entry {
+				margin-bottom: 1em;
+			}
+
 			.huge-text {
 				height: 25em !important;
 				p {
 					top: 31% !important;
 				}
+			}
+
+			.medium-text {
+				height: 18em !important;
 			}
 
 			.opposite-direction-bot {
@@ -183,7 +191,6 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 		        background-position: left top;
 		        background-size: 100% 100%;
 		        margin-top: -2em;
-
 		        p {
 		        	padding-left: 0.5em;
 		        	text-align: left;
