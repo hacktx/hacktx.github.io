@@ -67,7 +67,7 @@
   height: 10vh; }
 
 .about {
-  height: 120vh;
+  height: 100vh;
   width: 100%;
   position: relative;
   background-size: 100% 100%;
@@ -99,7 +99,8 @@
   .faq .faq-content h1 {
     text-align: center;
     font-size: 5em;
-    text-shadow: 1.5px 1.5px 1.5px #CB0922; }
+    text-shadow: 1.5px 1.5px 1.5px #CB0922;
+    margin-bottom: 1em; }
   .faq .faq-content .faq-info {
     position: relative;
     text-align: left; }
