@@ -114,7 +114,7 @@
       position: relative; }
       .faq .faq-content .faq-info .top-dark-blue p {
         position: absolute;
-        left: 10%;
+        left: 5%;
         top: 35%;
         font-weight: bold;
         font-size: 2em;
@@ -127,6 +127,8 @@
         top: 31% !important; }
     .faq .faq-content .faq-info .medium-text {
       height: 18em !important; }
+      .faq .faq-content .faq-info .medium-text p {
+        top: 40% !important; }
     .faq .faq-content .faq-info .opposite-direction-bot {
       background-image: url("../images/textbox2reversed.png") !important; }
     .faq .faq-content .faq-info .opposite-direction-top {
@@ -143,7 +145,7 @@
         text-align: left;
         position: absolute;
         width: 90%;
-        top: 45%;
+        top: 50%;
         font-size: 1.3em;
         color: #4E4E4E; }
 

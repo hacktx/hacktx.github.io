@@ -155,7 +155,7 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 		        position: relative;
 		        p {
 		        	position: absolute;
-		        	left: 10%;
+		        	left: 5%;
 		        	top: 35%;
 		        	font-weight: bold;
 		        	font-size: 2em;
@@ -176,6 +176,10 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 
 			.medium-text {
 				height: 18em !important;
+
+				p {
+					top: 40% !important;
+				}
 			}
 
 			.opposite-direction-bot {
@@ -197,7 +201,7 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 		        	text-align: left;
 		        	position: absolute;
 		        	width: 90%;
-		        	top: 45%;
+		        	top: 50%;
 		        	font-size: 1.3em;
 		        	color: #4E4E4E;
 		        }
