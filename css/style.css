@@ -101,6 +101,7 @@
     font-size: 5em;
     text-shadow: 1.5px 1.5px 1.5px #CB0922; }
   .faq .faq-content .faq-info {
+    position: relative;
     text-align: left; }
     .faq .faq-content .faq-info .top-dark-blue {
       background-image: url("../images/textbox1.png");

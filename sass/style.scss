@@ -142,7 +142,7 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 		}
 
 		.faq-info {
-
+			position: relative;
 			text-align: left;
 			.top-dark-blue {
 		        background-image: url('../images/textbox1.png');
