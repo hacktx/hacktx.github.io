@@ -88,7 +88,7 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 }
 
 .transition {
-	height: 10vh;
+	height: 5vh;
 }
 
 .about {
@@ -136,8 +136,6 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 		h1 {
 			text-align: center;
 			font-size: 5em;
-			//text-weight: bold;
-			//-webkit-text-stroke: 1px $freetail-red;
 			text-shadow: 1.5px 1.5px 1.5px $about-red;
 			margin-bottom: 1em;
 		}
@@ -210,4 +208,34 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 		}
 
 	}
+}
+
+.sponsors {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background-size: 100% 100%;
+	background: $light-blue;
+
+	h1 {
+		color: $about-red;
+		font-size: 5em;
+		font-weight: bold;
+		text-align: center;
+	}
+
+	.sponsor-row {
+		margin-top: 4em;
+		.sponsor-entry {
+		}
+	}
+
+	p {
+		margin-top: 2em;
+		margin-bottom: 2em;
+		text-align: center;
+		color: #4E4E4E;
+		font-size: 2em;
+	}
+
 }

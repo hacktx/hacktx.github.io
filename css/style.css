@@ -64,7 +64,7 @@
     margin-top: -5px;
     margin-bottom: 24px; } }
 .transition {
-  height: 10vh; }
+  height: 5vh; }
 
 .about {
   height: 100vh;
@@ -148,5 +148,25 @@
         top: 50%;
         font-size: 1.3em;
         color: #4E4E4E; }
+
+.sponsors {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-size: 100% 100%;
+  background: #E7F3FB; }
+  .sponsors h1 {
+    color: #CB0922;
+    font-size: 5em;
+    font-weight: bold;
+    text-align: center; }
+  .sponsors .sponsor-row {
+    margin-top: 4em; }
+  .sponsors p {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    text-align: center;
+    color: #4E4E4E;
+    font-size: 2em; }
 
 /*# sourceMappingURL=style.css.map */
