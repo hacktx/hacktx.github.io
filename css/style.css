@@ -103,7 +103,8 @@
     margin-bottom: 1em; }
   .faq .faq-content .faq-info {
     position: relative;
-    text-align: left; }
+    text-align: left;
+    margin-top: 2em; }
     .faq .faq-content .faq-info .top-dark-blue {
       background-image: url("../images/textbox1.png");
       background-size: 100% 100%;
@@ -160,7 +161,7 @@
     font-size: 5em;
     font-weight: bold;
     text-align: center; }
-  .sponsors .sponsor-row {
+  .sponsors .sponsor-row .sponsor-entry {
     margin-top: 4em; }
   .sponsors p {
     margin-top: 2em;
@@ -168,5 +169,12 @@
     text-align: center;
     color: #4E4E4E;
     font-size: 2em; }
+
+.footer {
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-size: 100% 100%;
+  background: #CB0922; }
 
 /*# sourceMappingURL=style.css.map */

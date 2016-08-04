@@ -143,6 +143,7 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 		.faq-info {
 			position: relative;
 			text-align: left;
+			margin-top: 2em;
 			.top-dark-blue {
 		        background-image: url('../images/textbox1.png');
 		        background-size: 100% 100%;
@@ -225,8 +226,8 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 	}
 
 	.sponsor-row {
-		margin-top: 4em;
 		.sponsor-entry {
+			margin-top: 4em;
 		}
 	}
 
@@ -238,4 +239,12 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 		font-size: 2em;
 	}
 
+}
+
+.footer {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	background-size: 100% 100%;
+	background: $about-red;
 }
