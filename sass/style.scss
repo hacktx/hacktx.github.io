@@ -1,3 +1,5 @@
+//To compile: sass --watch sass:css --style compressed --sourcemap=none
+
 $freetail-blue: #124e78;
 $freetail-red: #e45243;
 $light-blue: #E7F3FB;
@@ -211,7 +213,7 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 	}
 }
 
-.sponsors {
+.partners {
 	height: 100%;
 	width: 100%;
 	position: relative;
@@ -225,8 +227,8 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 		text-align: center;
 	}
 
-	.sponsor-row {
-		.sponsor-entry {
+	.partner-row {
+		.partner-entry {
 			margin-top: 4em;
 		}
 	}
