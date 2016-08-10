@@ -1,15 +1,15 @@
 //To compile: sass --watch sass:css --style compressed --sourcemap=none
-
 $freetail-blue: #124e78;
 $freetail-red: #e45243;
 $light-blue: #E7F3FB;
 $about-red: #CB0922;
-
-$bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0, 0.3);
+$bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%,
+rgba(0, 0, 0, 0.7) 15%,
+rgba(0, 0, 0, 0.3);
 
 /* Josefin San Google Font */
-@import 'https://fonts.googleapis.com/css?family=Josefin+Sans';
 
+@import 'https://fonts.googleapis.com/css?family=Josefin+Sans';
 * {
 	color: #EAF0CE;
 	font-family: 'Josefin Sans', sans-serif;
@@ -73,7 +73,6 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 		font-size: 2em;
 		text-align: center;
 	}
-
 	.bg {
 		height: 100vh;
 		background: radial-gradient($bg-gradient-stops), url(../images/cover-min.png) no-repeat fixed center;
@@ -99,19 +98,16 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 	position: relative;
 	background-size: 100% 100%;
 	background: $light-blue;
-
 	h1 {
 		color: $about-red;
 		font-size: 5em;
 		font-weight: bold;
 		text-align: center;
 	}
-
 	p {
 		color: #4E4E4E;
 		font-size: 2em;
 	}
-
 	.hype-video {
 		margin-top: 3em;
 		height: 50vh;
@@ -119,7 +115,6 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 		background-size: 100% 100%;
 		background: #E6E6E6;
 	}
-
 	@media (max-width: 768px) {
 		.hype-video {
 			display: none;
@@ -133,7 +128,6 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 	position: relative;
 	background-size: 100% 100%;
 	background: $freetail-blue;
-
 	.faq-content {
 		h1 {
 			text-align: center;
@@ -141,75 +135,66 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 			text-shadow: 1.5px 1.5px 1.5px $about-red;
 			margin-bottom: 1em;
 		}
-
 		.faq-info {
 			position: relative;
 			text-align: left;
 			margin-top: 2em;
 			.top-dark-blue {
-		        background-image: url('../images/textbox1.png');
-		        background-size: 100% 100%;
-		        height: 11em;
-		        width: 100%;
-		        background-repeat: no-repeat;
-		        background-position: left top;
-		        position: relative;
-		        p {
-		        	position: absolute;
-		        	left: 5%;
-		        	top: 35%;
-		        	font-weight: bold;
-		        	font-size: 2em;
-		        	color: #E6E6E6;
-		        }
+				background-image: url('../images/textbox1.png');
+				background-size: 100% 100%;
+				height: 11em;
+				width: 100%;
+				background-repeat: no-repeat;
+				background-position: left top;
+				position: relative;
+				p {
+					position: absolute;
+					left: 5%;
+					top: 35%;
+					font-weight: bold;
+					font-size: 2em;
+					color: #E6E6E6;
+				}
 			}
-
 			.faq-entry {
 				margin-bottom: 1em;
 			}
-
 			.huge-text {
 				height: 25em !important;
 				p {
 					top: 31% !important;
 				}
 			}
-
 			.medium-text {
 				height: 18em !important;
-
 				p {
 					top: 40% !important;
 				}
 			}
-
 			.opposite-direction-bot {
 				background-image: url('../images/textbox2reversed.png') !important;
 			}
-
 			.opposite-direction-top {
 				background-image: url('../images/textbox1reversed.png') !important;
 			}
 			.bot-light-blue {
-		        background-image: url('../images/textbox2.png');
-		        height: 15em;
-		        background-repeat: no-repeat;
-		        background-position: left top;
-		        background-size: 100% 100%;
-		        margin-top: -2em;
-		        p {
-		        	padding-left: 0.5em;
-		        	text-align: left;
-		        	position: absolute;
-		        	width: 90%;
-		        	top: 50%;
-		        	font-size: 1.3em;
-		        	color: #4E4E4E;
-		        }
+				background-image: url('../images/textbox2.png');
+				height: 15em;
+				background-repeat: no-repeat;
+				background-position: left top;
+				background-size: 100% 100%;
+				margin-top: -2em;
+				p {
+					padding-left: 0.5em;
+					text-align: left;
+					position: absolute;
+					width: 90%;
+					top: 50%;
+					font-size: 1.3em;
+					color: #4E4E4E;
+				}
 			}
-
 		}
-
 	}
 }
 
@@ -219,20 +204,25 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 	position: relative;
 	background-size: 100% 100%;
 	background: $light-blue;
-
 	h1 {
 		color: $about-red;
 		font-size: 5em;
 		font-weight: bold;
 		text-align: center;
 	}
-
 	.partner-row {
 		.partner-entry {
 			margin-top: 4em;
 		}
 	}
-
+	.col-centered {
+		display: inline-block;
+		float: none;
+		/* reset the text-align */
+		text-align: left;
+		/* inline-block space fix */
+		margin-right: -4px;
+	}
 	p {
 		margin-top: 2em;
 		margin-bottom: 2em;
@@ -240,7 +230,6 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 		color: #4E4E4E;
 		font-size: 2em;
 	}
-
 }
 
 .footer {
@@ -249,7 +238,6 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 	position: relative;
 	background-size: 100% 100%;
 	background: $about-red;
-
 	.footer-info-row {
 		margin-top: 4em;
 		margin-bottom: 3em;
@@ -262,14 +250,12 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%, rgba(0, 0, 0, 0.7) 15%, rgba(0, 0, 0,
 			display: inline-block;
 		}
 	}
-
 	p {
 		text-align: center;
 		font-size: 1.5em;
 		color: $light-blue;
 		padding-bottom: 1em;
 	}
-
 	i {
 		color: $light-blue;
 	}
