@@ -9,10 +9,15 @@ rgba(0, 0, 0, 0.3);
 
 /* Josefin San Google Font */
 
+
 @import 'https://fonts.googleapis.com/css?family=Josefin+Sans';
 * {
 	color: #EAF0CE;
 	font-family: 'Josefin Sans', sans-serif;
+}
+
+body {
+	background: $light-blue;
 }
 
 .bg {
@@ -89,11 +94,11 @@ rgba(0, 0, 0, 0.3);
 }
 
 .transition {
-	height: 5vh;
+	margin-top: 5em;
 }
 
 .about {
-	height: 100vh;
+	height: 100%;
 	width: 100%;
 	position: relative;
 	background-size: 100% 100%;
@@ -108,12 +113,20 @@ rgba(0, 0, 0, 0.3);
 		color: #4E4E4E;
 		font-size: 2em;
 	}
+
+	.about-content {
+		p {
+			text-align: center;
+			margin: auto;
+		}
+	}
 	.hype-video {
 		margin-top: 3em;
 		height: 50vh;
 		width: 100%;
 		background-size: 100% 100%;
 		background: #E6E6E6;
+		margin-bottom: 3em;
 	}
 	@media (max-width: 768px) {
 		.hype-video {
@@ -129,6 +142,7 @@ rgba(0, 0, 0, 0.3);
 	background-size: 100% 100%;
 	background: $freetail-blue;
 	.faq-content {
+		padding-top: 3em;
 		h1 {
 			text-align: center;
 			font-size: 5em;
@@ -138,7 +152,7 @@ rgba(0, 0, 0, 0.3);
 		.faq-info {
 			position: relative;
 			text-align: left;
-			margin-top: 2em;
+			margin-top: 1em;
 			.top-dark-blue {
 				background-image: url('../images/textbox1.png');
 				background-size: 100% 100%;
@@ -156,6 +170,11 @@ rgba(0, 0, 0, 0.3);
 					color: #E6E6E6;
 				}
 			}
+
+			.small-question {
+				height: 9em;
+			}
+
 			.faq-entry {
 				margin-bottom: 1em;
 			}
@@ -170,6 +189,10 @@ rgba(0, 0, 0, 0.3);
 				p {
 					top: 40% !important;
 				}
+			}
+
+			.small-text {
+				height: 13em !important;
 			}
 			.opposite-direction-bot {
 				background-image: url('../images/textbox2reversed.png') !important;
@@ -201,7 +224,6 @@ rgba(0, 0, 0, 0.3);
 .partners {
 	height: 100%;
 	width: 100%;
-	position: relative;
 	background-size: 100% 100%;
 	background: $light-blue;
 	h1 {
