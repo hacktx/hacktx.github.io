@@ -237,6 +237,21 @@ body {
 			margin-top: 4em;
 		}
 	}
+
+	.rest-partners {
+		img {
+			height: 100%;
+			width: 100%;
+		}
+	}
+
+	.two-per-partners {
+		img {
+			height: 100%;
+			width: 100%;
+			margin-top: 3em;
+		}
+	}
 	.col-centered {
 		display: inline-block;
 		float: none;
@@ -251,6 +266,19 @@ body {
 		text-align: center;
 		color: #4E4E4E;
 		font-size: 2em;
+	}
+
+	#mlh {
+		width: 35%;
+		height: 50%;
+	}
+
+	#microsoft {
+		width: 50%;
+	}
+
+	#utcs {
+		width: 50%;
 	}
 }
 

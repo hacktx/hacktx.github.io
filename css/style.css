@@ -175,6 +175,13 @@ body {
     text-align: center; }
   .partners .partner-row .partner-entry {
     margin-top: 4em; }
+  .partners .rest-partners img {
+    height: 100%;
+    width: 100%; }
+  .partners .two-per-partners img {
+    height: 100%;
+    width: 100%;
+    margin-top: 3em; }
   .partners .col-centered {
     display: inline-block;
     float: none;
@@ -188,6 +195,13 @@ body {
     text-align: center;
     color: #4E4E4E;
     font-size: 2em; }
+  .partners #mlh {
+    width: 35%;
+    height: 50%; }
+  .partners #microsoft {
+    width: 50%; }
+  .partners #utcs {
+    width: 50%; }
 
 .footer {
   height: 100%;
