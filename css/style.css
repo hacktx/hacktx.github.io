@@ -204,7 +204,14 @@ body {
     width: 50%; }
   @media (max-width: 768px) {
     .partners #palantir {
-      margin-top: -8em; } }
+      margin-top: -8em; }
+    .partners #mlh {
+      width: 50%;
+      height: 50%; }
+    .partners #microsoft {
+      width: 75%; }
+    .partners #utcs {
+      width: 75%; } }
 
 .footer {
   height: 100%;
