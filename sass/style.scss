@@ -280,6 +280,12 @@ body {
 	#utcs {
 		width: 50%;
 	}
+
+	@media (max-width: 768px) {
+		#palantir {
+			margin-top: -8em;
+		}
+	}
 }
 
 .footer {
