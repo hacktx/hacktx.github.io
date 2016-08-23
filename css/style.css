@@ -88,9 +88,10 @@ body {
     margin: auto; }
   .about .about-content h2 {
     color: #e45243;
-    font-size: 5em; }
+    font-size: 2em; }
   .about .about-content .mailing-list {
-    text-align: center; }
+    text-align: center;
+    font-size: 2em; }
     .about .about-content .mailing-list input[type=email] {
       width: 80%;
       color: #124e78;
