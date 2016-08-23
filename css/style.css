@@ -86,6 +86,19 @@ body {
   .about .about-content p {
     text-align: center;
     margin: auto; }
+  .about .about-content .mailing-list {
+    text-align: center; }
+    .about .about-content .mailing-list input[type=email] {
+      width: 80%;
+      padding: 12px 20px;
+      margin: 8px 0;
+      box-sizing: border-box; }
+    .about .about-content .mailing-list input[type=submit] {
+      height: 100%;
+      padding: 12px 20px;
+      background: #e45243;
+      border: 0 none;
+      cursor: pointer; }
   .about .hype-video {
     margin-top: 3em;
     height: 50vh;

@@ -119,6 +119,24 @@ body {
 			text-align: center;
 			margin: auto;
 		}
+
+		.mailing-list {
+			text-align: center;
+			input[type=email] {
+			    width: 80%;
+			    padding: 12px 20px;
+			    margin: 8px 0;
+			    box-sizing: border-box;
+			}
+
+			input[type=submit] {
+				height: 100%;
+			    padding: 12px 20px; 
+			    background: $freetail-red; 
+			    border:0 none;
+			    cursor:pointer;
+			}
+		}
 	}
 	.hype-video {
 		margin-top: 3em;
