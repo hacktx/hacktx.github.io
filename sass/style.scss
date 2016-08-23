@@ -120,10 +120,16 @@ body {
 			margin: auto;
 		}
 
+		h2 {
+			color: $freetail-red;
+			font-size: 5em;
+		}
+
 		.mailing-list {
 			text-align: center;
 			input[type=email] {
 			    width: 80%;
+			    color: $freetail-blue;
 			    padding: 12px 20px;
 			    margin: 8px 0;
 			    box-sizing: border-box;

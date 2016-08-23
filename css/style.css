@@ -86,10 +86,14 @@ body {
   .about .about-content p {
     text-align: center;
     margin: auto; }
+  .about .about-content h2 {
+    color: #e45243;
+    font-size: 5em; }
   .about .about-content .mailing-list {
     text-align: center; }
     .about .about-content .mailing-list input[type=email] {
       width: 80%;
+      color: #124e78;
       padding: 12px 20px;
       margin: 8px 0;
       box-sizing: border-box; }
