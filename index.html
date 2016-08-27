@@ -12,6 +12,10 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+	<script src="js/form.js"></script>
+	<script src="js/sweetalert.min.js"></script>
+	<link rel="stylesheet" href="css/sweetalert.css">
 </head>
 
 <body>
@@ -42,10 +46,13 @@
 				</div>
 				<div class="row mailing-list">
 					<h2>Join our mailing list!</h1>
-					<form action="https://formspree.io/hello@hacktx.com" method="POST">
-					    <input type="email" name="address" placeholder="Your email">
-					    <input type="submit" value="Send">
-					</form>
+					<form id="contact-form" action="//formspree.io/hello@hacktx.com" method="post">
+						<input type="hidden" name="_subject" value="New Mailing List Subscriber" />
+						<input type="text" name="_gotcha" style="display:none" />
+						<input type="hidden" name="_format" value="plain" />
+					    <input type="email" name="address" placeholder="Your email" id="subscribe-box">
+					    <input type="submit" value="Send" id="send">
+ 					</form>
 				</dir>
 			</div>
 		</section>
@@ -118,7 +125,7 @@
 							<p>Any rules?</p>
 						</div>
 						<div class="bot-light-blue medium-text">
-							<p>All code must be written at the event. You can't demo something you didn't build. Don't talk about Fight Club. All attendees (hackers, supporters, mentors, volunteers, etc) must abide by MLH's Code of Conduct (have a link here).</p>
+							<p>All code must be written at the event. You can't demo something you didn't build. Don't talk about Fight Club. All attendees (hackers, supporters, mentors, volunteers, etc) must abide by MLH's <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">Code of Conduct</a>.</p>
 						</div>
 					</div>
 				</div>
@@ -139,8 +146,7 @@
 							<p>Do y'all give travel reimbursements?</p>
 						</div>
 						<div class="faq-entry bot-light-blue opposite-direction-bot medium-text">
-							<!--			  TODO: Need to get these links-->
-							<p>We provide buses from nearby schools. If you want a bus from your school? Fill out our bus request form. We do not provide reimbursements for those who fly in, but we will provide some awesome high fives.</p>
+							<p>We provide buses from nearby schools. If you want a bus from your school? We'll provide a bus form closer to the event. We do not provide reimbursements for those who fly in, but we will provide some awesome high fives.</p>
 						</div>
 					</div>
 					<div class="faq-entry col-xs-12 col-sm-12  col-md-4">
@@ -183,112 +189,107 @@
 				<h1>Powered By</h1>
 				<div class="row partner-row">
 					<div class="col-xs-12 col-sm-12 col-md-12 partner-entry">
-						<img id="utcs" src="images/partners/utcs.png" class="center-block">
+						<a href="https://cs.utexas.edu"><img id="utcs" src="images/partners/utcs.png" class="center-block"></a>
 					</div>
 				</div>
 				<div class="row partner-row">
 					<div class="col-xs-12 col-sm-12 col-md-12 partner-entry">
-						<img id ="mlh" src="images/partners/mlh.png" class="center-block">
+						<a href="https://mlh.io/"><img id ="mlh" src="images/partners/mlh.png" class="center-block"></a>
 					</div>
 				</div>
 				<div class="row partner-row">
 					<div class="col-xs-12 col-sm-12 col-md-12 partner-entry">
-						<img id="microsoft" src="images/partners/microsoft.png" class="center-block">
+						<a href="https://www.microsoft.com/"><img id="microsoft" src="images/partners/microsoft.png" class="center-block"></a>
 					</div>
 				</div>
 				<div class="row rest-partners partner-row">
 					<div class="col-xs-0 col-sm-2 col-md-2 placeholder"></div>
 					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/a16z.png" class="center-block">
+						<a href="https://a16z.com/"><img src="images/partners/a16z.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry ">
-						<img src="images/partners/thiel.png" id="push-fix-thiel" class="center-block">
+						<a href="http://www.thielfoundation.org/"><img src="images/partners/thiel.png" class="center-block"></a>
 					</div>
 
 					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/quantlab-financial.png" class="center-block">
-						<!-- quantlab goes here -->
+						<a href="http://www.quantlab.com/"><img src="images/partners/quantlab-financial.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/qualtrics.png" class="center-block">
-					</div>
-					<div class="col-xs-0 col-sm-2 col-md-2 placeholder"></div>
-				</div>
-				<div class="row rest-partners partner-row">
-					<div class="col-xs-0 col-sm-2 col-md-2 placeholder"></div>
-					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/capital-one.png" class="center-block">
-					</div>
-					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/hbk.png" class="center-block push-fix">
-						<!-- janestreet -->
-					</div>
-					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/indeed.png" class="center-block">
-					</div>
-					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/goldman.jpg" class="center-block">
+						<a href="https://www.qualtrics.com/"><img src="images/partners/qualtrics.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-0 col-sm-2 col-md-2 placeholder"></div>
 				</div>
 				<div class="row rest-partners partner-row">
 					<div class="col-xs-0 col-sm-2 col-md-2 placeholder"></div>
 					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/janestreet.png" class="center-block">
+						<a href="https://developer.capitalone.com/"><img src="images/partners/capital-one.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/squareroot.png" class="center-block">
-						<!-- janestreet -->
+						<a href="https://www.hbk.com/"><img src="images/partners/hbk.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/indeed.png" class="center-block">
+						<a href="https://www.mongodb.com/"><img src="images/partners/mongodb.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/markiii.png" class="center-block">
+						<a href="http://www.goldmansachs.com/"><img src="images/partners/goldman.jpg" class="center-block"></a>
+					</div>
+					<div class="col-xs-0 col-sm-2 col-md-2 placeholder"></div>
+				</div>
+				<div class="row rest-partners partner-row">
+					<div class="col-xs-0 col-sm-2 col-md-2 placeholder"></div>
+					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
+						<a href="https://www.janestreet.com/"><img src="images/partners/janestreet.png" class="center-block"></a>
+					</div>
+					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
+						<a href="http://square-root.com/"><img src="images/partners/squareroot.png" class="center-block"></a>
+					</div>
+					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
+						<a href="http://www.indeed.com/"><img src="images/partners/indeed.png" class="center-block"></a>
+					</div>
+					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
+						<a href="https://bluechasm.com/"><img src="images/partners/markiii.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-0 col-sm-2 col-md-2 placeholder"></div>
 				</div>
 				<div class="row rest-partners partner-row">
 					<div class="col-xs-0 col-sm-4 col-md-4 placeholder"></div>
 					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/elastic.png" class="center-block">
+						<a href="https://www.elastic.co/"><img src="images/partners/elastic.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/uship.png" class="center-block">
+						<a href="https://www.uship.com/"><img src="images/partners/uship.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-0 col-sm-4 col-md-4 placeholder"></div>
 				</div>
 				<div class="row rest-partners partner-row">
 					<div class="col-xs-0 col-sm-2 col-md-2 placeholder"></div>
 					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/enjoylife.png" class="center-block">
-						<!-- enjoy -->
+						<a href="https://enjoylifefoods.com/"><img src="images/partners/enjoylife.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/gogo-squeeze.png" class="center-block push-fix">
+						<a href="http://www.gogosqueez.com/"><img src="images/partners/gogo-squeeze.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/justins.png" class="center-block">
+						<a href="http://justins.com/"><img src="images/partners/justins.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/simplyprotein-logo.png" class="center-block">
-						<!-- simply protein -->
+						<a href="https://simplyprotein.com/"><img src="images/partners/simplyprotein-logo.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-0 col-sm-2 col-md-2 placeholder"></div>
 				</div>
 				<div class="row rest-partners partner-row">
 					<div class="col-xs-0 col-sm-2 col-md-2 placeholder"></div>
 					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img id="tiffs" src="images/partners/tiff.png" class="center-block">
+						<a href="https://cookiedelivery.com/"><img id="tiffs" src="images/partners/tiff.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/zilks.png" class="center-block">
+						<a href="http://zilksfoods.com/"><img src="images/partners/zilks.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/google.png" class="center-block push-fix">
+						<a href="https://google.com"><img src="images/partners/google.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img id="palantir" src="images/partners/palantir.png" class="center-block">
+						<a href="https://www.palantir.com/"><img id="palantir" src="images/partners/palantir.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-0 col-sm-2 col-md-2 placeholder"></div>
 				</div>
@@ -296,17 +297,17 @@
 				<div class="row rest-partners partner-row">
 					<div class="col-xs-0 col-sm-4 col-md-4 placeholder"></div>
 					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/1517.jpeg" class="center-block">
+						<a href="http://www.1517fund.com/"><img src="images/partners/1517.jpeg" class="center-block"></a>
 					</div>
 					<div class="col-xs-6 col-sm-2 col-md-2 partner-entry">
-						<img src="images/partners/digital-ocean.png" class="center-block">
+						<a href="https://www.digitalocean.com/"><img src="images/partners/digital-ocean.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-0 col-sm-4 col-md-4 placeholder"></div>
 				</div>
 			</div>
 			<p>
-				Interested in Partnering with HackTX?
-				<br> Email us at partnerships@freetailhackers.com!
+				Interested in partnering with HackTX?
+				<br> Email us at <a href="mailto:partnerships@freetailhackers.com">partnerships@freetailhackers.com</a>!
 			</p>
 		</div>
 	</section>
@@ -315,9 +316,10 @@
 	<section class="footer">
 		<div class="container">
 			<div class="row footer-info-row">
-				<a href="https://www.facebook.com/HackTX" target="_blank"><img class="center-block" src="images/fbIcon.png"></a>
-				<a href="mailto:hello@freetailhackers.com"><img class="center-block" src="images/mailIcon.png"></a>
-				<a href="https://twitter.com/HackTX" target="_blank"><img class="center-block" src="images/twitterIcon.png"></a>
+				<a href="https://www.facebook.com/HackTX" target="_blank"><i class="fa fa-facebook-official fa-3x" aria-hidden="true"></i></a>
+				<a href="mailto:hello@hacktx.com"><i class="fa fa-envelope fa-3x" aria-hidden="true"></i></a>
+				<a href="https://twitter.com/HackTX" target="_blank"><i class="fa fa-twitter fa-3x" aria-hidden="true"></i></a>
+				<a href="https://github.com/hacktx" target="_blank"><i class="fa fa-github fa-3x" aria-hidden="true"></i></a>
 			</div>
 			<p>MADE WITH <i class="fa fa-heart" aria-hidden="true"></i> IN AUSTIN, TX</p>
 		</div>
