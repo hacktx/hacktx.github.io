@@ -293,11 +293,25 @@ body {
 		.partner-entry {
 			margin-top: 5%;
 			margin-bottom: 5%;
-			display: inline-block;
-			    vertical-align: middle;
-			    float: none;
+			@media (min-width: 768px) {
+				display: inline-block;
+				vertical-align: middle;
+				float: none;
+			}
+
 		}
 	}
+
+	#push-fix-thiel {
+		margin-top: 2em;
+		margin-bottom: 2em;
+	}
+
+
+	.push-fix {
+		margin-bottom: 2em;
+	}
+
 
 	.rest-partners {
 		img {
