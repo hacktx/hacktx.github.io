@@ -8,13 +8,15 @@
 	<meta name="apple-itunes-app" content="app-id=1038270406">
 	<title>HackTX</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 </head>
 
-<body>
+<body>	
+	<script src="js/form.js"></script>
 	<div class="bg">
 		<section class="header">
 			<div class="container">
@@ -42,9 +44,12 @@
 				</div>
 				<div class="row mailing-list">
 					<h2>Join our mailing list!</h1>
-					<form action="https://formspree.io/hello@hacktx.com" method="POST">
-					    <input type="email" name="address" placeholder="Your email">
-					    <input type="submit" value="Send">
+					<form id="contact-form" action="//formspree.io/hello@hacktx.com" method="post">
+						<input type="hidden" name="_subject" value="New Mailing List Subscriber" />
+						<input type="text" name="_gotcha" style="display:none" />
+						<input type="hidden" name="_format" value="plain" />
+					    <input type="email" name="address" placeholder="Your email" id="subscribe-box">
+					    <input type="submit" value="Send" id="send">
 					</form>
 				</dir>
 			</div>
@@ -193,40 +198,40 @@
 				</div>
 				<div class="row partner-row">
 					<div class="col-xs-12 col-sm-12 col-md-12 partner-entry">
-						<img id="microsoft" src="images/partners/microsoft.png" class="center-block">
+						<a href="https://www.microsoft.com/"><img id="microsoft" src="images/partners/microsoft.png" class="center-block"></a>
 					</div>
 				</div>
 				<div class="row rest-partners partner-row">
 					<div class="col-xs-0 col-sm-0 col-md-2 placeholder"></div>
 					<div class="col-xs-6 col-sm-6 col-md-2 partner-entry">
-						<img src="images/partners/a16z.png" class="center-block">
+						<a href="https://a16z.com/"><img src="images/partners/a16z.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-2 partner-entry">
-						<img src="images/partners/thiel.png" class="center-block">
+						<a href="http://www.thielfoundation.org/"><img src="images/partners/thiel.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-2 partner-entry">
-						<img src="images/partners/quantlab-financial.png" class="center-block">
+						<a href="http://www.quantlab.com/"><img src="images/partners/quantlab-financial.png" class="center-block"></a>
 						<!-- quantlab goes here -->
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-2 partner-entry">
-						<img src="images/partners/qualtrics.png" class="center-block">
+						<a href="https://www.qualtrics.com/"><img src="images/partners/qualtrics.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-0 col-sm-0 col-md-2 placeholder"></div>
 				</div>
 				<div class="row rest-partners partner-row">
 					<div class="col-xs-0 col-sm-0 col-md-2 placeholder"></div>
 					<div class="col-xs-6 col-sm-6 col-md-2 partner-entry">
-						<img src="images/partners/capital-one.png" class="center-block">
+						<a href="https://developer.capitalone.com/"><img src="images/partners/capital-one.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-2 partner-entry">
-						<img src="images/partners/hbk.png" class="center-block">
+						<a href="https://www.hbk.com"><img src="images/partners/hbk.png" class="center-block"></a>
 						<!-- janestreet -->
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-2 partner-entry">
-						<img src="images/partners/indeed.png" class="center-block">
+						<a href="http://www.indeed.com/"><img src="images/partners/indeed.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-2 partner-entry">
-						<img src="images/partners/goldman.jpg" class="center-block">
+						<a href="http://www.goldmansachs.com/"><img src="images/partners/goldman.jpg" class="center-block"></a>
 					</div>
 					<div class="col-xs-0 col-sm-0 col-md-2 placeholder"></div>
 				</div>
@@ -243,7 +248,7 @@
 						<img src="images/partners/indeed.png" class="center-block">
 					</div>
 					<div class="col-xs-6 col-sm-6 col-md-2 partner-entry">
-						<img src="images/partners/mark3.jpeg" class="center-block">
+						<a href="https://bluechasm.com/"><img src="images/partners/markiii.png" class="center-block"></a>
 					</div>
 					<div class="col-xs-0 col-sm-0 col-md-2 placeholder"></div>
 				</div>
@@ -347,5 +352,6 @@
 	</script>
 </body>
 <link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
-
+<script src="js/sweetalert.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
 </html>

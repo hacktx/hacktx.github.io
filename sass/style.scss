@@ -113,6 +113,20 @@ body {
 		color: #4E4E4E;
 		font-size: 2em;
 	}
+	
+	.alert {
+		color: $freetail-red;
+		fa {
+			color: $freetail-red;
+		}
+	}
+	
+	.alert--success {
+		color: #26A65B;
+		.fa {
+			color: #26A65B;
+		}
+	}
 
 	.about-content {
 		p {
