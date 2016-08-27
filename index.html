@@ -8,13 +8,15 @@
 	<meta name="apple-itunes-app" content="app-id=1038270406">
 	<title>HackTX</title>
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
 	<link href="css/style.css" rel="stylesheet">
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 </head>
 
-<body>
+<body>	
+	<script src="js/form.js"></script>
 	<div class="bg">
 		<section class="header">
 			<div class="container">
@@ -42,9 +44,12 @@
 				</div>
 				<div class="row mailing-list">
 					<h2>Join our mailing list!</h1>
-					<form action="https://formspree.io/hello@hacktx.com" method="POST">
-					    <input type="email" name="address" placeholder="Your email">
-					    <input type="submit" value="Send">
+					<form id="contact-form" action="//formspree.io/hello@hacktx.com" method="post">
+						<input type="hidden" name="_subject" value="New Mailing List Subscriber" />
+						<input type="text" name="_gotcha" style="display:none" />
+						<input type="hidden" name="_format" value="plain" />
+					    <input type="email" name="address" placeholder="Your email" id="subscribe-box">
+					    <input type="submit" value="Send" id="send">
 					</form>
 				</dir>
 			</div>
@@ -350,5 +355,6 @@
 	</script>
 </body>
 <link rel="stylesheet" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css">
-
+<script src="js/sweetalert.min.js"></script>
+<link rel="stylesheet" type="text/css" href="css/sweetalert.css">
 </html>
