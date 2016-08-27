@@ -296,6 +296,11 @@ body {
 			@media (min-width: 768px) {
 				display: inline-block;
 				vertical-align: middle;
+				float: none;
+
+				.push-fix {
+					margin-bottom: 0em !important;
+				}
 			}
 
 		}
