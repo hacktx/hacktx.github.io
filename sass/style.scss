@@ -296,7 +296,6 @@ body {
 			@media (min-width: 768px) {
 				display: inline-block;
 				vertical-align: middle;
-				float: none;
 			}
 
 		}
@@ -318,14 +317,13 @@ body {
 	.push-fix {
 
 		@media (max-width: 768px) {
-			margin-bottom: 2em;
+			margin-bottom: 3em;
 		}
 
 		@media (min-width: 768px) {
 			margin-bottom: 5em;
 		}
 	}
-
 
 	.rest-partners {
 		img {
@@ -340,14 +338,6 @@ body {
 			width: 100%;
 //			margin-top: 3em;
 		}
-	}
-	.col-centered {
-		display: inline-block;
-		float: none;
-		/* reset the text-align */
-		text-align: left;
-		/* inline-block space fix */
-		margin-right: -4px;
 	}
 	p {
 		margin-top: 2em;
