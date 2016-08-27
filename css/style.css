@@ -167,7 +167,7 @@ body {
         background-image: url("../images/textbox1reversed.png") !important; }
       .faq .faq-content .faq-info #gigantic-text {
         background-image: url("../images/textbox2.png");
-        height: 41em;
+        height: 40em;
         background-repeat: no-repeat;
         background-position: left top;
         background-size: 100% 100%;
