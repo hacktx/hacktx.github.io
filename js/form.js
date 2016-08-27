@@ -2,8 +2,9 @@ $(function () {
 	var $contactForm = $('#contact-form');
 	$contactForm.submit(function (e) {
 		e.preventDefault();
+		alert('HELLO');
 		$.ajax({
-			url: 'https://formspree.io/mnqbegnx',
+			url: 'https://formspree.io/hello@hacktx.com',
 			method: 'POST',
 			data: $(this).serialize(),
 			dataType: 'json',

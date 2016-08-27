@@ -12,6 +12,7 @@
 	<link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
 	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
 	<script src="js/form.js"></script>
 	<script src="js/sweetalert.min.js"></script>
 	<link rel="stylesheet" href="css/sweetalert.css">
@@ -45,10 +46,13 @@
 				</div>
 				<div class="row mailing-list">
 					<h2>Join our mailing list!</h1>
-					<form action="https://formspree.io/hello@hacktx.com" method="POST">
-					    <input type="email" name="address" placeholder="Your email">
-					    <input type="submit" value="Send">
-					</form>
+					<form id="contact-form" action="//formspree.io/hello@hacktx.com" method="post">
+						<input type="hidden" name="_subject" value="New Mailing List Subscriber" />
+						<input type="text" name="_gotcha" style="display:none" />
+						<input type="hidden" name="_format" value="plain" />
+					    <input type="email" name="address" placeholder="Your email" id="subscribe-box">
+					    <input type="submit" value="Send" id="send">
+ 					</form>
 				</dir>
 			</div>
 		</section>
