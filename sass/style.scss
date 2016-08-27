@@ -239,9 +239,27 @@ body {
 			.opposite-direction-top {
 				background-image: url('../images/textbox1reversed.png') !important;
 			}
+
+			#gigantic-text {
+				background-image: url('../images/textbox2.png');
+				height: 40em;
+				background-repeat: no-repeat;
+				background-position: left top;
+				background-size: 100% 100%;
+				margin-top: -2em;
+				p {
+					padding-left: 0.5em;
+					text-align: left;
+					position: absolute;
+					width: 90%;
+					top: 20%;
+					font-size: 1.3em;
+					color: #4E4E4E;
+				}
+			}
 			.bot-light-blue {
 				background-image: url('../images/textbox2.png');
-				height: 15em;
+				height: 16em;
 				background-repeat: no-repeat;
 				background-position: left top;
 				background-size: 100% 100%;
@@ -273,7 +291,8 @@ body {
 	}
 	.partner-row {
 		.partner-entry {
-			margin-top: 4em;
+			margin-top: 5%;
+			margin-bottom: 5%;
 		}
 		vertical-align: middle;
 	}
