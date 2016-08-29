@@ -79,7 +79,7 @@ body {
 	}
 	.bg {
 		height: 100vh;
-		background: radial-gradient($bg-gradient-stops), url(../images/cover-min.png) no-repeat fixed center;
+		background: radial-gradient($bg-gradient-stops), url(../images/cover-min.png) no-repeat fixed;
 	}
 }
 
