@@ -3,7 +3,7 @@ $(function () {
 	$contactForm.submit(function (e) {
 		e.preventDefault();
 		$.ajax({
-			url: 'https://formspree.io/hello@hacktx.com',
+			url: 'https://formspree.io/xvowplwm',
 			method: 'POST',
 			data: $(this).serialize(),
 			dataType: 'json',
