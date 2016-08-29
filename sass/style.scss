@@ -217,6 +217,11 @@ body {
 			text-align: center;
 			margin: auto;
 		}
+                @include phone {
+                        p {
+                                text-align: justify;
+                        }
+                }
 		h2 {
 			color: $about-red;
 			font-size: 2em;
@@ -498,6 +503,9 @@ body {
 		#utcs {
 			width: 75%;
 		}
+                .partnership-text {
+                        font-size: 1.5em;
+                }
 	}
 }
 
