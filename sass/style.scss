@@ -7,9 +7,33 @@ $bg-gradient-stops: rgba(0, 0, 0, 0.9) 5%,
 rgba(0, 0, 0, 0.7) 15%,
 rgba(0, 0, 0, 0.3);
 
+$phone-width: 500px;
+$tablet-width: 501px;
+$desktop-width: 992px;
+
+@mixin tablet {
+  @media (min-width: #{$tablet-width}) and (max-width: #{$desktop-width - 1px}) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media (min-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin phone {
+  @media (min-width: 0px) and (max-width: #{$phone-width}) {
+    @content;
+  }
+}
+
+
 /* Josefin San Google Font */
 
 @import 'https://fonts.googleapis.com/css?family=Josefin+Sans';
+
 * {
 	color: #EAF0CE;
 	font-family: 'Josefin Sans', sans-serif;
@@ -287,6 +311,9 @@ body {
 				background-image: url('../images/textbox1.png');
 				background-size: 100% 100%;
 				height: 11em;
+				@include phone {
+					height: 12em;
+				}
 				width: 100%;
 				background-repeat: no-repeat;
 				background-position: left top;
@@ -309,14 +336,17 @@ body {
 			}
 			.huge-text {
 				height: 25em !important;
-				p {
-					top: 31% !important;
+				@include tablet {
+					height: 15em !important;
 				}
-			}
-			.medium-text {
-				height: 18em !important;
 				p {
-					top: 40% !important;
+					top: 35% !important;
+					@include tablet {
+						top: 50% !important;
+					}
+					@include phone {
+						top: 35% !important;
+					}
 				}
 			}
 			.small-text {
@@ -330,34 +360,49 @@ body {
 			}
 			#gigantic-text {
 				background-image: url('../images/textbox2stretch.png');
-				height: 35em;
+				height: 37em;
 				background-repeat: no-repeat;
 				background-position: left top;
 				background-size: 100% 100%;
 				margin-top: -2em;
+				@include tablet {
+					height: 22em;
+				}
+
 				p {
 					padding-left: 0.5em;
 					text-align: left;
 					position: absolute;
 					width: 90%;
 					top: 25%;
+					@include tablet {
+						top: 40%;
+					}
 					font-size: 1.3em;
 					color: #4E4E4E;
 				}
 			}
 			.bot-light-blue {
 				background-image: url('../images/textbox2.png');
-				height: 16em;
+				height: 17em;
 				background-repeat: no-repeat;
 				background-position: left top;
 				background-size: 100% 100%;
 				margin-top: -2em;
+				@include phone {
+					margin-top: -2.5em;
+					height: 20em;
+				}
 				p {
 					padding-left: 0.5em;
 					text-align: left;
 					position: absolute;
 					width: 90%;
-					top: 50%;
+					top: 40%;
+					@include tablet {
+						top: 50%;
+					}
+
 					font-size: 1.3em;
 					color: #4E4E4E;
 				}
