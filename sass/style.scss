@@ -182,6 +182,12 @@ body {
 			color: #26A65B;
 		}
 	}
+	.alert--error {
+		color: $about-red;
+		.fa {
+			color: $about-red;
+		}
+	}
 	.about-content {
 		p {
 			text-align: center;
