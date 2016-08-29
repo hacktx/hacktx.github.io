@@ -9,7 +9,6 @@ rgba(0, 0, 0, 0.3);
 
 /* Josefin San Google Font */
 
-
 @import 'https://fonts.googleapis.com/css?family=Josefin+Sans';
 * {
 	color: #EAF0CE;
@@ -48,7 +47,6 @@ body {
 	display: block;
 	margin: auto;
 	padding-bottom: 20px;
-	
 }
 
 .teaser-text {
@@ -98,65 +96,151 @@ body {
 	margin-top: 5em;
 }
 
+.typed-text {
+	color: aqua;
+}
+
 .about {
 	height: 100%;
 	width: 100%;
 	position: relative;
 	background-size: 100% 100%;
 	background: $light-blue;
+	/* TYPED FOR HACKTX */
+	.typed-cursor {
+		opacity: 1;
+		font-size: 38px;
+		color: $freetail-blue;
+		font-family: 'Oswald', sans-serif;
+		-webkit-animation: blink 0.7s infinite;
+		-moz-animation: blink 0.7s infinite;
+		animation: blink 0.7s infinite;
+		/*float: left;*/
+		margin-top: -.6vh;
+	}
+	@keyframes blink {
+		0% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	@-webkit-keyframes blink {
+		0% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
+	@-moz-keyframes blink {
+		0% {
+			opacity: 1;
+		}
+		50% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	}
 	h1 {
 		color: $about-red;
 		font-size: 5em;
 		font-weight: bold;
 		text-align: center;
 	}
+	h3 {
+		color: $about-red;
+		font-size: 3em;
+		font-weight: bold;
+		text-align: center;
+		.typed-title {
+			color: $freetail-blue;
+		}
+	}
 	p {
 		color: #4E4E4E;
 		font-size: 2em;
 	}
-	
 	.alert {
-		color: $freetail-red;
+		color: $about-red;
 		fa {
-			color: $freetail-red;
+			color: $about-red;
 		}
 	}
-	
 	.alert--success {
 		color: #26A65B;
 		.fa {
 			color: #26A65B;
 		}
 	}
-
 	.about-content {
 		p {
 			text-align: center;
 			margin: auto;
 		}
-
 		h2 {
-			color: $freetail-red;
+			color: $about-red;
 			font-size: 2em;
 		}
-
 		.mailing-list {
 			text-align: center;
 			font-size: 2em;
 			input[type=email] {
-			    width: 80%;
-			    color: $freetail-blue;
-			    padding: 12px 20px;
-			    margin: 8px 0;
-			    box-sizing: border-box;
+				width: 80%;
+				color: $freetail-blue;
+				padding: 12px 20px;
+				margin: 8px 0;
+				box-sizing: border-box;
 			}
+			
+			input {
+		-webkit-appearance: none;
+		-moz-appearance: none;
+		appearance: none;
+		outline: 0;
+		border: 1px solid rgba(203,9,34, 0.4);
+		background-color: rgba(255, 255, 255, 0.2);
+		border-radius: 3px;
+		font-size: 18px;
+		color: #FFF;
+		transition-duration: 0.25s;
+		font-weight: 300;
+		transition-duration: 0.25s;
+		font-weight: 300;
+		&.no-expand:focus {
+			width: 250px;
+		}
+		&::selection {
+			color: white;
+			background: $freetail-blue; /* WebKit/Blink Browsers */
+		}
+		::-moz-selection {
+		  background: #000; /* Gecko Browsers */
+		}
 
+		&:hover {
+			background-color: rgba(255, 255, 255, 0.4);
+		}
+
+		&:focus {
+			background-color: white;
+		}
+	}
 			input[type=submit] {
 				height: 100%;
-			    padding: 12px 20px; 
-			    background: $freetail-red; 
-			    border:0 none;
-			    cursor:pointer;
+				padding: 12px 20px;
+				background: $about-red;
+				border: 0 none;
+				cursor: pointer;
 			}
 		}
 	}
@@ -211,11 +295,9 @@ body {
 					color: #E6E6E6;
 				}
 			}
-
 			.small-question {
 				height: 9em;
 			}
-
 			.faq-entry {
 				margin-bottom: 1em;
 			}
@@ -231,7 +313,6 @@ body {
 					top: 40% !important;
 				}
 			}
-
 			.small-text {
 				height: 13em !important;
 			}
@@ -241,7 +322,6 @@ body {
 			.opposite-direction-top {
 				background-image: url('../images/textbox1reversed.png') !important;
 			}
-
 			#gigantic-text {
 				background-image: url('../images/textbox2stretch.png');
 				height: 35em;
@@ -299,51 +379,41 @@ body {
 				display: inline-block;
 				vertical-align: middle;
 				float: none;
-
 				.push-fix {
 					margin-bottom: 0em !important;
 				}
 			}
-
 		}
 	}
-
 	#push-fix-thiel {
 		@media (max-width: 421px) {
 			margin-top: 2em;
 			margin-bottom: 2em;
 		}
-
 		@media (max-width: 768px) {
 			margin-top: 3em;
 			margin-bottom: 5em;
 		}
 	}
-
-
 	.push-fix {
-
 		@media (max-width: 768px) {
 			margin-bottom: 3em;
 		}
-
 		@media (min-width: 768px) {
 			margin-bottom: 5em;
 		}
 	}
-
 	.rest-partners {
 		img {
 			height: 100%;
 			width: 100%;
 		}
 	}
-
 	.two-per-partners {
 		img {
 			height: 100%;
 			width: 100%;
-//			margin-top: 3em;
+			//			margin-top: 3em;
 		}
 	}
 	p {
@@ -353,34 +423,27 @@ body {
 		color: #4E4E4E;
 		font-size: 2em;
 	}
-
 	#mlh {
 		width: 35%;
 		height: 50%;
 	}
-
 	#microsoft {
 		width: 50%;
 	}
-
 	#utcs {
 		width: 50%;
 	}
-
 	@media (max-width: 768px) {
 		#palantir {
 			margin-top: -8em;
 		}
-
 		#mlh {
 			width: 50%;
 			height: 50%;
 		}
-
 		#microsoft {
 			width: 75%;
 		}
-
 		#utcs {
 			width: 75%;
 		}
