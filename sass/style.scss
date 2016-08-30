@@ -445,24 +445,6 @@ body {
 			}
 		}
 	}
-	#push-fix-thiel {
-		@media (max-width: 421px) {
-			margin-top: 2em;
-			margin-bottom: 2em;
-		}
-		@media (max-width: 768px) {
-			margin-top: 3em;
-			margin-bottom: 5em;
-		}
-	}
-	.push-fix {
-		@media (max-width: 768px) {
-			margin-bottom: 3em;
-		}
-		@media (min-width: 768px) {
-			margin-bottom: 5em;
-		}
-	}
 	.rest-partners {
 		img {
 			height: 100%;
