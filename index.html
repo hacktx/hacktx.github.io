@@ -17,12 +17,28 @@
 	<link rel="icon" type="image/png" sizes="96x96" href="images/favicon-96x96.png">
 	<link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
 	<script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/1.1.4/typed.min.js"></script>
 	<script src="js/title-type.js"></script>
 </head>
 
 <body>
-	<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=red" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/red.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
+	<div class="modal fade" id="registration-modal" tabindex="-1" role="dialog">
+		<div class="vertical-alignment-helper">
+			<div class="modal-dialog modal-lg vertical-align-center" role="document">
+				<div class="modal-content">
+					<div class="modal-body modal-text">
+						Hey! We're amazed by the interest in HackTX, but our servers couldn't take it. We closed registration so we could fix it and prevent unfairness in registration for people who were randomly getting in by refreshing repeatedly. It will be open sometime tomorrow once it’s fixed, and we'll post about it in various groups and on this page to let y'all know! We are also discussing how to proceed to make sure there is no unfairness for people who got in on luck by randomly refreshing vs. people who didn’t. Sorry about all the confusion, but we really hope that we’ll see you there in October!
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-default modal-text" data-dismiss="modal">Close</button>
+					</div>
+				</div>
+			</div>
+		</div>
+  </div>
+
+	<a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:1" href="https://mlh.io/seasons/na-2017/events?utm_source=na-2017&utm_medium=TrustBadge&utm_campaign=na-2017&utm_content=red" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2017/red.svg" alt="Major League Hacking 2017 Hackathon Season" style="width:100%"></a>
 	<div class="bg">
 		<section class="header">
 			<div class="container">
@@ -38,7 +54,12 @@
 					<a href="https://www.google.com/maps/place/Omni+Austin+Hotel+Downtown" target="_blank" class="map-link">Omni Hotel</a>
 				</p>
 			</div>
+      <!--
 			<a href="https://my.hacktx.com" class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2 submit text-center register-now title-buttons">Register</a>
+      -->
+			<button type="button" class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2 submit text-center register-now title-buttons" data-toggle="modal" data-target="#registration-modal">
+				Register
+			</button>
 			<a href="https://goo.gl/forms/yJbbxsaojIwtguUd2" class="col-md-8 col-md-offset-2 col-xs-8 col-xs-offset-2 submit text-center register-now title-buttons">Volunteer</a>
 		</section>
 	</div>
