@@ -138,6 +138,12 @@ body {
 	}
 }
 
+.palantir-fix {
+	@media (max-width: 360px) {
+		margin-top: -95%;
+	}
+}
+
 .about {
 	height: 100%;
 	width: 100%;
@@ -459,6 +465,9 @@ body {
 		img {
 			height: 100%;
 			width: 100%;
+			@include phone {
+				width: 95%;
+			}
 		}
 	}
 	.two-per-partners {
