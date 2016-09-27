@@ -132,6 +132,12 @@ body {
 	color: aqua;
 }
 
+.logo-fix {
+	@include phone {
+		margin-top: -95%;
+	}
+}
+
 .about {
 	height: 100%;
 	width: 100%;
