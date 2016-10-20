@@ -64,6 +64,10 @@ body {
 }
 
 .content {
+	width: 50%;
+	@include phone {
+		width: 80%;
+	}
 	top: 50%;
 	left: 50%;
 	transform: translate3d(-50%, -50%, 0);
