@@ -1,0 +1,139 @@
+html, body { overflow: none !important; overflow-x: none !important; overflow-y: none !important; }
+
+html {
+  background-color: #22215b;
+}
+
+h1 {
+  font-family: "Varela Round", sans-serif;
+}
+
+div.site-wrapper {
+  background-color: #22215b;
+}
+
+.header {
+  height: 80px;
+}
+
+.logo {
+  margin: -5px;
+  width: 105%;
+}
+
+.gradient {
+  margin: auto;
+  height: 100%;
+  width: 60%;
+}
+
+.title {
+  font-size: 4rem;
+  text-align: center;
+  color: #bbb9ea;
+  height: 90px;
+  margin: 0 auto;
+}
+
+.sponsorship {
+  width: 250px;
+  height: 107px;
+  background: #22215b;
+  position: relative;
+  margin: 0 auto;
+}
+
+.sponsorship:hover {
+  cursor: pointer;
+}
+
+div.bottom {
+  width: 90%;
+  height: 9px;
+  background: linear-gradient(135deg, #ff9833, #ff0b63);
+  position: absolute;
+  bottom: 5%;
+  left: 5%;
+  border-radius: 5px;
+}
+
+div.top {
+  width: 75%;
+  height: 9px;
+  background: linear-gradient(135deg, #ffaa3a, #ff0b63);
+  position: absolute;
+  bottom: 80%;
+  left: 20%;
+  border-radius: 5px;
+}
+
+div.left {
+  width: 9px;
+  height: 51%;
+  background: linear-gradient(135deg, #ffaa3a, #ff9833);
+  position: absolute;
+  bottom: 6%;
+  left: 5%;
+  border-radius: 5px;
+}
+
+div.right {
+  width: 9px;
+  height: 77%;
+  background: #ff0b63;
+  position: absolute;
+  bottom: 8%;
+  left: 91.5%;
+  border-radius: 5px;
+}
+
+h1.sponsor {
+  position: relative;
+  font-size: 3.5rem;
+  margin-top: 15px;
+  background: -webkit-linear-gradient(left, #ffaa3a, #ff0b63);
+	background: linear-gradient(left, #ffaa3a, #ff0b63);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+  text-align: center;
+}
+
+i.sponsor-icon {
+  position: relative;
+  font-size: 2.3rem;
+  color: #ffaa3a;
+  left: 2%;
+  top: 7px;
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  .gradient {
+    margin: auto;
+    height: 100%;
+    width: 80%;
+  }
+
+  .title {
+    font-size: 2rem;
+    line-height: 50px;
+  }
+
+  .sponsorship {
+    width: 200px;
+    height: 86px;
+  }
+
+  h1.sponsor {
+    font-size: 2.5rem;
+    margin-top: 10px;
+  }
+
+  div.right {
+    left: 90.8%;
+    border-radius: 1px;
+  }
+
+  i.sponsor-icon {
+    font-size: 2rem;
+  }
+}
