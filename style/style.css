@@ -35,15 +35,12 @@ div.site-wrapper {
   margin: 0 auto;
 }
 
-.sponsorship {
-  width: 250px;
+.cover-button {
   height: 107px;
   background: #22215b;
-  position: relative;
-  margin: 0 auto;
 }
 
-.sponsorship:hover {
+.cover-button:hover {
   cursor: pointer;
 }
 
@@ -83,12 +80,11 @@ div.right {
   background: #ff0b63;
   position: absolute;
   bottom: 8%;
-  left: 91.5%;
+  left: 92%;
   border-radius: 5px;
 }
 
-h1.sponsor {
-  position: relative;
+h1.cover-button-text {
   font-size: 3.5rem;
   margin-top: 15px;
   background: -webkit-linear-gradient(left, #ffaa3a, #ff0b63);
@@ -96,9 +92,15 @@ h1.sponsor {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
   text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
 }
 
-i.sponsor-icon {
+#stay-updated {
+  font-size: 3.1rem;
+}
+
+i.cover-icon {
   position: relative;
   font-size: 2.3rem;
   color: #ffaa3a;
@@ -155,14 +157,21 @@ a:hover {
     line-height: 50px;
   }
 
-  .sponsorship {
-    width: 200px;
+  .cover-button {
     height: 86px;
   }
 
-  h1.sponsor {
+  h1.cover-button-text {
     font-size: 2.5rem;
     margin-top: 10px;
+  }
+
+  #stay-updated {
+    margin-top: 0px;
+    font-size: 2.4rem;
+    white-space: normal;
+    overflow: auto;
+    word-wrap: break-word;
   }
 
   div.right {
@@ -170,8 +179,10 @@ a:hover {
     border-radius: 1px;
   }
 
-  i.sponsor-icon {
+  i.cover-icon {
     font-size: 2rem;
+    left: -10px;
+    top: 3px;
   }
 
   .faq-question {
@@ -183,8 +194,16 @@ a:hover {
   }
 }
 
+/* Shenanigans to make the first page vertically centered on phones */
 @media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (orientation: portrait) {
   .cover-container {
     margin-top: 10em;
+  }
+}
+
+/* Shenanigans to make the first page vertically centered on tablets */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  .cover-container {
+    margin-top: 30%;
   }
 }
