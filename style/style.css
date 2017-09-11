@@ -1,3 +1,10 @@
+.sponsors {
+  width: 300px;
+   margin: 2em;
+   padding-top: 5em; 
+   float: left;
+}
+
 html, body { overflow: none !important; overflow-x: none !important; overflow-y: none !important; }
 
 html {
@@ -207,7 +214,6 @@ a:hover {
     margin-top: 30%;
   }
 }
-
 .sponsors {
   width: 300px;
    margin: 2em;
