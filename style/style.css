@@ -207,3 +207,10 @@ a:hover {
     margin-top: 30%;
   }
 }
+
+.sponsors {
+  width: 300px;
+   margin: 2em;
+   padding-top: 5em; 
+   float: left;
+}
