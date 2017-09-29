@@ -61,7 +61,7 @@ div.site-wrapper {
 
 div.bottom {
   width: 90%;
-  height: 9px;
+  height: 5px;
   background: linear-gradient(135deg, #ff9833, #ff0b63);
   position: absolute;
   bottom: 5%;
@@ -71,7 +71,7 @@ div.bottom {
 
 div.top {
   width: 75%;
-  height: 9px;
+  height: 5px;
   background: linear-gradient(135deg, #ffaa3a, #ff0b63);
   position: absolute;
   bottom: 80%;
@@ -80,7 +80,7 @@ div.top {
 }
 
 div.left {
-  width: 9px;
+  width: 5px;
   height: 51%;
   background: linear-gradient(135deg, #ffaa3a, #ff9833);
   position: absolute;
@@ -90,12 +90,12 @@ div.left {
 }
 
 div.right {
-  width: 9px;
-  height: 77%;
+  width: 5px;
+  height: 80%;
   background: #ff0b63;
   position: absolute;
-  bottom: 8%;
-  left: 92%;
+  bottom: 5%;
+  left: 94%;
   border-radius: 5px;
 }
 
