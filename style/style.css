@@ -111,6 +111,11 @@ h1.cover-button-text {
   overflow: hidden;
 }
 
+.blur{
+  -webkit-filter: blur(2px); /* Safari 6.0 - 9.0 */
+  filter: grayscale(2px);
+}
+
 i.cover-icon {
   position: relative;
   font-size: 2.3rem;
