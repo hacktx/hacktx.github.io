@@ -117,6 +117,14 @@ i.cover-icon {
   height: 100vh;
 }
 
+.schedule-section {
+  color: #bbb9ea;
+  padding-top: 100px;
+  padding-bottom: 3em;
+  padding-left: 1.5em;
+  padding-right: 1.5em;
+}
+
 .faq-section {
   color: #bbb9ea;
   padding-top: 100px;
