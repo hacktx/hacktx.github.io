@@ -125,6 +125,23 @@ i.cover-icon {
   padding-right: 1.5em;
 }
 
+.schedule-title {
+  font-size: 42px;
+}
+
+.schedule-event {
+  text-align: left;
+  font-size: 25px;
+  padding-left: .5em;
+}
+
+.schedule-date {
+  font-size: 30px;
+  font-weight: 600;
+  margin-top: 15px;
+  text-align: left;
+}
+
 .faq-section {
   color: #bbb9ea;
   padding-top: 100px;
