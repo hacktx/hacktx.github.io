@@ -2,10 +2,6 @@ body {
   font-family: 'Cabin', sans-serif;
 }
 
-.all {
-  display: none;
-}
-
 .hero-full-screen {
   height: 100vh;
   display: -webkit-flex;
