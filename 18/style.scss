@@ -1,0 +1,348 @@
+$gray: #4d4d4d;
+$red: #ff4115;
+$blue: #7ba8f9;
+$darkblue: #4b78bb;
+$white: white;
+
+$fancy: bebas-neue, sans-serif;
+$main: futura-pt, sans-serif;
+$fontsize: 20px;
+
+$smol: 600px;
+
+body {
+	font-family: $main;
+	font-size: $fontsize;
+	background: $blue;
+	color: $white;
+}
+
+html, body {
+	margin: 0;
+}
+
+h1, h2 {
+	font-family: $fancy;
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 1;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+$pad: 30px;
+header {
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: $white;
+	display: flex;
+	flex-direction: row;
+	font-family: $fancy;
+	font-size: 1.9em;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
+	z-index: 10;
+	@media only screen and (max-width: $smol) {
+		margin-bottom: 1.6em;
+	}
+	.logo {
+		a {
+			text-decoration: none;
+		}
+		padding: 0 $pad;
+		@media only screen and (max-width: $smol) {
+			padding: 0 $pad/2;
+		}
+		flex: 1;
+		display: flex;
+		align-items: center;
+		img {
+			color: $red;
+			display: block;
+			height: 1.7em;
+			transform: translateY(-0.05em);
+			@media only screen and (max-width: $smol) {
+				height: 1.4em;
+				transform: translateY(0);
+			}
+		}
+	}
+	.countdown {
+		display: flex;
+		@media only screen and (max-width: $smol) {
+			display: none;
+		}
+		flex-direction: row;
+		color: $gray;
+		align-items: center;
+		.number {
+			padding: 0 $pad/2;
+			text-align: center;
+			b, span {
+				display: block;
+				font-weight: normal;
+			}
+			b {
+				font-size: 1.2em;
+			}
+			span {
+				color: #999999;
+				font-size: 0.6em;
+			}
+		}
+		.colon {
+			color: $red;
+			transform: translateY(-0.3em);
+		}
+	}
+	.cta {
+		background: $red;
+		&:hover {
+			background: $darkblue;
+		}
+		color: $white;
+		padding: $pad $pad*2;
+		@media only screen and (max-width: $smol) {
+			padding: $pad/2 $pad;
+		}
+		text-decoration: none;
+		margin-left: $pad;
+	}
+}
+
+$offset: ($pad*2 + $fontsize*1.9)/2; // see header font-size
+section, footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+	.wrap {
+		width: 100%;
+		max-width: 600px;
+		padding: $offset 1em 1em 1em;
+	}
+	object {
+		width: 450px;
+	}
+	h2 {
+		padding: 0.4em 0;
+		font-size: 3em;
+	}
+	@media only screen and (max-width: $smol) {
+		flex-direction: column-reverse;
+		font-size: 0.9em;
+		.wrap {
+			width: auto;
+			padding: 2.5em;
+		}
+		object {
+			max-width: 80%;
+		}
+		h2 {
+			font-size: 2em;
+		}
+	}
+}
+
+#first {
+	height: 100vh;
+	background: $gray;
+	margin: -$offset 0;
+	$stopat: 1100px;
+	$titlesize: 4;
+	font-size: $titlesize*1vw;
+	position: relative;
+	z-index: 3;
+	@media only screen and (min-width: $stopat) {
+		font-size: $stopat/100*$titlesize;
+	}
+	.wrap {
+		position: relative;
+		max-width: 20em;
+		width: 100%;
+		padding: 1em 1em $offset 1em;
+	}
+	h1 {
+		img {
+			color: $blue;
+			font-size: 4em;
+			height: 0.7em;
+			display: block;
+		}
+		.year {
+			text-align: right;
+			float: right;
+			margin-top: 0.15em;
+		}
+		@media only screen and (max-width: $smol) {
+			img {
+				width: 100%;
+				height: auto;
+			}
+			&, .year {
+				text-align: center;
+			}
+		}
+	}
+	.info {
+		font-family: $fancy;
+		line-height: 1.2;
+		float: left;
+		position: absolute;
+		top: 52%;
+		text-align: right;
+		right: 12em;
+		@media only screen and (max-width: $smol) {
+			position: static;
+			text-align: center;
+			float: clear;
+			font-size: 2em;
+			padding-top: 0.6em;
+			width: 100%;
+		}
+	}
+}
+
+#mailing {
+	text-align: center;
+	h2 {
+		padding: 0.1em 0.7em;
+		@media only screen and (max-width: $smol) {
+			padding: 0.1em 0;
+			margin: 0 -0.2em;
+		}
+	}
+	form {
+		display: flex;
+		@media only screen and (max-width: $smol) {
+			flex-direction: column;
+		}
+		margin-top: 3em;
+		input {
+			border: 2px solid $white;
+			background: none;
+			font-family: $fancy;
+			font-size: inherit;
+			padding: 0.5em;
+			color: $white;
+			display: block;
+			&::placeholder {
+				color: $white;
+				opacity: 1;
+			}
+			:-ms-input-placeholder {
+				color: $white;
+			}
+			::-ms-input-placeholder {
+				color: $white;
+			}
+		}
+		.email {
+			flex-grow: 1;
+		}
+		.submit {
+			background: $white;
+			color: $blue;
+			padding: 0.5em 1em;
+			transition: padding 0.2s ease-in-out;
+			cursor: pointer;
+			&:hover {
+				padding: 0.5em 1.8em;
+			}
+			@media only screen and (max-width: $smol) {
+				margin: 1em auto;
+			}
+		}
+	}
+}
+
+#who {
+	@media only screen and (max-width: $smol) {
+		margin-top: -10em;
+		object {
+			margin-bottom: -10em;
+		}
+	}
+}
+
+// footer
+#us {
+	background: $darkblue;
+	height: auto;
+	.wrap {
+		display: flex;
+		flex-direction: row;
+		flex-flow: row wrap;
+		box-sizing: border-box;
+		width: 100%;
+		max-width: 1200px;
+		padding: 3em 2.5em;
+		h2 {
+			flex: 1;
+			padding: 0;
+		}
+		h3 {
+			margin: 0 0 0.5em 0;
+			font-size: 1.1em;
+		}
+		div {
+			margin-left: 5em;
+		}
+		a {
+			display: block;
+			color: inherit;
+			text-decoration: none;
+			&:hover {
+				text-decoration: underline wavy;
+			}
+		}
+		@media only screen and (max-width: $smol) {
+			// flex-direction: column;
+			h2 {
+				flex: 1 100%;
+			}
+			div {
+				margin-left: 0;
+				margin-top: 2em;
+				flex: 1 auto;
+			}
+		}
+	}
+}
+
+// side dots
+#progress {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0.8em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 2;
+	opacity: 0.6;
+	@media only screen and (max-width: $smol) {
+		display: none;
+	}
+	div {
+		display: block;
+		width: 0.5em;
+		height: 0.5em;
+		margin: 0.2em auto;
+		border-radius: 9em;
+		border: 0.1em solid $white;
+		&:first-child {
+			border-radius: 0;
+			width: 0.4em;
+			height: 0.4em;
+		}
+		&.active {
+			background: $white;
+		}
+	}
+}

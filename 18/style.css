@@ -1,0 +1,269 @@
+body {
+  font-family: futura-pt, sans-serif;
+  font-size: 20px;
+  background: #7ba8f9;
+  color: white; }
+
+html, body {
+  margin: 0; }
+
+h1, h2 {
+  font-family: bebas-neue, sans-serif;
+  text-transform: uppercase;
+  font-weight: normal;
+  line-height: 1;
+  margin: 0; }
+
+p {
+  margin: 0; }
+
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: white;
+  display: flex;
+  flex-direction: row;
+  font-family: bebas-neue, sans-serif;
+  font-size: 1.9em;
+  text-transform: uppercase;
+  transition: all 0.3s ease-in-out;
+  z-index: 10; }
+  @media only screen and (max-width: 600px) {
+    header {
+      margin-bottom: 1.6em; } }
+  header .logo {
+    padding: 0 30px;
+    flex: 1;
+    display: flex;
+    align-items: center; }
+    header .logo a {
+      text-decoration: none; }
+    @media only screen and (max-width: 600px) {
+      header .logo {
+        padding: 0 15px; } }
+    header .logo img {
+      color: #ff4115;
+      display: block;
+      height: 1.7em;
+      transform: translateY(-0.05em); }
+      @media only screen and (max-width: 600px) {
+        header .logo img {
+          height: 1.4em;
+          transform: translateY(0); } }
+  header .countdown {
+    display: flex;
+    flex-direction: row;
+    color: #4d4d4d;
+    align-items: center; }
+    @media only screen and (max-width: 600px) {
+      header .countdown {
+        display: none; } }
+    header .countdown .number {
+      padding: 0 15px;
+      text-align: center; }
+      header .countdown .number b, header .countdown .number span {
+        display: block;
+        font-weight: normal; }
+      header .countdown .number b {
+        font-size: 1.2em; }
+      header .countdown .number span {
+        color: #999999;
+        font-size: 0.6em; }
+    header .countdown .colon {
+      color: #ff4115;
+      transform: translateY(-0.3em); }
+  header .cta {
+    background: #ff4115;
+    color: white;
+    padding: 30px 60px;
+    text-decoration: none;
+    margin-left: 30px; }
+    header .cta:hover {
+      background: #4b78bb; }
+    @media only screen and (max-width: 600px) {
+      header .cta {
+        padding: 15px 30px; } }
+
+section, footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80vh; }
+  section .wrap, footer .wrap {
+    width: 100%;
+    max-width: 600px;
+    padding: 49px 1em 1em 1em; }
+  section object, footer object {
+    width: 450px; }
+  section h2, footer h2 {
+    padding: 0.4em 0;
+    font-size: 3em; }
+  @media only screen and (max-width: 600px) {
+    section, footer {
+      flex-direction: column-reverse;
+      font-size: 0.9em; }
+      section .wrap, footer .wrap {
+        width: auto;
+        padding: 2.5em; }
+      section object, footer object {
+        max-width: 80%; }
+      section h2, footer h2 {
+        font-size: 2em; } }
+
+#first {
+  height: 100vh;
+  background: #4d4d4d;
+  margin: -49px 0;
+  font-size: 4vw;
+  position: relative;
+  z-index: 3; }
+  @media only screen and (min-width: 1100px) {
+    #first {
+      font-size: 44px; } }
+  #first .wrap {
+    position: relative;
+    max-width: 20em;
+    width: 100%;
+    padding: 1em 1em 49px 1em; }
+  #first h1 img {
+    color: #7ba8f9;
+    font-size: 4em;
+    height: 0.7em;
+    display: block; }
+  #first h1 .year {
+    text-align: right;
+    float: right;
+    margin-top: 0.15em; }
+  @media only screen and (max-width: 600px) {
+    #first h1 img {
+      width: 100%;
+      height: auto; }
+    #first h1, #first h1 .year {
+      text-align: center; } }
+  #first .info {
+    font-family: bebas-neue, sans-serif;
+    line-height: 1.2;
+    float: left;
+    position: absolute;
+    top: 52%;
+    text-align: right;
+    right: 12em; }
+    @media only screen and (max-width: 600px) {
+      #first .info {
+        position: static;
+        text-align: center;
+        float: clear;
+        font-size: 2em;
+        padding-top: 0.6em;
+        width: 100%; } }
+
+#mailing {
+  text-align: center; }
+  #mailing h2 {
+    padding: 0.1em 0.7em; }
+    @media only screen and (max-width: 600px) {
+      #mailing h2 {
+        padding: 0.1em 0;
+        margin: 0 -0.2em; } }
+  #mailing form {
+    display: flex;
+    margin-top: 3em; }
+    @media only screen and (max-width: 600px) {
+      #mailing form {
+        flex-direction: column; } }
+    #mailing form input {
+      border: 2px solid white;
+      background: none;
+      font-family: bebas-neue, sans-serif;
+      font-size: inherit;
+      padding: 0.5em;
+      color: white;
+      display: block; }
+      #mailing form input::placeholder {
+        color: white;
+        opacity: 1; }
+      #mailing form input :-ms-input-placeholder {
+        color: white; }
+      #mailing form input ::-ms-input-placeholder {
+        color: white; }
+    #mailing form .email {
+      flex-grow: 1; }
+    #mailing form .submit {
+      background: white;
+      color: #7ba8f9;
+      padding: 0.5em 1em;
+      transition: padding 0.2s ease-in-out;
+      cursor: pointer; }
+      #mailing form .submit:hover {
+        padding: 0.5em 1.8em; }
+      @media only screen and (max-width: 600px) {
+        #mailing form .submit {
+          margin: 1em auto; } }
+
+@media only screen and (max-width: 600px) {
+  #who {
+    margin-top: -10em; }
+    #who object {
+      margin-bottom: -10em; } }
+
+#us {
+  background: #4b78bb;
+  height: auto; }
+  #us .wrap {
+    display: flex;
+    flex-direction: row;
+    flex-flow: row wrap;
+    box-sizing: border-box;
+    width: 100%;
+    max-width: 1200px;
+    padding: 3em 2.5em; }
+    #us .wrap h2 {
+      flex: 1;
+      padding: 0; }
+    #us .wrap h3 {
+      margin: 0 0 0.5em 0;
+      font-size: 1.1em; }
+    #us .wrap div {
+      margin-left: 5em; }
+    #us .wrap a {
+      display: block;
+      color: inherit;
+      text-decoration: none; }
+      #us .wrap a:hover {
+        text-decoration: underline wavy; }
+    @media only screen and (max-width: 600px) {
+      #us .wrap h2 {
+        flex: 1 100%; }
+      #us .wrap div {
+        margin-left: 0;
+        margin-top: 2em;
+        flex: 1 auto; } }
+
+#progress {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0.8em;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  z-index: 2;
+  opacity: 0.6; }
+  @media only screen and (max-width: 600px) {
+    #progress {
+      display: none; } }
+  #progress div {
+    display: block;
+    width: 0.5em;
+    height: 0.5em;
+    margin: 0.2em auto;
+    border-radius: 9em;
+    border: 0.1em solid white; }
+    #progress div:first-child {
+      border-radius: 0;
+      width: 0.4em;
+      height: 0.4em; }
+    #progress div.active {
+      background: white; }

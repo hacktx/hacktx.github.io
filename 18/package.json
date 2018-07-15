@@ -1,0 +1,13 @@
+{
+  "name": "hacktx18-website",
+  "scripts": {
+    "serve": "http-server",
+    "dev": "node-sass-watcher style.scss -o style.css -c 'cat <input> | node_modules/node-sass/bin/node-sass > <output>'",
+    "build": "cat style.scss | node_modules/node-sass/bin/node-sass > style.css"
+  },
+  "dependencies": {
+    "http-server": "^0.11.1",
+    "node-sass": "^4.7.2",
+    "node-sass-watcher": "^0.5.1"
+  }
+}
