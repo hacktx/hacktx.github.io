@@ -201,7 +201,9 @@ section, footer {
       color: #7ba8f9;
       padding: 0.5em 1em;
       transition: padding 0.2s ease-in-out;
-      cursor: pointer; }
+      cursor: pointer;
+      -moz-appearance: none;
+      -webkit-appearance: none; }
       #mailing form .submit:hover {
         padding: 0.5em 1.8em; }
       @media only screen and (max-width: 600px) {

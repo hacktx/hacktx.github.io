@@ -260,6 +260,8 @@ section, footer {
 			padding: 0.5em 1em;
 			transition: padding 0.2s ease-in-out;
 			cursor: pointer;
+			-moz-appearance: none;
+			-webkit-appearance: none;
 			&:hover {
 				padding: 0.5em 1.8em;
 			}
