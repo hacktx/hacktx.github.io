@@ -13,7 +13,7 @@ $smol: 600px;
 body {
 	font-family: $main;
 	font-size: $fontsize;
-	background: $blue;
+	background: $gray;
 	color: $white;
 }
 
@@ -47,9 +47,6 @@ header {
 	text-transform: uppercase;
 	transition: all 0.3s ease-in-out;
 	z-index: 10;
-	@media only screen and (max-width: $smol) {
-		margin-bottom: 1.6em;
-	}
 	.logo {
 		a {
 			text-decoration: none;
@@ -121,6 +118,7 @@ section, footer {
 	align-items: center;
 	justify-content: center;
 	height: 80vh;
+	background: $blue;
 	.wrap {
 		width: 100%;
 		max-width: 600px;
@@ -151,13 +149,13 @@ section, footer {
 
 #first {
 	height: 100vh;
-	background: $gray;
 	margin: -$offset 0;
 	$stopat: 1100px;
 	$titlesize: 4;
 	font-size: $titlesize*1vw;
 	position: relative;
 	z-index: 3;
+	background: none;
 	@media only screen and (min-width: $stopat) {
 		font-size: $stopat/100*$titlesize;
 	}
@@ -205,6 +203,17 @@ section, footer {
 			padding-top: 0.6em;
 			width: 100%;
 		}
+	}
+	.location {
+		display: block;
+		text-decoration: none;
+		color: inherit;
+	}
+}
+
+#what {
+	@media only screen and (max-width: $smol) {
+		padding-top: 1.6em;
 	}
 }
 
@@ -263,9 +272,9 @@ section, footer {
 
 #who {
 	@media only screen and (max-width: $smol) {
-		margin-top: -10em;
+		margin-top: -5em;
 		object {
-			margin-bottom: -10em;
+			margin-bottom: -5em;
 		}
 	}
 }

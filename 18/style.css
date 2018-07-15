@@ -1,7 +1,7 @@
 body {
   font-family: futura-pt, sans-serif;
   font-size: 20px;
-  background: #7ba8f9;
+  background: #4d4d4d;
   color: white; }
 
 html, body {
@@ -30,9 +30,6 @@ header {
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
   z-index: 10; }
-  @media only screen and (max-width: 600px) {
-    header {
-      margin-bottom: 1.6em; } }
   header .logo {
     padding: 0 30px;
     flex: 1;
@@ -90,7 +87,8 @@ section, footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 80vh; }
+  height: 80vh;
+  background: #7ba8f9; }
   section .wrap, footer .wrap {
     width: 100%;
     max-width: 600px;
@@ -114,11 +112,11 @@ section, footer {
 
 #first {
   height: 100vh;
-  background: #4d4d4d;
   margin: -49px 0;
   font-size: 4vw;
   position: relative;
-  z-index: 3; }
+  z-index: 3;
+  background: none; }
   @media only screen and (min-width: 1100px) {
     #first {
       font-size: 44px; } }
@@ -158,6 +156,14 @@ section, footer {
         font-size: 2em;
         padding-top: 0.6em;
         width: 100%; } }
+  #first .location {
+    display: block;
+    text-decoration: none;
+    color: inherit; }
+
+@media only screen and (max-width: 600px) {
+  #what {
+    padding-top: 1.6em; } }
 
 #mailing {
   text-align: center; }
@@ -204,9 +210,9 @@ section, footer {
 
 @media only screen and (max-width: 600px) {
   #who {
-    margin-top: -10em; }
+    margin-top: -5em; }
     #who object {
-      margin-bottom: -10em; } }
+      margin-bottom: -5em; } }
 
 #us {
   background: #4b78bb;
