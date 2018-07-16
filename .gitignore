@@ -3,3 +3,6 @@
 .sass-cache/
 *.css.map
 .vscode
+node_modules
+.sass-cache/
+*.css.map
