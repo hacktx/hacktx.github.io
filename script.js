@@ -19,37 +19,37 @@ $(document).ready(function() {
 		}
 
 		timeline.add({
-			targets: svg.querySelectorAll("#circlearrow2 *"),
+			targets: selectElements(svg, "#circlearrow2 *"),
 			strokeDashoffset: [initialStroke, 0],
 			duration: 300,
 			easing: "easeInOutSine",
 		}).add({
-			targets: svg.querySelectorAll("#circle2"),
+			targets: selectElements(svg, "#circle2"),
 			opacity: [0, 1],
 			duration: 200,
 			delay: -100,
 		}).add({
-			targets: svg.querySelectorAll("#circle21"),
+			targets: selectElements(svg, "#circle21"),
 			opacity: [0, 1],
 			duration: 200,
 			delay: -100,
 		}).add({
-			targets: svg.querySelectorAll("#squarearrow2 *"),
+			targets: selectElements(svg, "#squarearrow2 *"),
 			strokeDashoffset: [initialStroke, 0],
 			duration: 300,
 			easing: "easeInOutSine",
 		}).add({
-			targets: svg.querySelectorAll("#square2front, #square2back"),
+			targets: selectElements(svg, "#square2front, #square2back"),
 			opacity: [0, 1],
 			duration: 200,
 			delay: -100,
 		}).add({
-			targets: svg.querySelectorAll("#trianglearrow2 *"),
+			targets: selectElements(svg, "#trianglearrow2 *"),
 			strokeDashoffset: [initialStroke, 0],
 			duration: 300,
 			easing: "easeInOutSine",
 		}).add({
-			targets: svg.querySelectorAll("#triangle2front, #triangle2back"),
+			targets: selectElements(svg, "#triangle2front, #triangle2back"),
 			opacity: [0, 1],
 			duration: 200,
 			delay: -100,
@@ -67,7 +67,7 @@ $(document).ready(function() {
 			});
 
 		var t = ["#triangle", "#squaredash", "#circle", "#triangledash", "#square", "#circledash"].map(function(x) {
-			return svg.querySelectorAll(x);
+			return svg.querySelectorAll(x)[0];
 		}).forEach(function(el) {
 			timeline.add({
 				targets: el,
@@ -88,16 +88,16 @@ $(document).ready(function() {
 			});
 
 		timeline.add({
-			targets: svg.querySelectorAll("#bridge"),
+			targets: selectElements(svg, "#bridge"),
 			opacity: [1, 1],
 			duration: 200,
 		}).add({
-			targets: svg.querySelectorAll("#moon"),
+			targets: selectElements(svg, "#moon"),
 			fill: ["transparent", "white"],
 			translateY: [250, 0],
 			duration: 300,
 		}).add({
-			targets: svg.querySelectorAll("#bat"),
+			targets: selectElements(svg, "#bat"),
 			opacity: [0, 1],
 			duration: 200,
 		});
@@ -109,6 +109,12 @@ $(document).ready(function() {
 		var offset = anime.setDashoffset(pathEl);
 		pathEl.setAttribute("stroke-dashoffset", offset);
 		return offset;
+	}
+
+	function selectElements(svg, selector) {
+		var items = [], els = svg.querySelectorAll(selector);
+		for (var i = 0; i < els.length; i++) items.push(els[i]);
+		return items;
 	}
 
 	var timelines = [];
