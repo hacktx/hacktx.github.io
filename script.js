@@ -155,6 +155,12 @@ $(document).ready(function() {
 
 	$("#progress div").click(function() {
 		$(window).scrollToTop([$("section").eq($(this).attr("data-pos")).offset().top]);
+	}).first().addClass("active");
+
+	// FAQ
+
+	$("#faq .pair").addClass("collapsed").find("h3").click(function() {
+		$(this).parent(".pair").toggleClass("collapsed");
 	});
 
 	// Subscribe button
@@ -170,15 +176,18 @@ $(document).ready(function() {
 	var daysSpan = clock.find(".days b");
 	var hoursSpan = clock.find(".hours b");
 	var minutesSpan = clock.find(".minutes b");
+	var secondsSpan = clock.find(".seconds b");
 
 	function updateClock() {
 		var t = Date.parse("October 20 2018 10:00:00 GMT-0500") - Date.parse(new Date());
+		var seconds = Math.floor((t / 1000) % 60);
 		var minutes = Math.floor((t / 1000 / 60) % 60);
 		var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
 		var days = Math.floor(t / (1000 * 60 * 60 * 24));
 		daysSpan.text(days);
 		hoursSpan.text(("0"+hours).slice(-2));
 		minutesSpan.text(("0"+minutes).slice(-2));
+		secondsSpan.text(("0"+seconds).slice(-2));
 		if (t <= 0) {
 			clearInterval(timeinterval);
 			clock.hide();

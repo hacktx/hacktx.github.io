@@ -17,7 +17,14 @@ h1, h2 {
 p {
   margin: 0; }
 
+a {
+  color: inherit;
+  text-decoration: underline wavy; }
+  a:hover {
+    text-decoration: underline; }
+
 header {
+  position: -webkit-sticky;
   position: sticky;
   top: 0;
   left: 0;
@@ -29,7 +36,8 @@ header {
   font-size: 1.9em;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
-  z-index: 10; }
+  z-index: 10;
+  line-height: 1; }
   header .logo {
     padding: 0 30px;
     flex: 1;
@@ -37,7 +45,7 @@ header {
     align-items: center; }
     header .logo a {
       text-decoration: none; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 680px) {
       header .logo {
         padding: 0 15px; } }
     header .logo img {
@@ -45,7 +53,7 @@ header {
       display: block;
       height: 1.7em;
       transform: translateY(-0.05em); }
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 680px) {
         header .logo img {
           height: 1.4em;
           transform: translateY(0); } }
@@ -54,7 +62,7 @@ header {
     flex-direction: row;
     color: #4d4d4d;
     align-items: center; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 680px) {
       header .countdown {
         display: none; } }
     header .countdown .number {
@@ -74,14 +82,22 @@ header {
   header .cta {
     background: #ff4115;
     color: white;
+    transition: 0.2s ease-in-out all;
+    overflow: hidden;
     padding: 30px 60px;
     text-decoration: none;
     margin-left: 30px; }
     header .cta:hover {
-      background: #4b78bb; }
-    @media only screen and (max-width: 600px) {
+      background: #e12a00;
+      text-shadow: 1px 1px 0 #ff6a48, 2px 2px 0 #ff6a48, 3px 3px 0 #ff6a48, 4px 4px 0 #ff6a48, 5px 5px 0 #ff6a48, 6px 6px 0 #ff6a48, 7px 7px 0 #ff6a48, 8px 8px 0 #ff6a48, 9px 9px 0 #ff6a48, 10px 10px 0 #ff6a48, 11px 11px 0 #ff6a48, 12px 12px 0 #ff6a48, 13px 13px 0 #ff6a48, 14px 14px 0 #ff6a48, 15px 15px 0 #ff6a48, 16px 16px 0 #ff6a48, 17px 17px 0 #ff6a48, 18px 18px 0 #ff6a48, 19px 19px 0 #ff6a48, 20px 20px 0 #ff6a48, 21px 21px 0 #ff6a48, 22px 22px 0 #ff6a48, 23px 23px 0 #ff6a48, 24px 24px 0 #ff6a48, 25px 25px 0 #ff6a48, 26px 26px 0 #ff6a48, 27px 27px 0 #ff6a48, 28px 28px 0 #ff6a48, 29px 29px 0 #ff6a48, 30px 30px 0 #ff6a48, 31px 31px 0 #ff6a48, 32px 32px 0 #ff6a48, 33px 33px 0 #ff6a48, 34px 34px 0 #ff6a48, 35px 35px 0 #ff6a48, 36px 36px 0 #ff6a48, 37px 37px 0 #ff6a48, 38px 38px 0 #ff6a48, 39px 39px 0 #ff6a48, 40px 40px 0 #ff6a48, 41px 41px 0 #ff6a48, 42px 42px 0 #ff6a48, 43px 43px 0 #ff6a48, 44px 44px 0 #ff6a48, 45px 45px 0 #ff6a48, 46px 46px 0 #ff6a48, 47px 47px 0 #ff6a48, 48px 48px 0 #ff6a48, 49px 49px 0 #ff6a48, 50px 50px 0 #ff6a48, 51px 51px 0 #ff6a48, 52px 52px 0 #ff6a48, 53px 53px 0 #ff6a48, 54px 54px 0 #ff6a48, 55px 55px 0 #ff6a48, 56px 56px 0 #ff6a48, 57px 57px 0 #ff6a48, 58px 58px 0 #ff6a48, 59px 59px 0 #ff6a48, 60px 60px 0 #ff6a48, 61px 61px 0 #ff6a48, 62px 62px 0 #ff6a48, 63px 63px 0 #ff6a48, 64px 64px 0 #ff6a48, 65px 65px 0 #ff6a48, 66px 66px 0 #ff6a48, 67px 67px 0 #ff6a48, 68px 68px 0 #ff6a48, 69px 69px 0 #ff6a48, 70px 70px 0 #ff6a48; }
+    @media only screen and (max-width: 680px) {
       header .cta {
         padding: 15px 30px; } }
+  @media only screen and (max-width: 400px) {
+    header .logo img {
+      height: 1em; }
+    header .cta {
+      font-size: 0.8em; } }
 
 section, footer {
   display: flex;
@@ -92,13 +108,14 @@ section, footer {
   section .wrap, footer .wrap {
     width: 100%;
     max-width: 600px;
-    padding: 49px 1em 1em 1em; }
+    padding: 1em;
+    box-sizing: border-box; }
   section object, footer object {
     width: 450px; }
   section h2, footer h2 {
     padding: 0.4em 0;
     font-size: 3em; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 680px) {
     section, footer {
       flex-direction: column-reverse;
       font-size: 0.9em; }
@@ -112,7 +129,7 @@ section, footer {
 
 #first {
   height: 100vh;
-  margin: -49px 0;
+  margin: 0 0 -98px 0;
   font-size: 4vw;
   position: relative;
   z-index: 3;
@@ -124,7 +141,7 @@ section, footer {
     position: relative;
     max-width: 20em;
     width: 100%;
-    padding: 1em 1em 49px 1em; }
+    transform: translateY(-49px); }
   #first h1 img {
     color: #7ba8f9;
     font-size: 4em;
@@ -134,7 +151,7 @@ section, footer {
     text-align: right;
     float: right;
     margin-top: 0.15em; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 680px) {
     #first h1 img {
       width: 100%;
       height: auto; }
@@ -148,7 +165,7 @@ section, footer {
     top: 52%;
     text-align: right;
     right: 12em; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 680px) {
       #first .info {
         position: static;
         text-align: center;
@@ -160,23 +177,49 @@ section, footer {
     display: block;
     text-decoration: none;
     color: inherit; }
+  #first .message {
+    position: absolute;
+    top: 2em;
+    left: 0;
+    width: 100%;
+    max-width: 360px;
+    font-size: 20px;
+    color: white;
+    line-height: 1; }
+    @media only screen and (max-width: 680px) {
+      #first .message {
+        top: auto;
+        bottom: 8em; } }
+    #first .message div {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      padding: 0.5em 1em;
+      background: #4b78bb;
+      animation: slide-in 0.6s ease-out 1s;
+      animation-fill-mode: backwards; }
+    #first .message a {
+      text-decoration: none; }
 
-@media only screen and (max-width: 600px) {
+@keyframes slide-in {
+  from {
+    transform: translateX(-100%); }
+  to {
+    transform: none; } }
+
+@media only screen and (max-width: 680px) {
   #what {
     padding-top: 1.6em; } }
 
 #mailing {
   text-align: center; }
   #mailing h2 {
-    padding: 0.1em 0.7em; }
-    @media only screen and (max-width: 600px) {
+    padding: 0.1em 0; }
+    @media only screen and (max-width: 680px) {
       #mailing h2 {
-        padding: 0.1em 0;
         margin: 0 -0.2em; } }
   #mailing form {
     display: flex;
     margin-top: 3em; }
-    @media only screen and (max-width: 600px) {
+    @media only screen and (max-width: 680px) {
       #mailing form {
         flex-direction: column; } }
     #mailing form input {
@@ -186,7 +229,10 @@ section, footer {
       font-size: inherit;
       padding: 0.5em;
       color: white;
-      display: block; }
+      display: block;
+      -moz-appearance: none;
+      -webkit-appearance: none;
+      border-radius: 0; }
       #mailing form input::placeholder {
         color: white;
         opacity: 1; }
@@ -201,20 +247,72 @@ section, footer {
       color: #7ba8f9;
       padding: 0.5em 1em;
       transition: padding 0.2s ease-in-out;
-      cursor: pointer;
-      -moz-appearance: none;
-      -webkit-appearance: none; }
+      cursor: pointer; }
       #mailing form .submit:hover {
         padding: 0.5em 1.8em; }
-      @media only screen and (max-width: 600px) {
+      @media only screen and (max-width: 680px) {
         #mailing form .submit {
           margin: 1em auto; } }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 680px) {
   #who {
     margin-top: -5em; }
     #who object {
       margin-bottom: -5em; } }
+
+#freetail h2 {
+  margin-right: -2em; }
+  @media only screen and (max-width: 680px) {
+    #freetail h2 {
+      margin-right: 0; } }
+
+#faq {
+  height: auto;
+  padding-bottom: 5em; }
+  #faq .wrap {
+    max-width: 1200px;
+    padding: 1em 2.5em;
+    width: 100%; }
+  #faq h2 {
+    text-align: center; }
+  #faq .content {
+    display: flex;
+    flex-flow: wrap;
+    margin: 1em -0.5em 0 -0.5em; }
+    #faq .content .pair {
+      width: 50%;
+      box-sizing: border-box;
+      padding: 0 0.5em;
+      margin-bottom: 0.5em; }
+      #faq .content .pair h3 {
+        cursor: pointer;
+        text-transform: uppercase;
+        font-weight: normal;
+        margin: 0 0 0.5em 0;
+        letter-spacing: 0.05em; }
+        #faq .content .pair h3:after {
+          content: "";
+          display: inline-block;
+          height: 0;
+          width: 0;
+          border: 0 solid transparent;
+          border-width: 0.3em 0.5em;
+          border-left-color: #ff4115;
+          margin-left: 0.4em;
+          transform: rotate(90deg);
+          transform-origin: 25% 50%;
+          transition: 0.1s ease-in-out transform; }
+      #faq .content .pair.collapsed h3:after {
+        transform: none; }
+      #faq .content .pair.collapsed p {
+        display: none; }
+  @media only screen and (max-width: 680px) {
+    #faq h2 {
+      text-align: left; }
+    #faq .content {
+      display: block; }
+      #faq .content .pair {
+        width: auto; } }
 
 #us {
   background: #4b78bb;
@@ -223,7 +321,6 @@ section, footer {
     display: flex;
     flex-direction: row;
     flex-flow: row wrap;
-    box-sizing: border-box;
     width: 100%;
     max-width: 1200px;
     padding: 3em 2.5em; }
@@ -236,12 +333,8 @@ section, footer {
     #us .wrap div {
       margin-left: 5em; }
     #us .wrap a {
-      display: block;
-      color: inherit;
-      text-decoration: none; }
-      #us .wrap a:hover {
-        text-decoration: underline wavy; }
-    @media only screen and (max-width: 600px) {
+      display: block; }
+    @media only screen and (max-width: 680px) {
       #us .wrap h2 {
         flex: 1 100%; }
       #us .wrap div {
@@ -257,12 +350,13 @@ section, footer {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  z-index: 2;
+  z-index: 5;
   opacity: 0.6; }
-  @media only screen and (max-width: 600px) {
+  @media only screen and (max-width: 680px) {
     #progress {
       display: none; } }
   #progress div {
+    cursor: pointer;
     display: block;
     width: 0.5em;
     height: 0.5em;
@@ -275,3 +369,18 @@ section, footer {
       height: 0.4em; }
     #progress div.active {
       background: white; }
+
+#mlh-trust-badge {
+  display: block;
+  max-width: 100px;
+  min-width: 60px;
+  position: absolute;
+  right: 50px;
+  top: 0;
+  width: 10%;
+  z-index: 10000;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none; }
+  #mlh-trust-badge img {
+    width: 100%; }
