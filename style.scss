@@ -3,6 +3,7 @@ $red: #ff4115;
 $blue: #7ba8f9;
 $darkblue: #4b78bb;
 $white: white;
+$reallydarkblue: #213e5b;
 
 $fancy: bebas-neue, sans-serif;
 $main: futura-pt, sans-serif;
@@ -14,7 +15,7 @@ $reallywide: 1200px;
 body {
 	font-family: $main;
 	font-size: $fontsize;
-	background: $gray;
+	background: $reallydarkblue;
 	color: $white;
 }
 
@@ -182,74 +183,81 @@ section, footer {
 	$titlesize: 4;
 	font-size: $titlesize*1vw;
 	position: relative;
-	z-index: 3;
+	overflow: hidden;
 	background: none;
+	.wrap {
+		position: relative;
+		max-width: 22em;
+		width: 100%;
+		transform: translateY(-$headerheight/2) translateY(-2em) translateX(8%);
+		padding: 0;
+		z-index: 8;
+	}
+	.info {
+		display: flex;
+		font-family: bebas-neue, sans-serif;
+		font-size: 0.8em;
+		margin-right: 21%;
+		margin-bottom: 0.5em;
+		.date {
+			flex: 1;
+		}
+		.location {
+			text-decoration: none;
+		}
+	}
+	h1 {
+		position: relative;
+		font-size: 0;
+		.shadow {
+			position: absolute;
+			top: 99%;
+			left: 0.1%;
+			right: 0.4%;
+			height: 900px;
+			background: $blue;
+			transform: skew(45deg);
+			transform-origin: top left;
+		}
+	}
+	@media only screen and (max-width: $smol) {
+		font-size: $smol/100*$titlesize;
+		.location {
+			display: none;
+		}
+	}
 	@media only screen and (min-width: $stopat) {
 		font-size: $stopat/100*$titlesize;
 	}
-	.wrap {
-		position: relative;
-		max-width: 20em;
-		width: 100%;
-		transform: translateY(-$headerheight/2);
-	}
-	h1 {
-		img {
-			color: $blue;
-			font-size: 4em;
-			height: 0.7em;
-			display: block;
-		}
-		.year {
-			text-align: right;
-			float: right;
-			margin-top: 0.15em;
-		}
-		@media only screen and (max-width: $smol) {
-			img {
-				width: 100%;
-				height: auto;
-			}
-			&, .year {
-				text-align: center;
-			}
-		}
-	}
-	.info {
-		font-family: $fancy;
-		line-height: 1.2;
-		float: left;
+	.cityscape {
 		position: absolute;
-		top: 52%;
-		text-align: right;
-		right: 12em;
-		@media only screen and (max-width: $smol) {
-			position: static;
-			text-align: center;
-			float: clear;
-			font-size: 2em;
-			padding-top: 0.6em;
-			width: 100%;
+		bottom: $headerheight;
+		left: 0;
+		right: 0;
+		z-index: 10;
+		overflow: hidden;
+		img {
+			width: 1330px;
+			display: block;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
 		}
-	}
-	.location {
-		display: block;
-		text-decoration: none;
-		color: inherit;
 	}
 	.message {
 		position: absolute;
 		top: 2em;
 		@media only screen and (max-width: $smol) {
-			top: auto;
-			bottom: 8em;
+			font-size: 16px;
+			margin-right: 120px;
 		}
 		left: 0;
-		width: 100%;
+		right: 0;
 		max-width: 360px;
 		font-size: $fontsize;
 		color: $white;
 		line-height: 1;
+		z-index: 8;
 		div {
 			box-shadow: 0 4px 10px rgba(0,0,0,0.2);
 			padding: 0.5em 1em;
@@ -260,6 +268,15 @@ section, footer {
 		a {
 			text-decoration: none;
 		}
+	}
+	.cover {
+		background: $reallydarkblue;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 40px;
+		width: 40px;
+		z-index: 7;
 	}
 }
 
@@ -317,10 +334,16 @@ section, footer {
 			background: $white;
 			color: $blue;
 			padding: 0.5em 1em;
-			transition: padding 0.2s ease-in-out;
+			transition: color 0.3s ease-in-out, text-shadow 0.2s ease-in-out;
 			cursor: pointer;
 			&:hover {
-				padding: 0.5em 1.8em;
+				color: $darkblue;
+				$shadows: ();
+				$length: 70;
+				@for $i from 1 through $length {
+					$shadows: append($shadows, $i*1px $i*1px 0 lighten($blue, 20%), 'comma');
+				}
+				text-shadow: $shadows;
 			}
 			@media only screen and (max-width: $smol) {
 				margin: 1em auto;
@@ -362,13 +385,16 @@ section, footer {
 		display: flex;
 		flex-flow: wrap;
 		margin: 1em -0.5em 0 -0.5em;
-		.pair {
+		.column {
 			width: 50%;
 			box-sizing: border-box;
 			padding: 0 0.5em;
+		}
+		.pair {
 			margin-bottom: 0.5em;
 			h3 {
 				cursor: pointer;
+				font-family: bebas-neue, sans-serif;
 				text-transform: uppercase;
 				font-weight: normal;
 				margin: 0 0 0.5em 0;
@@ -403,15 +429,14 @@ section, footer {
 		}
 		.content {
 			display: block;
-			.pair {
+			.column {
 				width: auto;
 			}
 		}
 	}
 }
 
-// footer
-#us {
+footer {
 	background: $darkblue;
 	height: auto;
 	.wrap {
@@ -424,6 +449,12 @@ section, footer {
 		h2 {
 			flex: 1;
 			padding: 0;
+			$shadows: ();
+			$length: 260;
+			@for $i from 1 through $length {
+				$shadows: append($shadows, $i*1px $i*1px 0 $blue, 'comma');
+			}
+			text-shadow: $shadows;
 		}
 		h3 {
 			margin: 0 0 0.5em 0;
@@ -496,5 +527,8 @@ section, footer {
 	text-decoration: none;
 	img {
 		width: 100%;
+	}
+	@media only screen and (max-width: $smol) {
+		right: 30px;
 	}
 }
