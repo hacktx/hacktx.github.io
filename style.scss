@@ -234,10 +234,12 @@ section, footer {
 		bottom: $headerheight;
 		left: 0;
 		right: 0;
-		z-index: 10;
+		z-index: 8;
 		overflow: hidden;
+		pointer-events: none;
 		img {
 			width: 1330px;
+			max-width: 280%;
 			display: block;
 			position: relative;
 			left: 50%;
@@ -264,6 +266,7 @@ section, footer {
 			background: $darkblue;
 			animation: slide-in 0.6s ease-out 1s;
 			animation-fill-mode: backwards;
+			word-wrap: break-word;
 		}
 		a {
 			text-decoration: none;
