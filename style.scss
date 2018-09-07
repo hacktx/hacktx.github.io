@@ -415,6 +415,16 @@ section, footer {
 					transform-origin: 25% 50%;
 					transition: 0.1s ease-in-out transform;
 				}
+				em {
+					font-style: normal;
+					font-size: 0.6em;
+					padding: 0.2em 0.4em;
+					background: $darkblue;
+					line-height: 1;
+					transform: translateY(-0.3em);
+					display: inline-block;
+					margin-right: 0.4em;
+				}
 			}
 			&.collapsed {
 				h3:after {

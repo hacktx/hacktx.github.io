@@ -324,6 +324,15 @@ section, footer {
           transform: rotate(90deg);
           transform-origin: 25% 50%;
           transition: 0.1s ease-in-out transform; }
+        #faq .content .pair h3 em {
+          font-style: normal;
+          font-size: 0.6em;
+          padding: 0.2em 0.4em;
+          background: #4b78bb;
+          line-height: 1;
+          transform: translateY(-0.3em);
+          display: inline-block;
+          margin-right: 0.4em; }
       #faq .content .pair.collapsed h3:after {
         transform: none; }
       #faq .content .pair.collapsed p {
