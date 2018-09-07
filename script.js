@@ -167,7 +167,7 @@ $(document).ready(function() {
 	for (var i = 0; i < $("section").length; i++) $("#progress").append($("<div data-pos="+i+">"));
 
 	$("#progress div").click(function() {
-		$(window).scrollToTop([$("section").eq($(this).attr("data-pos")).offset().top]);
+		smoothScroll($(window), $("section").eq($(this).attr("data-pos")).offset().top, 300);
 	}).first().addClass("active");
 
 	// FAQ
