@@ -585,8 +585,8 @@ footer {
 		text-shadow: $shadows;
 	}
 	text-decoration: none;
-	margin-left: $pad * 2;
-	margin-right: $pad * 2;
+	margin-left: $pad * 4;
+	margin-right: $pad * 4;
 
 	@media only screen and (max-width: $smol) {
 		margin-left: $pad;
