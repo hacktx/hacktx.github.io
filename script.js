@@ -193,9 +193,8 @@ $(document).ready(function() {
 			clock.hide();
 		}
 		if (Date.parse("September 7 2018 15:00:00 GMT-0500") <= Date.parse(new Date())) {
-			$("header .cta").attr("href", "https://my.hacktx.com/").text("Sign up!");
+			$("header .cta").attr("href", "https://my.hacktx.com/").text("Register").off("click");
 		}
-
 	}
 
 	updateClock();
