@@ -136,7 +136,7 @@ $(document).ready(function() {
 			return;
 		}
 
-		var sectionsScrolled  = $(this).scrollTop() / $("#mailing").height();
+		var sectionsScrolled  = $(this).scrollTop() / $("#register").height();
 		$("#progress div").removeClass("active");
 		$("#progress div").eq(sectionsScrolled).addClass("active");
 
@@ -167,7 +167,7 @@ $(document).ready(function() {
 
 	$("header .cta").click(function(e) {
 		e.preventDefault();
-		$(window).scrollToTop([$("#mailing").offset().top]);
+		$(window).scrollToTop([$("#register").offset().top]);
 	});
 
 	// Countdown
