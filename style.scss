@@ -559,3 +559,37 @@ footer {
 		right: 30px;
 	}
 }
+
+#register {
+	text-align: center;
+}
+
+#register .button {
+	font-family: $fancy;
+	font-size: 1.9em;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
+	display: block;
+	background: $red;
+	color: $white;
+	transition: 0.2s ease-in-out all;
+	overflow: hidden;
+	padding: 0.5em 1em;
+	&:hover {
+		background: darken($red, 10%);
+		$shadows: ();
+		$length: 70;
+		@for $i from 1 through $length {
+			$shadows: append($shadows, $i*1px $i*1px 0 lighten($red, 10%), 'comma');
+		}
+		text-shadow: $shadows;
+	}
+	text-decoration: none;
+	margin-left: $pad * 4;
+	margin-right: $pad * 4;
+
+	@media only screen and (max-width: $smol) {
+		margin-left: $pad;
+		margin-right: $pad;
+	}
+}

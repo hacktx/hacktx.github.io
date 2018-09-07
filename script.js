@@ -1,4 +1,17 @@
 $(document).ready(function() {
+	function smoothScroll(el, to, duration) {
+	    if (duration < 0) {
+	        return;
+	    }
+	    var difference = to - $(window).scrollTop();
+	    var perTick = difference / duration * 10;
+	    this.scrollToTimerCache = setTimeout(function() {
+	        if (!isNaN(parseInt(perTick, 10))) {
+	            window.scrollTo(0, $(window).scrollTop() + perTick);
+	            smoothScroll(el, to, duration - 10);
+	        }
+	    }.bind(this), 10);
+	}
 	$("#what object").on("load", function() {
 		var svg = this.contentDocument,
 			els = svg.querySelectorAll("#square1, #triangle1, #circle1"),
@@ -136,7 +149,7 @@ $(document).ready(function() {
 			return;
 		}
 
-		var sectionsScrolled  = $(this).scrollTop() / $("#mailing").height();
+		var sectionsScrolled  = $(this).scrollTop() / $("#register").height();
 		$("#progress div").removeClass("active");
 		$("#progress div").eq(sectionsScrolled).addClass("active");
 
@@ -167,7 +180,7 @@ $(document).ready(function() {
 
 	$("header .cta").click(function(e) {
 		e.preventDefault();
-		$(window).scrollToTop([$("#mailing").offset().top]);
+		smoothScroll($(window), $("#register").offset().top, 400);
 	});
 
 	// Countdown
@@ -193,7 +206,7 @@ $(document).ready(function() {
 			clock.hide();
 		}
 		if (Date.parse("September 7 2018 15:00:00 GMT-0500") <= Date.parse(new Date())) {
-			$("header .cta").attr("href", "https://my.hacktx.com/").text("Register").off("click");
+			$("#register .button").attr("href", "https://my.hacktx.com/");
 		}
 	}
 
