@@ -336,6 +336,17 @@ section, footer {
       #faq .content .column {
         width: auto; } }
 
+#sponsors {
+  height: auto; }
+  #sponsors .main {
+    text-align: center; }
+    #sponsors .main img {
+      display: block;
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      margin: 1em auto; }
+
 footer {
   background: #4b78bb;
   height: auto; }

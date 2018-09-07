@@ -439,6 +439,20 @@ section, footer {
 	}
 }
 
+#sponsors {
+	height: auto;
+	.main {
+		text-align: center;
+		img {
+			display: block;
+			width: 100%;
+			max-width: 300px;
+			height: auto;
+			margin: 1em auto;
+		}
+	}
+}
+
 footer {
 	background: $darkblue;
 	height: auto;
