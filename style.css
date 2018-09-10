@@ -346,7 +346,9 @@ section, footer {
         width: auto; } }
 
 #sponsors {
-  height: auto; }
+  height: auto;
+  flex-direction: column;
+  flex-flow: column wrap; }
   #sponsors .main {
     text-align: center; }
     #sponsors .main img {
@@ -355,17 +357,22 @@ section, footer {
       max-width: 300px;
       height: auto;
       margin: 1em auto; }
-  #sponsors .wrap {
-    width: 100%; }
   #sponsors .more {
-    font-size: 0; }
+    font-size: 0;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px; }
   #sponsors .sponsor {
     width: 280px;
     height: 280px;
     float: left;
     text-align: center;
     position: relative;
-    transition: all 0.3s ease-in-out; }
+    transition: all 0.3s ease-in-out;
+    margin: 10px; }
     #sponsors .sponsor .logo {
       position: absolute;
       top: 50%;

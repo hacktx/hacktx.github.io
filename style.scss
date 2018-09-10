@@ -451,6 +451,8 @@ section, footer {
 
 #sponsors {
 	height: auto;
+	flex-direction: column;
+	flex-flow: column wrap;
 	.main {
 		text-align: center;
 		img {
@@ -461,11 +463,14 @@ section, footer {
 			margin: 1em auto;
 		}
 	}
-	.wrap {
-		width: 100%;
-	}
 	.more {
 		font-size: 0;
+		width: 100%;
+		max-width: $reallywide;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-top: $fontsize;
 	}
 	.sponsor {
 		width: 280px;
@@ -474,6 +479,7 @@ section, footer {
 		text-align: center;
 		position: relative;
 		transition: all 0.3s ease-in-out;
+		margin: $fontsize/2;
 		.logo {
 			position: absolute;
 			top: 50%;
