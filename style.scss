@@ -461,6 +461,62 @@ section, footer {
 			margin: 1em auto;
 		}
 	}
+	.wrap {
+		width: 100%;
+	}
+	.more {
+		font-size: 0;
+	}
+	.sponsor {
+		width: 280px;
+		height: 280px;
+		float: left;
+		text-align: center;
+		position: relative;
+		transition: all 0.3s ease-in-out;
+		.logo {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 100%;
+			display: inline-block;
+			transition: all 0.3s ease-in-out;
+			img {
+				width: 100%;
+				height: auto;
+			}
+			span {
+				font-size: 30px;
+			}
+		}
+		.description {
+			position: absolute;
+			width: 95%;
+			margin: 0 auto;
+			top: 50%;
+			left: 50%;
+			opacity: 0;
+			transition: all 50ms cubic-bezier(.68,-.55,.265,1.55);
+			transform: scale(0) translate(-50%, -50%);
+			transform-origin: left top;
+			font-size: $fontsize;
+		}
+		&.smaller .description {
+			font-size: 16px;
+		}
+		&.hastext:hover {
+			.logo {
+				top: -30px;
+				transform: scale(0.4) translateY(-50%);
+			}
+			.description {
+				opacity: 1;
+				transition: all 600ms cubic-bezier(.68,-.55,.265,1.55);
+				transform: scale(1) translate(-50%, -50%);
+			}
+		}
+	}
 }
 
 footer {
