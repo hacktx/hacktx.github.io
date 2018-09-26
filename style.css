@@ -280,6 +280,37 @@ section, footer {
     #who object {
       margin-bottom: -5em; } }
 
+#who .isss {
+  position: fixed;
+  top: 0;
+  right: 4em;
+  width: 5em;
+  color: #213e5b;
+  background: white;
+  padding: 0.6em;
+  text-align: center;
+  transform: translateY(-100%) translateY(-1.4em);
+  transition: transform 0.3s ease-in-out; }
+  #who .isss img {
+    display: block;
+    max-width: 100%;
+    margin: 5em 0 1em 0; }
+  #who .isss span {
+    display: block;
+    font-size: 0.8em; }
+  #who .isss:after {
+    display: block;
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 0;
+    border: 0 solid transparent;
+    border-width: 1.4em 3.1em;
+    border-top-color: white; }
+
+#who.visible .isss {
+  transform: none; }
+
 #freetail h2 {
   margin-right: -2em; }
   @media only screen and (max-width: 680px) {

@@ -152,6 +152,7 @@ $(document).ready(function() {
 		var sectionsScrolled  = $(this).scrollTop() / $("#register").height();
 		$("#progress div").removeClass("active");
 		$("#progress div").eq(sectionsScrolled).addClass("active");
+		$("section").removeClass("visible").eq(sectionsScrolled).addClass("visible");
 
 		sectionsScrolled += 3/5;
 		var section = parseInt(sectionsScrolled);
