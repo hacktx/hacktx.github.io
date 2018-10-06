@@ -322,6 +322,15 @@ section, footer {
     #freetail h2 {
       margin-right: 0; } }
 
+#schedule {
+  height: auto; }
+  #schedule time {
+    min-width: 100px;
+    display: inline-block; }
+  #schedule span {
+    display: inline-block;
+    padding-left: 0.6em; }
+
 #faq {
   height: auto;
   padding-bottom: 5em; }
