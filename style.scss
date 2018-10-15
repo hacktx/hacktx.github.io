@@ -417,9 +417,14 @@ section, footer {
 
 #schedule {
 	height: auto;
+	.wrap > div > div {
+		overflow: hidden;
+	}
 	time {
 		min-width: 100px;
 		display: inline-block;
+		margin-bottom: 1px;
+		float: left;
 	}
 	span {
 		display: inline-block;
