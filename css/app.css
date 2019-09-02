@@ -56,14 +56,14 @@ main {
     font-size: 2vw; }
     #hero .contents div, #hero .contents h1 {
       position: relative; }
-    @media all and (min-width: 1000px) {
+    @media all and (min-width: 1024px) {
       #hero .contents {
         display: flex; }
         #hero .contents .content {
           width: 50%; }
         #hero .contents .picture {
           width: 50%; } }
-    @media all and (max-width: 1000px) {
+    @media all and (max-width: 1024px) {
       #hero .contents .content {
         margin-top: 64px;
         width: 100%; }
