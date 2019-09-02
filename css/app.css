@@ -61,12 +61,24 @@ main {
         display: flex; }
         #hero .contents .content {
           width: 50%; }
+          #hero .contents .content .date {
+            font-size: 72px; }
+          #hero .contents .content .hacktx {
+            font-size: 200px; }
+          #hero .contents .content .location {
+            font-size: 36px; }
         #hero .contents .picture {
           width: 50%; } }
     @media all and (max-width: 1024px) {
       #hero .contents .content {
         margin-top: 64px;
         width: 100%; }
+        #hero .contents .content .date {
+          font-size: 36px; }
+        #hero .contents .content .hacktx {
+          font-size: 100px; }
+        #hero .contents .content .location {
+          font-size: 18px; }
       #hero .contents .picture {
         width: 100%; } }
     #hero .contents .content {
@@ -79,18 +91,15 @@ main {
         width: 100%; }
       #hero .contents .content .date {
         font-family: "Beba Neue Light";
-        font-size: 72px;
         color: #FFFFFF;
         color: white; }
       #hero .contents .content .hacktx {
         font-family: "Beba Neue";
         font-weight: bold;
-        font-size: 200px;
         color: #FFFFFF;
         color: white; }
       #hero .contents .content .location {
         font-family: "Beba Neue Light";
-        font-size: 32px;
         color: #FFFFFF;
         color: white; }
     #hero .contents .picture {

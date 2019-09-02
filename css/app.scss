@@ -79,6 +79,15 @@ main {
             display: flex;
             .content {
                 width: 50%;
+                .date {
+                    font-size: 72px;
+                }
+                .hacktx {
+                    font-size: 200px;
+                }
+                .location {
+                    font-size: 36px;
+                }
             }
             .picture {
                 width: 50%
@@ -88,6 +97,15 @@ main {
             .content {
                 margin-top: 64px;
                 width: 100%;
+                .date {
+                    font-size: 36px;
+                }
+                .hacktx {
+                    font-size: 100px;
+                }
+                .location {
+                    font-size: 18px;
+                }
             }
             .picture {
                 width: 100%;
@@ -105,20 +123,17 @@ main {
             }
 		    .date {
                 font-family: "Beba Neue Light";
-                font-size: 72px;
                 color: #FFFFFF;
                 color: rgb(255, 255, 255);
 		    }
 		    .hacktx {
                 font-family: "Beba Neue";
                 font-weight: bold;
-                font-size: 200px;
                 color: #FFFFFF;
                 color: rgb(255, 255, 255);
 		    }
             .location {
                 font-family: "Beba Neue Light";
-                font-size: 32px;
                 color: #FFFFFF;
                 color: rgb(255, 255, 255);
             }
