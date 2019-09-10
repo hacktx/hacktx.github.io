@@ -167,6 +167,9 @@ main {
 				border-color: white;
 				position: relative;
 			}
+            @media all and (max-width: $herowidth) {
+                font-size: 2.5em;
+            }
 		}
 		.email {
 			flex-grow: 1;
