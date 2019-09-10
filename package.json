@@ -9,6 +9,7 @@
   "dependencies": {
     "http-server": "^0.11.1",
     "node-sass": "^4.7.2",
-    "node-sass-watcher": "^0.5.1"
+    "node-sass-watcher": "^0.5.1",
+    "normalize.css": "^8.0.1"
   }
 }
