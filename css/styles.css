@@ -42,8 +42,7 @@ html, body {
 
 .normal-text {
   font-size: 19px;
-  line-height: 16.37px;
-  font-family: 'Beba Neue';
+  font-family: 'Montserrat';
   color: #FFFFFF;
   color: white; }
 
@@ -52,6 +51,9 @@ html, body {
   @media all and (min-width: 1024px) {
     .contents {
       display: flex; } }
+
+.content-margin {
+  margin: 32px; }
 
 @media all and (min-width: 1024px) {
   .content {

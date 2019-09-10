@@ -56,8 +56,7 @@ html, body {
 
 .normal-text {
     font-size: 19px;
-    line-height: 16.37px;
-    font-family: 'Beba Neue';
+    font-family: 'Montserrat';
     color: #FFFFFF;
     color: rgb(255, 255, 255);
 }
@@ -67,6 +66,10 @@ html, body {
     @media all and (min-width: $desktop-width) {
         display: flex;
     }
+}
+
+.content-margin {
+    margin: 32px;
 }
 
 .content {
