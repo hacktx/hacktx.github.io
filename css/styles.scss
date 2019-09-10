@@ -1,0 +1,116 @@
+$desktop-width: 1024px;
+$background-color: #210D18;
+$foreground-color: #210D18;
+
+@font-face {
+    font-family: 'Beba Neue Bold';
+    src: url('./bebaneue/bebasneue-bold-webfont.woff2') format('woff2'),
+         url('./bebaneue/bebasneue-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Beba Neue';
+    src: url('./bebaneue/bebasneue-regular-webfont.woff2') format('woff2'),
+         url('./bebaneue/bebasneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Beba Neue Light';
+    src: url('./bebaneue/bebasneue-light-webfont.woff2') format('woff2'),
+         url('./bebaneue/bebasneue-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: $background-color;
+    height: 100%;
+    width: 100%;
+}
+
+.parent-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.title {
+    font-size: 200px;
+    font-family: 'Beba Neue Bold';
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+}
+
+.heading {
+    font-size: 72px;
+    font-family: 'Beba Neue';
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+}
+
+.normal-text {
+    font-size: 19px;
+    line-height: 16.37px;
+    font-family: 'Beba Neue';
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+}
+
+.contents {
+    margin: 64px;
+    @media all and (min-width: $desktop-width) {
+        display: flex;
+    }
+}
+
+.content {
+    @media all and (min-width: $desktop-width) {
+        width: 50%;
+    }
+
+    @media all and (max-width: $desktop-width) {
+        padding-top: 32px;
+        width: 100%;
+    }
+
+    div {
+        display: inline;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.header {
+    width: 100%;
+}
+
+#maillist {
+    form {
+        width: 100%;
+        padding-top: 32px;
+        display: flex;
+        input {
+            padding: 8px;
+            font-size: 32px;
+            font-family: "Beba Neue";
+            background: #FFFFFF;
+            color: $foreground-color;    
+            &:focus, &:active {
+                border-color: white;
+                position: relative;
+            }
+        }
+        .email {
+            flex-grow: 1;
+        }
+    }
+}

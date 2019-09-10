@@ -4,7 +4,8 @@
     "serve": "http-server",
     "dev": "node-sass-watcher css/app.scss -o css/app.css -c 'cat <input> | node_modules/node-sass/bin/node-sass > <output>'",
     "build": "cat style.scss | node_modules/node-sass/bin/node-sass > style.css",
-    "build-css": "node-sass --include-path css css/app.scss css/app.css"
+    "build-css": "node-sass --include-path css css/app.scss css/app.css",
+    "css": "node-sass --include-path css css/styles.scss css/styles.css"
   },
   "dependencies": {
     "http-server": "^0.11.1",
