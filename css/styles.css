@@ -56,6 +56,15 @@ html, body {
   width: 100%;
   height: 100%; }
 
+.content .question {
+  font-weight: bolder;
+  margin-bottom: 5px; }
+
+.content .answer {
+  font-weight: lighter;
+  font-size: 1.3vw;
+  margin: 5px 0px 20px; }
+
 .no-margin-top {
   margin-top: 0px; }
 
