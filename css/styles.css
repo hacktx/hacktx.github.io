@@ -50,6 +50,20 @@ html, body {
   color: #FFFFFF;
   color: white; }
 
+#registration-button {
+  display: block;
+  margin-top: 15px; }
+  #registration-button a {
+    font-family: 'Beba Neue';
+    color: #210D18;
+    padding: 5px;
+    background-color: #FFFFFF;
+    transition: 0.3s;
+    text-decoration: none; }
+  #registration-button a:hover {
+    background-color: #5e344c;
+    color: #FFFFFF; }
+
 .normal-text {
   font-family: 'Montserrat';
   color: #FFFFFF;
@@ -105,6 +119,9 @@ html, body {
   .heading {
     font-size: 72px;
     font-size: 4vw; }
+  #registration-button a {
+    font-size: 72px;
+    font-size: 4vw; }
   .normal-text {
     font-size: 19px;
     font-size: 1.5vw; }
@@ -125,6 +142,9 @@ html, body {
     font-size: 100px;
     font-size: 25vw; }
   .heading {
+    font-size: 48px;
+    font-size: 7.5vw; }
+  #registration-button a {
     font-size: 48px;
     font-size: 7.5vw; }
   .normal-text {
