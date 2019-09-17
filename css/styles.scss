@@ -1,6 +1,7 @@
 $desktop-width: 1024px;
 $background-color: #210D18;
 $foreground-color: #210D18;
+$pad: 30px;
 
 @font-face {
     font-family: 'Beba Neue Bold';
@@ -38,6 +39,25 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.submit {
+    color: white;
+    background: $background-color;
+    transition: 0.2s ease-in-out all;
+    overflow: hidden;
+    &:hover {
+        background: darken(red, 10%);
+        $shadows: ();
+        $length: 70;
+        @for $i from 1 through $length {
+            $shadows: append($shadows, $i*1px $i*1px 0 lighten(red, 10%), 'comma');
+        }
+        text-shadow: $shadows;
+    }
+    padding: $pad $pad*2;
+    text-decoration: none;
+    margin-left: $pad;
 }
 
 .title {
