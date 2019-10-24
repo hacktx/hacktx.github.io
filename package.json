@@ -8,10 +8,10 @@
     "css": "node-sass --include-path css css/styles.scss css/styles.css"
   },
   "dependencies": {
+    "braces": ">=2.3.1",
     "http-server": "^0.11.1",
-    "node-sass": "^4.7.2",
+    "node-sass": "^4.12.0",
     "node-sass-watcher": "^0.5.1",
-    "normalize.css": "^8.0.1",
-    "braces": ">=2.3.1"
+    "normalize.css": "^8.0.1"
   }
 }

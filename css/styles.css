@@ -156,3 +156,39 @@ html, body {
   #maillist form input {
     padding: 1vw;
     font-size: 4vw; } }
+  
+#sponsors {
+  background: #ffffff;
+  height: auto;
+  flex-direction: column;
+  flex-flow: column wrap; }
+  #sponsors .more {
+    font-size: 0;
+    width: 100%;
+    max-width: 1200px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px; }
+  #sponsors .sponsor {
+    width: 280px;
+    height: 280px;
+    float: left;
+    text-align: center;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+    margin: 10px; }
+    #sponsors .sponsor .logo {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateY(-50%);
+      width: 100%;
+      display: inline-block;
+      transition: all 0.3s ease-in-out; }
+      #sponsors .sponsor .logo img {
+        width: 100%;
+        height: auto; }
+      #sponsors .sponsor .logo span {
+        font-size: 30px; }
+}
