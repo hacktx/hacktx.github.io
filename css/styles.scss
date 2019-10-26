@@ -184,6 +184,9 @@ html, body {
             font-size: 1.3vw;
         }
     }
+    .four-items {
+        width: 33%;
+    }
     #maillist {
         form {
             input {
@@ -215,6 +218,10 @@ html, body {
         font-size: 4.0vw;
         text-align: center;
     }
+    .four-items {
+        width: 50%;
+        padding: 3vw 0vw;
+    }
     .content {
         .answer {
             font-size: 3.5vw;
@@ -228,4 +235,11 @@ html, body {
             }
         }
     }
+}
+
+#sponsors {
+    background: #ffffff;
+    height: auto;
+    flex-direction: column;
+    flex-flow: column wrap; 
 }

@@ -1,0 +1,41 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/home/davidzchen/.nvm/versions/node/v0.12.18/bin/node',
+1 verbose cli   '/home/davidzchen/.nvm/versions/node/v0.12.18/bin/npm',
+1 verbose cli   'run',
+1 verbose cli   'css' ]
+2 info using npm@2.15.11
+3 info using node@v0.12.18
+4 verbose run-script [ 'precss', 'css', 'postcss' ]
+5 info precss hacktx19-website@
+6 info css hacktx19-website@
+7 verbose unsafe-perm in lifecycle true
+8 info hacktx19-website@ Failed to exec css script
+9 verbose stack Error: hacktx19-website@ css: `node-sass --include-path css css/styles.scss css/styles.css`
+9 verbose stack Exit status 1
+9 verbose stack     at EventEmitter.<anonymous> (/home/davidzchen/.nvm/versions/node/v0.12.18/lib/node_modules/npm/lib/utils/lifecycle.js:217:16)
+9 verbose stack     at EventEmitter.emit (events.js:110:17)
+9 verbose stack     at ChildProcess.<anonymous> (/home/davidzchen/.nvm/versions/node/v0.12.18/lib/node_modules/npm/lib/utils/spawn.js:24:14)
+9 verbose stack     at ChildProcess.emit (events.js:110:17)
+9 verbose stack     at maybeClose (child_process.js:1019:16)
+9 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1091:5)
+10 verbose pkgid hacktx19-website@
+11 verbose cwd /home/davidzchen/Documents/hacktx.github.io
+12 error Linux 4.4.0-17134-Microsoft
+13 error argv "/home/davidzchen/.nvm/versions/node/v0.12.18/bin/node" "/home/davidzchen/.nvm/versions/node/v0.12.18/bin/npm" "run" "css"
+14 error node v0.12.18
+15 error npm  v2.15.11
+16 error code ELIFECYCLE
+17 error hacktx19-website@ css: `node-sass --include-path css css/styles.scss css/styles.css`
+17 error Exit status 1
+18 error Failed at the hacktx19-website@ css script 'node-sass --include-path css css/styles.scss css/styles.css'.
+18 error This is most likely a problem with the hacktx19-website package,
+18 error not with npm itself.
+18 error Tell the author that this fails on your system:
+18 error     node-sass --include-path css css/styles.scss css/styles.css
+18 error You can get information on how to open an issue for this project with:
+18 error     npm bugs hacktx19-website
+18 error Or if that isn't available, you can get their info via:
+18 error
+18 error     npm owner ls hacktx19-website
+18 error There is likely additional logging output above.
+19 verbose exit [ 1, true ]
