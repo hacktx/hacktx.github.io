@@ -154,6 +154,7 @@ html, body {
     font-size: 4.0vw;
     text-align: center; }
   .four-items {
+    width: 50%;
     padding: 3vw 0vw; }
   .content .answer {
     font-size: 3.5vw; }
