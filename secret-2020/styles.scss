@@ -1,0 +1,403 @@
+$color-stops: #0b2135, #0f3857;
+$translateOrigin: 100px;
+$largebp: 832px;
+$mediumbp: 685px;
+$smallbp: 575px;
+$xsmallbp: 485px;
+$xxsmallbp: 350px;
+
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url('fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@mixin breakpoint($media) {
+	@if $media == large {
+		@media only screen and (max-height: $largebp + 1) { @content; }
+	} @else if $media == medium {
+		@media only screen and (max-height: $mediumbp) { @content; }
+	} @else if $media == small {
+		@media only screen and (max-height: $smallbp) {@content; }
+	} @else if $media == xsmall {
+		@media only screen and (max-height: $xsmallbp) {@content; }
+    } @else if $media == xxsmall {
+		@media only screen and (max-height: $xxsmallbp) {@content; }
+    }
+}
+
+
+@mixin shadow($alpha) {
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(0,0,0, $alpha);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 3px 3px rgba(0,0,0,$alpha);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 3px 3px rgba(0,0,0,$alpha);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ 
+}
+
+html, body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    overflow-x: auto;
+    overflow-y: hidden;
+    
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    cursor: grab;
+}
+
+.stretch-bg {
+    height: 100vh;
+    width: calc(100vw + 438vh + 5400px);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#superContentContainer {
+    width: 100vw;
+    height: 100vh;
+    perspective: 1px;
+    perspective-origin: $translateOrigin $translateOrigin;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#back-layer1 {
+    background: url('assets/starTile.png') repeat, nth($color-stops, 1); // fallback
+	background: url('assets/starTile.png') repeat, -webkit-linear-gradient(left, $color-stops);
+  	background: url('assets/starTile.png') repeat, -moz-linear-gradient(left, $color-stops);
+  	background: url('assets/starTile.png') repeat, -o-linear-gradient(left, $color-stops);
+    background: url('assets/starTile.png') repeat, linear-gradient(to right, $color-stops);
+    background-size: contain;
+}
+
+#parallex {
+    height: 100vh;
+    transform: translateZ(-3px) scale(4);
+    transform-origin: $translateOrigin $translateOrigin;
+}
+
+#contentContainer {
+    display: inline-flex;
+    height: 95vh;
+    position: absolute;
+    max-height: 1000px;
+}
+
+p {
+    font-family: Poppins-Light, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+    @include breakpoint(medium) {
+        font-size: 16px;
+        line-height: 20px;}
+    @include breakpoint(small) {
+        font-size: 15px;
+        line-height: 17px;}
+    @include breakpoint(xsmall) {
+        font-size: 4vh;
+    }
+    @include breakpoint(xxsmall) {
+        font-size: 3.5vh;
+    }
+    color: #f6f4d9;
+}
+
+/////////// LANDING SECTION
+
+#landing {
+    height: 100vh;
+    width: 90vw;
+    padding: 0 2vw;
+    display: inline-flex;
+    div {
+        height: 100%;
+    }
+}
+
+#animation {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    img {
+        width: 100%;
+    }
+}
+
+#event-title {
+    width: 40%;
+    flex-grow: 2;
+    padding-top: 15vh;
+    height: 85vh;
+    div {
+        // @include breakpoint(large) {width: 80%;};
+    }
+
+}
+
+#rocket {
+    width: 15%;
+    max-width: 250px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#title-container {
+    height: 80%;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+///////////// LOGOS
+#freetail-logo {
+    img {
+        width: 8vw;
+        max-width: 100px;
+    }
+    position: absolute;
+    left: 1vw;
+    top: 1vh;
+}
+
+#pinnacle-banner {
+    position: fixed;
+    left: 1vw;
+    bottom: 1vh;
+    z-index: 10000;
+    img {
+        height: 8vh;
+        max-height: 100px;
+    }
+}
+
+//////////// SCHEDULE
+#schedule {
+    display: inline-flex;
+    height: 100%;
+    margin-right: 400px;
+}
+
+.schedule-day {
+    width: 85vh;
+    @include breakpoint(small) {width: 100vh;};
+    img {
+        width: 100%;
+    }
+}
+
+.bottom-day {
+    display: flex;
+    align-items: flex-end;
+}
+
+/////////// BLURBS SECTION
+#blurbs {
+    display: inline-flex;
+}
+
+.blurb-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 32px;
+    @include breakpoint(small) {justify-content: center;}
+}
+
+.blurb-text {
+    display: flex;
+    flex-direction: column;
+    @include breakpoint(small) {
+        height: 80%;
+    };
+    background-color: #1c4862;
+    border-radius: 50px;
+    padding: 32px 32px 8px 24px;
+    @include shadow(0.2);
+    div {
+        height: 90px;
+        @include breakpoint(medium) {height: 70px;};
+        @include breakpoint(small) {height: 60px;};
+        @include breakpoint(xsmall) {height: 48px;};
+        img {
+            height: 100%;
+        }
+    }
+}
+
+.bottom-blurb {
+    justify-content: flex-end;
+    @include breakpoint(small) {justify-content: center;};
+}
+
+.illustration {
+    @include breakpoint(xsmall) {display: none;}
+}
+
+#blurb-1 {
+    width: 400px;
+    .blurb-text {
+        height: 60%;
+        @include breakpoint(xsmall) {height: 80%;}
+    }
+    .illustration {
+        transform: rotate(-60deg) translate(17%, -5%);
+        height: 60%;
+        @include breakpoint(medium) {
+            transform: rotate(-60deg) translate(7%, -5%);
+            height: 50%;
+        }
+    }
+}
+
+#post {
+    height: 110vh;
+    margin-top: -10vh;
+}
+
+#blurb-2 {
+    width: 425px;
+}
+
+#blurb-3 {
+    width: 475px;
+    @include breakpoint(large) {width: 575px;}
+    @include breakpoint(medium) {width: 525px;}
+    .blurb-text {
+        div {
+            height: 135px;
+            @include breakpoint(medium) {height: 105px;};
+            @include breakpoint(small) {height: 90px;};
+            @include breakpoint(xsmall) {height: 72px;};
+        }
+    }
+    .illustration {
+        width: 100%;
+        height: calc(100% - 460px);
+        @include breakpoint(large) {height: calc(100% - 400px);}
+        @include breakpoint(medium) {height: calc(100% - 340px);}
+        @include breakpoint(small) {height: calc(100% - 290px);}
+        img {
+            height: 100%;
+            transform: translateY(2%);
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+#blurb-4 {
+    width: 425px;
+    .blurb-text {
+        div {
+            height: 45px;
+            @include breakpoint(medium) {height: 35px;};
+            @include breakpoint(small) {height: 30px;};
+            @include breakpoint(xsmall) {height: 24px;};
+        }
+    }
+    .illustration {
+        height: 70%;
+        @include breakpoint(large) {height: calc(100% - 230px);};
+        @include breakpoint(medium) {height: calc(100% - 190px);};
+        @include breakpoint(small) {height: calc(100% - 170px);};
+        img {
+            height: 90%;
+            display: block;
+            margin: 0 auto;
+        }
+    }
+}
+
+////////// FAQ SECTION
+#faq {
+    display: flex;
+    flex-direction: column;
+    margin: 0 400px;
+    background-color: #0a2135;
+    border-radius: 50px;
+    @include shadow(1);
+    padding: 16px 32px;
+    @include breakpoint(xxsmall) {display: none;}
+}
+
+#faq-header {
+    height: 100px;
+    @include breakpoint(small) { height: 75px; }
+    @include breakpoint(xsmall) {height: 60px;}
+    width: 100%;
+    img {
+        display: block;
+        position: sticky;
+        left: calc(50% - 116px);
+        @include breakpoint(small) {left: calc(50% - 88px);};
+        @include breakpoint(small) {left: calc(50% - 70px);};
+    }
+}
+
+#questions-container {
+    height: calc(100% - 132px);
+    width: 1600px;
+    margin-top: 32px;
+    column-count: 4;
+    column-gap: 2%;
+    @include breakpoint(large) {
+        width: 2200px;
+        column-count: 5;
+    };
+    @include breakpoint(small) {
+        height: calc(100% - 110px);
+    }
+    @include breakpoint(xsmall) {
+        width: 2600px;
+        height: calc(100% - 94px);
+        margin-top: 16px;
+    }
+    p {
+        text-align: justify;
+        margin: 0;
+    }
+    .answer {
+        margin-bottom: 16px;
+        font-size: 16px;
+        @include breakpoint(medium) {font-size: 14px;};
+        @include breakpoint(small) {font-size: 12px;};
+        @include breakpoint(small) {font-size: 11px; line-height: 12px;};
+        @include breakpoint(xsmall) {font-size: 3vh; line-height: 3.5vh;};
+    }
+}
+
+.question {
+    color: #a6f4e4;
+    line-height: 20px;
+    @include breakpoint(medium) {line-height: 16px;};
+    @include breakpoint(small) {line-height: 14px;};
+    @include breakpoint(xsmall) {line-height: 4vh;};
+
+}
+
+
+
+////////// SPONSORS SECTION
+#sponsors {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    div {
+        height: 30%;
+        width: 100%;
+    } 
+    img {
+        height: 70%;
+        display: block;
+        margin: auto;
+    }
+}
