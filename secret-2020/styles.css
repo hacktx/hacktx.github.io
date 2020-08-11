@@ -1,0 +1,382 @@
+@font-face {
+  font-family: 'Poppins-Light';
+  src: url("fonts/Poppins-Regular.ttf") format("truetype"); }
+
+html, body {
+  margin: 0;
+  height: 100vh;
+  width: 100vw;
+  overflow-x: auto;
+  overflow-y: hidden; }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  cursor: grab; }
+
+.stretch-bg {
+  height: 100vh;
+  width: calc(100vw + 438vh + 5400px);
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+#superContentContainer {
+  width: 100vw;
+  height: 100vh;
+  perspective: 1px;
+  perspective-origin: 100px 100px;
+  overflow-x: auto;
+  overflow-y: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+
+#back-layer1 {
+  background: url("assets/starTile.png") repeat, #0b2135;
+  background: url("assets/starTile.png") repeat, -webkit-linear-gradient(left, #0b2135, #0f3857);
+  background: url("assets/starTile.png") repeat, -moz-linear-gradient(left, #0b2135, #0f3857);
+  background: url("assets/starTile.png") repeat, -o-linear-gradient(left, #0b2135, #0f3857);
+  background: url("assets/starTile.png") repeat, linear-gradient(to right, #0b2135, #0f3857);
+  background-size: contain; }
+
+#parallex {
+  height: 100vh;
+  transform: translateZ(-3px) scale(4);
+  transform-origin: 100px 100px; }
+
+#contentContainer {
+  display: inline-flex;
+  height: 95vh;
+  position: absolute;
+  max-height: 1000px; }
+
+p {
+  font-family: Poppins-Light, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  color: #f6f4d9; }
+  @media only screen and (max-height: 685px) {
+    p {
+      font-size: 16px;
+      line-height: 20px; } }
+  @media only screen and (max-height: 575px) {
+    p {
+      font-size: 15px;
+      line-height: 17px; } }
+  @media only screen and (max-height: 485px) {
+    p {
+      font-size: 4vh; } }
+  @media only screen and (max-height: 350px) {
+    p {
+      font-size: 3.5vh; } }
+
+#landing {
+  height: 100vh;
+  width: 90vw;
+  padding: 0 2vw;
+  display: inline-flex; }
+  #landing div {
+    height: 100%; }
+
+#animation {
+  width: 40%;
+  display: flex;
+  align-items: center; }
+  #animation img {
+    width: 100%; }
+
+#event-title {
+  width: 40%;
+  flex-grow: 2;
+  padding-top: 15vh;
+  height: 85vh; }
+
+#rocket {
+  width: 15%;
+  max-width: 250px;
+  display: flex;
+  align-items: flex-end; }
+
+#title-container {
+  height: 80%;
+  max-height: 500px;
+  display: flex;
+  flex-direction: column; }
+
+#freetail-logo {
+  position: absolute;
+  left: 1vw;
+  top: 1vh; }
+  #freetail-logo img {
+    width: 8vw;
+    max-width: 100px; }
+
+#pinnacle-banner {
+  position: fixed;
+  left: 1vw;
+  bottom: 1vh;
+  z-index: 10000; }
+  #pinnacle-banner img {
+    height: 8vh;
+    max-height: 100px; }
+
+#schedule {
+  display: inline-flex;
+  height: 100%;
+  margin-right: 400px; }
+
+.schedule-day {
+  width: 85vh; }
+  @media only screen and (max-height: 575px) {
+    .schedule-day {
+      width: 100vh; } }
+  .schedule-day img {
+    width: 100%; }
+
+.bottom-day {
+  display: flex;
+  align-items: flex-end; }
+
+#blurbs {
+  display: inline-flex; }
+
+.blurb-container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 32px; }
+  @media only screen and (max-height: 575px) {
+    .blurb-container {
+      justify-content: center; } }
+
+.blurb-text {
+  display: flex;
+  flex-direction: column;
+  background-color: #1c4862;
+  border-radius: 50px;
+  padding: 32px 32px 8px 24px;
+  -webkit-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
+  @media only screen and (max-height: 575px) {
+    .blurb-text {
+      height: 80%; } }
+  .blurb-text div {
+    height: 90px; }
+    @media only screen and (max-height: 685px) {
+      .blurb-text div {
+        height: 70px; } }
+    @media only screen and (max-height: 575px) {
+      .blurb-text div {
+        height: 60px; } }
+    @media only screen and (max-height: 485px) {
+      .blurb-text div {
+        height: 48px; } }
+    .blurb-text div img {
+      height: 100%; }
+
+.bottom-blurb {
+  justify-content: flex-end; }
+  @media only screen and (max-height: 575px) {
+    .bottom-blurb {
+      justify-content: center; } }
+
+@media only screen and (max-height: 485px) {
+  .illustration {
+    display: none; } }
+
+#blurb-1 {
+  width: 400px; }
+  #blurb-1 .blurb-text {
+    height: 60%; }
+    @media only screen and (max-height: 485px) {
+      #blurb-1 .blurb-text {
+        height: 80%; } }
+  #blurb-1 .illustration {
+    transform: rotate(-60deg) translate(17%, -5%);
+    height: 60%; }
+    @media only screen and (max-height: 685px) {
+      #blurb-1 .illustration {
+        transform: rotate(-60deg) translate(7%, -5%);
+        height: 50%; } }
+
+#post {
+  height: 110vh;
+  margin-top: -10vh; }
+
+#blurb-2 {
+  width: 425px; }
+
+#blurb-3 {
+  width: 475px; }
+  @media only screen and (max-height: 833px) {
+    #blurb-3 {
+      width: 575px; } }
+  @media only screen and (max-height: 685px) {
+    #blurb-3 {
+      width: 525px; } }
+  #blurb-3 .blurb-text div {
+    height: 135px; }
+    @media only screen and (max-height: 685px) {
+      #blurb-3 .blurb-text div {
+        height: 105px; } }
+    @media only screen and (max-height: 575px) {
+      #blurb-3 .blurb-text div {
+        height: 90px; } }
+    @media only screen and (max-height: 485px) {
+      #blurb-3 .blurb-text div {
+        height: 72px; } }
+  #blurb-3 .illustration {
+    width: 100%;
+    height: calc(100% - 460px); }
+    @media only screen and (max-height: 833px) {
+      #blurb-3 .illustration {
+        height: calc(100% - 400px); } }
+    @media only screen and (max-height: 685px) {
+      #blurb-3 .illustration {
+        height: calc(100% - 340px); } }
+    @media only screen and (max-height: 575px) {
+      #blurb-3 .illustration {
+        height: calc(100% - 290px); } }
+    #blurb-3 .illustration img {
+      height: 100%;
+      transform: translateY(2%);
+      display: block;
+      margin: 0 auto; }
+
+#blurb-4 {
+  width: 425px; }
+  #blurb-4 .blurb-text div {
+    height: 45px; }
+    @media only screen and (max-height: 685px) {
+      #blurb-4 .blurb-text div {
+        height: 35px; } }
+    @media only screen and (max-height: 575px) {
+      #blurb-4 .blurb-text div {
+        height: 30px; } }
+    @media only screen and (max-height: 485px) {
+      #blurb-4 .blurb-text div {
+        height: 24px; } }
+  #blurb-4 .illustration {
+    height: 70%; }
+    @media only screen and (max-height: 833px) {
+      #blurb-4 .illustration {
+        height: calc(100% - 230px); } }
+    @media only screen and (max-height: 685px) {
+      #blurb-4 .illustration {
+        height: calc(100% - 190px); } }
+    @media only screen and (max-height: 575px) {
+      #blurb-4 .illustration {
+        height: calc(100% - 170px); } }
+    #blurb-4 .illustration img {
+      height: 90%;
+      display: block;
+      margin: 0 auto; }
+
+#faq {
+  display: flex;
+  flex-direction: column;
+  margin: 0 400px;
+  background-color: #0a2135;
+  border-radius: 50px;
+  -webkit-box-shadow: 3px 3px 3px 3px black;
+  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+  -moz-box-shadow: 3px 3px 3px 3px black;
+  /* Firefox 3.5 - 3.6 */
+  box-shadow: 3px 3px 3px 3px black;
+  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+  padding: 16px 32px; }
+  @media only screen and (max-height: 350px) {
+    #faq {
+      display: none; } }
+
+#faq-header {
+  height: 100px;
+  width: 100%; }
+  @media only screen and (max-height: 575px) {
+    #faq-header {
+      height: 75px; } }
+  @media only screen and (max-height: 485px) {
+    #faq-header {
+      height: 60px; } }
+  #faq-header img {
+    display: block;
+    position: sticky;
+    left: calc(50% - 116px); }
+    @media only screen and (max-height: 575px) {
+      #faq-header img {
+        left: calc(50% - 88px); } }
+    @media only screen and (max-height: 575px) {
+      #faq-header img {
+        left: calc(50% - 70px); } }
+
+#questions-container {
+  height: calc(100% - 132px);
+  width: 1600px;
+  margin-top: 32px;
+  column-count: 4;
+  column-gap: 2%; }
+  @media only screen and (max-height: 833px) {
+    #questions-container {
+      width: 2200px;
+      column-count: 5; } }
+  @media only screen and (max-height: 575px) {
+    #questions-container {
+      height: calc(100% - 110px); } }
+  @media only screen and (max-height: 485px) {
+    #questions-container {
+      width: 2600px;
+      height: calc(100% - 94px);
+      margin-top: 16px; } }
+  #questions-container p {
+    text-align: justify;
+    margin: 0; }
+  #questions-container .answer {
+    margin-bottom: 16px;
+    font-size: 16px; }
+    @media only screen and (max-height: 685px) {
+      #questions-container .answer {
+        font-size: 14px; } }
+    @media only screen and (max-height: 575px) {
+      #questions-container .answer {
+        font-size: 12px; } }
+    @media only screen and (max-height: 575px) {
+      #questions-container .answer {
+        font-size: 11px;
+        line-height: 12px; } }
+    @media only screen and (max-height: 485px) {
+      #questions-container .answer {
+        font-size: 3vh;
+        line-height: 3.5vh; } }
+
+.question {
+  color: #a6f4e4;
+  line-height: 20px; }
+  @media only screen and (max-height: 685px) {
+    .question {
+      line-height: 16px; } }
+  @media only screen and (max-height: 575px) {
+    .question {
+      line-height: 14px; } }
+  @media only screen and (max-height: 485px) {
+    .question {
+      line-height: 4vh; } }
+
+#sponsors {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  #sponsors div {
+    height: 30%;
+    width: 100%; }
+  #sponsors img {
+    height: 70%;
+    display: block;
+    margin: auto; }
