@@ -16,6 +16,7 @@ function imageHoverOut(element) {
 
 var pos=0;
 $(window).bind('mousewheel DOMMouseScroll', function(event){
+    console.log("HI")
     if (event.originalEvent.wheelDelta <= 0 && event.originalEvent.detail >= 0) {              
         pos=pos+50;         
     }
@@ -26,3 +27,12 @@ $(window).bind('mousewheel DOMMouseScroll', function(event){
     }
     $('#superContentContainer').scrollLeft( pos)
 });
+
+window.onload = (event) => {
+    const titleRect = document.querySelector('#hacktxtitle').getBoundingClientRect();
+    const contentContainer = document.querySelector('#superContentContainer');
+    const contentContainerRight = contentContainer.getBoundingClientRect().right
+    if (titleRect.right > contentContainerRight) {
+        contentContainer.scrollLeft = titleRect.right - contentContainerRight + 100;
+    }
+};
