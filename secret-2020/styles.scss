@@ -82,6 +82,7 @@ body {
     height: 100vh;
     transform: translateZ(-3px) scale(4);
     transform-origin: $translateOrigin $translateOrigin;
+    width: calc(25vw + 109vh + 1350px);
 }
 
 #contentContainer {

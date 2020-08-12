@@ -45,7 +45,8 @@ body {
 #parallex {
   height: 100vh;
   transform: translateZ(-3px) scale(4);
-  transform-origin: 100px 100px; }
+  transform-origin: 100px 100px;
+  width: calc(25vw + 109vh + 1350px); }
 
 #contentContainer {
   display: inline-flex;
