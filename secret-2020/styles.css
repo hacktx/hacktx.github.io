@@ -46,7 +46,8 @@ body {
   height: 100vh;
   transform: translateZ(-3px) scale(4);
   transform-origin: 100px 100px;
-  width: calc(25vw + 109vh + 1350px); }
+  width: calc(25vw + 109vh + 1350px);
+  display: inline-flex; }
 
 #contentContainer {
   display: inline-flex;
@@ -91,6 +92,7 @@ p {
 
 #event-title {
   width: 37%;
+  max-width: 100vw;
   padding-top: 15vh;
   height: 85vh; }
   #event-title img {
