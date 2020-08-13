@@ -18,10 +18,22 @@ body {
 
 .stretch-bg {
   height: 100vh;
-  width: calc(100vw + 438vh + 5400px);
+  width: calc(650vh + 5000px);
   position: absolute;
   top: 0;
   left: 0; }
+  @media only screen and (max-height: 833px) {
+    .stretch-bg {
+      width: calc(650vh + 5600px); } }
+  @media only screen and (max-height: 575px) {
+    .stretch-bg {
+      width: calc(650vh + 5200px); } }
+  @media only screen and (max-height: 485px) {
+    .stretch-bg {
+      width: calc(650vh + 5600px); } }
+  @media only screen and (max-height: 350px) {
+    .stretch-bg {
+      width: calc(650vh + 2500px); } }
 
 #superContentContainer {
   width: 100vw;
@@ -46,8 +58,20 @@ body {
   height: 100vh;
   transform: translateZ(-3px) scale(4);
   transform-origin: 100px 100px;
-  width: calc(25vw + 109vh + 1350px);
+  width: calc(163vh + 1350px);
   display: inline-flex; }
+  @media only screen and (max-height: 833px) {
+    #parallex {
+      width: calc(163vh + 1400px); } }
+  @media only screen and (max-height: 575px) {
+    #parallex {
+      width: calc(163vh + 1300px); } }
+  @media only screen and (max-height: 485px) {
+    #parallex {
+      width: calc(650vh + 1400px); } }
+  @media only screen and (max-height: 350px) {
+    #parallex {
+      width: calc(650vh + 625px); } }
 
 #contentContainer {
   display: inline-flex;
@@ -131,6 +155,9 @@ p {
   display: inline-flex;
   height: 100%;
   margin-right: 400px; }
+  @media only screen and (max-height: 575px) {
+    #schedule {
+      margin-right: 200px; } }
 
 .schedule-day {
   width: 85vh; }
@@ -296,6 +323,9 @@ p {
   box-shadow: 3px 3px 3px 3px black;
   /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
   padding: 16px 32px; }
+  @media only screen and (max-height: 575px) {
+    #faq {
+      margin: 0 200px; } }
   @media only screen and (max-height: 350px) {
     #faq {
       display: none; } }

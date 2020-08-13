@@ -51,7 +51,11 @@ body {
 
 .stretch-bg {
     height: 100vh;
-    width: calc(100vw + 438vh + 5400px);
+    width: calc(650vh + 5000px);
+    @include breakpoint(large) {width: calc(650vh + 5600px);}
+    @include breakpoint(small) {width: calc(650vh + 5200px);}
+    @include breakpoint(xsmall) {width: calc(650vh + 5600px);};
+    @include breakpoint(xxsmall) {width: calc(650vh + 2500px);};
     position: absolute;
     top: 0;
     left: 0;
@@ -82,7 +86,11 @@ body {
     height: 100vh;
     transform: translateZ(-3px) scale(4);
     transform-origin: $translateOrigin $translateOrigin;
-    width: calc(25vw + 109vh + 1350px);
+    width: calc(163vh + 1350px);
+    @include breakpoint(large) {width: calc(163vh + 1400px);}
+    @include breakpoint(small) {width: calc(163vh + 1300px);}
+    @include breakpoint(xsmall) {width: calc(650vh + 1400px);};
+    @include breakpoint(xxsmall) {width: calc(650vh + 625px);};
     display: inline-flex;
 }
 
@@ -185,6 +193,7 @@ p {
     display: inline-flex;
     height: 100%;
     margin-right: 400px;
+    @include breakpoint(small) {margin-right: 200px;}
 }
 
 .schedule-day {
@@ -323,6 +332,7 @@ p {
     display: flex;
     flex-direction: column;
     margin: 0 400px;
+    @include breakpoint(small) {margin: 0 200px;};
     background-color: #0a2135;
     border-radius: 50px;
     @include shadow(1);
