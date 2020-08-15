@@ -17,23 +17,17 @@ body {
 
 .stretch-bg {
   height: 100vh;
-  width: calc(660vh + 4200px);
+  width: calc(660vh + 4400px);
   max-width: calc(440vh + 6400px);
   position: absolute;
   top: 0;
   left: 0; }
-  @media only screen and (max-height: 833px) {
-    .stretch-bg {
-      width: calc(650vh + 3800px); } }
   @media only screen and (max-height: 575px) {
     .stretch-bg {
-      width: calc(650vh + 5200px); } }
-  @media only screen and (max-height: 485px) {
-    .stretch-bg {
-      width: calc(650vh + 5600px); } }
+      width: calc(660vh + 4000px); } }
   @media only screen and (max-height: 350px) {
     .stretch-bg {
-      width: calc(650vh + 2500px); } }
+      width: calc(660vh + 4000px); } }
 
 #superContentContainer {
   width: 100vw;
@@ -60,16 +54,6 @@ body {
   transform-origin: 0px 0px;
   display: inline-flex;
   overflow: hidden; }
-
-#parallax1, #parallax2 {
-  background: url("assets/parallax(FILLER)1.png");
-  background-size: cover;
-  width: 376.317vh;
-  height: 100vh; }
-
-#parallax2 {
-  background: url("assets/parallax(FILLER)2.png");
-  background-size: cover; }
 
 #contentContainer {
   display: inline-flex;
@@ -139,8 +123,9 @@ p {
   left: 1vw;
   top: 1vh; }
   #freetail-logo img {
-    width: 8vw;
-    max-width: 100px; }
+    height: 20vh;
+    max-height: 120px;
+    width: auto; }
 
 #pinnacle-banner {
   position: fixed;
@@ -148,8 +133,8 @@ p {
   bottom: 1vh;
   z-index: 10000; }
   #pinnacle-banner img {
-    height: 8vh;
-    max-height: 100px; }
+    height: 60px;
+    width: auto; }
 
 #schedule {
   display: inline-flex;
@@ -308,9 +293,6 @@ p {
   @media only screen and (max-height: 575px) {
     #faq {
       margin: 0 200px; } }
-  @media only screen and (max-height: 350px) {
-    #faq {
-      display: none; } }
 
 #faq-header {
   height: 100px;
@@ -329,6 +311,10 @@ p {
   height: calc(100% - 132px);
   margin-top: 32px;
   display: flex; }
+  @media only screen and (max-height: 485px) {
+    #questions-container {
+      height: calc(100% - 91px);
+      margin-top: 16px; } }
   #questions-container p {
     text-align: justify;
     margin: 0;
@@ -338,20 +324,6 @@ p {
   #questions-container .answer {
     display: none;
     margin-bottom: 16px; }
-    @media only screen and (max-height: 685px) {
-      #questions-container .answer {
-        font-size: 14px; } }
-    @media only screen and (max-height: 575px) {
-      #questions-container .answer {
-        font-size: 12px; } }
-    @media only screen and (max-height: 575px) {
-      #questions-container .answer {
-        font-size: 11px;
-        line-height: 12px; } }
-    @media only screen and (max-height: 485px) {
-      #questions-container .answer {
-        font-size: 3vh;
-        line-height: 3.5vh; } }
   #questions-container .last-answer {
     margin-bottom: 0; }
   #questions-container .question {
@@ -364,10 +336,13 @@ p {
         line-height: 16px; } }
     @media only screen and (max-height: 575px) {
       #questions-container .question {
-        line-height: 14px; } }
+        font-size: 18px;
+        line-height: 20px; } }
     @media only screen and (max-height: 485px) {
       #questions-container .question {
-        line-height: 4vh; } }
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 3vh; } }
     #questions-container .question:hover {
       transform: scale(1.05); }
 

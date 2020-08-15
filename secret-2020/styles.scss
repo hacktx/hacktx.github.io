@@ -51,12 +51,10 @@ body {
 
 .stretch-bg {
     height: 100vh;
-    width: calc(660vh + 4200px);
+    width: calc(660vh + 4400px);
     max-width: calc(440vh + 6400px);
-    @include breakpoint(large) {width: calc(650vh + 3800px);}
-    @include breakpoint(small) {width: calc(650vh + 5200px);}
-    @include breakpoint(xsmall) {width: calc(650vh + 5600px);};
-    @include breakpoint(xxsmall) {width: calc(650vh + 2500px);};
+    @include breakpoint(small) {width: calc(660vh + 4000px);}
+    @include breakpoint(xxsmall) {width: calc(660vh + 4000px);};
     position: absolute;
     top: 0;
     left: 0;
@@ -96,18 +94,6 @@ body {
     // background-size: cover;
     display: inline-flex;
     overflow: hidden;
-}
-
-#parallax1, #parallax2 {
-    background: url('assets/parallax\(FILLER\)1.png');
-    background-size: cover;
-    width: 376.317vh;
-    height: 100vh;
-}
-
-#parallax2 {
-    background: url('assets/parallax\(FILLER\)2.png');
-    background-size: cover;
 }
 
 #contentContainer {
@@ -187,8 +173,9 @@ p {
 ///////////// LOGOS
 #freetail-logo {
     img {
-        width: 8vw;
-        max-width: 100px;
+        height: 20vh;
+        max-height: 120px;
+        width: auto;
     }
     position: absolute;
     left: 1vw;
@@ -201,8 +188,8 @@ p {
     bottom: 1vh;
     z-index: 10000;
     img {
-        height: 8vh;
-        max-height: 100px;
+        height: 60px;
+        width: auto;
     }
 }
 
@@ -349,7 +336,6 @@ p {
     border-radius: 50px;
     @include shadow(1);
     padding: 16px 32px;
-    @include breakpoint(xxsmall) {display: none;}
 }
 
 #faq-header {
@@ -366,6 +352,10 @@ p {
 #questions-container {
     height: calc(100% - 132px);
     margin-top: 32px;
+    @include breakpoint(xsmall) {
+        height: calc(100% - 91px);
+        margin-top: 16px;
+    }
     display: flex;
     p {
         text-align: justify;
@@ -378,10 +368,6 @@ p {
     .answer {
         display: none;
         margin-bottom: 16px;
-        @include breakpoint(medium) {font-size: 14px;};
-        @include breakpoint(small) {font-size: 12px;};
-        @include breakpoint(small) {font-size: 11px; line-height: 12px;};
-        @include breakpoint(xsmall) {font-size: 3vh; line-height: 3.5vh;};
     }
     
     .last-answer {
@@ -394,8 +380,8 @@ p {
         margin-top: 5vh;
         font-size: 20px;
         @include breakpoint(medium) {line-height: 16px;};
-        @include breakpoint(small) {line-height: 14px;};
-        @include breakpoint(xsmall) {line-height: 4vh;};
+        @include breakpoint(small) {font-size: 18px; line-height: 20px;};
+        @include breakpoint(xsmall) {font-size: 16px; line-height: 16px; margin-top: 3vh;};
         &:hover {
             transform: scale(1.05);
         }
