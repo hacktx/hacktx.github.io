@@ -1,5 +1,5 @@
 $color-stops: #0b2135, #0f3857;
-$translateOrigin: 100px;
+$translateOrigin: 0px 0px;
 $largebp: 832px;
 $mediumbp: 685px;
 $smallbp: 575px;
@@ -38,7 +38,6 @@ html, body {
     width: 100vw;
     overflow-x: auto;
     overflow-y: hidden;
-    
 }
 
 body {
@@ -51,8 +50,8 @@ body {
 
 .stretch-bg {
     height: 100vh;
-    width: calc(650vh + 5000px);
-    @include breakpoint(large) {width: calc(650vh + 5600px);}
+    width: calc(650vh + 3200px);
+    @include breakpoint(large) {width: calc(650vh + 3800px);}
     @include breakpoint(small) {width: calc(650vh + 5200px);}
     @include breakpoint(xsmall) {width: calc(650vh + 5600px);};
     @include breakpoint(xxsmall) {width: calc(650vh + 2500px);};
@@ -65,7 +64,7 @@ body {
     width: 100vw;
     height: 100vh;
     perspective: 1px;
-    perspective-origin: $translateOrigin $translateOrigin;
+    perspective-origin: $translateOrigin;
     overflow-x: auto;
     overflow-y: hidden;
     display: flex;
@@ -85,13 +84,20 @@ body {
 #parallex {
     height: 100vh;
     transform: translateZ(-3px) scale(4);
-    transform-origin: $translateOrigin $translateOrigin;
+    transform-origin: $translateOrigin;
     width: calc(163vh + 1350px);
     @include breakpoint(large) {width: calc(163vh + 1400px);}
     @include breakpoint(small) {width: calc(163vh + 1300px);}
     @include breakpoint(xsmall) {width: calc(650vh + 1400px);};
     @include breakpoint(xxsmall) {width: calc(650vh + 625px);};
+    // background: url('assets/parallax\(FILLER\).png');
+	// background: url('assets/parallax\(FILLER\).png');
+  	// background: url('assets/parallax\(FILLER\).png');
+  	// background: url('assets/parallax\(FILLER\).png');
+    // background: url('assets/parallax\(FILLER\).png');
+    // background-size: cover;
     display: inline-flex;
+    overflow: hidden;
 }
 
 #contentContainer {
@@ -124,7 +130,9 @@ p {
 
 #landing {
     height: 100vh;
+    max-height: 1000px;
     width: 220vh;
+    max-width: 2200px;
     display: inline-flex;
     div {
         height: 100%;
@@ -224,10 +232,8 @@ p {
 
 .blurb-text {
     display: flex;
+    flex: 0 1 auto;
     flex-direction: column;
-    @include breakpoint(small) {
-        height: 80%;
-    };
     background-color: #1c4862;
     border-radius: 50px;
     padding: 32px 32px 8px 24px;
@@ -250,27 +256,27 @@ p {
 
 .illustration {
     @include breakpoint(xsmall) {display: none;}
+    flex: 1 1 auto;
 }
 
 #blurb-1 {
     width: 400px;
-    .blurb-text {
-        height: 60%;
-        @include breakpoint(xsmall) {height: 80%;}
-    }
     .illustration {
-        transform: rotate(-60deg) translate(17%, -5%);
-        height: 60%;
-        @include breakpoint(medium) {
-            transform: rotate(-60deg) translate(7%, -5%);
-            height: 50%;
-        }
+        background-image: url('assets/illustration_2.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
     }
 }
 
 #post {
     height: 110vh;
+    width: 42.7vh;
     margin-top: -10vh;
+    background-image: url('assets/WantedPosterFINAL.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
 }
 
 #blurb-2 {
@@ -290,17 +296,11 @@ p {
         }
     }
     .illustration {
-        width: 100%;
-        height: calc(100% - 460px);
-        @include breakpoint(large) {height: calc(100% - 400px);}
-        @include breakpoint(medium) {height: calc(100% - 340px);}
-        @include breakpoint(small) {height: calc(100% - 290px);}
-        img {
-            height: 100%;
-            transform: translateY(2%);
-            display: block;
-            margin: 0 auto;
-        }
+        background-image: url('assets/illustration_3.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
+        transform: translateY(5vh);
     }
 }
 
@@ -315,15 +315,10 @@ p {
         }
     }
     .illustration {
-        height: 70%;
-        @include breakpoint(large) {height: calc(100% - 230px);};
-        @include breakpoint(medium) {height: calc(100% - 190px);};
-        @include breakpoint(small) {height: calc(100% - 170px);};
-        img {
-            height: 90%;
-            display: block;
-            margin: 0 auto;
-        }
+        background-image: url('assets/illustration_1.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: contain;
     }
 }
 
@@ -356,33 +351,47 @@ p {
 
 #questions-container {
     height: calc(100% - 132px);
-    width: 1600px;
     margin-top: 32px;
-    column-count: 4;
-    column-gap: 2%;
-    @include breakpoint(large) {
-        width: 2200px;
-        column-count: 5;
-    };
-    @include breakpoint(small) {
-        height: calc(100% - 110px);
-    }
-    @include breakpoint(xsmall) {
-        width: 2600px;
-        height: calc(100% - 94px);
-        margin-top: 16px;
-    }
+    column-width: 400px;
+    column-fill: auto;
+    // display: flex;
+    // flex-direction: column;
+    // align-items: flex-start;
+    // flex-wrap: wrap;
+    // column-count: 4;
+    // column-gap: 2%;
+    // @include breakpoint(large) {
+    //     width: 2200px;
+    //     column-count: 5;
+    // };
+    // @include breakpoint(small) {
+    //     height: calc(100% - 110px);
+    // }
+    // @include breakpoint(xsmall) {
+    //     width: 2600px;
+    //     height: calc(100% - 94px);
+    //     margin-top: 16px;
+    // }
     p {
         text-align: justify;
         margin: 0;
+        width: 400px;
+        margin: 8px 16px;
     }
+
     .answer {
+        display: none;
+        overflow: hidden    ;
         margin-bottom: 16px;
         font-size: 16px;
         @include breakpoint(medium) {font-size: 14px;};
         @include breakpoint(small) {font-size: 12px;};
         @include breakpoint(small) {font-size: 11px; line-height: 12px;};
         @include breakpoint(xsmall) {font-size: 3vh; line-height: 3.5vh;};
+    }
+    
+    .last-answer {
+        margin-bottom: 0;
     }
 }
 
@@ -392,7 +401,6 @@ p {
     @include breakpoint(medium) {line-height: 16px;};
     @include breakpoint(small) {line-height: 14px;};
     @include breakpoint(xsmall) {line-height: 4vh;};
-
 }
 
 

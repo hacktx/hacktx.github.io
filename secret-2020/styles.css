@@ -18,13 +18,13 @@ body {
 
 .stretch-bg {
   height: 100vh;
-  width: calc(650vh + 5000px);
+  width: calc(650vh + 3200px);
   position: absolute;
   top: 0;
   left: 0; }
   @media only screen and (max-height: 833px) {
     .stretch-bg {
-      width: calc(650vh + 5600px); } }
+      width: calc(650vh + 3800px); } }
   @media only screen and (max-height: 575px) {
     .stretch-bg {
       width: calc(650vh + 5200px); } }
@@ -39,7 +39,7 @@ body {
   width: 100vw;
   height: 100vh;
   perspective: 1px;
-  perspective-origin: 100px 100px;
+  perspective-origin: 0px 0px;
   overflow-x: auto;
   overflow-y: hidden;
   display: flex;
@@ -57,9 +57,10 @@ body {
 #parallex {
   height: 100vh;
   transform: translateZ(-3px) scale(4);
-  transform-origin: 100px 100px;
+  transform-origin: 0px 0px;
   width: calc(163vh + 1350px);
-  display: inline-flex; }
+  display: inline-flex;
+  overflow: hidden; }
   @media only screen and (max-height: 833px) {
     #parallex {
       width: calc(163vh + 1400px); } }
@@ -101,7 +102,9 @@ p {
 
 #landing {
   height: 100vh;
+  max-height: 1000px;
   width: 220vh;
+  max-width: 2200px;
   display: inline-flex; }
   #landing div {
     height: 100%; }
@@ -185,6 +188,7 @@ p {
 
 .blurb-text {
   display: flex;
+  flex: 0 1 auto;
   flex-direction: column;
   background-color: #1c4862;
   border-radius: 50px;
@@ -195,9 +199,6 @@ p {
   /* Firefox 3.5 - 3.6 */
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
   /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
-  @media only screen and (max-height: 575px) {
-    .blurb-text {
-      height: 80%; } }
   .blurb-text div {
     height: 90px; }
     @media only screen and (max-height: 685px) {
@@ -218,28 +219,28 @@ p {
     .bottom-blurb {
       justify-content: center; } }
 
-@media only screen and (max-height: 485px) {
-  .illustration {
-    display: none; } }
+.illustration {
+  flex: 1 1 auto; }
+  @media only screen and (max-height: 485px) {
+    .illustration {
+      display: none; } }
 
 #blurb-1 {
   width: 400px; }
-  #blurb-1 .blurb-text {
-    height: 60%; }
-    @media only screen and (max-height: 485px) {
-      #blurb-1 .blurb-text {
-        height: 80%; } }
   #blurb-1 .illustration {
-    transform: rotate(-60deg) translate(17%, -5%);
-    height: 60%; }
-    @media only screen and (max-height: 685px) {
-      #blurb-1 .illustration {
-        transform: rotate(-60deg) translate(7%, -5%);
-        height: 50%; } }
+    background-image: url("assets/illustration_2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
 
 #post {
   height: 110vh;
-  margin-top: -10vh; }
+  width: 42.7vh;
+  margin-top: -10vh;
+  background-image: url("assets/WantedPosterFINAL.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
 
 #blurb-2 {
   width: 425px; }
@@ -264,22 +265,11 @@ p {
       #blurb-3 .blurb-text div {
         height: 72px; } }
   #blurb-3 .illustration {
-    width: 100%;
-    height: calc(100% - 460px); }
-    @media only screen and (max-height: 833px) {
-      #blurb-3 .illustration {
-        height: calc(100% - 400px); } }
-    @media only screen and (max-height: 685px) {
-      #blurb-3 .illustration {
-        height: calc(100% - 340px); } }
-    @media only screen and (max-height: 575px) {
-      #blurb-3 .illustration {
-        height: calc(100% - 290px); } }
-    #blurb-3 .illustration img {
-      height: 100%;
-      transform: translateY(2%);
-      display: block;
-      margin: 0 auto; }
+    background-image: url("assets/illustration_3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: translateY(5vh); }
 
 #blurb-4 {
   width: 425px; }
@@ -295,20 +285,10 @@ p {
       #blurb-4 .blurb-text div {
         height: 24px; } }
   #blurb-4 .illustration {
-    height: 70%; }
-    @media only screen and (max-height: 833px) {
-      #blurb-4 .illustration {
-        height: calc(100% - 230px); } }
-    @media only screen and (max-height: 685px) {
-      #blurb-4 .illustration {
-        height: calc(100% - 190px); } }
-    @media only screen and (max-height: 575px) {
-      #blurb-4 .illustration {
-        height: calc(100% - 170px); } }
-    #blurb-4 .illustration img {
-      height: 90%;
-      display: block;
-      margin: 0 auto; }
+    background-image: url("assets/illustration_1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
 
 #faq {
   display: flex;
@@ -352,26 +332,17 @@ p {
 
 #questions-container {
   height: calc(100% - 132px);
-  width: 1600px;
   margin-top: 32px;
-  column-count: 4;
-  column-gap: 2%; }
-  @media only screen and (max-height: 833px) {
-    #questions-container {
-      width: 2200px;
-      column-count: 5; } }
-  @media only screen and (max-height: 575px) {
-    #questions-container {
-      height: calc(100% - 110px); } }
-  @media only screen and (max-height: 485px) {
-    #questions-container {
-      width: 2600px;
-      height: calc(100% - 94px);
-      margin-top: 16px; } }
+  column-width: 400px;
+  column-fill: auto; }
   #questions-container p {
     text-align: justify;
-    margin: 0; }
+    margin: 0;
+    width: 400px;
+    margin: 8px 16px; }
   #questions-container .answer {
+    display: none;
+    overflow: hidden;
     margin-bottom: 16px;
     font-size: 16px; }
     @media only screen and (max-height: 685px) {
@@ -388,6 +359,8 @@ p {
       #questions-container .answer {
         font-size: 3vh;
         line-height: 3.5vh; } }
+  #questions-container .last-answer {
+    margin-bottom: 0; }
 
 .question {
   color: #a6f4e4;
