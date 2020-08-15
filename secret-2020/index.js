@@ -1,17 +1,19 @@
 var contentContainer;   // #superContentContainer
 var questionContainer;  // #question-container
+var oldHeight;          // window height
+
 
 // scroll horizontally on vertical scroll
-function replaceVerticalScrollByHorizontal(event) {
-    if (Math.abs(event.deltaY) > 2) {
-      // manually scroll horizonally instead
-        contentContainer.scroll(contentContainer.scrollLeft + event.deltaY , 0);
-        // prevent vertical scroll
-    }
-    event.preventDefault();
-    return;
-}
-window.addEventListener('wheel', replaceVerticalScrollByHorizontal, {passive: false});
+// function replaceVerticalScrollByHorizontal(event) {
+//     if (Math.abs(event.deltaY) > 2) {
+//       // manually scroll horizonally instead
+//         contentContainer.scroll(contentContainer.scrollLeft + event.deltaY , 0);
+//         // prevent vertical scroll
+//     }
+//     event.preventDefault();
+//     return;
+// }
+// window.addEventListener('wheel', replaceVerticalScrollByHorizontal, {passive: false});
 
 document.addEventListener("DOMContentLoaded", function(event) {
     // move hack tx title into view if it is cut off
@@ -35,11 +37,19 @@ document.addEventListener("DOMContentLoaded", function(event) {
           } else {
             content.style.display = "block";
           }
-          questionContainer.style.width = 'auto';
-          questionContainer.style.width = questionContainer.scrollWidth + "px";
+          // questionContainer.style.width = 'auto';
+          // questionContainer.style.width = questionContainer.scrollWidth + "px";
         });
       }
 });
+
+// window.addEventListener('resize', function() {
+//   if (window.innerHeight == oldHeight) {
+//     return;
+//   }
+//   questionContainer.style.width = 'auto';
+//   questionContainer.style.width = questionContainer.scrollWidth + "px";
+// })
 
 function imageHover(element) {
     var currSrc = element.src; 

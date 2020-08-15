@@ -1,4 +1,6 @@
 $color-stops: #0b2135, #0f3857;
+$whiteText: #f6f4d9;
+$blueText: #a6f4e4;
 $translateOrigin: 0px 0px;
 $largebp: 832px;
 $mediumbp: 685px;
@@ -45,12 +47,12 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    cursor: grab;
 }
 
 .stretch-bg {
     height: 100vh;
-    width: calc(650vh + 3200px);
+    width: calc(660vh + 4200px);
+    max-width: calc(440vh + 6400px);
     @include breakpoint(large) {width: calc(650vh + 3800px);}
     @include breakpoint(small) {width: calc(650vh + 5200px);}
     @include breakpoint(xsmall) {width: calc(650vh + 5600px);};
@@ -85,19 +87,27 @@ body {
     height: 100vh;
     transform: translateZ(-3px) scale(4);
     transform-origin: $translateOrigin;
-    width: calc(163vh + 1350px);
-    @include breakpoint(large) {width: calc(163vh + 1400px);}
-    @include breakpoint(small) {width: calc(163vh + 1300px);}
-    @include breakpoint(xsmall) {width: calc(650vh + 1400px);};
-    @include breakpoint(xxsmall) {width: calc(650vh + 625px);};
-    // background: url('assets/parallax\(FILLER\).png');
-	// background: url('assets/parallax\(FILLER\).png');
-  	// background: url('assets/parallax\(FILLER\).png');
-  	// background: url('assets/parallax\(FILLER\).png');
+    // width: calc(165vh + 1050px);
+    // @include breakpoint(large) {width: calc(165vh + 1050px);}
+    // @include breakpoint(small) {width: calc(163vh + 1300px);}
+    // @include breakpoint(xsmall) {width: calc(650vh + 1400px);};
+    // @include breakpoint(xxsmall) {width: calc(650vh + 625px);};
     // background: url('assets/parallax\(FILLER\).png');
     // background-size: cover;
     display: inline-flex;
     overflow: hidden;
+}
+
+#parallax1, #parallax2 {
+    background: url('assets/parallax\(FILLER\)1.png');
+    background-size: cover;
+    width: 376.317vh;
+    height: 100vh;
+}
+
+#parallax2 {
+    background: url('assets/parallax\(FILLER\)2.png');
+    background-size: cover;
 }
 
 #contentContainer {
@@ -123,7 +133,7 @@ p {
     @include breakpoint(xxsmall) {
         font-size: 3.5vh;
     }
-    color: #f6f4d9;
+    color: $whiteText;
 }
 
 /////////// LANDING SECTION
@@ -304,6 +314,13 @@ p {
     }
 }
 
+.link {
+    color: $whiteText;
+    &:hover {
+        color: $blueText;
+    }
+}
+
 #blurb-4 {
     width: 425px;
     .blurb-text {
@@ -342,48 +359,25 @@ p {
     width: 100%;
     img {
         display: block;
-        position: sticky;
-        left: calc(50% - 116px);
-        @include breakpoint(small) {left: calc(50% - 88px);};
-        @include breakpoint(small) {left: calc(50% - 70px);};
+        margin: 0 auto;
     }
 }
 
 #questions-container {
     height: calc(100% - 132px);
     margin-top: 32px;
-    column-width: 400px;
-    column-fill: auto;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: flex-start;
-    // flex-wrap: wrap;
-    // column-count: 4;
-    // column-gap: 2%;
-    // @include breakpoint(large) {
-    //     width: 2200px;
-    //     column-count: 5;
-    // };
-    // @include breakpoint(small) {
-    //     height: calc(100% - 110px);
-    // }
-    // @include breakpoint(xsmall) {
-    //     width: 2600px;
-    //     height: calc(100% - 94px);
-    //     margin-top: 16px;
-    // }
+    display: flex;
     p {
         text-align: justify;
         margin: 0;
-        width: 400px;
+        width: 350px;
         margin: 8px 16px;
+        width: fit-content;
     }
 
     .answer {
         display: none;
-        overflow: hidden    ;
         margin-bottom: 16px;
-        font-size: 16px;
         @include breakpoint(medium) {font-size: 14px;};
         @include breakpoint(small) {font-size: 12px;};
         @include breakpoint(small) {font-size: 11px; line-height: 12px;};
@@ -393,15 +387,33 @@ p {
     .last-answer {
         margin-bottom: 0;
     }
+
+    .question {
+        color: $blueText;
+        line-height: 22px;
+        margin-top: 5vh;
+        font-size: 20px;
+        @include breakpoint(medium) {line-height: 16px;};
+        @include breakpoint(small) {line-height: 14px;};
+        @include breakpoint(xsmall) {line-height: 4vh;};
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
 }
 
-.question {
-    color: #a6f4e4;
-    line-height: 20px;
-    @include breakpoint(medium) {line-height: 16px;};
-    @include breakpoint(small) {line-height: 14px;};
-    @include breakpoint(xsmall) {line-height: 4vh;};
+.q-column {
+    width: 400px;
+    margin: 0 32px;
+    overflow-y: scroll;
 }
+
+// .right-justify {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-end;
+// }
+
 
 
 ////////// SPONSORS SECTION

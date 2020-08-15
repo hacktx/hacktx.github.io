@@ -13,12 +13,12 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-  cursor: grab; }
+  align-content: center; }
 
 .stretch-bg {
   height: 100vh;
-  width: calc(650vh + 3200px);
+  width: calc(660vh + 4200px);
+  max-width: calc(440vh + 6400px);
   position: absolute;
   top: 0;
   left: 0; }
@@ -58,21 +58,18 @@ body {
   height: 100vh;
   transform: translateZ(-3px) scale(4);
   transform-origin: 0px 0px;
-  width: calc(163vh + 1350px);
   display: inline-flex;
   overflow: hidden; }
-  @media only screen and (max-height: 833px) {
-    #parallex {
-      width: calc(163vh + 1400px); } }
-  @media only screen and (max-height: 575px) {
-    #parallex {
-      width: calc(163vh + 1300px); } }
-  @media only screen and (max-height: 485px) {
-    #parallex {
-      width: calc(650vh + 1400px); } }
-  @media only screen and (max-height: 350px) {
-    #parallex {
-      width: calc(650vh + 625px); } }
+
+#parallax1, #parallax2 {
+  background: url("assets/parallax(FILLER)1.png");
+  background-size: cover;
+  width: 376.317vh;
+  height: 100vh; }
+
+#parallax2 {
+  background: url("assets/parallax(FILLER)2.png");
+  background-size: cover; }
 
 #contentContainer {
   display: inline-flex;
@@ -271,6 +268,11 @@ p {
     background-size: contain;
     transform: translateY(5vh); }
 
+.link {
+  color: #f6f4d9; }
+  .link:hover {
+    color: #a6f4e4; }
+
 #blurb-4 {
   width: 425px; }
   #blurb-4 .blurb-text div {
@@ -321,30 +323,21 @@ p {
       height: 60px; } }
   #faq-header img {
     display: block;
-    position: sticky;
-    left: calc(50% - 116px); }
-    @media only screen and (max-height: 575px) {
-      #faq-header img {
-        left: calc(50% - 88px); } }
-    @media only screen and (max-height: 575px) {
-      #faq-header img {
-        left: calc(50% - 70px); } }
+    margin: 0 auto; }
 
 #questions-container {
   height: calc(100% - 132px);
   margin-top: 32px;
-  column-width: 400px;
-  column-fill: auto; }
+  display: flex; }
   #questions-container p {
     text-align: justify;
     margin: 0;
-    width: 400px;
-    margin: 8px 16px; }
+    width: 350px;
+    margin: 8px 16px;
+    width: fit-content; }
   #questions-container .answer {
     display: none;
-    overflow: hidden;
-    margin-bottom: 16px;
-    font-size: 16px; }
+    margin-bottom: 16px; }
     @media only screen and (max-height: 685px) {
       #questions-container .answer {
         font-size: 14px; } }
@@ -361,19 +354,27 @@ p {
         line-height: 3.5vh; } }
   #questions-container .last-answer {
     margin-bottom: 0; }
+  #questions-container .question {
+    color: #a6f4e4;
+    line-height: 22px;
+    margin-top: 5vh;
+    font-size: 20px; }
+    @media only screen and (max-height: 685px) {
+      #questions-container .question {
+        line-height: 16px; } }
+    @media only screen and (max-height: 575px) {
+      #questions-container .question {
+        line-height: 14px; } }
+    @media only screen and (max-height: 485px) {
+      #questions-container .question {
+        line-height: 4vh; } }
+    #questions-container .question:hover {
+      transform: scale(1.05); }
 
-.question {
-  color: #a6f4e4;
-  line-height: 20px; }
-  @media only screen and (max-height: 685px) {
-    .question {
-      line-height: 16px; } }
-  @media only screen and (max-height: 575px) {
-    .question {
-      line-height: 14px; } }
-  @media only screen and (max-height: 485px) {
-    .question {
-      line-height: 4vh; } }
+.q-column {
+  width: 400px;
+  margin: 0 32px;
+  overflow-y: scroll; }
 
 #sponsors {
   height: 100%;
