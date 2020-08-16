@@ -60,6 +60,9 @@ body {
     #parallex {
       transform: translateZ(-3px) scale(4);
       transform-origin: 0px 0px; } }
+  @media only screen and (max-height: 485px) {
+    #parallex {
+      display: none; } }
 
 #contentContainer {
   display: inline-flex;
@@ -95,11 +98,20 @@ p {
 
 #animation {
   width: 50%;
+  height: 46.582%;
   margin-right: 10%;
   display: flex;
-  align-items: center; }
-  #animation img {
-    width: 100%; }
+  align-items: center;
+  background-image: url("assets/spacecowboy.gif");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    #animation {
+      background-image: url("assets/spacecowboy.png"); } }
+  @media only screen and (max-height: 350px) {
+    #animation {
+      background-image: url("assets/spacecowboy.png"); } }
 
 #event-title {
   width: 37%;
@@ -148,16 +160,33 @@ p {
       margin-right: 200px; } }
 
 .schedule-day {
-  width: 85vh; }
+  width: 85vh;
+  height: 100%; }
   @media only screen and (max-height: 575px) {
     .schedule-day {
       width: 100vh; } }
-  .schedule-day img {
-    width: 100%; }
 
 .bottom-day {
   display: flex;
   align-items: flex-end; }
+
+#friday {
+  background-image: url("assets/Friday.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+#saturday {
+  background-image: url("assets/Saturday.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
+
+#sunday {
+  background-image: url("assets/Sunday.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat; }
 
 #blurbs {
   display: inline-flex; }
@@ -209,6 +238,7 @@ p {
       justify-content: center; } }
 
 .illustration {
+  display: flex;
   flex: 1 1 auto; }
   @media only screen and (max-height: 485px) {
     .illustration {
@@ -217,7 +247,6 @@ p {
 #blurb-1 {
   width: 400px; }
   #blurb-1 .illustration {
-    display: flex;
     flex-direction: column;
     justify-content: center; }
     #blurb-1 .illustration div {
@@ -289,7 +318,6 @@ p {
       #blurb-4 .blurb-text div {
         height: 20px; } }
   #blurb-4 .illustration {
-    display: flex;
     flex-direction: column;
     justify-content: center; }
     #blurb-4 .illustration div {
@@ -397,7 +425,25 @@ p {
   #sponsors div {
     height: 30%;
     width: 100%; }
-  #sponsors img {
-    height: 70%;
-    display: block;
-    margin: auto; }
+
+#gif-sponsors, #static-sponsors {
+  height: 70%;
+  margin: auto; }
+
+#gif-sponsors {
+  display: block; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    #gif-sponsors {
+      display: none; } }
+  @media only screen and (max-height: 350px) {
+    #gif-sponsors {
+      display: none; } }
+
+#static-sponsors {
+  display: none; }
+  @media only screen and (min-width: 320px) and (max-width: 480px) {
+    #static-sponsors {
+      display: block; } }
+  @media only screen and (max-height: 350px) {
+    #static-sponsors {
+      display: block; } }

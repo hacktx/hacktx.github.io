@@ -25,6 +25,10 @@ $minHeight: 270px;
 		@media only screen and (max-height: $xsmallbp) {@content; }
     } @else if $media == xxsmall {
 		@media only screen and (max-height: $xxsmallbp) {@content; }
+    } @else if $media == mobile {
+        @media only screen and (min-width: 320px) and (max-width: 480px)
+             {@content;}
+        @media only screen and (max-height: $xxsmallbp) {@content; }
     }
 }
 
@@ -36,11 +40,17 @@ $minHeight: 270px;
     }
 }
 
-
 @mixin shadow($alpha) {
     -webkit-box-shadow: 3px 3px 3px 3px rgba(0,0,0, $alpha);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow:    3px 3px 3px 3px rgba(0,0,0,$alpha);  /* Firefox 3.5 - 3.6 */
     box-shadow:         3px 3px 3px 3px rgba(0,0,0,$alpha);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ 
+}
+
+@mixin background($url) {
+    background-image: url($url);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 html, body {
@@ -107,6 +117,7 @@ body {
         transform: translateZ(-3px) scale(4);
         transform-origin: $translateOrigin;
     }
+    @include breakpoint(xsmall) {display: none;};
 }
 
 
@@ -151,12 +162,12 @@ p {
 
 #animation {
     width: 50%;
+    height: 46.582%;
     margin-right: 10%;
     display: flex;
     align-items: center;
-    img {
-        width: 100%;
-    }
+    @include background('assets/spacecowboy.gif');
+    @include breakpoint(mobile) {background-image: url('assets/spacecowboy.png');};
 }
 
 #event-title {
@@ -217,16 +228,20 @@ p {
 
 .schedule-day {
     width: 85vh;
+    height: 100%;
     @include breakpoint(small) {width: 100vh;};
-    img {
-        width: 100%;
-    }
 }
 
 .bottom-day {
     display: flex;
     align-items: flex-end;
 }
+
+#friday { @include background('assets/Friday.png');};
+
+#saturday { @include background('assets/Saturday.png');};
+
+#sunday { @include background('assets/Sunday.png');};
 
 /////////// BLURBS SECTION
 #blurbs {
@@ -268,14 +283,14 @@ p {
 }
 
 .illustration {
-    @include breakpoint(xsmall) {display: none;}
+    display: flex;
     flex: 1 1 auto;
+    @include breakpoint(xsmall) {display: none;}
 }
 
 #blurb-1 {
     width: 400px;
     .illustration {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         div {
@@ -345,7 +360,6 @@ p {
         }
     }
     .illustration {
-        display: flex;
         flex-direction: column;
         justify-content: center;
         div {
@@ -452,9 +466,19 @@ p {
         height: 30%;
         width: 100%;
     } 
-    img {
-        height: 70%;
-        display: block;
-        margin: auto;
-    }
+}
+
+#gif-sponsors, #static-sponsors {
+    height: 70%;
+    margin: auto;
+}
+
+#gif-sponsors {
+    display: block;
+    @include breakpoint(mobile) {display: none;}
+}
+
+#static-sponsors {
+    display: none;
+    @include breakpoint(mobile) {display: block;}
 }
