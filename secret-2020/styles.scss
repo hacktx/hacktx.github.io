@@ -31,6 +31,8 @@ $minHeight: 270px;
 @mixin browser($browser) {
     @if $browser == chrome {
         @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {@content;}
+    } @else if $browser == edge {
+        @supports (-ms-ime-align:auto) {@content;}
     }
 }
 
@@ -55,6 +57,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    // cursor: url('assets/lasso_cursor.JPG'), auto;
 }
 
 .stretch-bg {
@@ -91,33 +94,16 @@ body {
 
 /////// PARALLAX
 
-#superContentContainer::-webkit-scrollbar {
-    -webkit-appearance: none;
-    width: 0;
-    height: 0;
-}
-
 #parallex {
-    // width: calc(165vh + 1100px);
-    // @include breakpoint(large) {width: calc(165vh + 1050px);}
-    // @include breakpoint(small) {width: calc(163vh + 1300px);}
-    // @include breakpoint(xsmall) {width: calc(650vh + 1400px);};
-    // @include breakpoint(xxsmall) {width: calc(650vh + 625px);};
-    // background: url('assets/parallax\(FILLER\).png');
-    // background-size: cover;
     display: inline-flex;
     overflow: hidden;
-    // @include browser(chrome) {
+    @include browser(chrome) {
         transform: translateZ(-3px) scale(4);
         transform-origin: $translateOrigin;
-    // }
-}
-
-@media screen and (-webkit-min-device-pixel-ratio:0)
-  and (min-resolution:.001dpcm) {
-    // target chrome
-    #parallex {
-        
+    }
+    @include browser(edge) {
+        transform: translateZ(-3px) scale(4);
+        transform-origin: $translateOrigin;
     }
 }
 
@@ -254,6 +240,7 @@ p {
 }
 
 .blurb-text {
+    max-width: 95vw;
     display: flex;
     flex: 0 1 auto;
     flex-direction: column;
@@ -286,10 +273,17 @@ p {
 #blurb-1 {
     width: 400px;
     .illustration {
-        background-image: url('assets/illustration_2.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        div {
+            height: 95%;
+            width: 100%;
+            background-image: url('assets/illustration_2.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
     }
 }
 
@@ -323,9 +317,9 @@ p {
     .illustration {
         background-image: url('assets/illustration_3.png');
         background-repeat: no-repeat;
-        background-position: center;
+        background-position: bottom;
         background-size: contain;
-        transform: translateY(5vh);
+        transform: scale(1.05) translateY(5vh);
     }
 }
 
@@ -349,10 +343,17 @@ p {
         }
     }
     .illustration {
-        background-image: url('assets/illustration_1.png');
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: contain;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        div {
+            height: 95%;
+            width: 100%;
+            background-image: url('assets/illustration_1.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
     }
 }
 
@@ -394,6 +395,7 @@ p {
         text-align: justify;
         margin: 0;
         width: 350px;
+        max-width: 95vw;
         margin: 8px 16px;
         width: fit-content;
     }
