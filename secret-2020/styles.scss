@@ -100,6 +100,8 @@ body {
     @include browser(chrome) {
         transform: translateZ(-3px) scale(4);
         transform-origin: $translateOrigin;
+        -moz-transform: none;
+        -moz-transform-origin: none;
     }
     @include browser(edge) {
         transform: translateZ(-3px) scale(4);
@@ -279,7 +281,7 @@ p {
         div {
             height: 95%;
             width: 100%;
-            background-image: url('assets/illustration_2.png');
+            background-image: url('assets/Illustration_2.png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;
@@ -315,7 +317,7 @@ p {
         }
     }
     .illustration {
-        background-image: url('assets/illustration_3.png');
+        background-image: url('assets/Illustration_3.png');
         background-repeat: no-repeat;
         background-position: bottom;
         background-size: contain;
@@ -349,7 +351,7 @@ p {
         div {
             height: 95%;
             width: 100%;
-            background-image: url('assets/illustration_1.png');
+            background-image: url('assets/Illustration_1.png');
             background-repeat: no-repeat;
             background-position: center;
             background-size: contain;

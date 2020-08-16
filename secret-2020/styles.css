@@ -53,7 +53,9 @@ body {
   @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
     #parallex {
       transform: translateZ(-3px) scale(4);
-      transform-origin: 0px 0px; } }
+      transform-origin: 0px 0px;
+      -moz-transform: none;
+      -moz-transform-origin: none; } }
   @supports (-ms-ime-align: auto) {
     #parallex {
       transform: translateZ(-3px) scale(4);
@@ -221,7 +223,7 @@ p {
     #blurb-1 .illustration div {
       height: 95%;
       width: 100%;
-      background-image: url("assets/illustration_2.png");
+      background-image: url("assets/Illustration_2.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain; }
@@ -258,7 +260,7 @@ p {
       #blurb-3 .blurb-text div {
         height: 60px; } }
   #blurb-3 .illustration {
-    background-image: url("assets/illustration_3.png");
+    background-image: url("assets/Illustration_3.png");
     background-repeat: no-repeat;
     background-position: bottom;
     background-size: contain;
@@ -293,7 +295,7 @@ p {
     #blurb-4 .illustration div {
       height: 95%;
       width: 100%;
-      background-image: url("assets/illustration_1.png");
+      background-image: url("assets/Illustration_1.png");
       background-repeat: no-repeat;
       background-position: center;
       background-size: contain; }
