@@ -6,6 +6,7 @@ html, body {
   margin: 0;
   height: 100vh;
   width: 100vw;
+  min-height: 270px;
   overflow-x: auto;
   overflow-y: hidden; }
 
@@ -13,21 +14,25 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center;
-  cursor: grab; }
+  align-content: center; }
 
 .stretch-bg {
-  height: 100vh;
-  width: calc(100vw + 438vh + 5400px);
+  height: 100%;
+  width: calc(660vh + 4400px);
+  max-width: calc(440vh + 6400px);
   position: absolute;
   top: 0;
   left: 0; }
+  @media only screen and (max-height: 575px) {
+    .stretch-bg {
+      width: calc(660vh + 4000px); } }
 
 #superContentContainer {
   width: 100vw;
   height: 100vh;
+  min-height: 270px;
   perspective: 1px;
-  perspective-origin: 100px 100px;
+  perspective-origin: 0px 0px;
   overflow-x: auto;
   overflow-y: hidden;
   display: flex;
@@ -42,57 +47,64 @@ body {
   background: url("assets/starTile.png") repeat, linear-gradient(to right, #0b2135, #0f3857);
   background-size: contain; }
 
+#superContentContainer::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0;
+  height: 0; }
+
 #parallex {
-  height: 100vh;
+  display: inline-flex;
+  overflow: hidden;
   transform: translateZ(-3px) scale(4);
-  transform-origin: 100px 100px; }
+  transform-origin: 0px 0px; }
 
 #contentContainer {
   display: inline-flex;
-  height: 95vh;
+  height: 95%;
   position: absolute;
   max-height: 1000px; }
 
 p {
   font-family: Poppins-Light, sans-serif;
   font-size: 18px;
-  line-height: 22px;
   color: #f6f4d9; }
   @media only screen and (max-height: 685px) {
     p {
-      font-size: 16px;
-      line-height: 20px; } }
+      font-size: 16px; } }
   @media only screen and (max-height: 575px) {
     p {
-      font-size: 15px;
-      line-height: 17px; } }
+      font-size: 15px; } }
   @media only screen and (max-height: 485px) {
     p {
-      font-size: 4vh; } }
+      font-size: 12px; } }
   @media only screen and (max-height: 350px) {
     p {
-      font-size: 3.5vh; } }
+      font-size: 11px; } }
 
 #landing {
   height: 100vh;
-  width: 90vw;
-  padding: 0 2vw;
+  max-height: 1000px;
+  width: 220vh;
+  max-width: 2200px;
   display: inline-flex; }
   #landing div {
     height: 100%; }
 
 #animation {
-  width: 40%;
+  width: 50%;
+  margin-right: 10%;
   display: flex;
   align-items: center; }
   #animation img {
     width: 100%; }
 
 #event-title {
-  width: 40%;
-  flex-grow: 2;
+  width: 37%;
+  max-width: 100vw;
   padding-top: 15vh;
   height: 85vh; }
+  #event-title img {
+    margin-bottom: 16px; }
 
 #rocket {
   width: 15%;
@@ -111,8 +123,9 @@ p {
   left: 1vw;
   top: 1vh; }
   #freetail-logo img {
-    width: 8vw;
-    max-width: 100px; }
+    height: 20vh;
+    max-height: 120px;
+    width: auto; }
 
 #pinnacle-banner {
   position: fixed;
@@ -120,13 +133,16 @@ p {
   bottom: 1vh;
   z-index: 10000; }
   #pinnacle-banner img {
-    height: 8vh;
-    max-height: 100px; }
+    height: 60px;
+    width: auto; }
 
 #schedule {
   display: inline-flex;
   height: 100%;
   margin-right: 400px; }
+  @media only screen and (max-height: 575px) {
+    #schedule {
+      margin-right: 200px; } }
 
 .schedule-day {
   width: 85vh; }
@@ -154,6 +170,7 @@ p {
 
 .blurb-text {
   display: flex;
+  flex: 0 1 auto;
   flex-direction: column;
   background-color: #1c4862;
   border-radius: 50px;
@@ -164,9 +181,6 @@ p {
   /* Firefox 3.5 - 3.6 */
   box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
   /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ }
-  @media only screen and (max-height: 575px) {
-    .blurb-text {
-      height: 80%; } }
   .blurb-text div {
     height: 90px; }
     @media only screen and (max-height: 685px) {
@@ -178,6 +192,9 @@ p {
     @media only screen and (max-height: 485px) {
       .blurb-text div {
         height: 48px; } }
+    @media only screen and (max-height: 350px) {
+      .blurb-text div {
+        height: 40px; } }
     .blurb-text div img {
       height: 100%; }
 
@@ -187,28 +204,28 @@ p {
     .bottom-blurb {
       justify-content: center; } }
 
-@media only screen and (max-height: 485px) {
-  .illustration {
-    display: none; } }
+.illustration {
+  flex: 1 1 auto; }
+  @media only screen and (max-height: 485px) {
+    .illustration {
+      display: none; } }
 
 #blurb-1 {
   width: 400px; }
-  #blurb-1 .blurb-text {
-    height: 60%; }
-    @media only screen and (max-height: 485px) {
-      #blurb-1 .blurb-text {
-        height: 80%; } }
   #blurb-1 .illustration {
-    transform: rotate(-60deg) translate(17%, -5%);
-    height: 60%; }
-    @media only screen and (max-height: 685px) {
-      #blurb-1 .illustration {
-        transform: rotate(-60deg) translate(7%, -5%);
-        height: 50%; } }
+    background-image: url("assets/illustration_2.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
 
 #post {
   height: 110vh;
-  margin-top: -10vh; }
+  width: 42.7vh;
+  margin-top: -10vh;
+  background-image: url("assets/WantedPosterFINAL.gif");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
 
 #blurb-2 {
   width: 425px; }
@@ -218,9 +235,6 @@ p {
   @media only screen and (max-height: 833px) {
     #blurb-3 {
       width: 575px; } }
-  @media only screen and (max-height: 685px) {
-    #blurb-3 {
-      width: 525px; } }
   #blurb-3 .blurb-text div {
     height: 135px; }
     @media only screen and (max-height: 685px) {
@@ -232,23 +246,21 @@ p {
     @media only screen and (max-height: 485px) {
       #blurb-3 .blurb-text div {
         height: 72px; } }
+    @media only screen and (max-height: 350px) {
+      #blurb-3 .blurb-text div {
+        height: 60px; } }
   #blurb-3 .illustration {
-    width: 100%;
-    height: calc(100% - 460px); }
-    @media only screen and (max-height: 833px) {
-      #blurb-3 .illustration {
-        height: calc(100% - 400px); } }
-    @media only screen and (max-height: 685px) {
-      #blurb-3 .illustration {
-        height: calc(100% - 340px); } }
-    @media only screen and (max-height: 575px) {
-      #blurb-3 .illustration {
-        height: calc(100% - 290px); } }
-    #blurb-3 .illustration img {
-      height: 100%;
-      transform: translateY(2%);
-      display: block;
-      margin: 0 auto; }
+    background-image: url("assets/illustration_3.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    transform: translateY(5vh); }
+
+.link {
+  color: #f6f4d9; }
+  .link:hover {
+    color: #a6f4e4;
+    cursor: pointer; }
 
 #blurb-4 {
   width: 425px; }
@@ -263,21 +275,14 @@ p {
     @media only screen and (max-height: 485px) {
       #blurb-4 .blurb-text div {
         height: 24px; } }
+    @media only screen and (max-height: 350px) {
+      #blurb-4 .blurb-text div {
+        height: 20px; } }
   #blurb-4 .illustration {
-    height: 70%; }
-    @media only screen and (max-height: 833px) {
-      #blurb-4 .illustration {
-        height: calc(100% - 230px); } }
-    @media only screen and (max-height: 685px) {
-      #blurb-4 .illustration {
-        height: calc(100% - 190px); } }
-    @media only screen and (max-height: 575px) {
-      #blurb-4 .illustration {
-        height: calc(100% - 170px); } }
-    #blurb-4 .illustration img {
-      height: 90%;
-      display: block;
-      margin: 0 auto; }
+    background-image: url("assets/illustration_1.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain; }
 
 #faq {
   display: flex;
@@ -292,9 +297,12 @@ p {
   box-shadow: 3px 3px 3px 3px black;
   /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
   padding: 16px 32px; }
-  @media only screen and (max-height: 350px) {
+  @media only screen and (max-height: 575px) {
     #faq {
-      display: none; } }
+      margin: 0 200px; } }
+  @media only screen and (max-height: 485px) {
+    #faq {
+      padding: 16px 16px; } }
 
 #faq-header {
   height: 100px;
@@ -305,68 +313,64 @@ p {
   @media only screen and (max-height: 485px) {
     #faq-header {
       height: 60px; } }
+  @media only screen and (max-height: 350px) {
+    #faq-header {
+      height: 45px; } }
   #faq-header img {
     display: block;
-    position: sticky;
-    left: calc(50% - 116px); }
-    @media only screen and (max-height: 575px) {
-      #faq-header img {
-        left: calc(50% - 88px); } }
-    @media only screen and (max-height: 575px) {
-      #faq-header img {
-        left: calc(50% - 70px); } }
+    margin: 0 auto; }
 
 #questions-container {
   height: calc(100% - 132px);
-  width: 1600px;
   margin-top: 32px;
-  column-count: 4;
-  column-gap: 2%; }
-  @media only screen and (max-height: 833px) {
-    #questions-container {
-      width: 2200px;
-      column-count: 5; } }
-  @media only screen and (max-height: 575px) {
-    #questions-container {
-      height: calc(100% - 110px); } }
+  display: flex; }
   @media only screen and (max-height: 485px) {
     #questions-container {
-      width: 2600px;
-      height: calc(100% - 94px);
+      height: calc(100% - 91px);
       margin-top: 16px; } }
+  @media only screen and (max-height: 485px) {
+    #questions-container {
+      height: calc(100% - 61px); } }
   #questions-container p {
     text-align: justify;
-    margin: 0; }
+    margin: 0;
+    width: 350px;
+    margin: 8px 16px;
+    width: fit-content; }
   #questions-container .answer {
-    margin-bottom: 16px;
-    font-size: 16px; }
+    display: none;
+    margin-bottom: 16px; }
+  #questions-container .last-answer {
+    margin-bottom: 0; }
+  #questions-container .question {
+    color: #a6f4e4;
+    line-height: 22px;
+    margin-top: 5vh;
+    font-size: 20px; }
     @media only screen and (max-height: 685px) {
-      #questions-container .answer {
-        font-size: 14px; } }
+      #questions-container .question {
+        line-height: 16px; } }
     @media only screen and (max-height: 575px) {
-      #questions-container .answer {
-        font-size: 12px; } }
-    @media only screen and (max-height: 575px) {
-      #questions-container .answer {
-        font-size: 11px;
-        line-height: 12px; } }
+      #questions-container .question {
+        font-size: 18px;
+        line-height: 20px; } }
     @media only screen and (max-height: 485px) {
-      #questions-container .answer {
-        font-size: 3vh;
-        line-height: 3.5vh; } }
+      #questions-container .question {
+        font-size: 16px;
+        line-height: 16px;
+        margin-top: 3vh; } }
+    @media only screen and (max-height: 350px) {
+      #questions-container .question {
+        font-size: 14px;
+        margin-top: 2vh; } }
+    #questions-container .question:hover {
+      transform: scale(1.05);
+      cursor: pointer; }
 
-.question {
-  color: #a6f4e4;
-  line-height: 20px; }
-  @media only screen and (max-height: 685px) {
-    .question {
-      line-height: 16px; } }
-  @media only screen and (max-height: 575px) {
-    .question {
-      line-height: 14px; } }
-  @media only screen and (max-height: 485px) {
-    .question {
-      line-height: 4vh; } }
+.q-column {
+  width: 400px;
+  margin: 0 32px;
+  overflow-y: scroll; }
 
 #sponsors {
   height: 100%;
