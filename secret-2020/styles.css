@@ -47,16 +47,17 @@ body {
   background: url("assets/starTile.png") repeat, linear-gradient(to right, #0b2135, #0f3857);
   background-size: contain; }
 
-#superContentContainer::-webkit-scrollbar {
-  -webkit-appearance: none;
-  width: 0;
-  height: 0; }
-
 #parallex {
   display: inline-flex;
-  overflow: hidden;
-  transform: translateZ(-3px) scale(4);
-  transform-origin: 0px 0px; }
+  overflow: hidden; }
+  @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
+    #parallex {
+      transform: translateZ(-3px) scale(4);
+      transform-origin: 0px 0px; } }
+  @supports (-ms-ime-align: auto) {
+    #parallex {
+      transform: translateZ(-3px) scale(4);
+      transform-origin: 0px 0px; } }
 
 #contentContainer {
   display: inline-flex;
@@ -169,6 +170,7 @@ p {
       justify-content: center; } }
 
 .blurb-text {
+  max-width: 95vw;
   display: flex;
   flex: 0 1 auto;
   flex-direction: column;
@@ -213,10 +215,16 @@ p {
 #blurb-1 {
   width: 400px; }
   #blurb-1 .illustration {
-    background-image: url("assets/illustration_2.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #blurb-1 .illustration div {
+      height: 95%;
+      width: 100%;
+      background-image: url("assets/illustration_2.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain; }
 
 #post {
   height: 110vh;
@@ -252,9 +260,9 @@ p {
   #blurb-3 .illustration {
     background-image: url("assets/illustration_3.png");
     background-repeat: no-repeat;
-    background-position: center;
+    background-position: bottom;
     background-size: contain;
-    transform: translateY(5vh); }
+    transform: scale(1.05) translateY(5vh); }
 
 .link {
   color: #f6f4d9; }
@@ -279,10 +287,16 @@ p {
       #blurb-4 .blurb-text div {
         height: 20px; } }
   #blurb-4 .illustration {
-    background-image: url("assets/illustration_1.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: contain; }
+    display: flex;
+    flex-direction: column;
+    justify-content: center; }
+    #blurb-4 .illustration div {
+      height: 95%;
+      width: 100%;
+      background-image: url("assets/illustration_1.png");
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: contain; }
 
 #faq {
   display: flex;
@@ -335,6 +349,7 @@ p {
     text-align: justify;
     margin: 0;
     width: 350px;
+    max-width: 95vw;
     margin: 8px 16px;
     width: fit-content; }
   #questions-container .answer {
