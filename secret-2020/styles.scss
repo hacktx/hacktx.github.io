@@ -7,6 +7,7 @@ $mediumbp: 685px;
 $smallbp: 575px;
 $xsmallbp: 485px;
 $xxsmallbp: 350px;
+$minHeight: 270px;
 
 @font-face {
     font-family: 'Poppins-Light';
@@ -27,6 +28,12 @@ $xxsmallbp: 350px;
     }
 }
 
+@mixin browser($browser) {
+    @if $browser == chrome {
+        @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {@content;}
+    }
+}
+
 
 @mixin shadow($alpha) {
     -webkit-box-shadow: 3px 3px 3px 3px rgba(0,0,0, $alpha);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
@@ -38,6 +45,7 @@ html, body {
     margin: 0;
     height: 100vh;
     width: 100vw;
+    min-height: $minHeight;
     overflow-x: auto;
     overflow-y: hidden;
 }
@@ -50,11 +58,10 @@ body {
 }
 
 .stretch-bg {
-    height: 100vh;
+    height: 100%;
     width: calc(660vh + 4400px);
     max-width: calc(440vh + 6400px);
     @include breakpoint(small) {width: calc(660vh + 4000px);}
-    @include breakpoint(xxsmall) {width: calc(660vh + 4000px);};
     position: absolute;
     top: 0;
     left: 0;
@@ -63,6 +70,7 @@ body {
 #superContentContainer {
     width: 100vw;
     height: 100vh;
+    min-height: $minHeight;
     perspective: 1px;
     perspective-origin: $translateOrigin;
     overflow-x: auto;
@@ -81,11 +89,16 @@ body {
     background-size: contain;
 }
 
+/////// PARALLAX
+
+#superContentContainer::-webkit-scrollbar {
+    -webkit-appearance: none;
+    width: 0;
+    height: 0;
+}
+
 #parallex {
-    height: 100vh;
-    transform: translateZ(-3px) scale(4);
-    transform-origin: $translateOrigin;
-    // width: calc(165vh + 1050px);
+    // width: calc(165vh + 1100px);
     // @include breakpoint(large) {width: calc(165vh + 1050px);}
     // @include breakpoint(small) {width: calc(163vh + 1300px);}
     // @include breakpoint(xsmall) {width: calc(650vh + 1400px);};
@@ -94,11 +107,24 @@ body {
     // background-size: cover;
     display: inline-flex;
     overflow: hidden;
+    // @include browser(chrome) {
+        transform: translateZ(-3px) scale(4);
+        transform-origin: $translateOrigin;
+    // }
 }
+
+@media screen and (-webkit-min-device-pixel-ratio:0)
+  and (min-resolution:.001dpcm) {
+    // target chrome
+    #parallex {
+        
+    }
+}
+
 
 #contentContainer {
     display: inline-flex;
-    height: 95vh;
+    height: 95%;
     position: absolute;
     max-height: 1000px;
 }
@@ -106,18 +132,18 @@ body {
 p {
     font-family: Poppins-Light, sans-serif;
     font-size: 18px;
-    line-height: 22px;
+    // line-height: 22px;
     @include breakpoint(medium) {
         font-size: 16px;
-        line-height: 20px;}
+        }
     @include breakpoint(small) {
         font-size: 15px;
-        line-height: 17px;}
+        }
     @include breakpoint(xsmall) {
-        font-size: 4vh;
+        font-size: 12px;
     }
     @include breakpoint(xxsmall) {
-        font-size: 3.5vh;
+        font-size: 11px;
     }
     color: $whiteText;
 }
@@ -240,6 +266,7 @@ p {
         @include breakpoint(medium) {height: 70px;};
         @include breakpoint(small) {height: 60px;};
         @include breakpoint(xsmall) {height: 48px;};
+        @include breakpoint(xxsmall) {height: 40px;};
         img {
             height: 100%;
         }
@@ -283,13 +310,14 @@ p {
 #blurb-3 {
     width: 475px;
     @include breakpoint(large) {width: 575px;}
-    @include breakpoint(medium) {width: 525px;}
+    // @include breakpoint(medium) {width: 525px;}
     .blurb-text {
         div {
             height: 135px;
             @include breakpoint(medium) {height: 105px;};
             @include breakpoint(small) {height: 90px;};
             @include breakpoint(xsmall) {height: 72px;};
+            @include breakpoint(xxsmall) {height: 60px;};
         }
     }
     .illustration {
@@ -305,6 +333,7 @@ p {
     color: $whiteText;
     &:hover {
         color: $blueText;
+        cursor: pointer;
     }
 }
 
@@ -316,6 +345,7 @@ p {
             @include breakpoint(medium) {height: 35px;};
             @include breakpoint(small) {height: 30px;};
             @include breakpoint(xsmall) {height: 24px;};
+            @include breakpoint(xxsmall) {height: 20px;};
         }
     }
     .illustration {
@@ -336,12 +366,14 @@ p {
     border-radius: 50px;
     @include shadow(1);
     padding: 16px 32px;
+    @include breakpoint(xsmall) {padding: 16px 16px;};
 }
 
 #faq-header {
     height: 100px;
     @include breakpoint(small) { height: 75px; }
     @include breakpoint(xsmall) {height: 60px;}
+    @include breakpoint(xxsmall) {height: 45px;}
     width: 100%;
     img {
         display: block;
@@ -356,6 +388,7 @@ p {
         height: calc(100% - 91px);
         margin-top: 16px;
     }
+    @include breakpoint(xsmall) {height: calc(100% - 61px);}
     display: flex;
     p {
         text-align: justify;
@@ -382,8 +415,11 @@ p {
         @include breakpoint(medium) {line-height: 16px;};
         @include breakpoint(small) {font-size: 18px; line-height: 20px;};
         @include breakpoint(xsmall) {font-size: 16px; line-height: 16px; margin-top: 3vh;};
+        @include breakpoint(xxsmall) {font-size: 14px; margin-top: 2vh;};
+
         &:hover {
             transform: scale(1.05);
+            cursor: pointer;
         }
     }
 }

@@ -1,5 +1,6 @@
 var contentContainer;   // #superContentContainer
 var questionContainer;  // #question-container
+var bg;                 // #back-layer1
 var oldHeight;          // window height
 
 
@@ -40,23 +41,32 @@ document.addEventListener("DOMContentLoaded", function(event) {
           // questionContainer.style.width = 'auto';
           // questionContainer.style.width = questionContainer.scrollWidth + "px";
         });
-      }
+    }
+
+    bg = document.querySelector('#back-layer1');
+
+    // prevent scrolling past a point
+    contentContainer.onscroll = function(e) {
+      setMaxScroll(e.target);
+    }
+
+    window.onresize = function() {
+      setMaxScroll(contentContainer);
+    }
 });
 
-// window.addEventListener('resize', function() {
-//   if (window.innerHeight == oldHeight) {
-//     return;
-//   }
-//   questionContainer.style.width = 'auto';
-//   questionContainer.style.width = questionContainer.scrollWidth + "px";
-// })
+function setMaxScroll(e) {
+  const maxScrollLeft = bg.offsetWidth - window.innerWidth;
+  if (e.scrollLeft > maxScrollLeft) {
+    e.scrollLeft = maxScrollLeft
+  }
+}
 
 function imageHover(element) {
     var currSrc = element.src; 
     const path = currSrc.indexOf('assets')
     const dotPos = currSrc.indexOf('.', path)
     var newSrc = currSrc.substring(path, dotPos) + "Hover.png" 
-    console.log(newSrc)
     element.setAttribute('src', newSrc)
 }
 

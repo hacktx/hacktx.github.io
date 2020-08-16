@@ -6,6 +6,7 @@ html, body {
   margin: 0;
   height: 100vh;
   width: 100vw;
+  min-height: 270px;
   overflow-x: auto;
   overflow-y: hidden; }
 
@@ -16,7 +17,7 @@ body {
   align-content: center; }
 
 .stretch-bg {
-  height: 100vh;
+  height: 100%;
   width: calc(660vh + 4400px);
   max-width: calc(440vh + 6400px);
   position: absolute;
@@ -25,13 +26,11 @@ body {
   @media only screen and (max-height: 575px) {
     .stretch-bg {
       width: calc(660vh + 4000px); } }
-  @media only screen and (max-height: 350px) {
-    .stretch-bg {
-      width: calc(660vh + 4000px); } }
 
 #superContentContainer {
   width: 100vw;
   height: 100vh;
+  min-height: 270px;
   perspective: 1px;
   perspective-origin: 0px 0px;
   overflow-x: auto;
@@ -48,38 +47,39 @@ body {
   background: url("assets/starTile.png") repeat, linear-gradient(to right, #0b2135, #0f3857);
   background-size: contain; }
 
+#superContentContainer::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 0;
+  height: 0; }
+
 #parallex {
-  height: 100vh;
-  transform: translateZ(-3px) scale(4);
-  transform-origin: 0px 0px;
   display: inline-flex;
-  overflow: hidden; }
+  overflow: hidden;
+  transform: translateZ(-3px) scale(4);
+  transform-origin: 0px 0px; }
 
 #contentContainer {
   display: inline-flex;
-  height: 95vh;
+  height: 95%;
   position: absolute;
   max-height: 1000px; }
 
 p {
   font-family: Poppins-Light, sans-serif;
   font-size: 18px;
-  line-height: 22px;
   color: #f6f4d9; }
   @media only screen and (max-height: 685px) {
     p {
-      font-size: 16px;
-      line-height: 20px; } }
+      font-size: 16px; } }
   @media only screen and (max-height: 575px) {
     p {
-      font-size: 15px;
-      line-height: 17px; } }
+      font-size: 15px; } }
   @media only screen and (max-height: 485px) {
     p {
-      font-size: 4vh; } }
+      font-size: 12px; } }
   @media only screen and (max-height: 350px) {
     p {
-      font-size: 3.5vh; } }
+      font-size: 11px; } }
 
 #landing {
   height: 100vh;
@@ -192,6 +192,9 @@ p {
     @media only screen and (max-height: 485px) {
       .blurb-text div {
         height: 48px; } }
+    @media only screen and (max-height: 350px) {
+      .blurb-text div {
+        height: 40px; } }
     .blurb-text div img {
       height: 100%; }
 
@@ -232,9 +235,6 @@ p {
   @media only screen and (max-height: 833px) {
     #blurb-3 {
       width: 575px; } }
-  @media only screen and (max-height: 685px) {
-    #blurb-3 {
-      width: 525px; } }
   #blurb-3 .blurb-text div {
     height: 135px; }
     @media only screen and (max-height: 685px) {
@@ -246,6 +246,9 @@ p {
     @media only screen and (max-height: 485px) {
       #blurb-3 .blurb-text div {
         height: 72px; } }
+    @media only screen and (max-height: 350px) {
+      #blurb-3 .blurb-text div {
+        height: 60px; } }
   #blurb-3 .illustration {
     background-image: url("assets/illustration_3.png");
     background-repeat: no-repeat;
@@ -256,7 +259,8 @@ p {
 .link {
   color: #f6f4d9; }
   .link:hover {
-    color: #a6f4e4; }
+    color: #a6f4e4;
+    cursor: pointer; }
 
 #blurb-4 {
   width: 425px; }
@@ -271,6 +275,9 @@ p {
     @media only screen and (max-height: 485px) {
       #blurb-4 .blurb-text div {
         height: 24px; } }
+    @media only screen and (max-height: 350px) {
+      #blurb-4 .blurb-text div {
+        height: 20px; } }
   #blurb-4 .illustration {
     background-image: url("assets/illustration_1.png");
     background-repeat: no-repeat;
@@ -293,6 +300,9 @@ p {
   @media only screen and (max-height: 575px) {
     #faq {
       margin: 0 200px; } }
+  @media only screen and (max-height: 485px) {
+    #faq {
+      padding: 16px 16px; } }
 
 #faq-header {
   height: 100px;
@@ -303,6 +313,9 @@ p {
   @media only screen and (max-height: 485px) {
     #faq-header {
       height: 60px; } }
+  @media only screen and (max-height: 350px) {
+    #faq-header {
+      height: 45px; } }
   #faq-header img {
     display: block;
     margin: 0 auto; }
@@ -315,6 +328,9 @@ p {
     #questions-container {
       height: calc(100% - 91px);
       margin-top: 16px; } }
+  @media only screen and (max-height: 485px) {
+    #questions-container {
+      height: calc(100% - 61px); } }
   #questions-container p {
     text-align: justify;
     margin: 0;
@@ -343,8 +359,13 @@ p {
         font-size: 16px;
         line-height: 16px;
         margin-top: 3vh; } }
+    @media only screen and (max-height: 350px) {
+      #questions-container .question {
+        font-size: 14px;
+        margin-top: 2vh; } }
     #questions-container .question:hover {
-      transform: scale(1.05); }
+      transform: scale(1.05);
+      cursor: pointer; }
 
 .q-column {
   width: 400px;
