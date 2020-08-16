@@ -7,7 +7,7 @@ $mediumbp: 685px;
 $smallbp: 575px;
 $xsmallbp: 485px;
 $xxsmallbp: 350px;
-$minHeight: 270px;
+$minHeight: 215px;
 
 @font-face {
     font-family: 'Poppins-Light';
@@ -142,7 +142,7 @@ p {
         font-size: 12px;
     }
     @include breakpoint(xxsmall) {
-        font-size: 11px;
+        font-size: 10px;
     }
     color: $whiteText;
 }
@@ -270,7 +270,7 @@ p {
         @include breakpoint(medium) {height: 70px;};
         @include breakpoint(small) {height: 60px;};
         @include breakpoint(xsmall) {height: 48px;};
-        @include breakpoint(xxsmall) {height: 40px;};
+        @include breakpoint(xxsmall) {height: 32px;};
         img {
             height: 100%;
         }
@@ -328,7 +328,7 @@ p {
             @include breakpoint(medium) {height: 105px;};
             @include breakpoint(small) {height: 90px;};
             @include breakpoint(xsmall) {height: 72px;};
-            @include breakpoint(xxsmall) {height: 60px;};
+            @include breakpoint(xxsmall) {height: 48px;};
         }
     }
     .illustration {
@@ -356,7 +356,7 @@ p {
             @include breakpoint(medium) {height: 35px;};
             @include breakpoint(small) {height: 30px;};
             @include breakpoint(xsmall) {height: 24px;};
-            @include breakpoint(xxsmall) {height: 20px;};
+            @include breakpoint(xxsmall) {height: 16px;};
         }
     }
     .illustration {
@@ -433,7 +433,7 @@ p {
         @include breakpoint(medium) {line-height: 16px;};
         @include breakpoint(small) {font-size: 18px; line-height: 20px;};
         @include breakpoint(xsmall) {font-size: 16px; line-height: 16px; margin-top: 3vh;};
-        @include breakpoint(xxsmall) {font-size: 14px; margin-top: 2vh;};
+        @include breakpoint(xxsmall) {font-size: 12px; margin-top: 2vh;};
 
         &:hover {
             transform: scale(1.05);
@@ -465,6 +465,10 @@ p {
     div {
         height: 30%;
         width: 100%;
+        img {
+            margin: 0 auto;
+            display: block;
+        }
     } 
 }
 
