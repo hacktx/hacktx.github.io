@@ -49,28 +49,5 @@ function resizeBackground() {
   const els = document.querySelectorAll('.stretch-bg');
   for (const layer of els) {
     layer.style.width = (contentContainer.offsetWidth + 200) + "px";
-    console.log(layer.style.width)
   }
-}
-
-// function setMaxScroll(e) {
-//   const maxScrollLeft = bg.offsetWidth - window.innerWidth;
-//   if (e.scrollLeft > maxScrollLeft) {
-//     e.scrollLeft = maxScrollLeft
-//   }
-// }
-
-function imageHover(element) {
-    var currSrc = element.src; 
-    const path = currSrc.indexOf('assets')
-    const dotPos = currSrc.indexOf('.', path)
-    var newSrc = currSrc.substring(path, dotPos) + "Hover.png" 
-    element.setAttribute('src', newSrc)
-}
-
-function imageHoverOut(element) {
-    var currSrc = element.src; 
-    const cutOut = currSrc.indexOf('Hover')
-    var newSrc = currSrc.substring(0, cutOut) + currSrc.substring(cutOut + 5);
-    element.setAttribute('src', newSrc)
 }
