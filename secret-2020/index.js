@@ -3,15 +3,16 @@ var questionContainer;  // #question-container
 
 
 // scroll horizontally on vertical scroll
-function replaceVerticalScrollByHorizontal(event) {
-    if (event.deltaX != 0 && Math.abs(event.deltaY) < 2) {
-      return; // default scroll
-    } else if (Math.abs(event.deltaY) > 0) {
-      contentContainer.scroll(contentContainer.scrollLeft + event.deltaY , 0);
-    }
-    event.preventDefault();
-}
-window.addEventListener('wheel', replaceVerticalScrollByHorizontal, {passive: false});
+// function replaceVerticalScrollByHorizontal(event) {
+//     if (event.deltaX != 0 && Math.abs(event.deltaY) < 1) {
+//       console.log("HERE")
+//       return; // default scroll
+//     } else if (Math.abs(event.deltaY) > 0) {
+//       contentContainer.scroll(contentContainer.scrollLeft + event.deltaY , 0);
+//     }
+//     event.preventDefault();
+// }
+// window.addEventListener('wheel', replaceVerticalScrollByHorizontal, {passive: false});
 
 document.addEventListener("DOMContentLoaded", function(event) {
     // move hack tx title into view if it is cut off

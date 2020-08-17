@@ -14,7 +14,8 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-content: center; }
+  align-content: center;
+  cursor: url("assets/cursor.png"), auto; }
 
 .stretch-bg {
   height: 100%;
@@ -49,7 +50,8 @@ body {
 
 #parallex {
   display: inline-flex;
-  overflow: hidden; }
+  overflow: hidden;
+  max-height: 1200px; }
   @media screen and (-webkit-min-device-pixel-ratio: 0) and (min-resolution: 0.001dpcm) {
     #parallex {
       transform: translateZ(-3px) scale(4);
@@ -63,6 +65,16 @@ body {
   @media only screen and (max-height: 485px) {
     #parallex {
       display: none; } }
+
+@media only screen and (min-height: 1101px) {
+  #regSize {
+    display: none; } }
+
+#largeSize {
+  display: none; }
+  @media only screen and (min-height: 1101px) {
+    #largeSize {
+      display: block; } }
 
 #contentContainer {
   display: inline-flex;
@@ -248,9 +260,10 @@ p {
   width: 400px; }
   #blurb-1 .illustration {
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    padding: 2.5% 0; }
     #blurb-1 .illustration div {
-      height: 95%;
+      flex: 1 1 auto;
       width: 100%;
       background-image: url("assets/Illustration_2.png");
       background-repeat: no-repeat;
@@ -261,7 +274,7 @@ p {
   height: 110vh;
   width: 42.7vh;
   margin-top: -10vh;
-  background-image: url("assets/WantedPosterFINAL.gif");
+  background-image: url("assets/wantedPoster.gif");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain; }
@@ -299,7 +312,7 @@ p {
   color: #f6f4d9; }
   .link:hover {
     color: #a6f4e4;
-    cursor: pointer; }
+    cursor: url("assets/cursor hover.png"), auto; }
 
 #blurb-4 {
   width: 425px; }
@@ -319,9 +332,10 @@ p {
         height: 16px; } }
   #blurb-4 .illustration {
     flex-direction: column;
-    justify-content: center; }
+    justify-content: center;
+    padding: 2.5% 0; }
     #blurb-4 .illustration div {
-      height: 95%;
+      flex: 1 1 auto;
       width: 100%;
       background-image: url("assets/Illustration_1.png");
       background-repeat: no-repeat;
@@ -410,7 +424,7 @@ p {
         margin-top: 2vh; } }
     #questions-container .question:hover {
       transform: scale(1.05);
-      cursor: pointer; }
+      cursor: url("assets/cursor hover.png"), auto; }
 
 .q-column {
   width: 400px;
