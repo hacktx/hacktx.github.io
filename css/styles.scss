@@ -1,0 +1,569 @@
+$color-stops: #0b2135, #0f3857;
+$whiteText: #f6f4d9;
+$blueText: #a6f4e4;
+$translateOrigin: 0px 0px;
+$xlargebp: 1100px;
+$largebp: 832px;
+$mediumbp: 685px;
+$smallbp: 575px;
+$xsmallbp: 485px;
+$xxsmallbp: 350px;
+$minHeight: 215px;
+
+@font-face {
+    font-family: 'Poppins-Light';
+    src: url('../fonts/Poppins-Regular.ttf') format('truetype');
+}
+
+@mixin breakpoint($media) {
+	@if $media == large {
+		@media only screen and (max-height: $largebp + 1) { @content; }
+	} @else if $media == medium {
+		@media only screen and (max-height: $mediumbp) { @content; }
+	} @else if $media == small {
+		@media only screen and (max-height: $smallbp) {@content; }
+	} @else if $media == xsmall {
+		@media only screen and (max-height: $xsmallbp) {@content; }
+    } @else if $media == xxsmall {
+		@media only screen and (max-height: $xxsmallbp) {@content; }
+    } @else if $media == mobile {
+        @media only screen and (min-width: 320px) and (max-width: 480px)
+             {@content;}
+        @media only screen and (max-height: $xxsmallbp) {@content; }
+    } @else if $media == xlarge {
+        @media only screen and (min-height: $xlargebp + 1) { @content; }
+    }
+}
+
+@mixin browser($browser) {
+    @if $browser == chrome {
+        @media screen and (-webkit-min-device-pixel-ratio:0) and (min-resolution:.001dpcm) {@content;}
+    } @else if $browser == edge {
+        @supports (-ms-ime-align:auto) {@content;}
+    }
+}
+
+@mixin shadow($alpha) {
+    -webkit-box-shadow: 3px 3px 3px 3px rgba(0,0,0, $alpha);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow:    3px 3px 3px 3px rgba(0,0,0,$alpha);  /* Firefox 3.5 - 3.6 */
+    box-shadow:         3px 3px 3px 3px rgba(0,0,0,$alpha);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ 
+}
+
+@mixin background($url) {
+    background-image: url($url);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+html, body {
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+    min-height: $minHeight;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    cursor: url('../assets/cursor.png'), auto;
+}
+
+.stretch-bg {
+    height: 100%;
+    // min-width: calc(450vh + 4100px);
+    // width: calc(100vw + 500vh + 4000px);
+    // max-width: calc(140vh + 380vw + 6700px);
+    @include breakpoint(small) {width: calc(660vh + 4000px);}
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#superContentContainer {
+    width: 100vw;
+    height: 100vh;
+    min-height: $minHeight;
+    perspective: 1px;
+    perspective-origin: $translateOrigin;
+    overflow-x: auto;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#back-layer1 {
+    background: url('../assets/starTile.png') repeat, nth($color-stops, 1); // fallback
+	background: url('../assets/starTile.png') repeat, -webkit-linear-gradient(left, $color-stops);
+  	background: url('../assets/starTile.png') repeat, -moz-linear-gradient(left, $color-stops);
+  	background: url('../assets/starTile.png') repeat, -o-linear-gradient(left, $color-stops);
+    background: url('../assets/starTile.png') repeat, linear-gradient(to right, $color-stops);
+    background-size: contain;
+}
+
+/////// PARALLAX
+
+#parallex {
+    display: inline-flex;
+    overflow: hidden;
+    @include browser(chrome) {
+        transform: translateZ(-3px) scale(4);
+        transform-origin: $translateOrigin;
+        -moz-transform: none;
+        -moz-transform-origin: none;
+    }
+    @include browser(edge) {
+        transform: translateZ(-3px) scale(4);
+        transform-origin: $translateOrigin;
+    }
+    @include breakpoint(xsmall) {display: none;};
+    @include breakpoint(xlarge) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+    }
+    div {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+#reg-parallax {
+    @include background('../assets/parallax(FILLER).png');
+    @include breakpoint(xlarge) {display: none;}
+    background-size: cover;
+}
+
+#large-parallax {
+    display: none;
+    @include background('../assets/parallax(FULL).png');
+    @include breakpoint(xlarge) {display: block;}
+    max-height: 1200px;
+}
+
+
+#contentContainer {
+    display: inline-flex;
+    height: 95%;
+    position: absolute;
+    max-height: 1000px;
+}
+
+p {
+    font-family: Poppins-Light, sans-serif;
+    font-size: 18px;
+    // line-height: 22px;
+    @include breakpoint(medium) {
+        font-size: 16px;
+        }
+    @include breakpoint(small) {
+        font-size: 15px;
+        }
+    @include breakpoint(xsmall) {
+        font-size: 12px;
+    }
+    @include breakpoint(xxsmall) {
+        font-size: 10px;
+    }
+    color: $whiteText;
+}
+
+/////////// LANDING SECTION
+
+#landing {
+    height: 100vh;
+    max-height: 1000px;
+    div {
+        height: 100%;
+    }
+}
+
+#landingShot {    
+    width: 95vw;
+    min-width: 700px;
+    max-width: 2200px;
+    height: 100%;
+    display: inline-flex;
+    justify-content: space-between;
+
+}
+
+#animation {
+    width: 50%;
+    height: 46.582%;
+    margin-right: 10%;
+    display: flex;
+    align-items: center;
+    @include background('../assets/spacecowboy.gif');
+    @include breakpoint(mobile) {background-image: url('../assets/spacecowboy.png');};
+}
+
+#event-title {
+    width: 37%;
+    max-width: 100vw;
+    padding-top: 12vh;
+    height: 85%;
+    div {
+        margin-bottom: 16px;
+    }
+    #hacktxtitle {
+        @include background('../assets/hacktxDate&Logo.png');
+        background-position: left bottom;
+        height: 50%;
+    }
+    #registerButton {
+        @include background('../assets/beforeBUTTON.png');
+        background-position: left;
+        height: 10%;
+        &:hover {
+            background-image: url('../assets/beforeBUTTONHover.png');
+        }
+    }
+    #arrow {
+        @include background('../assets/arrow.gif');
+        background-position: left;
+        height: 8%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    #event-title {
+        width: 45%;
+        padding-top: 5vh;
+    }
+}
+@media screen and (max-height: $xsmallbp) and (min-width: 1500px) {
+    #landingShot {
+        max-width: 70vw;
+    }
+}
+
+#rocket {
+    width: 50vh;
+    max-width: 250px;
+    height: 100vh;
+    max-height: 1000px;
+    display: flex;
+    align-items: flex-end;
+    padding-right: 200px;
+    div {
+        @include background('../assets/rocket.png');
+        background-position: bottom;
+        height: 70%;
+        width: 100%;
+    }
+}
+
+#title-container {
+    height: 80%;
+    max-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+#registerButton:hover {
+    display: block;
+}
+
+///////////// LOGOS
+#freetail-logo {
+    img {
+        height: 20vh;
+        max-height: 120px;
+        width: auto;
+    }
+    position: absolute;
+    left: 1vw;
+    top: 1vh;
+}
+
+#pinnacle-banner {
+    position: fixed;
+    left: 1vw;
+    bottom: 1vh;
+    z-index: 10000;
+    img {
+        height: 60px;
+        width: auto;
+    }
+}
+
+//////////// SCHEDULE
+#schedule {
+    display: inline-flex;
+    height: 100%;
+    margin-right: 400px;
+    @include breakpoint(small) {margin-right: 200px;}
+}
+
+.schedule-day {
+    width: 85vh;
+    max-width: 850px;
+    height: 100%;
+    @include breakpoint(small) {width: 100vh;};
+}
+
+.bottom-day {
+    display: flex;
+    align-items: flex-end;
+}
+
+#friday { @include background('../assets/Friday.png');};
+
+#saturday { @include background('../assets/Saturday.png');};
+
+#sunday { @include background('../assets/Sunday.png');};
+
+/////////// BLURBS SECTION
+#blurbs {
+    display: inline-flex;
+}
+
+.blurb-container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 32px;
+    @include breakpoint(small) {justify-content: center;}
+}
+
+.blurb-text {
+    max-width: 95vw;
+    display: flex;
+    flex: 0 1 auto;
+    flex-direction: column;
+    background-color: #1c4862;
+    border-radius: 50px;
+    padding: 32px 32px 8px 24px;
+    @include shadow(0.2);
+    div {
+        height: 90px;
+        @include breakpoint(medium) {height: 70px;};
+        @include breakpoint(small) {height: 60px;};
+        @include breakpoint(xsmall) {height: 48px;};
+        @include breakpoint(xxsmall) {height: 32px;};
+        img {
+            height: 100%;
+        }
+    }
+}
+
+.bottom-blurb {
+    justify-content: flex-end;
+    @include breakpoint(small) {justify-content: center;};
+}
+
+.illustration {
+    display: flex;
+    flex: 1 1 auto;
+    @include breakpoint(xsmall) {display: none;}
+}
+
+#blurb-1 {
+    width: 400px;
+    .illustration {
+        flex-direction: column;
+        justify-content: center;
+        padding: 2.5% 0;
+        div {
+            flex: 1 1 auto;
+            width: 100%;
+            background-image: url('../assets/Illustration_2.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+}
+
+#post {
+    height: 110%;
+    width: 42.7vh;
+    max-width: 427px;
+    margin-top: -2.5%;
+    @include breakpoint(medium) {margin-top: -1%;};
+    background-image: url('../assets/wantedPoster.gif');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+#blurb-2 {
+    width: 425px;
+}
+
+#blurb-3 {
+    width: 475px;
+    @include breakpoint(large) {width: 575px;}
+    // @include breakpoint(medium) {width: 525px;}
+    .blurb-text {
+        div {
+            height: 135px;
+            @include breakpoint(medium) {height: 105px;};
+            @include breakpoint(small) {height: 90px;};
+            @include breakpoint(xsmall) {height: 72px;};
+            @include breakpoint(xxsmall) {height: 48px;};
+        }
+    }
+    .illustration {
+        background-image: url('../assets/Illustration_3.png');
+        background-repeat: no-repeat;
+        background-position: bottom;
+        background-size: contain;
+        transform: scale(1.05) translateY(5vh);
+    }
+}
+
+.link {
+    color: $whiteText;
+    &:hover {
+        color: $blueText;
+        cursor: url('../assets/cursor\ hover.png'), auto;
+    }
+}
+
+#blurb-4 {
+    width: 425px;
+    .blurb-text {
+        div {
+            height: 45px;
+            @include breakpoint(medium) {height: 35px;};
+            @include breakpoint(small) {height: 30px;};
+            @include breakpoint(xsmall) {height: 24px;};
+            @include breakpoint(xxsmall) {height: 16px;};
+        }
+    }
+    .illustration {
+        flex-direction: column;
+        justify-content: center;
+        padding: 2.5% 0;
+        div {
+            flex: 1 1 auto;
+            width: 100%;
+            background-image: url('../assets/Illustration_1.png');
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+    }
+}
+
+////////// FAQ SECTION
+#faq {
+    display: flex;
+    flex-direction: column;
+    margin: 0 400px;
+    @include breakpoint(small) {margin: 0 200px;};
+    background-color: #0a2135;
+    border-radius: 50px;
+    @include shadow(1);
+    padding: 16px 32px;
+    @include breakpoint(xsmall) {padding: 16px 16px;};
+}
+
+#faq-header {
+    height: 100px;
+    @include breakpoint(small) { height: 75px; }
+    @include breakpoint(xsmall) {height: 60px;}
+    @include breakpoint(xxsmall) {height: 45px;}
+    width: 100%;
+    img {
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+#questions-container {
+    height: calc(100% - 132px);
+    margin-top: 32px;
+    @include breakpoint(xsmall) {
+        height: calc(100% - 91px);
+        margin-top: 16px;
+    }
+    @include breakpoint(xsmall) {height: calc(100% - 61px);}
+    display: flex;
+    p {
+        text-align: justify;
+        margin: 0;
+        width: 350px;
+        max-width: 95vw;
+        margin: 8px 16px;
+        width: fit-content;
+    }
+
+    .answer {
+        display: none;
+        margin-bottom: 16px;
+    }
+    
+    .last-answer {
+        margin-bottom: 0;
+    }
+
+    .question {
+        color: $blueText;
+        line-height: 22px;
+        margin-top: 5vh;
+        font-size: 20px;
+        @include breakpoint(medium) {line-height: 16px;};
+        @include breakpoint(small) {font-size: 18px; line-height: 20px;};
+        @include breakpoint(xsmall) {font-size: 16px; line-height: 16px; margin-top: 3vh;};
+        @include breakpoint(xxsmall) {font-size: 12px; margin-top: 2vh;};
+
+        &:hover {
+            transform: scale(1.05);
+            cursor: url('../assets/cursor\ hover.png'), auto;
+        }
+    }
+}
+
+.q-column {
+    width: 400px;
+    margin: 0 32px;
+    overflow-y: scroll;
+}
+
+// .right-justify {
+//     display: flex;
+//     flex-direction: column;
+//     align-items: flex-end;
+// }
+
+
+
+////////// SPONSORS SECTION
+#sponsors {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    div {
+        height: 30%;
+        width: 100%;
+        img {
+            margin: 0 auto;
+            display: block;
+        }
+    } 
+}
+
+#gif-sponsors, #static-sponsors {
+    height: 70%;
+    margin: auto;
+}
+
+#gif-sponsors {
+    display: block;
+    @include breakpoint(mobile) {display: none;}
+}
+
+#static-sponsors {
+    display: none;
+    @include breakpoint(mobile) {display: block;}
+}
