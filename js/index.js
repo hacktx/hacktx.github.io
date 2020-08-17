@@ -1,28 +1,29 @@
-var contentContainer;   // #superContentContainer
+var superContentContainer;   // #superContentContainer
+var contentContainer;       // #contentContainer
 var questionContainer;  // #question-container
 
 
-// scroll horizontally on vertical scroll
-// function replaceVerticalScrollByHorizontal(event) {
-//     if (event.deltaX != 0 && Math.abs(event.deltaY) < 1) {
-//       console.log("HERE")
-//       return; // default scroll
-//     } else if (Math.abs(event.deltaY) > 0) {
-//       contentContainer.scroll(contentContainer.scrollLeft + event.deltaY , 0);
-//     }
-//     event.preventDefault();
-// }
-// window.addEventListener('wheel', replaceVerticalScrollByHorizontal, {passive: false});
+// scroll horiozontally on vertical scroll
+function replaceVerticalScrollByHorizontal(event) {
+    if (event.deltaX != 0 && Math.abs(event.deltaY) < 1) {
+      return; // default scroll
+    } else if (Math.abs(event.deltaY) > 0) {
+      superContentContainer.scroll(superContentContainer.scrollLeft + event.deltaY , 0);
+    }
+    event.preventDefault();
+}
+window.addEventListener('wheel', replaceVerticalScrollByHorizontal, {passive: false});
 
 document.addEventListener("DOMContentLoaded", function(event) {
     // move hack tx title into view if it is cut off
     const titleRect = document.querySelector('#hacktxtitle').getBoundingClientRect();
-    contentContainer = document.querySelector('#superContentContainer');
-    const contentRect = contentContainer.getBoundingClientRect();
+    superContentContainer = document.querySelector('#superContentContainer');
+    contentContainer = document.querySelector('#contentContainer');
+    const contentRect = superContentContainer.getBoundingClientRect();
     if (titleRect.right > contentRect.right) {
         const contentMid = (contentRect.width) / 2.0;
         const titleMid = titleRect.left + (titleRect.width / 2.0);
-        contentContainer.scrollLeft = (titleMid - contentMid);
+        superContentContainer.scrollLeft = (titleMid - contentMid);
     }
     
     questionContainer = document.querySelector('#questions-container');
@@ -40,7 +41,17 @@ document.addEventListener("DOMContentLoaded", function(event) {
           // questionContainer.style.width = questionContainer.scrollWidth + "px";
         });
     }
+    window.onload = resizeBackground;
+    window.onresize = resizeBackground;
 });
+
+function resizeBackground() {
+  const els = document.querySelectorAll('.stretch-bg');
+  for (const layer of els) {
+    layer.style.width = (contentContainer.offsetWidth + 200) + "px";
+    console.log(layer.style.width)
+  }
+}
 
 // function setMaxScroll(e) {
 //   const maxScrollLeft = bg.offsetWidth - window.innerWidth;

@@ -1,0 +1,169 @@
+@font-face {
+  font-family: 'Beba Neue Bold';
+  src: url("./bebaneue/bebasneue-bold-webfont.woff2") format("woff2"), url("./bebaneue/bebasneue-bold-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Beba Neue';
+  src: url("./bebaneue/bebasneue-regular-webfont.woff2") format("woff2"), url("./bebaneue/bebasneue-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Beba Neue Light';
+  src: url("./bebaneue/bebasneue-light-webfont.woff2") format("woff2"), url("./bebaneue/bebasneue-light-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #210D18;
+  height: 100%;
+  width: 100%; }
+
+.parent-center {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+.submit {
+  color: white;
+  background: #210D18;
+  transition: 0.2s ease-in-out all;
+  overflow: hidden;
+  padding: 30px 60px;
+  text-decoration: none;
+  margin-left: 30px; }
+  .submit:hover {
+    background: #cc0000;
+    text-shadow: 1px 1px 0 #ff3333, 2px 2px 0 #ff3333, 3px 3px 0 #ff3333, 4px 4px 0 #ff3333, 5px 5px 0 #ff3333, 6px 6px 0 #ff3333, 7px 7px 0 #ff3333, 8px 8px 0 #ff3333, 9px 9px 0 #ff3333, 10px 10px 0 #ff3333, 11px 11px 0 #ff3333, 12px 12px 0 #ff3333, 13px 13px 0 #ff3333, 14px 14px 0 #ff3333, 15px 15px 0 #ff3333, 16px 16px 0 #ff3333, 17px 17px 0 #ff3333, 18px 18px 0 #ff3333, 19px 19px 0 #ff3333, 20px 20px 0 #ff3333, 21px 21px 0 #ff3333, 22px 22px 0 #ff3333, 23px 23px 0 #ff3333, 24px 24px 0 #ff3333, 25px 25px 0 #ff3333, 26px 26px 0 #ff3333, 27px 27px 0 #ff3333, 28px 28px 0 #ff3333, 29px 29px 0 #ff3333, 30px 30px 0 #ff3333, 31px 31px 0 #ff3333, 32px 32px 0 #ff3333, 33px 33px 0 #ff3333, 34px 34px 0 #ff3333, 35px 35px 0 #ff3333, 36px 36px 0 #ff3333, 37px 37px 0 #ff3333, 38px 38px 0 #ff3333, 39px 39px 0 #ff3333, 40px 40px 0 #ff3333, 41px 41px 0 #ff3333, 42px 42px 0 #ff3333, 43px 43px 0 #ff3333, 44px 44px 0 #ff3333, 45px 45px 0 #ff3333, 46px 46px 0 #ff3333, 47px 47px 0 #ff3333, 48px 48px 0 #ff3333, 49px 49px 0 #ff3333, 50px 50px 0 #ff3333, 51px 51px 0 #ff3333, 52px 52px 0 #ff3333, 53px 53px 0 #ff3333, 54px 54px 0 #ff3333, 55px 55px 0 #ff3333, 56px 56px 0 #ff3333, 57px 57px 0 #ff3333, 58px 58px 0 #ff3333, 59px 59px 0 #ff3333, 60px 60px 0 #ff3333, 61px 61px 0 #ff3333, 62px 62px 0 #ff3333, 63px 63px 0 #ff3333, 64px 64px 0 #ff3333, 65px 65px 0 #ff3333, 66px 66px 0 #ff3333, 67px 67px 0 #ff3333, 68px 68px 0 #ff3333, 69px 69px 0 #ff3333, 70px 70px 0 #ff3333; }
+
+.title {
+  font-family: 'Beba Neue Bold';
+  color: #FFFFFF;
+  color: white; }
+
+.heading {
+  font-family: 'Beba Neue';
+  color: #FFFFFF;
+  color: white; }
+
+#registration-button {
+  display: block;
+  margin-top: 15px; }
+  #registration-button a {
+    font-family: 'Beba Neue';
+    color: #210D18;
+    padding: 5px;
+    background-color: #FFFFFF;
+    transition: 0.3s;
+    text-decoration: none; }
+  #registration-button a:hover {
+    background-color: #5e344c;
+    color: #FFFFFF; }
+
+.normal-text {
+  font-family: 'Montserrat';
+  color: #FFFFFF;
+  color: white; }
+
+.contents {
+  margin: 8vw 8vw; }
+
+.content-margin {
+  margin: 2vw; }
+
+.content div {
+  display: inline; }
+
+.content img {
+  width: 100%;
+  height: 100%; }
+
+.content .question {
+  font-weight: bolder;
+  margin-bottom: 5px; }
+
+.content .answer {
+  font-weight: lighter;
+  margin: 5px 0px 20px; }
+
+.no-margin-top {
+  margin-top: 0px; }
+
+.header {
+  width: 100%; }
+
+#maillist form {
+  width: 100%;
+  padding-top: 32px;
+  display: flex; }
+  #maillist form input {
+    font-family: "Beba Neue";
+    background: #FFFFFF;
+    color: #210D18; }
+    #maillist form input:focus, #maillist form input:active {
+      border-color: white;
+      position: relative; }
+  #maillist form .email {
+    flex-grow: 1; }
+
+@media all and (min-width: 1024px) {
+  .conditional-no-margin-top {
+    margin-top: 0px; }
+  .title {
+    font-size: 200px;
+    font-size: 15vw; }
+  .heading {
+    font-size: 72px;
+    font-size: 4vw; }
+  #registration-button a {
+    font-size: 72px;
+    font-size: 4vw; }
+  .normal-text {
+    font-size: 19px;
+    font-size: 1.5vw; }
+  .contents {
+    display: flex; }
+  .content {
+    width: 50%; }
+    .content .answer {
+      font-size: 1.3vw; }
+  .four-items {
+    width: 33%; }
+  #maillist form input {
+    padding: 0.5vw;
+    font-size: 2vw; } }
+
+@media all and (max-width: 1024px) {
+  .conditional-center {
+    text-align: center; }
+  .title {
+    font-size: 100px;
+    font-size: 25vw; }
+  .heading {
+    font-size: 48px;
+    font-size: 7.5vw; }
+  #registration-button a {
+    font-size: 48px;
+    font-size: 7.5vw; }
+  .normal-text {
+    font-size: 19px;
+    font-size: 4.0vw;
+    text-align: center; }
+  .four-items {
+    width: 50%;
+    padding: 3vw 0vw; }
+  .content .answer {
+    font-size: 3.5vw; }
+  #maillist form input {
+    padding: 1vw;
+    font-size: 4vw; } }
+
+#sponsors {
+  background: #ffffff;
+  height: auto;
+  flex-direction: column;
+  flex-flow: column wrap; }

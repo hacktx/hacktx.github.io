@@ -1,0 +1,245 @@
+$desktop-width: 1024px;
+$background-color: #210D18;
+$foreground-color: #210D18;
+$pad: 30px;
+
+@font-face {
+    font-family: 'Beba Neue Bold';
+    src: url('./bebaneue/bebasneue-bold-webfont.woff2') format('woff2'),
+         url('./bebaneue/bebasneue-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Beba Neue';
+    src: url('./bebaneue/bebasneue-regular-webfont.woff2') format('woff2'),
+         url('./bebaneue/bebasneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Beba Neue Light';
+    src: url('./bebaneue/bebasneue-light-webfont.woff2') format('woff2'),
+         url('./bebaneue/bebasneue-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    background: $background-color;
+    height: 100%;
+    width: 100%;
+}
+
+.parent-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit {
+    color: white;
+    background: $background-color;
+    transition: 0.2s ease-in-out all;
+    overflow: hidden;
+    &:hover {
+        background: darken(red, 10%);
+        $shadows: ();
+        $length: 70;
+        @for $i from 1 through $length {
+            $shadows: append($shadows, $i*1px $i*1px 0 lighten(red, 10%), 'comma');
+        }
+        text-shadow: $shadows;
+    }
+    padding: $pad $pad*2;
+    text-decoration: none;
+    margin-left: $pad;
+}
+
+.title {
+    font-family: 'Beba Neue Bold';
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+}
+
+.heading {
+    font-family: 'Beba Neue';
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+}
+
+#registration-button {
+    display: block;
+    margin-top: 15px;
+
+    a {
+        font-family: 'Beba Neue';
+        color: $background-color;
+        padding: 5px;
+        background-color: #FFFFFF;
+        transition: 0.3s;
+        text-decoration: none;
+    }
+
+    a:hover {
+        background-color: rgb(94, 52, 76);
+        color: #FFFFFF;
+    }
+}
+
+.normal-text {
+    font-family: 'Montserrat';
+    color: #FFFFFF;
+    color: rgb(255, 255, 255);
+}
+
+.contents {
+    margin: 8vw 8vw;
+}
+
+.content-margin {
+    margin: 2vw;
+}
+
+.content {
+    div {
+        display: inline;
+    }
+
+    img {
+        width: 100%;
+        height: 100%;
+    }
+
+    .question {
+        font-weight: bolder;
+        margin-bottom: 5px;
+    }
+
+    .answer {
+        font-weight: lighter;
+        margin: 5px 0px 20px;
+    }
+}
+
+.no-margin-top {
+    margin-top: 0px;
+}
+
+.header {
+    width: 100%;
+}
+
+#maillist {
+    form {
+        width: 100%;
+        padding-top: 32px;
+        display: flex;
+        input {
+            font-family: "Beba Neue";
+            background: #FFFFFF;
+            color: $foreground-color;    
+            &:focus, &:active {
+                border-color: white;
+                position: relative;
+            }
+        }
+        .email {
+            flex-grow: 1;
+        }
+    }
+}
+
+@media all and (min-width: $desktop-width) {
+    .conditional-no-margin-top {
+        margin-top: 0px;
+    }
+    .title {
+        font-size: 200px;
+        font-size: 15vw;
+    }
+    .heading {
+        font-size: 72px;
+        font-size: 4vw;
+    }
+    #registration-button a {
+        font-size: 72px;
+        font-size: 4vw;
+    }
+    .normal-text {
+        font-size: 19px;
+        font-size: 1.5vw;
+    }
+    .contents {
+        display: flex
+    }
+    .content {
+        width: 50%;
+
+        .answer {
+            font-size: 1.3vw;
+        }
+    }
+    .four-items {
+        width: 33%;
+    }
+    #maillist {
+        form {
+            input {
+                padding: 0.5vw;
+                font-size: 2vw;
+            }
+        }
+    }
+}
+
+@media all and (max-width: $desktop-width) {
+    .conditional-center {
+        text-align: center;
+    }
+    .title {
+        font-size: 100px;
+        font-size: 25vw;
+    }
+    .heading {
+        font-size: 48px;
+        font-size: 7.5vw;
+    }
+    #registration-button a {
+        font-size: 48px;
+        font-size: 7.5vw;
+    }
+    .normal-text {
+        font-size: 19px;
+        font-size: 4.0vw;
+        text-align: center;
+    }
+    .four-items {
+        width: 50%;
+        padding: 3vw 0vw;
+    }
+    .content {
+        .answer {
+            font-size: 3.5vw;
+        }
+    }
+    #maillist {
+        form {
+            input {
+                padding: 1vw;
+                font-size: 4vw;
+            }
+        }
+    }
+}
+
+#sponsors {
+    background: #ffffff;
+    height: auto;
+    flex-direction: column;
+    flex-flow: column wrap; 
+}
