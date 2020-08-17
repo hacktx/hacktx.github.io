@@ -2,6 +2,7 @@ $color-stops: #0b2135, #0f3857;
 $whiteText: #f6f4d9;
 $blueText: #a6f4e4;
 $translateOrigin: 0px 0px;
+$xlargebp: 1100px;
 $largebp: 832px;
 $mediumbp: 685px;
 $smallbp: 575px;
@@ -29,6 +30,8 @@ $minHeight: 215px;
         @media only screen and (min-width: 320px) and (max-width: 480px)
              {@content;}
         @media only screen and (max-height: $xxsmallbp) {@content; }
+    } @else if $media == xlarge {
+        @media only screen and (min-height: $xlargebp + 1) { @content; }
     }
 }
 
@@ -67,7 +70,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-content: center;
-    // cursor: url('assets/lasso_cursor.JPG'), auto;
+    cursor: url('assets/cursor.png'), auto;
 }
 
 .stretch-bg {
@@ -107,6 +110,7 @@ body {
 #parallex {
     display: inline-flex;
     overflow: hidden;
+    max-height: 1200px;
     @include browser(chrome) {
         transform: translateZ(-3px) scale(4);
         transform-origin: $translateOrigin;
@@ -118,6 +122,15 @@ body {
         transform-origin: $translateOrigin;
     }
     @include breakpoint(xsmall) {display: none;};
+}
+
+#regSize {
+    @include breakpoint(xlarge) {display: none;}
+}
+
+#largeSize {
+    display: none;
+    @include breakpoint(xlarge) {display: block;}
 }
 
 
@@ -293,8 +306,9 @@ p {
     .illustration {
         flex-direction: column;
         justify-content: center;
+        padding: 2.5% 0;
         div {
-            height: 95%;
+            flex: 1 1 auto;
             width: 100%;
             background-image: url('assets/Illustration_2.png');
             background-repeat: no-repeat;
@@ -308,7 +322,7 @@ p {
     height: 110vh;
     width: 42.7vh;
     margin-top: -10vh;
-    background-image: url('assets/WantedPosterFINAL.gif');
+    background-image: url('assets/wantedPoster.gif');
     background-repeat: no-repeat;
     background-position: center;
     background-size: contain;
@@ -344,7 +358,7 @@ p {
     color: $whiteText;
     &:hover {
         color: $blueText;
-        cursor: pointer;
+        cursor: url('assets/cursor\ hover.png'), auto;
     }
 }
 
@@ -362,8 +376,9 @@ p {
     .illustration {
         flex-direction: column;
         justify-content: center;
+        padding: 2.5% 0;
         div {
-            height: 95%;
+            flex: 1 1 auto;
             width: 100%;
             background-image: url('assets/Illustration_1.png');
             background-repeat: no-repeat;
@@ -437,7 +452,7 @@ p {
 
         &:hover {
             transform: scale(1.05);
-            cursor: pointer;
+            cursor: url('assets/cursor\ hover.png'), auto;
         }
     }
 }
