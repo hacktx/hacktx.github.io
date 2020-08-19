@@ -53,7 +53,7 @@ function resizeBackground() {
   // resize faqs container if necessary
   questionContainer.style.columnWidth = (firstQuestion.offsetWidth + 64) + 'px';
   questionContainer.style.width = 'auto';
-  questionContainer.style.width = questionContainer.scrollWidth + "px";
+  questionContainer.style.width = (questionContainer.scrollWidth + 1) + "px";
 
   // resize background layers if necessary
   const els = document.querySelectorAll('.stretch-bg');
