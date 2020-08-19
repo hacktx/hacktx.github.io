@@ -1,6 +1,7 @@
 var superContentContainer;   // #superContentContainer
-var contentContainer;       // #contentContainer
-var questionContainer;  // #question-container
+var contentContainer;        // #contentContainer
+var questionContainer;       // #question-container
+var firstQuestion;           // .question (first one)
 
 
 // scroll horiozontally on vertical scroll
@@ -12,6 +13,7 @@ function replaceVerticalScrollByHorizontal(event) {
     }
     event.preventDefault();
 }
+
 window.addEventListener('wheel', replaceVerticalScrollByHorizontal, {passive: false});
 
 document.addEventListener("DOMContentLoaded", function(event) {
@@ -28,6 +30,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
     
     questionContainer = document.querySelector('#questions-container');
     const questions = document.querySelectorAll(".question");
+    firstQuestion = questions[0];
+    console.log(firstQuestion)
     for (i = 0; i < questions.length; i++) {
         questions[i].addEventListener("click", function() {
           this.classList.toggle("active");
@@ -37,15 +41,21 @@ document.addEventListener("DOMContentLoaded", function(event) {
           } else {
             content.style.display = "block";
           }
-          // questionContainer.style.width = 'auto';
-          // questionContainer.style.width = questionContainer.scrollWidth + "px";
+          resizeBackground();
         });
     }
     window.onload = resizeBackground;
     window.onresize = resizeBackground;
+    superContentContainer.onscroll = replaceVerticalScrollByHorizontal
 });
 
 function resizeBackground() {
+  // resize faqs container if necessary
+  questionContainer.style.columnWidth = (firstQuestion.offsetWidth + 64) + 'px';
+  questionContainer.style.width = 'auto';
+  questionContainer.style.width = questionContainer.scrollWidth + "px";
+
+  // resize background layers if necessary
   const els = document.querySelectorAll('.stretch-bg');
   for (const layer of els) {
     layer.style.width = (contentContainer.offsetWidth + 200) + "px";
