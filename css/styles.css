@@ -869,13 +869,13 @@ p {
 
 @media only screen and (min-width: 320px) and (max-width: 480px) {
   #faq {
-    margin: 0 275px;
+    margin: 0 125px 0 275px;
   }
 }
 
 @media only screen and (max-height: 350px) {
   #faq {
-    margin: 0 275px;
+    margin: 0 125px 0 275px;
   }
 }
 
@@ -1035,9 +1035,47 @@ p {
           justify-content: space-between;
 }
 
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  #sponsors {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+@media only screen and (max-height: 350px) {
+  #sponsors {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
 #sponsors div {
   height: 30%;
   width: 100%;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 480px) {
+  #sponsors div {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-right: 30px;
+    height: 13%;
+  }
+}
+
+@media only screen and (max-height: 350px) {
+  #sponsors div {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    margin-right: 30px;
+    height: 13%;
+  }
 }
 
 #sponsors div img {

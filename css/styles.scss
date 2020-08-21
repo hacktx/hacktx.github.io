@@ -485,7 +485,7 @@ p {
     @include breakpoint(mobile) {flex-direction: row;}
     margin: 0 400px;
     @include breakpoint(small) {margin: 0 200px;};
-    @include breakpoint(mobile) {margin: 0 275px;}
+    @include breakpoint(mobile) {margin: 0 125px 0 275px;}
     background-color: #0a2135;
     border-radius: 50px;
     @include shadow(1);
@@ -563,9 +563,15 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @include breakpoint(mobile) {flex-direction: row;}
     div {
         height: 30%;
         width: 100%;
+        @include breakpoint(mobile) {
+            align-self: center;
+            margin-right: 30px;
+            height: 13%;
+        }
         img {
             margin: 0 auto;
             display: block;
