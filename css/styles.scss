@@ -45,7 +45,7 @@ $minHeight: 215px;
 @mixin shadow($alpha) {
     -webkit-box-shadow: 3px 3px 3px 3px rgba(0,0,0, $alpha);  /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
     -moz-box-shadow:    3px 3px 3px 3px rgba(0,0,0,$alpha);  /* Firefox 3.5 - 3.6 */
-    box-shadow:         3px 3px 3px 3px rgba(0,0,0,$alpha);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */ 
+    box-shadow:         3px 3px 3px 3px rgba(0,0,0,$alpha);  /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
 }
 
 @mixin background($url) {
@@ -183,7 +183,7 @@ p {
     }
 }
 
-#landingShot {    
+#landingShot {
     width: 95vw;
     min-width: 1000px;
     max-width: 2200px;
@@ -209,6 +209,7 @@ p {
     max-width: 100vw;
     padding-top: 12vh;
     height: 85%;
+    @include breakpoint(mobile) {max-width: 90vw;}
     div {
         margin-bottom: 16px;
     }
@@ -255,6 +256,7 @@ p {
     align-items: flex-end;
     padding-right: 200px;
     @include breakpoint(small) {padding-right: 50px;}
+    @include breakpoint(mobile) {padding-right: 0px;}
     div {
         @include background('../assets/rocket.png');
         background-position: left bottom;
@@ -303,6 +305,7 @@ p {
     height: 100%;
     margin-right: 400px;
     @include breakpoint(small) {margin-right: 200px;}
+    @include breakpoint(mobile) {margin-right: 0px;}
 }
 
 .schedule-day {
@@ -345,6 +348,7 @@ p {
     border-radius: 50px;
     padding: 32px 32px 8px 24px;
     @include shadow(0.2);
+    @include breakpoint(mobile) {width: 80vw;};
     div {
         height: 90px;
         @include breakpoint(medium) {height: 70px;};
@@ -360,6 +364,7 @@ p {
 .bottom-blurb {
     justify-content: flex-end;
     @include breakpoint(small) {justify-content: center;};
+    @include breakpoint(mobile) {justify-content: center;};
 }
 
 .illustration {
@@ -410,6 +415,7 @@ p {
     max-height: 950px;
     width: 475px;
     @include breakpoint(large) {width: 575px;}
+    @include breakpoint(mobile) {width: 400px;}
     // @include breakpoint(medium) {width: 525px;}
     .blurb-text {
         div {
@@ -418,6 +424,7 @@ p {
             @include breakpoint(small) {height: 90px;};
             @include breakpoint(xsmall) {height: 72px;};
             @include breakpoint(xxsmall) {height: 48px;};
+            @include breakpoint(mobile) {height: 75px;}
         }
     }
     .illustration {
@@ -445,6 +452,7 @@ p {
 
 #blurb-4 {
     width: 425px;
+    @include breakpoint(mobile) {height: 70vh; width: 150px;}
     .blurb-text {
         div {
             height: 45px;
@@ -459,6 +467,7 @@ p {
         justify-content: center;
         padding: 2.5% 0;
         div {
+            margin-left: 30vw;
             flex: 1 1 auto;
             width: 100%;
             background-image: url('../assets/Illustration_1.png');
@@ -473,8 +482,10 @@ p {
 #faq {
     display: flex;
     flex-direction: column;
+    @include breakpoint(mobile) {flex-direction: row;}
     margin: 0 400px;
     @include breakpoint(small) {margin: 0 200px;};
+    @include breakpoint(mobile) {margin: 0 275px;}
     background-color: #0a2135;
     border-radius: 50px;
     @include shadow(1);
@@ -487,10 +498,16 @@ p {
     @include breakpoint(small) { height: 75px; }
     @include breakpoint(xsmall) {height: 60px;}
     @include breakpoint(xxsmall) {height: 45px;}
-    width: 100%;
+    @include breakpoint(mobile) {
+        align-self: center;
+        margin-right: 30px;
+    }
     img {
         display: block;
         margin: 0 auto;
+        @include breakpoint(mobile) {
+            margin: 0;
+        }
     }
 }
 
@@ -517,7 +534,7 @@ p {
         display: none;
         margin-bottom: 16px;
     }
-    
+
     .last-answer {
         margin-bottom: 0;
     }
@@ -553,7 +570,7 @@ p {
             margin: 0 auto;
             display: block;
         }
-    } 
+    }
 }
 
 #gif-sponsors, #static-sponsors {
