@@ -31,7 +31,6 @@ document.addEventListener("DOMContentLoaded", function(event) {
     questionContainer = document.querySelector('#questions-container');
     const questions = document.querySelectorAll(".question");
     firstQuestion = questions[0];
-    console.log(firstQuestion)
     for (i = 0; i < questions.length; i++) {
         questions[i].addEventListener("click", function() {
           this.classList.toggle("active");
