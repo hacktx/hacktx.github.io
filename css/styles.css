@@ -525,14 +525,14 @@ p {
   flex-direction: column;
   justify-content: space-between; }
   #sponsors div {
-    height: 30%;
+    height: 22%;
     width: 100%; }
     #sponsors div img {
       margin: 0 auto;
       display: block; }
 
 #gif-sponsors, #static-sponsors {
-  height: 70%;
+  height: 78%;
   margin: auto; }
 
 #gif-sponsors {
