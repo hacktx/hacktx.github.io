@@ -40,15 +40,15 @@ document.addEventListener("DOMContentLoaded", function(event) {
           } else {
             content.style.display = "block";
           }
-          resizeBackground();
+          resizeBackground(false);
         });
     }
-    window.onload = resizeBackground;
-    window.onresize = resizeBackground;
+    window.onload = () => {resizeBackground(true)};
+    window.onresize = () => {resizeBackground(true)};
     superContentContainer.onscroll = replaceVerticalScrollByHorizontal
 });
 
-function resizeBackground() {
+function resizeBackground(shouldResizeParallax) {
   // resize faqs container if necessary
   questionContainer.style.columnWidth = (firstQuestion.offsetWidth + 64) + 'px';
   questionContainer.style.width = 'auto';
@@ -56,7 +56,8 @@ function resizeBackground() {
 
   // resize background layers if necessary
   const els = document.querySelectorAll('.stretch-bg');
-  for (const layer of els) {
-    layer.style.width = (contentContainer.offsetWidth + 200) + "px";
+  els[0].style.width = (contentContainer.offsetWidth + 200) + "px";
+  if (shouldResizeParallax) {
+    els[1].style.width = (contentContainer.offsetWidth + 200) + "px";
   }
 }

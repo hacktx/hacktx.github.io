@@ -172,14 +172,14 @@ p {
     background-position: left bottom;
     height: 50%; }
   #event-title #registerButton {
-    background-image: url("../assets/beforeBUTTON.png");
+    background-image: url("../assets/RegisterButton.png");
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     background-position: left;
-    height: 10%; }
+    height: 15%; }
     #event-title #registerButton:hover {
-      background-image: url("../assets/beforeBUTTONHover.png");
+      background-image: url("../assets/RegisterButtonHover.png");
       cursor: url("../assets/cursor hover.png"), auto; }
   #event-title #arrow {
     background-image: url("../assets/arrow.gif");

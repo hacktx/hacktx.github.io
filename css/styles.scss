@@ -218,11 +218,11 @@ p {
         height: 50%;
     }
     #registerButton {
-        @include background('../assets/beforeBUTTON.png');
+        @include background('../assets/RegisterButton.png');
         background-position: left;
-        height: 10%;
+        height: 15%;
         &:hover {
-            background-image: url('../assets/beforeBUTTONHover.png');
+            background-image: url('../assets/RegisterButtonHover.png');
             cursor: url('../assets/cursor\ hover.png'), auto;
         }
     }
