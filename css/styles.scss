@@ -200,8 +200,105 @@ p {
     height: 46.582%;
     display: flex;
     align-items: center;
-    @include background('../assets/spacecowboy.gif');
-    @include breakpoint(mobile) {background-image: url('../assets/spacecowboy.png');};
+    
+    #animation-spaceship {
+        width: 18%;
+        height: 50%;
+        margin-left: 8%;
+        margin-right: 0%;
+        margin-top: -30%;
+
+        animation: rotateSpaceship 3s infinite ease-in-out, 
+                   moveSpaceshipVertical 5s infinite ease-in-out,
+                   moveSpaceshipHorizontal 7s infinite ease-in-out;
+
+        @include background('../assets/spaceship.png');
+
+        @keyframes rotateSpaceship {
+            0% {
+                transform: rotate(-30deg);
+            }
+    
+            50% {
+                transform: rotate(0deg);
+            }
+    
+            100% {
+                transform: rotate(-30deg);
+            }
+        }
+
+        @keyframes moveSpaceshipVertical {
+            0% {
+                margin-top: -30%;
+            }
+    
+            50% {
+                margin-top: -20%;
+            }
+    
+            100% {
+                margin-top: -30%;
+            }
+        }
+
+        @keyframes moveSpaceshipHorizontal {
+            0% {
+                margin-left: 8%;
+                margin-right: 0%;
+            }
+    
+            50% {
+                margin-left: 2%;
+                margin-right: 6%;
+            }
+    
+            100% {
+                margin-left: 8%;
+                margin-right: 0%;
+            }
+        }
+    }
+
+    #animation-horse {
+        width: 60%;
+        margin-left: 5%;
+
+        transform-origin: 25% 100%;
+        animation: rotateHorse 4s infinite ease-in-out;
+
+        @include background('../assets/spacecowboy-horse.png');
+
+        $down: rotate(10deg);
+        $up: rotate(-8deg);
+        $mid: rotate(-5deg);
+
+        @keyframes rotateHorse {
+            0% {
+                transform: $mid;
+            }
+    
+            15% {
+                transform: $up;
+            }
+
+            40% {
+                transform: $down;
+            }
+
+            60% {
+                transform: $down;
+            }
+
+            85% {
+                transform: $up;
+            }
+    
+            100% {
+                transform: $mid;
+            }
+        }
+    }
 }
 
 #event-title {
