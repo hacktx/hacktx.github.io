@@ -6,12 +6,26 @@ var firstQuestion;           // .question (first one)
 
 // scroll horiozontally on vertical scroll
 function replaceVerticalScrollByHorizontal(event) {
+    if (isMobile()) {
+      return;
+    }
     if (event.deltaX != 0 && Math.abs(event.deltaY) < 1) {
       return; // default scroll
     } else if (Math.abs(event.deltaY) > 0) {
       superContentContainer.scroll(superContentContainer.scrollLeft + event.deltaY , 0);
     }
     event.preventDefault();
+}
+
+// detects if on mobile
+function isMobile() {
+  return navigator.userAgent.match(/Android/i)
+                || navigator.userAgent.match(/webOS/i)
+                || navigator.userAgent.match(/iPhone/i)
+                || navigator.userAgent.match(/iPad/i)
+                || navigator.userAgent.match(/iPod/i)
+                || navigator.userAgent.match(/BlackBerry/i)
+                || navigator.userAgent.match(/Windows Phone/i);
 }
 
 window.addEventListener('wheel', replaceVerticalScrollByHorizontal, {passive: false});
@@ -27,7 +41,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         const titleMid = titleRect.left + (titleRect.width / 2.0);
         superContentContainer.scrollLeft = (titleMid - contentMid);
     }
-    
+
     questionContainer = document.querySelector('#questions-container');
     const questions = document.querySelectorAll(".question");
     firstQuestion = questions[0];
@@ -44,8 +58,8 @@ document.addEventListener("DOMContentLoaded", function(event) {
           resizeBackground();
         });
     }
-    window.onload = resizeBackground;
-    window.onresize = resizeBackground;
+    // window.onload = resizeBackground;
+    // window.onresize = resizeBackground;
     superContentContainer.onscroll = replaceVerticalScrollByHorizontal
 });
 
