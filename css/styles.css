@@ -233,12 +233,39 @@ p {
       background-image: url("../assets/RegisterButtonHover.png");
       cursor: url("../assets/cursor hover.png"), auto; }
   #event-title #arrow {
-    background-image: url("../assets/arrow.gif");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: left;
-    height: 8%; }
+    width: 100%;
+    max-height: 8%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    animation: moveArrow 1.5s linear infinite; }
+    #event-title #arrow #arrow-fire {
+      width: 10%;
+      transform-origin: right;
+      animation: growFire 1.5s linear infinite;
+      background-image: url("../assets/arrow-fire.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+
+@keyframes growFire {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1.2); } }
+    #event-title #arrow #arrow-arrow {
+      width: 40%;
+      margin-left: -2%;
+      background-image: url("../assets/arrow.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+
+@keyframes moveArrow {
+  0% {
+    left: -10%; }
+  100% {
+    left: 43%; } }
 
 @media screen and (max-width: 1000px) {
   #event-title {
