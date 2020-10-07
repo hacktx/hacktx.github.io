@@ -145,17 +145,61 @@ p {
   width: 50%;
   height: 46.582%;
   display: flex;
-  align-items: center;
-  background-image: url("../assets/spacecowboy.gif");
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat; }
-  @media only screen and (min-width: 320px) and (max-width: 480px) {
-    #animation {
-      background-image: url("../assets/spacecowboy.png"); } }
-  @media only screen and (max-height: 350px) {
-    #animation {
-      background-image: url("../assets/spacecowboy.png"); } }
+  align-items: center; }
+  #animation #animation-spaceship {
+    width: 18%;
+    height: 50%;
+    margin-left: 8%;
+    margin-right: 0%;
+    margin-top: -30%;
+    animation: rotateSpaceship 3s infinite ease-in-out,  moveSpaceshipVertical 5s infinite ease-in-out, moveSpaceshipHorizontal 7s infinite ease-in-out;
+    background-image: url("../assets/spaceship.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+@keyframes rotateSpaceship {
+  0% {
+    transform: rotate(-30deg); }
+  50% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(-30deg); } }
+
+@keyframes moveSpaceshipVertical {
+  0% {
+    margin-top: -30%; }
+  50% {
+    margin-top: -20%; }
+  100% {
+    margin-top: -30%; } }
+
+@keyframes moveSpaceshipHorizontal {
+  0% {
+    margin-left: 8%;
+    margin-right: 0%; }
+  50% {
+    margin-left: 2%;
+    margin-right: 6%; }
+  100% {
+    margin-left: 8%;
+    margin-right: 0%; } }
+  #animation #animation-horse {
+    width: 60%;
+    margin-left: 5%;
+    animation: rotateHorse 4s infinite ease-in-out;
+    background-image: url("../assets/spacecowboy-horse.png");
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat; }
+
+@keyframes rotateHorse {
+  0% {
+    transform: rotate(10deg); }
+  50% {
+    transform: rotate(-8deg); }
+  100% {
+    transform: rotate(10deg); } }
 
 #event-title {
   width: 45%;
@@ -182,12 +226,39 @@ p {
       background-image: url("../assets/RegisterButtonHover.png");
       cursor: url("../assets/cursor hover.png"), auto; }
   #event-title #arrow {
-    background-image: url("../assets/arrow.gif");
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-position: left;
-    height: 8%; }
+    width: 100%;
+    max-height: 8%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    animation: moveArrow 1.5s linear infinite; }
+    #event-title #arrow #arrow-fire {
+      width: 10%;
+      transform-origin: right;
+      animation: growFire 1.5s linear infinite;
+      background-image: url("../assets/arrow-fire.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+
+@keyframes growFire {
+  0% {
+    transform: scale(0.5); }
+  100% {
+    transform: scale(1.2); } }
+    #event-title #arrow #arrow-arrow {
+      width: 40%;
+      margin-left: -2%;
+      background-image: url("../assets/arrow.png");
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat; }
+
+@keyframes moveArrow {
+  0% {
+    left: -10%; }
+  100% {
+    left: 43%; } }
 
 @media screen and (max-width: 1000px) {
   #event-title {
