@@ -305,11 +305,11 @@ p {
 
 #pinnacle-banner {
   position: fixed;
-  left: 1vw;
-  bottom: 5vh;
+  right: 200px;
+  top: 0px;
   z-index: 10000; }
   #pinnacle-banner img {
-    height: 60px;
+    height: 170px;
     width: auto; }
 
 #schedule {
