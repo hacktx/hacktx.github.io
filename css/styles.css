@@ -187,7 +187,6 @@ p {
   #animation #animation-horse {
     width: 60%;
     margin-left: 5%;
-    transform-origin: 25% 100%;
     animation: rotateHorse 4s infinite ease-in-out;
     background-image: url("../assets/spacecowboy-horse.png");
     background-size: contain;
@@ -196,17 +195,11 @@ p {
 
 @keyframes rotateHorse {
   0% {
-    transform: rotate(-5deg); }
-  15% {
-    transform: rotate(-8deg); }
-  40% {
     transform: rotate(10deg); }
-  60% {
-    transform: rotate(10deg); }
-  85% {
+  50% {
     transform: rotate(-8deg); }
   100% {
-    transform: rotate(-5deg); } }
+    transform: rotate(10deg); } }
 
 #event-title {
   width: 45%;
