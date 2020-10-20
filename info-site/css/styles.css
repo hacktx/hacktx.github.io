@@ -67,26 +67,6 @@ button{
     display: none;
 }
 
-#text-header{
-    color: #FFFFFF;
-    position: fixed;
-    margin-top: 13%;
-    margin-left: 5%;
-    font-size: 30px;
-    font-weight: bolder;
-}
-
-#text-body{
-    color: #FFFFFF;
-    position: fixed;
-    margin-top: 16%;
-    margin-left: 5%;
-    text-align: left;
-    font-size: 110%;
-    width: 30%;
-    height: 1000px;
-}
-
 .general{
     width: 80%;
     margin: 0 auto;
