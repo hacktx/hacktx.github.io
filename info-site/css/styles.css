@@ -195,4 +195,18 @@ button{
         width: 50%;
         height: auto;
     }
-  }
+
+    .row{
+        flex-direction: column;
+    }
+
+    .company{
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    .company img{
+        width: 270px;
+    }
+
+}
