@@ -8,7 +8,6 @@ html, body{
     width: 100vw;
     min-height: 215px;
     overflow-x: auto;
-    overflow-y: hidden; 
 }
 
 body{
@@ -22,15 +21,19 @@ body{
     cursor: url("../../assets/cursor.png"), auto; 
 }
 
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
 nav > *{
     width: 100vw;
     height: 80px;
 }
 
 #freetail-logo {
-    position: absolute;
-    left: 1vw;
-    top: 1vh;
+    margin-left: 1vw;
+    margin-top: 1vh;
     height: 20vh;
     max-height: 120px;
     width: auto;
