@@ -68,7 +68,7 @@ button{
 }
 
 .general{
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
@@ -90,14 +90,68 @@ button{
 }
 
 .general-bg{
-    padding: 20px 0;
-    width: 100%;
+    width: min(80%, 900px);
+    margin: 50px auto;
     height: 800px;
 }
 
 .general-bg rect{
     height: 100%;
     fill: #F7896F;
+}
+
+.companies{
+    background-color: #F7896F;
+    width: min(80%, 900px);
+    margin: 50px auto;
+    color: white;
+    padding-top: 70px;
+}
+
+.row{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.company{
+    width: 370px;
+    margin: 0 auto;
+}
+
+.company img{
+    width: 330px;
+    height: auto;
+    padding: 20px 0;
+}
+
+.company-microsoft img{
+    padding: 0;
+}
+
+.company p{
+    font-size: 14px;
+}
+
+.challenges{
+    background-color: #F7896F;
+    width: min(80%, 900px);
+    margin: 50px auto;
+    color: white;
+    padding-top: 30px;
+}
+
+.challenge h1{
+    font-size: 25px;
+    padding: 0 75px;
+}
+
+.challenge p{
+    font-size: 16px;
+    padding: 0 75px;
+    padding-bottom: 30px;
 }
 
 @media only screen and (max-width: 1000px) {
