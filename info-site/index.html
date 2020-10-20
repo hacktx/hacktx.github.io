@@ -15,7 +15,6 @@
     <link rel="manifest" href="../assets/icons/site.webmanifest">
     <body> 
         <nav id="navigation-bar">
-            <img id="freetail-logo" src="../assets/freetail_logo.png">
             <ul>
                 <button>☰</button>
                 <li><a href="index.html">Home</a></li>
@@ -25,5 +24,75 @@
                 <li><a href="pages/extra.html">Extra</a></li>
             </ul>
         </nav>
+   <head>
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+      <style>
+        /* phone */
+         @media screen
+         and (min-device-width : 320px) {
+            body {
+                background: url('../assets/freetail_logo.png') no-repeat fixed 5% 5%, url('../assets/title.png') no-repeat fixed 50% 20%, url('../assets/StarsHomepage.png') fixed, #034965;
+                background-size: 7.5%, 50%, 100%, auto;
+                object-fit: fill, auto;
+                font-family: "Poppins";
+            }
+            #text-header{
+                color: #FFFFFF;
+                font-size: 70%;
+                margin-top: 25%;
+                text-align: center;
+                font-weight: bolder;
+            }
+            #text-body{
+                color: #FFFFFF;
+                font-size: 50%;
+                margin-top: 2%;
+                margin-left: 10%;
+                text-align: center;
+                width: 80%;
+                height: 1000px;
+            }
+
+         }
+        /* laptop */
+        @media screen   
+        and (min-device-width : 768px)   
+        and (max-device-width : 1605px) {
+            body{
+                background: url('../assets/freetail_logo.png') no-repeat fixed 5% 5%, url('../assets/title.png') no-repeat fixed 90% 50%, url('../assets/wave.png') no-repeat fixed, url('../assets/StarsHomepage.png') fixed;
+                background-color: #034965;
+                background-size: 7.5%, 55%, 50% 100%, 100%;
+                font-family: "Poppins";
+                overflow: hidden;
+                margin: 0;
+            }
+            #text-header{
+                color: #FFFFFF;
+                position: fixed;
+                margin-top: 13%;
+                margin-left: 5%;
+                font-size: 30px;
+                font-weight: bolder;
+            }
+            #text-body{
+                color: #FFFFFF;
+                position: fixed;
+                margin-top: 16%;
+                margin-left: 5%;
+                text-align: left;
+                font-size: 110%;
+                width: 30%;
+                height: 1000px;
+            }
+        }
+
+      </style>
+   </head>
+   <body>
+    <div id = "text-header"> Welcome!</div>
+        <div id = "text-body">
+            Hello, everyone! This is the LONGEST TEXT EVER! I was inspired by the various other "longest texts ever" on the internet, and I wanted to make my own. So here it is! This is going to be a WORLD RECORD! This is actually my third attempt at doing this. The first time, I didn't save it. The second time, the Neocities editor crashed. Now I'm writing this in Notepad, then copying it into the Neocities editor instead of typing it directly in the Neocities editor to avoid crashing. It sucks that my past two attempts are gone now. Those actually got pretty long. Not the longest, but still pretty long. I hope this one won't get lost somehow. Anyways, let's talk about WAFFLES! I like waffles.
+        </div>
     </body>
 </html>
