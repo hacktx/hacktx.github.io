@@ -117,17 +117,35 @@ button{
 }
 
 .company{
-    width: 370px;
+    width: 390px;
     margin: 0 auto;
 }
 
+.company-instabase{
+    width: 500px;
+}
+
 .company img{
-    width: 330px;
+    width: 360px;
     height: auto;
     padding: 20px 0;
 }
 
+.company-instabase img{
+    width: 500px;
+    margin: 0 auto;
+}
+
 .company-microsoft img{
+    padding: 0;
+}
+
+.company-pwc img{
+    width: 200px;
+    margin-left: 80px;
+}
+
+.company-chevron img{
     padding: 0;
 }
 
