@@ -67,6 +67,14 @@ button{
     display: none;
 }
 
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
 .general{
     width: 100%;
     margin: 0 auto;
@@ -100,7 +108,7 @@ button{
     fill: #F7896F;
 }
 
-.companies{
+.companies {
     background-color: #F7896F;
     width: min(80%, 900px);
     margin: 50px auto;
@@ -108,7 +116,101 @@ button{
     padding-top: 70px;
 }
 
-.row{
+.events {
+    background-color: #F7896F;
+    width: min(80%, 900px);
+    margin: 50px auto;
+    color: white;
+    padding-top: 20px;
+}
+
+.eventsWrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.eventColumn {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+}
+
+.event {
+    background: rgb(255, 245, 255);
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.event h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.event h2 {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.smallEvent {
+    background: rgb(255, 245, 255);
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    width: 50%;
+    padding: 2px;
+}
+
+.smallEvent h1{
+    font-size: 14px;
+}
+
+.smallEvent h2 {
+    font-size: 10px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.eventRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.speaker {
+    background-color: pink;
+}
+
+.careerfair {
+    background-color: rgb(71, 197, 255);
+}
+
+.funevent {
+    background-color: #1c4862;
+    color: white;
+}
+
+.beginner {
+    background-color: rgb(228, 95, 95);
+}
+
+.milestone {
+    background-color: rgba(255, 241, 43, 0.842);
+}
+
+.company .row{
     display: flex;
     flex-direction: row;
     margin-bottom: 50px;
@@ -117,17 +219,35 @@ button{
 }
 
 .company{
-    width: 370px;
+    width: 390px;
     margin: 0 auto;
 }
 
+.company-instabase{
+    width: 500px;
+}
+
 .company img{
-    width: 330px;
+    width: 360px;
     height: auto;
     padding: 20px 0;
 }
 
+.company-instabase img{
+    width: 500px;
+    margin: 0 auto;
+}
+
 .company-microsoft img{
+    padding: 0;
+}
+
+.company-pwc img{
+    width: 200px;
+    margin-left: 80px;
+}
+
+.company-chevron img{
     padding: 0;
 }
 
@@ -148,7 +268,11 @@ button{
     padding: 0 75px;
 }
 
+<<<<<<< HEAD
 .challenge h2{
+=======
+.challenge h2 {
+>>>>>>> master
     font-size: 18px;
     padding: 0 75px;
     font-style: italic;
@@ -160,8 +284,34 @@ button{
     padding-bottom: 30px;
 }
 
+<<<<<<< HEAD
 .challenge a{
     color: rgb(134, 64, 64);
+=======
+.faqq{
+    background-color: #F7896F;
+    width: min(80%, 900px);
+    margin: 50px auto;
+    color: white;
+    padding-top: 30px;
+}
+
+.faq h1{
+    font-size: 25px;
+    padding: 0 75px;
+}
+
+.faq p{
+    font-size: 16px;
+    padding: 0 75px;
+    padding-bottom: 30px;
+}
+
+.schedulenotes {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 16px;
+>>>>>>> master
 }
 
 @media only screen and (max-width: 1000px) {
