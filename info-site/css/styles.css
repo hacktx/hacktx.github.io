@@ -67,6 +67,14 @@ button{
     display: none;
 }
 
+a {
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
 .general{
     width: 100%;
     margin: 0 auto;
@@ -100,7 +108,7 @@ button{
     fill: #F7896F;
 }
 
-.companies{
+.companies, .events {
     background-color: #F7896F;
     width: min(80%, 900px);
     margin: 50px auto;
@@ -108,7 +116,93 @@ button{
     padding-top: 70px;
 }
 
-.row{
+.eventsWrapper {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 50px;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.eventColumn {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    text-align: center;
+}
+
+.event {
+    background: rgb(255, 245, 255);
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+    padding: 5px;
+}
+
+.event h1 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.event h2 {
+    font-size: 14px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.smallEvent {
+    background: rgb(255, 245, 255);
+    color: black;
+    text-align: center;
+    vertical-align: middle;
+    margin-right: 15px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    width: 50%;
+    padding: 2px;
+}
+
+.smallEvent h1{
+    font-size: 14px;
+}
+
+.smallEvent h2 {
+    font-size: 10px;
+    font-weight: normal;
+    font-style: italic;
+}
+
+.eventRow {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.speaker {
+    background-color: pink;
+}
+
+.careerfair {
+    background-color: rgb(71, 197, 255);
+}
+
+.funevent {
+    background-color: #1c4862;
+    color: white;
+}
+
+.beginner {
+    background-color: rgb(228, 95, 95);
+}
+
+.milestone {
+    background-color: rgba(255, 241, 43, 0.842);
+}
+
+.company .row{
     display: flex;
     flex-direction: row;
     margin-bottom: 50px;
@@ -146,6 +240,12 @@ button{
 .challenge h1{
     font-size: 25px;
     padding: 0 75px;
+}
+
+.challenge h2 {
+    font-size: 18px;
+    padding: 0 75px;
+    font-style: italic;
 }
 
 .challenge p{
