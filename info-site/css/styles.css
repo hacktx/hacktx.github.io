@@ -305,6 +305,12 @@ a:visited {
     font-size: 16px;
 }
 
+.dayheader {
+    text-align: center;
+    margin-bottom: 35px;
+    font-size: 24px;
+}
+
 @media only screen and (max-width: 1000px) {
     button{
         display: block;
