@@ -268,11 +268,7 @@ a:visited {
     padding: 0 75px;
 }
 
-<<<<<<< HEAD
-.challenge h2{
-=======
 .challenge h2 {
->>>>>>> master
     font-size: 18px;
     padding: 0 75px;
     font-style: italic;
@@ -284,10 +280,10 @@ a:visited {
     padding-bottom: 30px;
 }
 
-<<<<<<< HEAD
 .challenge a{
     color: rgb(134, 64, 64);
-=======
+}
+
 .faqq{
     background-color: #F7896F;
     width: min(80%, 900px);
@@ -311,7 +307,6 @@ a:visited {
     text-align: center;
     margin-bottom: 50px;
     font-size: 16px;
->>>>>>> master
 }
 
 @media only screen and (max-width: 1000px) {
