@@ -272,6 +272,25 @@ a:visited {
     padding-bottom: 30px;
 }
 
+.faqq{
+    background-color: #F7896F;
+    width: min(80%, 900px);
+    margin: 50px auto;
+    color: white;
+    padding-top: 30px;
+}
+
+.faq h1{
+    font-size: 25px;
+    padding: 0 75px;
+}
+
+.faq p{
+    font-size: 16px;
+    padding: 0 75px;
+    padding-bottom: 30px;
+}
+
 @media only screen and (max-width: 1000px) {
     button{
         display: block;
