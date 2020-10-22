@@ -108,12 +108,20 @@ a:visited {
     fill: #F7896F;
 }
 
-.companies, .events {
+.companies {
     background-color: #F7896F;
     width: min(80%, 900px);
     margin: 50px auto;
     color: white;
     padding-top: 70px;
+}
+
+.events {
+    background-color: #F7896F;
+    width: min(80%, 900px);
+    margin: 50px auto;
+    color: white;
+    padding-top: 20px;
 }
 
 .eventsWrapper {
@@ -289,6 +297,12 @@ a:visited {
     font-size: 16px;
     padding: 0 75px;
     padding-bottom: 30px;
+}
+
+.schedulenotes {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 16px;
 }
 
 @media only screen and (max-width: 1000px) {
