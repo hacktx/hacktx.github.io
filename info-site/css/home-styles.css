@@ -54,6 +54,34 @@ nav li{
     margin: 0 4vw;
 }
 
+a{
+    text-decoration: none;
+    color: #ed2a41;
+    font-size: 30px;
+}
+
+a:hover{
+    color: white;
+}
+
+button{
+    display: none;
+}
+
+td {
+    padding-right: 10px;
+}
+
+td a{
+    text-decoration: none;
+    color: #1c4862;
+    font-size: 19px;
+}
+
+td a:hover{
+    color: white;
+}
+
 nav a{
     text-decoration: none;
     color: white;
@@ -62,10 +90,6 @@ nav a{
 
 nav a:hover{
     color: #ed2a41;
-}
-
-button{
-    display: none;
 }
 
 #text-header{
