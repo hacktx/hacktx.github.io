@@ -308,6 +308,28 @@ a:visited {
     font-size: 24px;
 }
 
+
+.square {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+}
+
+.legend {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    margin: 0 20px;
+    padding-bottom: 50px;
+}
+
+.legend-key {
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    margin-right: 20px;
+}
+
 @media only screen and (max-width: 1000px) {
     button{
         display: block;
@@ -362,5 +384,4 @@ a:visited {
     .company img{
         width: 270px;
     }
-
 }
