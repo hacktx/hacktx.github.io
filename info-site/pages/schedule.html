@@ -94,9 +94,15 @@
                         <h1>Beginner: ML and AI</h1>
                         <h2>12:00-1:00pm</h2>
                       </div>
-                      <div class="event" id='microsoft'>
-                        <h1>Microsoft Workshop: Deploy w/ Azure</h1>
-                        <h2>1:00-2:00pm</h2>
+                      <div class="eventRow">
+                        <div class="smallEvent" id='product'>
+                          <h1>Intro to Product Management</h1>
+                          <h2>1:00-2:00pm</h2>
+                        </div>
+                        <div class="smallEvent" id='microsoft'>
+                          <h1>Microsoft Workshop: Deploy w/ Azure</h1>
+                          <h2>1:00-2:00pm</h2>
+                        </div>
                       </div>
                       <div class="eventRow">
                         <div class="smallEvent" id='gamedev'>
@@ -277,7 +283,7 @@
             interactive: true,
           });
           tippy('#beginnerml', {
-            content: 'A workshop led by UT MLDS (Machine Learning and Data Science) on an introduction to Machine Learning. This event counts as 1 beginners workshop. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/neptuneroom">Neptune Room</a>',
+            content: 'A beginner workshop where Rohan will be teaching about the basics of Machine Learning and how to use it throughout the hackathon. This event counts as 1 beginner\'s workshop. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/neptuneroom">Neptune Room</a>',
             placement: 'top',
             allowHTML: true,
             interactive: true,
@@ -288,6 +294,12 @@
             allowHTML: true,
             interactive: true,
           });
+          tippy('#product', {
+            content: 'Come hear from Krish Munot, product manager at Stackend Solutions, on how product management works and how you can become one someday! Many people are not familiar with this line of work, even though tech people are very suited to it. This event counts as 1 beginner\'s workshop. Click the zoom link to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/jupiterroom">Jupiter Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true
+          })
           tippy('#gamedev', {
             content: 'A workshop led by UT EGaDS (Electronic Game Developers Society) about game development. This event counts as 1 other event for the beginners attendance sheet. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/marsroom">Mars Room</a>',
             placement: 'top',
