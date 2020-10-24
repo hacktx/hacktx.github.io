@@ -141,9 +141,15 @@
                         <h2>VP @ HP Enterprise</h2>
                         <h2>2:30-3:00pm</h2>
                       </div>
-                      <div class="event" id='hacs'>
-                        <h1>Workout session w/ HaCS!</h1>
-                        <h2>3:00-3:30pm</h2>
+                      <div class="eventRow">
+                        <div class="smallEvent" id='hacs'>
+                          <h1>Workout session w/ HaCS!</h1>
+                          <h2>3:00-3:30pm</h2>
+                        </div>
+                        <div class="smallEvent" id='mlh'>
+                          <h1>MLH: Cybersecurity CTF</h1>
+                          <h2>3:00-4:00pm</h2>
+                        </div>
                       </div>
                       <div class="eventRow">
                         <div class="smallEvent" id='wayfair'>
@@ -442,7 +448,18 @@
             allowHTML: true,
             interactive: true,
           });
-
+          tippy('#closing', {
+            content: 'We will be streaming closing ceremony on our YouTube channel. Thanks for attending HackTX!<br/><br/><a target="_blank" href="https://www.youtube.com/channel/UCebi1myLBuB9dMBkN6hYL9g">Freetail YouTube Channel</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#mlh', {
+            content: 'Join MLH for their introduction to Cybersecurity through a CTF (Capture the Flag) event! Come for the chance to get some free swag and prizes. This event counts as 1 other event for the beginners attendance sheet. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/marsroom">Mars Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
         </script>
     </body>
 </html>
