@@ -349,6 +349,9 @@ p,span,textarea,input,label,button,a {
    width: 50vw;
    z-index: 2;
 }
+@media only screen and (max-width: 670px) {
+   #who-heading {
+    top: 19vw; } }
 #who-text {
    position: absolute;
    top: 25vw;
@@ -356,6 +359,9 @@ p,span,textarea,input,label,button,a {
    width: 34vw;
    z-index: 2;
 }
+@media only screen and (max-width: 670px) {
+   #who-text {
+    top: 26vw; } }
 #road13 {
    position: absolute;
    top: 61.3vw;
