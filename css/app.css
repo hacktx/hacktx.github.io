@@ -16,6 +16,9 @@ body {
   padding: 0;
   background-size: contain; }
 
+#wrapper {
+  overflow-x: clip; }
+
 h1, h2, h3, h4, h5, h6,
 p, span, textarea, input, label, button, a {
   font-family: 'Museo', sans-serif; }
