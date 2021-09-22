@@ -44,7 +44,12 @@ window.addEventListener('scroll', () => {
 
     scrollpercentOriginal=scrollPercent
 
-    if(scrollPercent < turn1Percentage){
+    if(scrollPercent <= 0){
+        sprite.style.left = "27.5vw"
+        sprite.style.top = topConst
+    }
+
+    if(scrollPercent > 0 && scrollPercent < turn1Percentage){
         topS = 3.5 * getScrollPercent() + topConst
         sprite.src = "images/spriteFront.png"
         sprite.style.left = "27.5vw"
