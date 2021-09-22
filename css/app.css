@@ -292,7 +292,7 @@ p, span, textarea, input, label, button, a {
   position: absolute;
   top: 20vw;
   left: 3vw;
-  width: 45vw;
+  width: 50vw;
   z-index: 2; }
 
 #who-text {
