@@ -66,14 +66,14 @@ window.addEventListener('scroll', () => {
     }
     if(scrollPercent > turn3Percentage && scrollPercent < turn4Percentage){
         topS = 8 * turn3Percentage - turn2Percentage + midConst
-        leftS = -15 * (getScrollPercent() - turn3Percentage) + rightConst
+        leftS = -14 * (getScrollPercent() - turn3Percentage) + rightConst
         sprite.src = "images/spriteLeft.png"
         sprite.style.left = leftS + "vw"
         sprite.style.top = topS + "vw"
     }
     if(scrollPercent > turn4Percentage && scrollPercent < turn5Percentage){
         topS = 8 * getScrollPercent() - turn4Percentage + bridgeConst
-        leftS = -15 * (turn4Percentage - turn3Percentage) + rightConst
+        leftS = -14 * (turn4Percentage - turn3Percentage) + rightConst
         sprite.src = "images/spriteFront.png"
         sprite.style.left = leftS + "vw"
         sprite.style.top = topS + "vw"

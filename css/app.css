@@ -263,7 +263,7 @@ p, span, textarea, input, label, button, a {
 #road10 {
   position: absolute;
   top: 48.8vw;
-  left: 29.2vw;
+  left: 29.8vw;
   height: 12.8vw;
   z-index: 1;
   user-select: none;
@@ -272,7 +272,7 @@ p, span, textarea, input, label, button, a {
 #road11 {
   position: absolute;
   top: 48.8vw;
-  left: 19vw;
+  left: 22vw;
   height: 12.8vw;
   z-index: 1;
   user-select: none;
@@ -281,7 +281,7 @@ p, span, textarea, input, label, button, a {
 #road12 {
   position: absolute;
   top: 48.89vw;
-  left: 6.3vw;
+  left: 9.4vw;
   height: 12.5vw;
   z-index: 2;
   transform: rotate(90deg);
@@ -305,7 +305,7 @@ p, span, textarea, input, label, button, a {
 #road13 {
   position: absolute;
   top: 61.3vw;
-  left: 6.3vw;
+  left: 9.4vw;
   width: 12.7vw;
   z-index: 2;
   transform: rotate(180deg);
@@ -315,9 +315,8 @@ p, span, textarea, input, label, button, a {
 #lake {
   position: absolute;
   top: 73vw;
-  left: -3.4vw;
   z-index: 2;
-  width: 133%;
+  width: 100%;
   user-select: none;
   -webkit-user-drag: none; }
 
@@ -396,8 +395,8 @@ p, span, textarea, input, label, button, a {
 
 #road14 {
   position: absolute;
-  top: 115vw;
-  left: 6.3vw;
+  top: 113vw;
+  left: 9.4vw;
   width: 12.7vw;
   z-index: 1;
   user-select: none;
@@ -406,7 +405,7 @@ p, span, textarea, input, label, button, a {
 #road15 {
   position: absolute;
   top: 132.5vw;
-  left: 6.3vw;
+  left: 9.4vw;
   width: 12.7vw;
   z-index: 1;
   user-select: none;
@@ -415,7 +414,7 @@ p, span, textarea, input, label, button, a {
 #road16 {
   position: absolute;
   top: 155vw;
-  left: 6.3vw;
+  left: 9.4vw;
   width: 12.8vw;
   z-index: 1;
   user-select: none;
@@ -424,7 +423,7 @@ p, span, textarea, input, label, button, a {
 #road17 {
   position: absolute;
   top: 155vw;
-  left: 19vw;
+  left: 22vw;
   height: 12.8vw;
   z-index: 1;
   user-select: none;
