@@ -1,5 +1,5 @@
 {
-  "name": "hacktx19-website",
+  "name": "hacktx21-website",
   "scripts": {
     "serve": "http-server",
     "dev": "node-sass-watcher css/app.scss -o css/app.css -c 'cat <input> | node_modules/node-sass/bin/node-sass > <output>'",
@@ -12,6 +12,7 @@
     "http-server": "^0.12.3",
     "node-sass": "^4.14.1",
     "node-sass-watcher": "^0.5.1",
-    "normalize.css": "^8.0.1"
+    "normalize.css": "^8.0.1",
+    "sass": "^1.42.0"
   }
 }

@@ -1,0 +1,188 @@
+$pad: 8px;
+$herowidth: 1024px;
+$mainwidth: 800px;
+$background: #210D18;
+$foreground: #210D18;
+
+@mixin puffy($property) {
+	@include puffy($property, 1);
+}
+
+@mixin puffy($property, $multiplier: 1) {
+	#{$property}: $multiplier*$pad;
+	@media all and (min-width: $mainwidth/2) {
+		#{$property}: $multiplier*$pad*2;
+	}
+}
+
+@font-face {
+    font-family: 'Beba Neue';
+    src: url('./bebaneue/bebasneue-regular-webfont.woff2') format('woff2'),
+         url('./bebaneue/bebasneue-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Beba Neue Light';
+    src: url('./bebaneue/bebasneue-light-webfont.woff2') format('woff2'),
+         url('./bebaneue/bebasneue-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+	font-family: sans-serif;
+	font-size: 16px;
+	margin: 0;
+	padding: 0;
+	background: $background;
+	color: $foreground;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+}
+
+section, footer {
+	margin: 0 auto;
+	@include puffy(padding-top);
+	@include puffy(padding-bottom);
+	max-width: $mainwidth;
+}
+
+main {
+	margin: auto;
+}
+
+#hero {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	color: white;
+	background: #151113;
+	font-size: 0;
+	overflow: hidden;
+	margin: 0 auto;
+	min-height: 500px;
+	.contents {
+		position: relative;
+		text-shadow: 0 2px 2px rgba(0,0,0,0.3), 0 5px 10px rgba(0,0,0,0.5);
+        margin: 16px;
+		font-size: 2vw;
+		div, h1 {
+			position: relative;
+		}
+        @media all and (min-width: $herowidth) {
+            display: flex;
+            .content {
+                width: 50%;
+                .date {
+                    font-size: 72px;
+                }
+                .hacktx {
+                    font-size: 200px;
+                }
+                .location {
+                    font-size: 36px;
+                }
+            }
+            .picture {
+                width: 50%
+            }
+        }
+        @media all and (max-width: $herowidth) {
+            .content {
+                margin-top: 64px;
+                width: 100%;
+                .date {
+                    font-size: 36px;
+                }
+                .hacktx {
+                    font-size: 100px;
+                }
+                .location {
+                    font-size: 18px;
+                }
+            }
+            .picture {
+                width: 100%;
+            }
+        }
+        .content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            div {
+                display: inline;
+            }
+            .text {
+                width: 100%;
+            }
+		    .date {
+                font-family: "Beba Neue Light";
+                color: #FFFFFF;
+                color: rgb(255, 255, 255);
+		    }
+		    .hacktx {
+                font-family: "Beba Neue";
+                font-weight: bold;
+                color: #FFFFFF;
+                color: rgb(255, 255, 255);
+		    }
+            .location {
+                font-family: "Beba Neue Light";
+                color: #FFFFFF;
+                color: rgb(255, 255, 255);
+            }
+	    }
+	    .picture {
+            position: relative;
+            display: inline-block;
+		    img {
+			    width: auto;
+			    height: auto;
+			    max-width: 100%;
+			    min-width: 25%;
+		    }
+	    }
+	}
+}
+
+#maillist {
+    @include puffy(margin-top);
+    @include puffy(margin-bottom);
+	form {
+        width: 100%;
+		display: flex;
+		input {
+            @include puffy(padding);
+			font-size: 0.75em;
+			font-family: "Beba Neue Light";
+			color: $foreground;
+			background: #FFFFFF;
+			&:focus, &:active {
+				border-color: white;
+				position: relative;
+			}
+            @media all and (max-width: $herowidth) {
+                font-size: 2.5em;
+            }
+		}
+		.email {
+			flex-grow: 1;
+		}
+	}
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	border-bottom: 1px solid;
+}
+
+footer {
+	text-align: center;
+}

@@ -1,0 +1,716 @@
+$gray: #4d4d4d;
+$red: #ff4115;
+$blue: #7ba8f9;
+$darkblue: #4b78bb;
+$white: white;
+$reallydarkblue: #213e5b;
+
+$fancy: bebas-neue, sans-serif;
+$main: futura-pt, sans-serif;
+$fontsize: 20px;
+
+$smol: 680px;
+$reallywide: 1200px;
+
+body {
+	font-family: $main;
+	font-size: $fontsize;
+	background: $reallydarkblue;
+	color: $white;
+}
+
+html, body {
+	margin: 0;
+}
+
+h1, h2 {
+	font-family: $fancy;
+	text-transform: uppercase;
+	font-weight: normal;
+	line-height: 1;
+	margin: 0;
+}
+
+p {
+	margin: 0;
+}
+
+a {
+	color: inherit;
+	text-decoration: underline wavy;
+	&:hover {
+		text-decoration: underline;
+	}
+}
+
+$pad: 30px;
+header {
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	background: $white;
+	display: flex;
+	flex-direction: row;
+	font-family: $fancy;
+	font-size: 1.9em;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
+	z-index: 10;
+	line-height: 1;
+	.logo {
+		a {
+			text-decoration: none;
+		}
+		padding: 0 $pad;
+		@media only screen and (max-width: $smol) {
+			padding: 0 $pad/2;
+		}
+		flex: 1;
+		display: flex;
+		align-items: center;
+		img {
+			color: $red;
+			display: block;
+			height: 1.7em;
+			transform: translateY(-0.05em);
+			@media only screen and (max-width: $smol) {
+				height: 1.4em;
+				transform: translateY(0);
+			}
+		}
+	}
+	.countdown {
+		display: flex;
+		@media only screen and (max-width: $smol) {
+			display: none;
+		}
+		flex-direction: row;
+		color: $gray;
+		align-items: center;
+		.number {
+			padding: 0 $pad/2;
+			text-align: center;
+			b, span {
+				display: block;
+				font-weight: normal;
+			}
+			b {
+				font-size: 1.2em;
+			}
+			span {
+				color: #999999;
+				font-size: 0.6em;
+			}
+		}
+		.colon {
+			color: $red;
+			transform: translateY(-0.3em);
+		}
+	}
+	.cta {
+		background: $red;
+		color: $white;
+		transition: 0.2s ease-in-out all;
+		overflow: hidden;
+		&:hover {
+			background: darken($red, 10%);
+			$shadows: ();
+			$length: 70;
+			@for $i from 1 through $length {
+				$shadows: append($shadows, $i*1px $i*1px 0 lighten($red, 10%), 'comma');
+			}
+			text-shadow: $shadows;
+		}
+		padding: $pad $pad*2;
+		@media only screen and (max-width: $smol) {
+			padding: $pad/2 $pad;
+		}
+		text-decoration: none;
+		margin-left: $pad;
+	}
+	@media only screen and (max-width: 400px) {
+		.logo img {
+			height: 1em;
+		}
+		.cta {
+			font-size: 0.8em;
+		}
+	}
+}
+
+$headerheight: $pad*2 + $fontsize*1.9; // see header font-size
+section, footer {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 80vh;
+	background: $blue;
+	.wrap {
+		width: 100%;
+		max-width: 600px;
+		padding: 1em;
+		box-sizing: border-box;
+	}
+	object {
+		width: 450px;
+	}
+	h2 {
+		padding: 0.4em 0;
+		font-size: 3em;
+	}
+	@media only screen and (max-width: $smol) {
+		flex-direction: column-reverse;
+		font-size: 0.9em;
+		.wrap {
+			width: auto;
+			padding: 2.5em;
+		}
+		object {
+			max-width: 80%;
+		}
+		h2 {
+			font-size: 2em;
+		}
+	}
+}
+
+#first {
+	height: 100vh;
+	margin: 0 0 -1*$headerheight 0;
+	$stopat: 1100px;
+	$titlesize: 4;
+	font-size: $titlesize*1vw;
+	position: relative;
+	overflow: hidden;
+	background: none;
+	.wrap {
+		position: relative;
+		max-width: 22em;
+		width: 100%;
+		transform: translateY(-$headerheight/2) translateY(-2em) translateX(8%);
+		padding: 0;
+		z-index: 8;
+	}
+	.info {
+		display: flex;
+		font-family: bebas-neue, sans-serif;
+		font-size: 0.8em;
+		margin-right: 21%;
+		margin-bottom: 0.5em;
+		.date {
+			flex: 1;
+		}
+		.location {
+			text-decoration: none;
+		}
+	}
+	h1 {
+		position: relative;
+		font-size: 0;
+		.shadow {
+			position: absolute;
+			top: 99%;
+			left: 0.1%;
+			right: 0.4%;
+			height: 900px;
+			background: $blue;
+			transform: skew(45deg);
+			transform-origin: top left;
+		}
+	}
+	@media only screen and (max-width: $smol) {
+		font-size: $smol/100*$titlesize;
+		.location {
+			display: none;
+		}
+	}
+	@media only screen and (min-width: $stopat) {
+		font-size: $stopat/100*$titlesize;
+	}
+	.cityscape {
+		position: absolute;
+		bottom: $headerheight;
+		left: 0;
+		right: 0;
+		z-index: 8;
+		overflow: hidden;
+		pointer-events: none;
+		img {
+			width: 1330px;
+			max-width: 280%;
+			display: block;
+			position: relative;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	.message {
+		position: absolute;
+		top: 2em;
+		@media only screen and (max-width: $smol) {
+			font-size: 16px;
+			margin-right: 120px;
+		}
+		left: 0;
+		right: 0;
+		max-width: 360px;
+		font-size: $fontsize;
+		color: $white;
+		line-height: 1;
+		z-index: 8;
+		div {
+			box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+			padding: 0.5em 1em;
+			background: $darkblue;
+			animation: slide-in 0.6s ease-out 1s;
+			animation-fill-mode: backwards;
+			word-wrap: break-word;
+		}
+		a {
+			text-decoration: none;
+		}
+	}
+	.cover {
+		background: $reallydarkblue;
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 40px;
+		width: 40px;
+		z-index: 7;
+	}
+}
+
+@keyframes slide-in {
+	from { transform: translateX(-100%) }
+	to { transform: none }
+}
+
+#what {
+	@media only screen and (max-width: $smol) {
+		padding-top: 1.6em;
+	}
+}
+
+#mailing {
+	text-align: center;
+	h2 {
+		padding: 0.1em 0;
+		@media only screen and (max-width: $smol) {
+			margin: 0 -0.2em;
+		}
+	}
+	form {
+		display: flex;
+		@media only screen and (max-width: $smol) {
+			flex-direction: column;
+		}
+		margin-top: 3em;
+		input {
+			border: 2px solid $white;
+			background: none;
+			font-family: $fancy;
+			font-size: inherit;
+			padding: 0.5em;
+			color: $white;
+			display: block;
+			-moz-appearance: none;
+			-webkit-appearance: none;
+			border-radius: 0;
+			&::placeholder {
+				color: $white;
+				opacity: 1;
+			}
+			:-ms-input-placeholder {
+				color: $white;
+			}
+			::-ms-input-placeholder {
+				color: $white;
+			}
+		}
+		.email {
+			flex-grow: 1;
+		}
+		.submit {
+			background: $white;
+			color: $blue;
+			padding: 0.5em 1em;
+			transition: color 0.3s ease-in-out, text-shadow 0.2s ease-in-out;
+			cursor: pointer;
+			&:hover {
+				color: $darkblue;
+				$shadows: ();
+				$length: 70;
+				@for $i from 1 through $length {
+					$shadows: append($shadows, $i*1px $i*1px 0 lighten($blue, 20%), 'comma');
+				}
+				text-shadow: $shadows;
+			}
+			@media only screen and (max-width: $smol) {
+				margin: 1em auto;
+			}
+		}
+	}
+}
+
+#who {
+	@media only screen and (max-width: $smol) {
+		margin-top: -5em;
+		object {
+			margin-bottom: -5em;
+		}
+	}
+	$bannerwidth: 5em;
+	$bannerpad: 0.6em;
+	.isss {
+		position: fixed;
+		top: 0;
+		right: 4em;
+		width: $bannerwidth;
+		color: $reallydarkblue;
+		background: $white;
+		padding: $bannerpad;
+		text-align: center;
+		img {
+			display: block;
+			max-width: 100%;
+			margin: 5em 0 1em 0;
+		}
+		span {
+			display: block;
+			font-size: 0.8em;
+		}
+		&:after {
+			display: block;
+			content: "";
+			position: absolute;
+			top: 100%;
+			left: 0;
+			border: 0 solid transparent;
+			border-width: 1.4em $bannerwidth/2+$bannerpad;
+			border-top-color: $white;
+		}
+		transform: translateY(-100%) translateY(-1.4em);
+		transition: transform 0.3s ease-in-out;
+	}
+	&.visible .isss {
+		transform: none;
+	}
+}
+
+#preview {
+	width: 1px;
+	position: absolute;
+	left: -9px;
+}
+
+#freetail {
+	h2 {
+		margin-right: -2em;
+		@media only screen and (max-width: $smol) {
+			margin-right: 0;
+		}
+	}
+}
+
+#schedule {
+	height: auto;
+	.wrap > div > div {
+		overflow: hidden;
+	}
+	time {
+		min-width: 100px;
+		display: inline-block;
+		margin-bottom: 1px;
+		float: left;
+	}
+	span {
+		display: inline-block;
+		padding-left: 0.6em;
+	}
+}
+
+#faq {
+	height: auto;
+	padding-bottom: 5em;
+	.wrap {
+		max-width: $reallywide;
+		padding: 1em 2.5em;
+		width: 100%;
+	}
+	h2 {
+		text-align: center;
+	}
+	.content {
+		display: flex;
+		flex-flow: wrap;
+		margin: 1em -0.5em 0 -0.5em;
+		.column {
+			width: 50%;
+			box-sizing: border-box;
+			padding: 0 0.5em;
+		}
+		.pair {
+			margin-bottom: 0.5em;
+			h3 {
+				cursor: pointer;
+				font-family: bebas-neue, sans-serif;
+				text-transform: uppercase;
+				font-weight: normal;
+				margin: 0 0 0.5em 0;
+				letter-spacing: 0.05em;
+				&:after {
+					content: "";
+					display: inline-block;
+					height: 0;
+					width: 0;
+					border: 0 solid transparent;
+					border-width: 0.3em 0.5em;
+					border-left-color: $red;
+					margin-left: 0.4em;
+					transform: rotate(90deg);
+					transform-origin: 25% 50%;
+					transition: 0.1s ease-in-out transform;
+				}
+				em {
+					font-style: normal;
+					font-size: 0.6em;
+					padding: 0.2em 0.4em;
+					background: $darkblue;
+					line-height: 1;
+					transform: translateY(-0.3em);
+					display: inline-block;
+					margin-right: 0.4em;
+				}
+			}
+			&.collapsed {
+				h3:after {
+					transform: none;
+				}
+				p {
+					display: none;
+				}
+			}
+		}
+	}
+	@media only screen and (max-width: $smol) {
+		h2 {
+			text-align: left;
+		}
+		.content {
+			display: block;
+			.column {
+				width: auto;
+			}
+		}
+	}
+}
+
+#sponsors {
+	height: auto;
+	flex-direction: column;
+	flex-flow: column wrap;
+	.main {
+		text-align: center;
+		img {
+			display: block;
+			width: 100%;
+			max-width: 300px;
+			height: auto;
+			margin: 1em auto;
+		}
+	}
+	.more {
+		font-size: 0;
+		width: 100%;
+		max-width: $reallywide;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
+		margin-top: $fontsize;
+	}
+	.sponsor {
+		width: 280px;
+		height: 280px;
+		float: left;
+		text-align: center;
+		position: relative;
+		transition: all 0.3s ease-in-out;
+		margin: $fontsize/2;
+		.logo {
+			position: absolute;
+			top: 50%;
+			left: 0;
+			transform: translateY(-50%);
+			width: 100%;
+			display: inline-block;
+			transition: all 0.3s ease-in-out;
+			img {
+				width: 100%;
+				height: auto;
+			}
+			span {
+				font-size: 30px;
+			}
+		}
+		.description {
+			position: absolute;
+			width: 95%;
+			margin: 0 auto;
+			top: 50%;
+			left: 50%;
+			opacity: 0;
+			transition: all 50ms cubic-bezier(.68,-.55,.265,1.55);
+			transform: scale(0) translate(-50%, -50%);
+			transform-origin: left top;
+			font-size: $fontsize;
+		}
+		&.smaller .description {
+			font-size: 16px;
+		}
+		&.hastext:hover {
+			.logo {
+				top: -30px;
+				transform: scale(0.4) translateY(-50%);
+			}
+			.description {
+				opacity: 1;
+				transition: all 600ms cubic-bezier(.68,-.55,.265,1.55);
+				transform: scale(1) translate(-50%, -50%);
+			}
+		}
+	}
+}
+
+footer {
+	background: $darkblue;
+	height: auto;
+	.wrap {
+		display: flex;
+		flex-direction: row;
+		flex-flow: row wrap;
+		width: 100%;
+		max-width: $reallywide;
+		padding: 3em 2.5em;
+		h2 {
+			flex: 1;
+			padding: 0;
+			$shadows: ();
+			$length: 260;
+			@for $i from 1 through $length {
+				$shadows: append($shadows, $i*1px $i*1px 0 $blue, 'comma');
+			}
+			text-shadow: $shadows;
+		}
+		h3 {
+			margin: 0 0 0.5em 0;
+			font-size: 1.1em;
+		}
+		div {
+			margin-left: 5em;
+		}
+		a {
+			display: block;
+		}
+		@media only screen and (max-width: $smol) {
+			// flex-direction: column;
+			h2 {
+				flex: 1 100%;
+			}
+			div {
+				margin-left: 0;
+				margin-top: 2em;
+				flex: 1 auto;
+			}
+		}
+	}
+}
+
+// side dots
+#progress {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	right: 0.8em;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	z-index: 5;
+	opacity: 0.6;
+	@media only screen and (max-width: $smol) {
+		display: none;
+	}
+	div {
+		cursor: pointer;
+		display: block;
+		width: 0.5em;
+		height: 0.5em;
+		margin: 0.2em auto;
+		border-radius: 9em;
+		border: 0.1em solid $white;
+		&:first-child {
+			border-radius: 0;
+			width: 0.4em;
+			height: 0.4em;
+		}
+		&.active {
+			background: $white;
+		}
+	}
+}
+
+#mlh-trust-badge {
+	display: block;
+	max-width: 100px;
+	min-width: 60px;
+	position: absolute;
+	right: 50px;
+	top: 0;
+	width: 10%;
+	z-index: 10000;
+	font-size: $fontsize;
+	text-align: center;
+	text-decoration: none;
+	img {
+		width: 100%;
+	}
+	@media only screen and (max-width: $smol) {
+		right: 30px;
+	}
+}
+
+#register {
+	text-align: center;
+}
+
+#register .button {
+	font-family: $fancy;
+	font-size: 1.9em;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
+	display: block;
+	background: $red;
+	color: $white;
+	transition: 0.2s ease-in-out all;
+	overflow: hidden;
+	padding: 0.5em 1em;
+	&:hover {
+		background: darken($red, 10%);
+		$shadows: ();
+		$length: 70;
+		@for $i from 1 through $length {
+			$shadows: append($shadows, $i*1px $i*1px 0 lighten($red, 10%), 'comma');
+		}
+		text-shadow: $shadows;
+	}
+	text-decoration: none;
+	margin-left: $pad * 4;
+	margin-right: $pad * 4;
+
+	@media only screen and (max-width: $smol) {
+		margin-left: $pad;
+		margin-right: $pad;
+	}
+}

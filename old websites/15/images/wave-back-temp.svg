@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1996px" height="158px" viewBox="0 0 1996 158" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>back copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="wave-back" sketch:type="MSLayerGroup" fill="#7FC9FF">
+            <g id="Page-1" sketch:type="MSShapeGroup">
+                <g id="water-waves">
+                    <g id="Page-1">
+                        <g id="Artboard">
+                            <g id="water-waves">
+                                <path d="M1419.86262,47.3897268 C1337.50827,47.3897251 1274.14285,0.348525552 1161.31801,0.348524362 C1070.91925,0.348523408 1043.35616,34 996,34.0000012 L996,201.000007 L1996,201.000009 L1996,34.0000012 C1918.18751,34 1852.53692,0.348523824 1716.15123,0.348524094 C1579.76554,0.348524363 1502.21696,47.3897285 1419.86262,47.3897268 L1419.86262,47.3897268 L1419.86262,47.3897268 Z" id="back"></path>
+                                <path d="M423.862619,47.3897268 C341.508274,47.3897251 278.142854,0.348525552 165.318007,0.348524362 C74.9192472,0.348523408 47.3561553,34 0,34.0000012 L0,201.000007 L1000,201.000009 L1000,34.0000012 C922.187508,34 856.536917,0.348523824 720.151227,0.348524094 C583.765536,0.348524363 506.216963,47.3897285 423.862619,47.3897268 L423.862619,47.3897268 L423.862619,47.3897268 Z" id="back-copy"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

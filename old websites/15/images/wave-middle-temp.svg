@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1997px" height="143px" viewBox="0 0 1997 143" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>middle</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="wave-middle" sketch:type="MSLayerGroup" fill="#33A4E9">
+            <g id="Page-1" sketch:type="MSShapeGroup">
+                <g id="water-waves">
+                    <g id="Page-1">
+                        <g id="Artboard">
+                            <g id="water-waves">
+                                <path d="M1465.86236,14.820312 C1371.57322,14.820312 1353.71032,44.161564 1272.14994,44.161564 C1190.58957,44.161564 1106.98308,0 997,0 L997,173 L1997,173 L1997,0 C1903.93739,0 1831.40579,54.231724 1729.50672,54.231724 C1627.60764,54.231724 1560.15151,14.820312 1465.86236,14.820312 L1465.86236,14.820312 L1465.86236,14.820312 Z" id="middle"></path>
+                                <path d="M468.862362,14.820312 C374.573218,14.820312 356.710315,44.161564 275.149944,44.161564 C193.589574,44.161564 109.98308,0 0,0 L0,173 L1000,173 L1000,0 C906.937394,0 834.405787,54.231724 732.506716,54.231724 C630.607643,54.231724 563.151506,14.820312 468.862362,14.820312 L468.862362,14.820312 L468.862362,14.820312 Z" id="middle-copy"></path>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

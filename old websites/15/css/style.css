@@ -1,0 +1,682 @@
+/*
+* HackTX IV CSS File
+* http://bit.ly/1ywfhq7
+*/
+
+/* Open Sans Google Font */
+@import url(//fonts.googleapis.com/css?family=Open+Sans:400,300,600,700);
+
+/* Oswald Google Font */
+@import url(//fonts.googleapis.com/css?family=Oswald:400,700);
+
+/* Montserrat Google Font*/
+@import url(//fonts.googleapis.com/css?family=Montserrat);
+
+::-webkit-input-placeholder {
+  color: #f7f7f7;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+  color: #f7f7f7;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+  color: #f7f7f7;
+}
+
+:-ms-input-placeholder {
+  color: #f7f7f7;
+}
+
+/* TYPED FOR HACKTX */
+.typed-cursor{
+  opacity: 1;
+  font-size: 38px;
+  color: rgb(148, 34, 31);
+  font-family: 'Oswald', sans-serif;
+  -webkit-animation: blink 0.7s infinite;
+  -moz-animation: blink 0.7s infinite;
+  animation: blink 0.7s infinite;
+  /*float: left;*/
+  margin-top: -.6vh;
+}
+@keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+@-moz-keyframes blink{
+  0% { opacity:1; }
+  50% { opacity:0; }
+  100% { opacity:1; }
+}
+
+/* GENERAL STYLE */
+
+* {
+  font-family: 'Open Sans', sans-serif;
+  color: #f7f7f7;
+  letter-spacing: -0.5px;
+}
+
+h1, h2, h3{
+  font-family: 'Oswald', sans-serif;
+}
+
+h2 {
+  margin: 0;
+  padding: 0px 0px 50px 0px;
+  font-size: 50px;
+}
+
+h3 {
+  margin: 0;
+  padding: 0px 0px 35px 0px;
+  font-size: 35px;
+}
+
+p {
+  font-size: 24px;
+}
+
+.body-div {
+  overflow-x: hidden;
+}
+
+#skrollr-body {
+  height: auto;
+}
+
+body {
+  /*height: 100vh;*/
+}
+
+.hero {
+  background: #7ED3F2;
+  display: block;
+  position: relative;
+}
+
+.hero .container {
+  height: 100vh;
+}
+
+.email {
+  background: none;
+  border: 4px solid #f7f7f7;
+  border-radius: 0;
+  color: #f7f7f7;
+  text-shadow: 1px 1px rgba(0,0,0,.1);
+  font-size: 16px;
+  padding: 14px;
+}
+
+input[type="email"], textarea {
+
+  background-color : #7ED3F2;
+
+}
+
+.submit {
+  background: #f7f7f7;
+  border: none;
+  border-radius: 0;
+  color: rgb(126,211,242);
+  font-size: 16px;
+  padding: 18px 5px;
+}
+
+input:focus {
+  outline-width: 0;
+}
+
+.form {
+  margin-top: 100px;
+  padding: 0 38px;
+}
+
+.hero-image {
+  margin-top: 15vh;
+}
+
+.hero-info {
+  color: #f7f7f7;
+  text-shadow: 1px 1px rgba(0,0,0,.2);
+  margin-top: 20px;
+}
+
+h3.hero-info{
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -1.13px;
+  text-align: center;
+  font-size: 24px;
+}
+
+.clouds {
+  height: 0;
+  width: 100vw;
+}
+
+#capitol {
+  top: -250px;
+  position: relative;
+  margin: auto;
+  display: block;
+}
+
+#cloud1,
+#cloud2,
+#cloud3,
+#cloud4 {
+  position: absolute;
+}
+
+#cloud1 {
+  top: 20%;
+  left: 4%;
+  width: 100px;
+}
+
+#cloud2 {
+  top: 20%;
+  right: 10%;
+  width: 90px;
+}
+
+#cloud3 {
+  top: 10%;
+  right: 25%;
+  width: 68px;
+  opacity: .95;
+}
+
+#cloud4 {
+  top: 5%;
+  left: 21%;
+  width: 46px;
+  opacity: .90;
+}
+
+/* ABOUT SECTION */
+
+.about {
+  background: #f04650;
+}
+
+.about-info {
+  text-align:center;
+}
+
+.about-info p {
+  color: #ffffff;
+  padding-top: 10px;
+  line-height: 45px;
+  text-align: left;
+  font-weight: 300;
+}
+
+.about-info p,
+.schedule-detail p {
+  text-shadow: 1px 1px rgba(0,0,0,.1);
+}
+
+.about-info h2 {
+  display: inline;
+}
+
+.about-info h3 {
+  display: inline;
+}
+
+
+.typed-title {
+  color: #96211A;
+}
+
+/* SCHEDULE SECTION */
+
+.schedule {
+  background: #1C67CA;
+  line-height: 50px;
+}
+
+.kayak {
+  position: relative;
+  padding-left: 45%;
+  height: 10vh;
+  display: block;
+}
+
+.kayak img {
+  /*padding-top: 34%;*/
+  height: 10vh;
+  transform: rotate(350deg);
+  display: block;
+}
+
+.schedule h4 {
+  color: #15323C;
+  font-size: 31px;
+  font-weight: bold;
+  margin: 30px;
+  text-align: center;
+}
+
+.schedule-time p {
+  color: #15323C;
+  font-weight: bold;
+  text-align: right;
+}
+
+.schedule-detail p {
+  font-size: 19px;
+  text-align: left;
+}
+
+.schedule .left-side .row,
+.schedule .right-side .row {
+  padding: 10px;
+}
+
+/* FAQ SECTION */
+
+.questions {
+  background: #5AD286;
+}
+
+.questions-info {
+  margin-bottom: 100px;
+}
+
+.questions-info h2 a {
+  color: #2C7447;
+  font-family: 'Oswald', sans-serif;
+  margin: 0;
+  padding: 0px 0px 50px 0px;
+  font-size: 50px;
+  text-decoration: underline;
+}
+
+.questions-info h2 a:hover {
+  color: #2C7447;
+  text-decoration: none;
+}
+
+.questions-info h3 {
+  text-align: center;
+}
+
+.faq-question {
+  font-weight: 600;
+  margin-top: 20px;
+  text-align: left;
+  text-shadow: 1px 1px rgba(0,0,0,.2);
+}
+
+.faq-answer {
+  color: #2C7447;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 25px;
+  text-align: left;
+}
+
+.questions .left-side,
+.questions .right-side {
+  padding: 0px 40px;
+}
+
+.faq-answer a {
+  color: #2C7447;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.faq-answer a:hover {
+  color: #2C7447;
+  text-decoration: none;
+}
+
+/* SPONSOR SECTION */
+
+.sponsors {
+  background: #ffffff;
+}
+
+.sponsors-info h2 {
+  color: #51504E;
+}
+
+.sponsors-info .row {
+  /*min-height: 1em;*/
+  vertical-align: middle;
+}
+
+.sponsors-info .row img {
+  -moz-transform: scale(.5, .5);
+  -ms-transform: scale(.5, .5);
+  -webkit-transform: scale(.5, .5);
+  transform: scale(.5, .5);
+
+  padding: 10px;
+}
+
+.sponsors-info .row p {
+  color: #51504E;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* CONTACT SECTION */
+
+.contact {
+  background: #47b871;
+}
+
+.contact-love {
+  text-align: center;
+  font-size: 17px;
+}
+
+.contact-detail {
+  text-align: center;
+  color: #09190f;
+  font-size: 12px;
+}
+
+.contact-social {
+  text-align: center;
+}
+
+.contact-social i {
+  padding: 5px;
+}
+
+.about .container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.schedule .container,
+.questions .container,
+.sponsors .container {
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.chair {
+  position: relative;
+  display: block;
+
+}
+
+.chair img {
+  height: 20vh;
+  margin-left: 20vw;
+  margin-bottom: -5vh;
+  display: block;
+}
+
+.contact .container {
+  padding-top: 5vh;
+  padding-bottom: 20px;
+}
+
+.skyline,
+.bridge,
+.hills,
+.grass {
+  z-index: 0;
+}
+
+.skyline {
+  position: relative;
+  width: 102%;
+  margin-left: -1%;
+  margin-right: -1%;
+  margin-bottom: -3%;
+}
+
+.skyline img {
+  width: 100%;
+  margin-bottom: -1%;
+}
+
+.bats {
+  position: relative;
+  bottom: 0;
+  left: 70%;
+}
+
+.bats img {
+  width: 12vw;
+  padding-bottom: 2vh;
+}
+
+
+.bridge {
+  padding-top: 30%;
+  position: relative;
+  bottom: 0;
+}
+
+.hills {
+  bottom: 0;
+}
+
+.grass {
+  bottom: 0;
+}
+
+.hills img,
+.grass img {
+  width: 100%;
+}
+
+.grass img {
+  position: absolute;
+  bottom: 0;
+}
+
+@-webkit-keyframes wave-middle-anim {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@-moz-keyframes wave-middle-anim {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@-ms-keyframes wave-middle-anim {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+@keyframes wave-middle-anim {
+  0% {
+    left: 0%;
+  }
+  100% {
+    left: -100%;
+  }
+}
+
+#wave-mid {
+  -webkit-animation: wave-middle-anim 60s infinite linear;
+  -moz-animation: wave-middle-anim 60s infinite linear;
+  -ms-animation: wave-middle-anim 60s infinite linear;
+  -o-animation: wave-middle-anim 60s infinite linear;
+  animation: wave-middle-anim 60s infinite linear;
+  -webkit-animation-duration: 105s;
+  -moz-animation-duration: 105s;
+  -ms-animation-duration: 105s;
+  -o-animation-duration: 105s;
+  animation-duration: 105s;
+}
+
+@-webkit-keyframes wave-front-anim {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@-moz-keyframes wave-front-anim {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@-ms-keyframes wave-front-anim {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+@keyframes wave-front-anim {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 0%;
+  }
+}
+
+#wave-front {
+  -webkit-animation: wave-front-anim 60s infinite linear;
+  -moz-animation: wave-front-anim 60s infinite linear;
+  -ms-animation: wave-front-anim 60s infinite linear;
+  -o-animation: wave-front-anim 60s infinite linear;
+  animation: wave-front-anim 60s infinite linear;
+  -webkit-animation-duration: 60s;
+  -moz-animation-duration: 60s;
+  -ms-animation-duration: 60s;
+  -o-animation-duration: 60s;
+  animation-duration: 60s;
+}
+
+#wave-back {
+  -webkit-animation: wave-front-anim 60s infinite linear;
+  -moz-animation: wave-front-anim 60s infinite linear;
+  -ms-animation: wave-front-anim 60s infinite linear;
+  -o-animation: wave-front-anim 60s infinite linear;
+  animation: wave-front-anim 60s infinite linear;
+  -webkit-animation-duration: 150s;
+  -moz-animation-duration: 150s;
+  -ms-animation-duration: 150s;
+  -o-animation-duration: 150s;
+  animation-duration: 150s;
+}
+
+.bridge-wave {
+  position: absolute;
+  bottom: 0;
+  width:200%;
+}
+
+.bridge-white {
+  position: absolute;
+  left: 0;
+  bottom: 10%;
+  width:100%;
+}
+
+
+
+.about-info h2,
+.schedule-info h2,
+.questions-info h2,
+.sponsors-info h2,
+.contact-info h2{
+  width: 100%;
+  text-align: center;
+  text-shadow: 1px 1px rgba(0,0,0,.1);
+}
+
+@media (max-width: 768px) {
+  .hack-title {
+    margin:auto;
+  }
+
+  h2 {
+    font-size: 34px;
+  }
+
+  .questions-info h2 a {
+    font-size: 34px;
+  }
+
+  .hackTxFor {
+    /*width: 65vw;*/
+    width: 208px;
+    height: 90px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 466px) {
+
+  .hero-info {
+    text-align: center;
+  }
+
+  h2.location,
+  h2.date {
+    float: none;
+  }
+
+  .about-info p {
+    line-height: 30px;
+    font-size: 20px;
+  }
+
+  .schedule-time p,
+  .schedule-detail p {
+    line-height: 35px;
+  }
+}
+
+.register-now {
+  text-decoration: none !important;
+  text-shadow:0 0 0;
+}
+
+.register-now:hover {
+  color: rgb(126,211,242) !important;
+}
+
+/* centered columns styles */
+.row-centered {
+  text-align:center;
+}
+.col-centered {
+  display:inline-block;
+  float:none;
+  /* reset the text-align */
+  text-align:left;
+  /* inline-block space fix */
+  margin-right:-4px;
+}

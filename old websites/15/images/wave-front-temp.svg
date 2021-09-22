@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1997px" height="110px" viewBox="0 0 1997 110" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <!-- Generator: Sketch 3.3.3 (12081) - http://www.bohemiancoding.com/sketch -->
+    <title>front copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="wave-front" sketch:type="MSLayerGroup" fill="#1C67CA">
+            <g id="Page-1" sketch:type="MSShapeGroup">
+                <path d="M1759.07567,1.97266 C1677.99459,1.97266 1650.54968,23.192689 1575.14875,35.800004 C1499.74782,48.40732 1442.58574,46.105456 1347.32269,15.482173 C1252.05965,-15.141109 1151.40347,7.901052 1107.48232,20.383483 C1066.10749,32.14225 1047.8189,35.800005 997,35.800005 L997,139.000009 L1997,139.000009 L1997,35.800005 C1870.04471,35.800005 1840.15674,1.97266 1759.07567,1.97266 L1759.07567,1.97266 L1759.07567,1.97266 Z" id="front"></path>
+                <path d="M762.075667,1.97266 C680.994592,1.97266 653.549685,23.192689 578.148753,35.800004 C502.747821,48.40732 445.585738,46.105456 350.32269,15.482173 C255.059645,-15.141109 154.403467,7.901052 110.482321,20.383483 C69.1074898,32.14225 50.8188968,35.800005 0,35.800005 L0,139.000009 L1000,139.000009 L1000,35.800005 C873.044706,35.800005 843.156741,1.97266 762.075667,1.97266 L762.075667,1.97266 L762.075667,1.97266 Z" id="front-copy"></path>
+            </g>
+        </g>
+    </g>
+</svg>
