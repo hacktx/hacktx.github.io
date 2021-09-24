@@ -447,7 +447,8 @@ p, span, textarea, input, label, button, a {
 
 #spriteWalk {
   width: 0;
-  z-index: 3; }
+  z-index: 3;
+  transition: top 0.2s, left 0.2s; }
 
 #road19 {
   position: absolute;
