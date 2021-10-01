@@ -637,24 +637,60 @@ p,span,textarea,input,label,button,a {
    position: absolute;
    z-index: 4;
    width: 11vw;
-   top: 379vw;
-   left: 68vw;
+   top: 375vw;
+   left: 5vw;
    user-select: none;
    -webkit-user-drag: none;
 }
 #linode {
    position: absolute;
    z-index: 4;
-   width: 20vw;
-   top: 375vw;
+   width: 21vw;
+   top: 382vw;
    left: 15vw;
+   user-select: none;
+   -webkit-user-drag: none;
+}
+#facebook {
+   position: absolute;
+   z-index: 4;
+   width: 20vw;
+   top: 379vw;
+   left: 29vw;
+   user-select: none;
+   -webkit-user-drag: none;
+}
+#mlh {
+   position: absolute;
+   z-index: 4;
+   width: 20vw;
+   top: 389vw;
+   left: 46vw;
+   user-select: none;
+   -webkit-user-drag: none;
+}
+#gcp {
+   position: absolute;
+   z-index: 4;
+   width: 20vw;
+   top: 387vw;
+   left: 75vw;
+   user-select: none;
+   -webkit-user-drag: none;
+}
+#ecb {
+   position: absolute;
+   z-index: 4;
+   width: 18vw;
+   top: 376vw;
+   left: 63vw;
    user-select: none;
    -webkit-user-drag: none;
 }
 #cave {
    position: relative;
    width: 100%;
-   top: 75vw;
+   top: 80vw;
    user-select: none;
    -webkit-user-drag: none;
 }
@@ -684,7 +720,7 @@ p,span,textarea,input,label,button,a {
 
 #sponsors-heading{
      position: absolute;
-     top: 375vw;
+     top: 365vw;
      font-size: 5vw;
      z-index: 100;
      width: 100vw;
