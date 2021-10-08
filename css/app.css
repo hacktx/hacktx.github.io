@@ -74,8 +74,16 @@ p, span, textarea, input, label, button, a {
   user-select: none;
   -webkit-user-drag: none; }
 
-.button-register {
+#date {
   animation: fadeInDelayed 3.8s ease-out;
+  position: absolute;
+  width: 22%;
+  z-index: 5;
+  left: 20vw;
+  top: 22vw; }
+
+.button-register {
+  animation: fadeInDelayed 4.4s ease-out;
   max-width: 100%;
   position: absolute;
   left: 0;
@@ -461,6 +469,20 @@ p, span, textarea, input, label, button, a {
   user-select: none;
   -webkit-user-drag: none; }
 
+#inclusion-heading {
+  position: absolute;
+  top: 172vw;
+  left: 25vw;
+  width: 50vw;
+  z-index: 3; }
+
+#inclusion-text {
+  position: absolute;
+  top: 177vw;
+  left: 26vw;
+  width: 34vw;
+  z-index: 3; }
+
 #forest {
   position: relative;
   width: 100%;
@@ -472,7 +494,7 @@ p, span, textarea, input, label, button, a {
 
 #bird2 {
   position: absolute;
-  top: 170vw;
+  top: 166vw;
   left: 48vw;
   width: 20vw;
   z-index: 100;
@@ -540,6 +562,7 @@ p, span, textarea, input, label, button, a {
 #mountain-terrain {
   position: relative;
   width: 100%;
+  height: 83vw;
   top: 100vw;
   user-select: none;
   -webkit-user-drag: none; }
@@ -598,10 +621,37 @@ p, span, textarea, input, label, button, a {
   user-select: none;
   -webkit-user-drag: none; }
 
+#github {
+  position: absolute;
+  z-index: 4;
+  width: 16vw;
+  top: 403vw;
+  left: 5vw;
+  user-select: none;
+  -webkit-user-drag: none; }
+
+#stickermule {
+  position: absolute;
+  z-index: 4;
+  width: 30vw;
+  top: 403vw;
+  left: 57vw;
+  user-select: none;
+  -webkit-user-drag: none; }
+
+#matrix {
+  position: absolute;
+  z-index: 4;
+  width: 15vw;
+  top: 398vw;
+  left: 31vw;
+  user-select: none;
+  -webkit-user-drag: none; }
+
 #cave {
   position: relative;
   width: 100%;
-  top: 80vw;
+  top: 78vw;
   user-select: none;
   -webkit-user-drag: none; }
 
@@ -624,6 +674,7 @@ p, span, textarea, input, label, button, a {
   -webkit-user-drag: none; }
 
 #misc-text-section {
+  position: relative;
   height: 0;
   margin-bottom: 0;
   padding-bottom: 0; }
