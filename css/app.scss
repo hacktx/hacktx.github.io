@@ -130,13 +130,6 @@ p,span,textarea,input,label,button,a {
    text-align: center;
    font-size: 3em;
    text-shadow: 0 0 6px #0007;
-
-   transition: transform 0.2s ease-out;
-
-   &:hover {
-      transform: scale(1.1);
-   }
-
    a {
       color: #fff;
       text-decoration: none;
@@ -145,28 +138,107 @@ p,span,textarea,input,label,button,a {
       &::before, &::after {
          font-size: 0.7em;
          padding: 20px;
-         content: "◀";
+         content: "";
          display: inline-block;
       }
 
       &::after {
-         content: "▶";
+         content: "";
       }
    }
+
+   transition: transform 0.2s ease-out;
+
+   &:hover {
+      transform: scale(1.1);
+      a {
+         color: #fff;
+         text-decoration: none;
+         padding: 10px;
+   
+         &::before, &::after {
+            font-size: 0.7em;
+            padding: 20px;
+            content: "◀";
+            display: inline-block;
+         }
+   
+         &::after {
+            content: "▶";
+         }
+      }
+   }
+
+   
+}
+
+.button-mentor {
+   animation: fadeInDelayed 5s ease-out;
+   max-width: 100%;
+   position: absolute;
+   left: 0;
+   right: 0;
+   top: 30vw;
+
+   transform: scale(1);
+
+   text-align: center;
+   font-size: 3em;
+   text-shadow: 0 0 6px #0007;
+   a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px;
+
+      &::before, &::after {
+         font-size: 0.7em;
+         padding: 20px;
+         content: "";
+         display: inline-block;
+      }
+
+      &::after {
+         content: "";
+      }
+   }
+
+   transition: transform 0.2s ease-out;
+
+   &:hover {
+      transform: scale(1.1);
+      a {
+         color: #fff;
+         text-decoration: none;
+         padding: 10px;
+   
+         &::before, &::after {
+            font-size: 0.7em;
+            padding: 20px;
+            content: "◀";
+            display: inline-block;
+         }
+   
+         &::after {
+            content: "▶";
+         }
+      }
+   }
+
+   
 }
 
 .button-more {
    position: absolute;
    left: 0;
    right: 0;
-   top: 32vw;
+   top: 37vw;
    max-width: 100%;
    text-align: center;
    font-size: 2em;
    text-shadow: 0 0 6px #0007;
    color: #fff;
 
-   animation: fadeInDelayed 1.8s ease-out;
+   animation: fadeInDelayed 5.6s ease-out;
 
    &::after {
       font-size: 0.7em;
@@ -225,7 +297,7 @@ p,span,textarea,input,label,button,a {
 #road3 {
    position: absolute;
    top: 5.75vw;
-   left: 38.4vw;
+   left: 38.2vw;
    height: 12.76vw;
    z-index: 1;
    user-select: none;
@@ -741,10 +813,19 @@ p,span,textarea,input,label,button,a {
    user-select: none;
    -webkit-user-drag: none;
 }
+#likewize {
+   position: absolute;
+   z-index: 4;
+   width: 27vw;
+   top: 410vw;
+   left: 5vw;
+   user-select: none;
+   -webkit-user-drag: none;
+}
 #cave {
    position: relative;
    width: 100%;
-   top: 78vw;
+   top: 79vw;
    user-select: none;
    -webkit-user-drag: none;
 }
