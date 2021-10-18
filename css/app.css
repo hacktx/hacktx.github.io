@@ -685,7 +685,10 @@ p, span, textarea, input, label, button, a {
   top: 403vw;
   left: 57vw;
   user-select: none;
-  -webkit-user-drag: none; }
+  -webkit-user-drag: none;
+  transform: scale(1); }
+  #stickermule:hover {
+    transform: scale(1.1); }
 
 #matrix {
   position: absolute;
