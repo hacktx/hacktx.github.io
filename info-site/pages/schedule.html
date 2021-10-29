@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="../css/styles.css">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HackTX 2020</title>
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script src="../scripts/navbar.js"></script>
+    </head>
+    <link rel="apple-touch-icon" sizes="180x180" href="../../assets/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/icons/favicon-16x16.png">
+    <link rel="manifest" href="../../assets/icons/site.webmanifest">
+    <body style= "height: 1080px; background-position: -50px -100px; background-size: 2100px; background-image: url('../assets/backgroundF.png');"> 
+      <nav id="navigation-bar" style = "background-color: #37355b; height: 90px;">
+            <img id="freetail-logo" src="../assets/logo.png">
+            <ul>
+                <button>☰</button>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="schedule.html">Schedule</a></li>
+                <li><a href="companies.html">Companies</a></li>
+                <li><a href="challenges.html">Challenges</a></li>
+                <li><a href="faq.html">Extra</a></li>
+            </ul>
+        </nav>
+        
+        <div class="general">
+            <img class="general-header" src="../assets/Schedule.png">
+            <img style = "width:52%; margin-left: 24%; z-index: 100;" src="../assets/scrollEnd.png">
+            <div class="events">
+              <div class="legend">
+                <div class="legend-key">
+                  <div class="square milestone"></div>
+                  <div >Key Event</div>
+                </div>
+                <div class="legend-key">
+                  <div class="square beginner"></div>
+                  <div >Workshop</div>
+                </div>
+                <div class="legend-key">
+                  <div class="square speaker"></div>
+                  <div >Speaker Event</div>
+                </div>
+                <div class="legend-key">
+                  <div class="square funevent"></div>
+                  <div >Fun Event</div>
+                </div>
+              </div>
+              <div class="schedulenotes">
+                *All times are in Central Time (CT)* <br />
+          
+              </div>
+                <div class="eventsWrapper">
+
+                    <div class="eventColumn">
+                      <div class="dayheader">Saturday, Oct 30</div>
+                      <div class="event" id='teambuilding2'>
+                        <h1>Breakfast is Served</h1>
+                        <h2>10:00-11:00am</h2>
+                      </div>
+                      <div class="event" id='teambuilding2'>
+                        <h1>Opening Ceremony (GDC 2.216)</h1>
+                        <h2>11:00-11:30am</h2>
+                      </div>
+                      <div class="event" id='teambuilding2'>
+                        <h1>Intro to Git (GDC 5.302)</h1>
+                        <h2>11:30-12:30am</h2>
+                      </div>
+                      <div class="event" id='teambuilding2'>
+                        <h1>Hacking Starts</h1>
+                        <h2>12:00pm</h2>
+                      </div>
+                      <div class="event" id='teambuilding2'>
+                        <h1>Intro to Python (GDC 5.302)</h1>
+                        <h2>12:30-1:30pm</h2>
+                      </div>
+                      <div class="eventRow">
+                        <div class="smallEvent beginner" id='beginnermobile'>
+                          <h1>Team Matching</h1>
+                          <h2>1:00pm</h2>
+                        </div>
+                        <div class="smallEvent" id='gcpintro'>
+                          <h1>Talk w/ Ploomber</h1>
+                          <h2>1:00pm</h2>
+                        </div>
+                      </div>
+                      <div class="event" id='teambuilding2'>
+                        <h1>MLH Talk</h1>
+                        <h2>2:00-3:00pm</h2>
+                      </div>
+                      <div class="event" id='teambuilding2'>
+                        <h1>Hackathon Olympics (GDC Courtyard)</h1>
+                        <h2>3:00-4:00pm</h2>
+                      </div>
+                      <div class="event" id='teambuilding2'>
+                        <h1>How to Recruit (GDC 5.302)</h1>
+                        <h2>4:00-5:00pm</h2>
+                      </div>
+                      <div class="event" id='teambuilding2'>
+                        <h1>Dinner (GDC Atrium)</h1>
+                        <h2>6:00-7:00pm</h2>
+                      </div>
+                      <div class="event" id='teambuilding2'>
+                        <h1>Resume Reviews (GDC 5.302)</h1>
+                        <h2>8:00-9:00pm</h2>
+                      </div>
+                      <div class="event" id='teambuilding2'>
+                        <h1>Smash Bros Ultimate Tourney (GDC 5.302)</h1>
+                        <h2>9:00pm</h2>
+                      </div>
+                    </div>
+                    <div class="eventColumn">
+                      <div class="dayheader">Sunday, Oct 31</div>
+                      <div class="event" id='instabase2'>
+                        <h1>Office Hours (GDC 5.302)</h1>
+                        <h2>11:00am</h2>
+                      </div>
+                      <div class="eventRow">
+                        <div class="smallEvent beginner" id='beginnermobile'>
+                          <h1>Hacking Ends</h1>
+                          <h2>12:00pm</h2>
+                        </div>
+                        <div class="smallEvent" id='gcpintro'>
+                          <h1>Lunch</h1>
+                          <h2>12:00pm</h2>
+                        </div>
+                      </div>
+                      <div class="event milestone" id='deadline'>
+                        <h1>Judging</h1>
+                        <h2 style="font-weight: bolder;">1:00-3:00pm</h2>
+                      </div>
+                      <div class="event milestone" id='closing'>
+                        <h1>Closing Ceremony (GDC 2.216)</h1>
+                        <h2>4:00pm</h2>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Development -->
+        <script src="https://unpkg.com/@popperjs/core@2/dist/umd/popper.min.js"></script>
+        <script src="https://unpkg.com/tippy.js@6/dist/tippy-bundle.umd.js"></script>
+
+        <!-- Production -->
+        <script src="https://unpkg.com/@popperjs/core@2"></script>
+        <script src="https://unpkg.com/tippy.js@6"></script>
+
+        <script>
+          tippy('#opening', {
+            content: 'Opening ceremony featuring the amazing Freetail Hackers Directors! It also features the HackTX welcome video, an introduction from MLH, and a word from a few of our sponsors. Watch it live on our Youtube channel!<br/><br/><a target="_blank" href="https://www.youtube.com/channel/UCebi1myLBuB9dMBkN6hYL9g">Freetail YouTube Channel</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#teambuilding1', {
+            content: 'An event where hackers can find people to team up with for the hackathon. Similar to speed dating, hackers will move in and out of zoom breakout rooms to meet their potential team. Click the zoom link below to join!<br/><br/><a target="_blank" href="https://utexas.zoom.us/my/jupiterroom">Jupiter Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#teambuilding2', {
+            content: 'An event where hackers can find people to team up with for the hackathon. Similar to speed dating, hackers will move in and out of zoom breakout rooms to meet their potential team. Click the zoom link below to join!<br/><br/><a target="_blank" href="https://utexas.zoom.us/my/neptuneroom">Neptune Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#introhackathons', {
+            content: 'A beginner workshop where Emran and Rachel will be teaching about what a hackathon is and how to be successful throughout one. This event counts as 1 beginners workshop.Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/marsroom">Mars Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#introgit', {
+            content: 'A beginner workshop where Nikhil and Ian will be teaching about the basics of Git and how to use it for collaboration throughout the hackathon. This event counts as 1 beginners workshop. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/jupiterroom">Jupiter Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#beginnermobile', {
+            content: 'A beginner workshop where Ryan and Anisha will be teaching the basics of mobile development. This event counts as 1 beginners workshop. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/neptuneroom">Neptune Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#gcpintro', {
+            content: 'Join one of our sponsors, Google Cloud, to learn about their amazing product Firebase! In this talk, Google Andrea Wu will give an overview and showcase a demo on how your team can use Firebase for your hackathon project and/or personal projects. This event counts as 1 other event for the beginner\'s attendance sheet. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/marsroom">Mars Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#anant', {
+            content: 'Come here from Anant Bhardwaj, the founder and CEO of Instabase, on how he went from grad school to founding a startup that\'s valued at over $1 billion! The interviewer will be Ansh Jain, Freetail\'s corporate director. This talk will be streamed live on our Youtube Channel.<br/><br/><a target="_blank" href="https://www.youtube.com/channel/UCebi1myLBuB9dMBkN6hYL9g">Freetail YouTube Channel</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#beginnerweb', {
+            content: 'A beginner workshop where Ashwin and Lisa will be teaching about the basics of web development. This event counts as 1 beginners workshop. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/marsroom">Mars Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#echoar', {
+            content: 'Come learn how to build an AR/VR app in 15 minutes or less with Alon Grinshpoon from echoAR! The workshop will show how to quickly create AR/VR apps with no technical skills or coding required and scale existing apps by connecting them to the cloud. Workshop participants will learn how to create real-time cloud-connected augmented and virtual reality (AR/VR) apps using the echoAR platform. This event counts as 1 other event for the beginner\'s attendance sheet. Click the Google Meet link below to join! <br/><br/><a target="_blank" href="https://meet.google.com/ypm-dweh-rpb">Google Meet</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#bobross', {
+            content: 'Our first fun event! Follow along as Ellen teaches us how to paint like Bob Ross but in Microsoft Paint. Feel free to watch in amazement or create your own work of art! This event counts as 1 other event for the beginners attendance sheet. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/jupiterroom">Jupiter Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#beginnerml', {
+            content: 'A beginner workshop where Rohan will be teaching about the basics of Machine Learning and how to use it throughout the hackathon. This event counts as 1 beginner\'s workshop. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/neptuneroom">Neptune Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#microsoft', {
+            content: 'Come hear from Microsoft, one of our Giga sponsors, on deploying an app with Azure Static Web Apps! In this workshop you will learn how to deploy a static web app to the cloud directly from GitHub with Azure Static Web Apps. We then create a simple backend API with the help of Azure Functions. Finally, we put everything together and publish our backend and updated frontend. This event counts as 1 other event for the beginner\'s attendance sheet. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/neptuneroom">Neptune Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#product', {
+            content: 'Come hear from Krish Munot, product manager at Stackend Solutions, on how product management works and how you can become one someday! Many people are not familiar with this line of work, even though tech people are very suited to it. This event counts as 1 beginner\'s workshop. Click the zoom link to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/jupiterroom">Jupiter Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true
+          })
+          tippy('#gamedev', {
+            content: 'A workshop led by UT EGaDS (Electronic Game Developers Society) about game development. This event counts as 1 other event for the beginners attendance sheet. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/marsroom">Mars Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#kuzoclass', {
+            content: 'Meet Patrick Lee, a 22-Year-Old Entrepreneur with $10M in VC RaisedDescription. When he turned 18, Patrick Lee founded Orthly (now Dandy), a healthcare technology company modernizing orthodontic care with $10M in venture backing. Orthly (now Dandy) has become one of the recognized leaders in the emerging D2C orthodontics space, and was named by Inc. Magazine as “1 of 5 Startups that will Change Healthcare in 2018.”In this workshop, Patrick will be sharing his story and answering your questions. Aspiring entrepreneurs will learn what it takes to start a Silicon Valley venture-backed startup at a young age. This event counts as 1 other event for the beginner\'s attendance sheet. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/jupiterroom">Jupiter Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#instabase2', {
+            content: 'Come join Instabase, our Title Sponsor, for a product demo! They will be showing off the power of their platform on the example document of a UT ID card, and then talking about how you can launch your product into the future! This event counts as 1 other event for the beginner\'s attendance sheet. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/marsroom">Mars Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#billmannel', {
+            content: 'Come join HP\'s Bill Mannel for his talk "High-Performance Computing: Solving the World’s (and Universe’s) Toughest Problems". This event does not count towards the beginner\'s attendance sheet. This event will be streamed on our YouTube channel!',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#hacs', {
+            content: 'Join this event for a workout session led by UT HACS (Hispanic Association of Computer Scientists). Take a quick break from your hard work with some fun exercise! This event counts as 1 other event for the beginners attendance sheet. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/jupiterroom">Jupiter Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#wayfair', {
+            content: 'Come join Wayfair for an "Introduction to React Native" - React Native is react on the phone. It uses React for both Android and Iphone to create multi platform native experience. This event counts as 1 other event for the beginner\'s attendance sheet. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/neptuneroom">Neptune Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#women', {
+            content: 'A networking event for all women participating in HackTX led by UT WiCS (Women in Computer Science) and UT WECE (Women in Electrical and Computer Engineering). This event counts as 1 other event for the beginners attendance sheet. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/jupiterroom">Jupiter Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#careerfair', {
+            content: 'An online career fair on Glimpse. Join to talk to recruiters/employees from Wayfair, Instabase, IBM, GCP, and more! We will also be hosting professional development hours in the Mars room. This event does not count for the beginners attendance sheet. Download Glimpse <a href="http://app.joinglimpse.com">here</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#estimathon', {
+            content: 'HackTX-imathon is our Estimathon at HackTX this year! This is an event where you compete with a team of hackers to answer Fermi problems, like "How many stop signs are in New York?". You\'ll have 30 minutes to submit confidence intervals for 13 problems, and the first 50 hackers in attendance will get a free Estimathon T-shirt! This event counts as 1 other event for the beginner\'s attendance sheet. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/marsroom">Mars Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#design', {
+            content: 'A workshop led by the Freetail Hackers Creative Team on designing a project to look aesthetic and visually appealing. Design is an important part of a complete project! This event counts as 1 other event for the beginners attendance sheet. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/jupiterroom">Jupiter Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#cloudhero', {
+            content: 'Come join Google Cloud for another tech talk, hosted by speaker Ryan Matsumoto! This event counts as 1 other event for the beginner\'s attendance sheet. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/neptuneroom">Neptune Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#organizer', {
+            content: 'A zoom room for hackathon organizers from all over to meet and chill! Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/jupiterroom">Jupiter Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#atlatrivia', {
+            content: 'How much do you know about Avatar the Last Airbender? Join for a challenging trivia night event testing your knowledge of the beloved show. This event counts as 1 other event for the beginners attendance sheet. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/marsroom">Mars Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#trivia', {
+            content: 'Do you know random facts that other people probably do not? Come join Trivia Night to showcase your big brain! The trivia will not cover a specific topic. This event counts as 1 other event for the beginners attendance sheet. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/neptuneroom">Neptune Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#games', {
+            content: 'Are you tired of doing work? Do you love playing online games? Come to Game Night to make (or break) friendships over fun games like Skribbl.io, Minecraft, Among Us, Codenames, or a game of your choice (if you can find enough people willing to play)! This event counts as 1 other event for the beginners attendance sheet. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/jupiterroom">Jupiter Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#smash', {
+            content: 'Do you play Super Smash Bros. Ultimate? If so, join this epic late night event to compete with other smash players in a HackTX competition! Unfortunately, you must have a copy of Super Smash Bros. Ultimate and Nintendo Switch online to play. This event counts as 1 other event for the beginners attendance sheet. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/marsroom">Mars Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#convergent', {
+            content: 'Learn how to pitch your amazing project with this workshop hosted by Texas Convergent! Join the zoom to learn how to prepare your pitch for the upcoming project judging. This event counts as 1 other event for the beginners attendance sheet. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/jupiterroom">Jupiter Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#submission', {
+            content: 'Join to get assistance with submitting your project! Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/marsroom">Mars Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#projectfair', {
+            content: 'Join a zoom link to look at other people\'s amazing projects! Make sure to fill out the google sheet if you want to showcase your project. This event counts as 1 other event for the beginner\'s attendance sheet. Individual project links will be posted later.',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#closing', {
+            content: 'We will be streaming closing ceremony on our YouTube channel. Thanks for attending HackTX!<br/><br/><a target="_blank" href="https://www.youtube.com/channel/UCebi1myLBuB9dMBkN6hYL9g">Freetail YouTube Channel</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#closing', {
+            content: 'We will be streaming closing ceremony on our YouTube channel. Thanks for attending HackTX!<br/><br/><a target="_blank" href="https://www.youtube.com/channel/UCebi1myLBuB9dMBkN6hYL9g">Freetail YouTube Channel</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#mlh', {
+            content: 'Join MLH for their introduction to Cybersecurity through a CTF (Capture the Flag) event! Come for the chance to get some free swag and prizes. This event counts as 1 other event for the beginners attendance sheet. Click the Zoom link below to join! <br/><br/><a target="_blank" href="https://utexas.zoom.us/my/marsroom">Mars Room</a>',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+        </script>
+    </body>
+</html>

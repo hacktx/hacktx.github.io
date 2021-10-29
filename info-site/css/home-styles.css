@@ -1,0 +1,189 @@
+@font-face {
+    font-family: 'museo';
+    src: url("../assets/fonts/Museo300-Regular.otf");
+}
+  
+html, body{
+    height: 100vh;
+    width: 100vw;
+    min-height: 215px;
+    overflow-x: auto;
+}
+
+body{
+    background: no-repeat fixed 5% 5%, url('../assets/title.png') no-repeat fixed 90% 50%, url('../assets/wave.png') no-repeat fixed, url('../assets/StarsHomepage.png') fixed;
+    background-size: 7.5%, 55%, 50% 100%, 100%;
+    background-color: #1c4862;
+    margin: 0;
+    font-family: Poppins-Light, sans-serif;
+    font-size: 18px;
+    display: flex;
+    flex-direction: column;
+    cursor: url("../../assets/cursor.png"), auto; 
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+}
+
+nav > *{
+    width: 100vw;
+    height: 80px;
+}
+
+#freetail-logo {
+    margin-left: 2vw;
+    margin-top: 2vh;
+    height: 10vh;
+    max-height: 60px;
+    width: auto;
+}
+
+nav ul{
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav li{
+    font-family: museo;
+    list-style-type: none;
+    margin: 0 2vw;
+}
+
+a{
+    text-decoration: none;
+    font-size: 30px;
+}
+
+a:hover{
+    color: white;
+}
+
+button{
+    display: none;
+}
+
+td {
+    padding-right: 10px;
+}
+
+td a{
+    text-decoration: none;
+    color: #1c4862;
+    font-size: 19px;
+}
+
+td a:hover{
+    color: white;
+}
+
+nav a{
+    text-decoration: none;
+    color: white;
+    font-size: 22px;
+}
+
+nav a:hover{
+    color: #e5bf89;
+}
+
+#text-header{
+    font-family: museo;
+    color: #FFFFFF;
+    margin-top: -1050px;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bolder;
+    width: 100%;
+}
+
+#text-body{
+    font-family: museo;
+    color: #FFFFFF;
+    margin-top: -370px;
+    text-align: center;
+    font-size: 100%;
+    width: 100%;
+    height: 1000px;
+}
+.info{
+    text-align: left;
+    margin-left: auto;
+    margin-right: auto;
+}
+#scroll{
+    display: block; margin-left: auto; margin-right: auto; width: 900px;
+}
+#titleLogo{
+    margin-top: 30px; display: block; margin-left: auto; margin-right: auto; width: 900px;
+}
+
+@media only screen and (max-width: 1000px) {
+    body{
+        background: no-repeat fixed 5% 5%, url('../assets/title.png') no-repeat fixed 90% 50%, url('../assets/wave.png') no-repeat fixed, url('../assets/StarsHomepage.png') fixed;
+        background-color: #034965;
+        background-size: 7.5%, 55%, 50% 100%, 100%;
+    }
+    #scroll{
+        margin-top: 5vw;
+        width: 100vw;
+
+        height: 100vw;
+    }
+    #titleLogo{
+        width: 80vw;
+    }
+    button{
+        display: block;
+        margin-top: 1vh;
+        margin-right: 1vw;
+        font-size: 2vh;
+        cursor: url("../../assets/cursor.png"), auto; 
+    }
+    
+    nav > *{
+        width: 100vw;
+        height: 100px;
+    }
+    
+    nav ul{
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: flex-start;
+    }
+    
+    nav li{
+      margin: 0;
+      margin-right: 1vw;
+    }
+
+    nav a{
+      display: block;
+      font-size: 18px;
+    }
+
+    #text-header{
+        font-family: museo;
+        color: #FFFFFF;
+
+        text-align: center;
+        font-size: 30px;
+        font-weight: bolder;
+        width: 100%;
+    }
+    
+    #text-body{
+        font-family: museo;
+        color: #FFFFFF;
+        margin-top: -65vw;
+        text-align: center;
+        font-size: 2vw;
+        width: 100%;
+        height: 1000px;
+    }
+  }
