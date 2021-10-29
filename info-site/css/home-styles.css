@@ -70,11 +70,12 @@ button{
 
 td {
     padding-right: 10px;
+    color: #004a68;
 }
 
 td a{
     text-decoration: none;
-    color: #1c4862;
+    color: #3C7EDD;
     font-size: 19px;
 }
 
@@ -94,7 +95,7 @@ nav a:hover{
 
 #text-header{
     font-family: museo;
-    color: #FFFFFF;
+    color: #2F3649;
     margin-top: -1050px;
     text-align: center;
     font-size: 30px;
@@ -104,7 +105,7 @@ nav a:hover{
 
 #text-body{
     font-family: museo;
-    color: #FFFFFF;
+    color: #2F3649;
     margin-top: -370px;
     text-align: center;
     font-size: 100%;
@@ -169,7 +170,6 @@ nav a:hover{
 
     #text-header{
         font-family: museo;
-        color: #FFFFFF;
 
         text-align: center;
         font-size: 30px;
@@ -179,7 +179,6 @@ nav a:hover{
     
     #text-body{
         font-family: museo;
-        color: #FFFFFF;
         margin-top: -65vw;
         text-align: center;
         font-size: 2vw;
