@@ -340,6 +340,12 @@ a:visited {
     margin-right: 20px;
 }
 
+#scrollImg{
+    width:min(89%, 1000px); margin-left: auto; margin-right: auto; z-index: 100;
+}
+#scrollImgSchedule{
+    width:min(89%, 1000px); margin-left: auto; margin-right: auto; z-index: 100;
+}
 @media only screen and (max-width: 1000px) {
     button{
         display: block;
@@ -393,5 +399,36 @@ a:visited {
 
     .company img{
         width: 270px;
+    }
+    .legend {
+        height: 60px;
+        display: block;
+        width: 60vw;
+        margin: 0px;
+        padding-bottom: 30px;
+    }
+    .legend-key {
+        height: 40px;
+        display: flex;
+        flex-direction: row;
+        margin-left: 5vw;
+    }
+    .schedulenotes {
+        text-align: center;
+        margin-top: 100px;
+        margin-bottom: 10px;
+        font-size: 16px;
+
+    }
+    .events {
+        background-color: #e5bf89;
+        width: min(90%, 900px);
+        margin: -5px auto;
+        color: white;
+        padding-top: 70px;
+    }
+
+    #scrollImgSchedule{
+        width:min(100%, 1000px); margin-left: auto; margin-right: auto; z-index: 100;
     }
 }
