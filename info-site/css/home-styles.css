@@ -76,7 +76,7 @@ td {
 td a{
     text-decoration: none;
     color: #3C7EDD;
-    font-size: 3vw;
+    font-size: 19px;
 }
 
 td a:hover{
@@ -111,6 +111,15 @@ nav a:hover{
     font-size: 100%;
     width: 100%;
     height: 1000px;
+}
+
+#report{
+    margin-top: 150px;
+    font-size: 19px;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 .info{
     text-align: left;
@@ -184,5 +193,25 @@ nav a:hover{
         font-size: 2vw;
         width: 100%;
         height: 1000px;
+    }
+
+    td a{
+        text-decoration: none;
+        color: #3C7EDD;
+        font-size: 3vw;
+    }
+    #report{
+        margin-top: 30vw;
+        font-size: 3vw;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        background-color: rgba(255, 255, 255, 0.863);
+        border-radius: 15px;
+        padding: 20px;
+    }
+    #report a{
+        color: #3C7EDD;
+
     }
   }
