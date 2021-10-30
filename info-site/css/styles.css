@@ -239,18 +239,58 @@ a:visited {
     margin: 0 auto;
 }
 
-.company-microsoft img{
+.company-devrev img{
+    width: 91px;
     padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.company-linode img{
+    width: 270px;
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.company-ecb img{
+    width: 250px;
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.company-mlh img{
+    width: 300px;
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
+}
+.company-github img{
+    width: 250px;
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
 }
 
-.company-pwc img{
-    width: 200px;
-    margin-left: 80px;
+.company-likewize img{
+    width: 275px;
+    padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
 }
 
-.company-chevron img{
+.company-matrix img{
+    width: 250px;
     padding: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;   
 }
+
 
 .company p{
     font-size: 14px;
