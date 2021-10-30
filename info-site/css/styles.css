@@ -239,58 +239,18 @@ a:visited {
     margin: 0 auto;
 }
 
-.company-devrev img{
-    width: 91px;
+.company-microsoft img{
     padding: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;   
-}
-.company-linode img{
-    width: 270px;
-    padding: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;   
-}
-.company-ecb img{
-    width: 250px;
-    padding: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;   
-}
-.company-mlh img{
-    width: 300px;
-    padding: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;   
-}
-.company-github img{
-    width: 250px;
-    padding: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;   
 }
 
-.company-likewize img{
-    width: 275px;
-    padding: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;   
+.company-pwc img{
+    width: 200px;
+    margin-left: 80px;
 }
 
-.company-matrix img{
-    width: 250px;
+.company-chevron img{
     padding: 0;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;   
 }
-
 
 .company p{
     font-size: 14px;
@@ -397,7 +357,7 @@ a:visited {
     
     nav > *{
         width: 100vw;
-        height: 100px;
+        height: 200px;
     }
     
     nav ul{
@@ -407,9 +367,12 @@ a:visited {
     }
     
     nav li{
-      margin: 0;
-      margin-right: 1vw;
-    }
+        margin: 0;
+        background-color: #37355b;
+        padding: 10px;
+        z-index: 100;
+        width: 40%;
+      }
 
     nav a{
       display: block;
