@@ -102,6 +102,10 @@
                         <h1>Dinner (GDC Atrium)</h1>
                         <h2>6:00-7:00pm</h2>
                       </div>
+                      <div class="event funevent" id='gamenight'>
+                        <h1>Virtual Game Night</h1>
+                        <h2>7:00pm</h2>
+                      </div>
                       <div class="event" id='resume'>
                         <h1>Resume Reviews (GDC 5.302)</h1>
                         <h2>8:00-9:00pm</h2>
@@ -211,6 +215,12 @@
           });
           tippy('#dindin', {
             content: 'Hungry? Come for dinner at GDC Atrium!',
+            placement: 'top',
+            allowHTML: true,
+            interactive: true,
+          });
+          tippy('#gamenight', {
+            content: 'Join us for some exciting virtual games! <br><br><a target="_blank" href="https://utexas.zoom.us/my/adventure.room">Adventure Room</a>',
             placement: 'top',
             allowHTML: true,
             interactive: true,
