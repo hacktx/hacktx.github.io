@@ -1,177 +1,134 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <meta charset="utf-8">
-  <title>HackTX 2021</title>
-  <link href="css/app.css" rel="stylesheet" type="text/css" />
-  <link rel="icon" type="image/x-icon" href="./images/Favicon.png">
-  <link href="fonts/museo_300_macroman/stylesheet.css" rel="stylesheet" type="text/css" />
+<style>
+@font-face {
+  font-family: rye;
+  src: url('Rye/Rye-Regular.ttf');
+}
+
+@font-face {
+  font-family: lobster2;
+  src: url(Lobster_Two/LobsterTwo-Italic.ttf);
+  font-style: italic;
+}
+
+@font-face {
+  font-family: lobster2;
+  src: url(Lobster_Two/LobsterTwo-Regular.ttf);
+}
+
+@font-face {
+  font-family: teko;
+  src: url(Teko/Teko-Regular.ttf);
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  background: rgb(228, 224, 221);
+
+  display: flex;
+  align-items: center;
+}
+
+.noise {
+  width: 100%;
+  height: 100vh;
+  background: url('noise.png');
+  position: absolute;
+  opacity: 0.8;
+}
+
+.border {
+  width: calc(100% - 40px);
+  height: calc(100vh - 40px);
+  position: absolute;
+  border: 4px rgb(47, 45, 50) solid;
+  margin: 16px; 
+}
+
+.text {
+  margin: 0 auto;
+}
+
+h1, h2, h3, p {
+  color: rgb(47, 45, 50);
+}
+
+h1, h2, h3 {
+  text-align: center;
+  width:  100%;
+  margin: 0;
+}
+
+.lobster {
+  font-family: lobster2, cursive;
+  font-style: italic;
+}
+
+.teko {
+  font-family: teko, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: -0.2em;
+  margin-top: -0.2em;
+}
+
+.small {
+  font-size: 3.5vw;
+}
+
+.medium {
+  font-size:  7vw;
+}
+
+.big {
+  font-size: 16vw;
+}
+
+.brace {
+  font-size: 40vw;
+  font-family: serif;
+  margin-top: 0.8em;
+}
+
+h1 {
+  margin-bottom: -0.4em !important;
+}
+
+.mobile {
+  display: none;
+}
+
+@media screen and (max-width: 600px) {
+  .desktop {
+    display: none;
+  }
+
+  .mobile {
+    display: block;
+  }
+
+  .text {
+    transform: scale(1.7);
+  }
+}
+</style>
 </head>
 <body>
-  <div id="wrapper">
-      <a id="mlh-trust-badge" style="display:block;max-width:100px;min-width:60px;position:fixed;right:50px;top:0;width:10%;z-index:10000" href="https://mlh.io/seasons/2022/events?utm_source=na-hackathon&utm_medium=TrustBadge&utm_campaign=2022-season&utm_content=white" target="_blank"><img src="https://s3.amazonaws.com/logged-assets/trust-badge/2022/mlh-trust-badge-2022-white.svg" alt="Major League Hacking 2022 Hackathon Season" style="width:100%"></a>
-      <img id="spriteWalk" src="images/spriteFront.png">
-      <div class="sky"></div>
-      <img id="title" src="images/hacktx-2021-logo.svg">
-      <img id="castle" src="images/castle+huts.png">
-      <img id="date" src="images/date.png">
-      <h2 class="button-register">
-        <a href="//register.hacktx.com" tabindex="0">register now</a>
-      </h2>
-      <h2 class="button-mentor">
-        <a href="https://forms.gle/dcViQz5rV9b7fNhm8" tabindex="0">become a mentor</a>
-      </h2>
-      <h2 class="button-team">
-        <a href="https://hacktx.com/info-site" tabindex="0">day-of site</a>
-      </h2>
-      <h2 class="button-more" tabindex="0">
-        more
-      </h2>
-      <div class="terrain">
-        <div class ="what-section">
-          <img id="guard1" src="images/knight.png">
-          <img id="guard2" src="images/knight.png">
-          <img id="road1" src="images/pathVertical.png">
-          <img id="road2" src="images/pathCorner.png">
-          <img id="road3" src="images/pathHorizontal.png">
-          <img id="road4" src="images/pathHorizontal.png">
-          <img id="road5" src="images/pathCorner.png">
-          <div class="heading" id="what-heading">What is HackTX?</div>
-          <div class="normal-text" id="what-text">HackTX is an annual hackathon at the University of Texas at Austin. A hackathon is simply a space for students of any major to come together and come up with creative solutions using technology. They are a place to learn, to meet others, and to innovate. We design our hackathons to be beginner-friendly and will have plenty of mentors and workshops to guide you!</div>
-        </div>
-        <div class="who-section">
-          <img id="road6" src="images/pathVertical.png">
-          <img id="road7" src="images/pathVertical.png">
-          <img id="road8" src="images/pathCorner.png">
-          <img id="road9" src="images/pathHorizontal.png">
-          <img id="road10" src="images/pathHorizontal.png">
-          <img id="road11" src="images/pathHorizontal.png">
-          <img id="road12" src="images/pathCorner.png">
-          <img id="rock-terrain" src="images/rockBackground.png">
-          <div id="dragon"></div>
-          <div id="volcano"></div>
-          <div class="heading" id="who-heading">Who are the Freetail Hackers?</div>
-          <div class="normal-text" id="who-text">We're a group of UT Austin students who love bringing students who are passionate about inspiring others, learning new skills, and being involved in the hackathon and tech communities. We love organizing hackathons and having fun together while doing so! If this sounds like a good fit for you, you should apply to join our team when applications open in December. Applications will be posted on our Facebook page. Need to reach out to us for any further questions or want to work with us for the next event? Email us at hello@freetailhackers.com!</div>
-        </div>
-        <div class="schedule-section">
-          <img id="road13" src="images/pathVertical.png">
-          <img id="lake" src="images/lakeImage-03.png">
-          <div id="ducks1"></div>
-          <div id="ducks2"></div>
-          <div id="schedule">
-            <h2 class="schedule-heading" class="heading"><span id="saturday-button" class="active">Saturday</span><span id="sunday-button">Sunday</span></h2>
-            <div id="saturday-schedule" class="active">
-              <div class="normal-text schedule-text">
-                <div class="schedule-item" tabindex="0"><p><span class="schedule-event-name">10:00 AM - Breakfast is Served (GDC atrium)</span></p><p>Come join us for breakfast if you are attending in-person :)</p></div>
-                <div class="schedule-item" tabindex="0"><p><span class="schedule-event-name">11:00 AM - Opening Ceremony (GDC 2.216)</span></p><p>Join us as we kick off our event with some general information and resources to guide you throughout the weekend.</p></div>
-                <div class="schedule-item" tabindex="0"><p><span class="schedule-event-name">11:30 AM - Intro to Git (GDC 5.302)</span></p><p>Learn how to use a system to keep track of your code changes and collaborate on software development. </p></div>
-                <div class="schedule-item" tabindex="0"><p><span class="schedule-event-name">11:30 PM - Hacking Starts</span></p><p>Go go go!</p></div>
-                <div class="schedule-item" tabindex="0"><p><span class="schedule-event-name">12:30 PM - Intro to Python (GDC 5.302)</span></p><p>Let’s learn how to code in Python! Beginner friendly, assumes no prior coding experience :)</p></div>
-                <div class="schedule-item" tabindex="0"><p><span class="schedule-event-name">1:00 PM - Team Matching</span></p><p>Don't have a team? We gotchu</p></div>
-                <div class="schedule-item" tabindex="0"><p><span class="schedule-event-name">1:00 PM - Talk w/ Ploomber </span></p><p> Tune in <a style = "color: white" href="https://utexas.zoom.us/my/castle.room">here</a></p></div>
-                <div class="schedule-item" tabindex="0"><p><span class="schedule-event-name">2:00 PM - MLH Talk </span></p><p> Tune in <a style = "color: white" href="https://utexas.zoom.us/my/adventure.room">here</a></p></div>
-                <div class="schedule-item" tabindex="0"><p><span class="schedule-event-name">3:00 PM - Hackathon Olympics (GDC Courtyard)</span></p><p>Join us for some exciting in-person games</p></div>
-                <div class="schedule-item" tabindex="0"><p><span class="schedule-event-name">4:30 PM - How to Recruit (GDC 5.302)</span></p><p>Learn how to recruit for technical internships and full time positions.</p></div>
-                <div class="schedule-item" tabindex="0"><p><span class="schedule-event-name">6:00 PM - Dinner (GDC Atrium)</span></p></div>
-                <div class="schedule-item" tabindex="0"><p><span class="schedule-event-name">7:00 PM - Virtual Game Night! </span></p><p> Join us <a style = "color: white" href="https://utexas.zoom.us/my/adventure.room">here</a></p></div>
-                <div class="schedule-item" tabindex="0"><p><span class="schedule-event-name">8:00 PM - Resume Reviews (GDC 5.302)</span></p><p>Feel free to hop in and get help with your project, resume, submission, or anything else</p></div>
-                <div class="schedule-item" tabindex="0"><p><span class="schedule-event-name">9:00 PM - Smash Bros Ultimate Tourney (GDC 5.302)</span></p><p>Enough said.</p></div>
-
-              </div>
-            </div>
-            <div id="sunday-schedule">
-              <div class="normal-text schedule-text">
-                <div class="schedule-item" tabindex="0"><p><span class="schedule-event-name">11:00 AM - Office Hours (GDC 5.302)</span></p><p>Come join us for breakfast if you are attending in-person :)</p></div>
-                <div class="schedule-item" tabindex="0"><p><span class="schedule-event-name">12:00 PM - Hacking Ends</span></p><p>Time to submit your projects!</p></div>
-                <div class="schedule-item" tabindex="0"><p><span class="schedule-event-name">12:00 PM - Lunch</span></p><p>Come join us for lunch if you are attending in-person :)</p></div>
-                <div class="schedule-item" tabindex="0"><p><span class="schedule-event-name">1:00 PM - Judging Starts</span></p><p>Time to see what y'all made!</p></div>
-                <div class="schedule-item" tabindex="0"><p><span class="schedule-event-name">3:00 PM - Judging Ends</span></p><p>Wow those were some cool projects.</p></div>
-                <div class="schedule-item" tabindex="0"><p><span class="schedule-event-name">4:00 PM - Closing Ceremony (GDC 2.216)</span></p><p>Thanks for coming y'all!</p></div>
-            </div>
-            </div>
-          </div>
-          <img id="road14" src="images/pathVertical.png">
-          <img id="road15" src="images/pathVertical.png">
-          <img id="road16" src="images/pathCorner.png">
-          <img id="road17" src="images/pathHorizontal.png">
-          <img id="road18" src="images/pathHorizontal.png">
-          <img id="road19" src="images/pathCorner.png">
-        </div>
-        <div class="who-attend-section">
-            <div class="heading" id="inclusion-heading">Inclusion</div>
-            <div class="normal-text" id="inclusion-text">To embrace inclusivity, all participants are expected to follow the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a> to facilitate a safe space and a positive hackathon experience for everyone!</div>
-            <img id="forest" src="images/forest.png">
-            <img id="bird2" src="images/Bird2.png">
-            <img id="bird1" src="images/Bird1.png">
-            <img id="beaver" src="images/beaver.png">
-            <img id="bunny" src="images/bunny.png">
-            <img id="fox" src="images/fox.png">
-            <div class="heading" id="who-attend-heading">Who Can Attend?</div>
-            <div class="normal-text" id="who-attend-text">The event is open anyone! This includes high-schoolers, undergraduate and graduate students from other universities. All levels of experience and all majors are welcome! Beginner? No problem! We'll have mentors and workshops to help you develop new skills. All you need to come in with is a desire to create. Interested in learning something new? We'll have plenty of people to help teach you how to make an impact right from your own desk!</div>
-        </div>
-        <div class="misc-text-section">
-          <img id="mountains" src="images/Mountain.png">
-          <img id="mountain-terrain" src="images/redmountainBackground.png">
-          <img id="cave" src="images/cave-end.png">
-          <img id="bat2" src="images/Bat2.png">
-          <img id="bat1" src="images/Bat1.png">
-        </div>
-
-      </div>
-      <div class="heading" id="sponsors-heading">Sponsors</div>
-      <img id="linode" src="images/linode.png">
-      <img id="devrev" src="images/devrev.png">
-      <img id="facebook" src="images/facebook.png">
-      <img id="mlh" src="images/mlh.png">
-      <img id="gcp" src="images/gcp.png">
-      <img id="ecb" src="images/ecb.png">
-      <img id="github" src="images/github-logo.png">
-      <a href="http://hackp.ac/mlh-stickermule-hackathons" target="_blank">
-        <img id="stickermule" src="images/sticker-mule-logo.png">
-      </a>
-      <img id="matrix" src="images/matrix.png">
-      <img id="likewize" src="images/likewize.png">
-        <div id="FAQ-heading">FAQ</div>
-        <div class="two-column" width="100%">
-          <div class="left-column-mobile normal-text">
-            <p class="question">How do teams work?</p>
-            <p>Teams can be up to 5 members. If you don't have a team, don’t worry!  
-              Joining a team of new friends is the best part of a hackathon. 
-              We will have team matching available for everyone on the day of the event, 
-              but if you would like to message our channel and create a team beforehand, that's okay too! 
-              We will have a spreadsheet to fill out and confirm team information.
-            </p>
-
-            <p class="question">What format will HackTX 2021 be in?</p>
-            <p>Currently, we are planning for a hybrid format where all participants will get the same access to workshops, mentors, and sponsors and students on UT Austin’s campus will get access to some in-person benefits such as food. As the Covid-19 situation is quickly changing, we will continue to keep you posted if anything changes.
-            </p>
-
-            <p class="question">How do I volunteer?</p>
-            <p>We are always looking for mentors to answer student questions or workshop suggestions. If you want to help out at our event, shoot us an email at hello@freetailhackers.com! 
-            </p>
-        </div>
-          <div class="right-column-mobile normal-text">
-
-            <p class="question">How much money will this cost me?</p>
-            <p>Zero. Zip. Zilch. Nada. Nothing. Gratis. It's free. Freetail Hackers will provide all students with mentors, tech talks, and prizes!</p>
-              <p class="question">Any rules?</p>
-              <p>All work must be done during the 24-hour period of the event. 
-                  You can't demo something you didn't build. Don't talk about Fight Club. 
-                  All attendees (hackers, supporters, mentors, volunteers, etc.) must abide by the <a href="https://static.mlh.io/docs/mlh-code-of-conduct.pdf">MLH Code of Conduct</a>.</p>
-              
-              <p class="question">When is HackTX?</p>
-              <p>HackTX 2021 will be October 30th-October 31st</p>
-              
-              <p class="question">When does registration close?</p>
-              <p>TBD</p>
-              
-              <p class="question">Will there be prizes?</p>
-              <p>Yes! We plan to give prizes to the top 3 placing teams. More info to come.
-          </p></div>
-      </div>
-    </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.6/lottie.min.js" integrity="sha512-BB7rb8ZBAxtdJdB7nwDijJH9NC+648xSzviK9Itm+5APTtdpgKz1+82bDl4znz/FBhd0R7pJ/gQtomnMpZYzRw==" crossorigin="anonymous"></script>
-    <script src="js/app.js "></script>
-    <script src="js/walk.js "></script>
+  <p class="brace desktop">{</p>
+  <div class="text">
+    <h2 class="lobster small">October 8 - 9, 2022</h2>
+    <h1 class="teko big">HackTX</h1>
+    <h2 class="teko medium"><span class="desktop">- </span>University of Texas<span class="desktop"> -</span></h2>
+    <h3 class="lobster small">Stay Tuned</h3>
+  </div>
+  <p class="brace desktop">}</p>
+  <div class="border mobile"></div>
+  <div class="noise"></div>
 </body>
 </html>
