@@ -1,0 +1,174 @@
+@font-face {
+    font-family: Holtwood;
+    src: url('../fonts/HoltwoodOneSC.ttf');
+  }
+
+body{
+    height: 200vw;
+    margin: 0;
+    background-color: orange;
+    font-family: Holtwood;
+}
+.layerimg{
+    pointer-events: none;
+    width: 100%;
+}
+.noselect {
+    user-select: none;
+}
+#header {
+    position: relative;
+    display:flex;  
+}
+
+#layer1 {
+    position: relative;
+    display:flex;
+    justify-content: center;
+    margin-top: -20vw;
+    transition: margin 1s;
+}
+
+#layer2 {
+    position: relative;
+    display:flex;
+    margin-top: -165vw;
+    transition: margin 1s;
+}
+
+#layer3 {
+    position: relative;
+    display:flex;
+    margin-top: -145vw;
+    transition: margin 1s;
+}
+
+#layer4 {
+    position: relative;
+    display:flex;
+    margin-top: -125vw;
+    transition: margin 1s;
+}
+
+#layer5 {
+    position: relative;
+    display:flex;
+    margin-top: -110vw;
+    transition: margin 1s;
+}
+#layer6 {
+    position: relative;
+    display:flex;
+    margin-top: -90vw;
+    transition: margin 1s;
+}
+
+#layer1title {
+    position: absolute;
+    text-align: center;
+    font-weight: 400;
+    font-size: 7vw;
+    color: #FFF6D2;
+    z-index: 1000;
+    margin-top: 12vw;
+ }
+ #layer2title {
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    font-weight: 400;
+    font-size: 7vw;
+    color: #FFF6D2;
+    z-index: 1000;
+    margin-top: 20vw;
+ }
+ #layer3title {
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    font-weight: 400;
+    font-size: 7vw;
+    color: #FFF6D2;
+    z-index: 1000;
+    margin-top: 16vw;
+ }
+ #layer4title {
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    font-weight: 400;
+    font-size: 7vw;
+    z-index: 1000;
+    color: #FFF6D2;
+    margin-top: 16vw;
+ }
+ #layer5title {
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    z-index: 1000;
+    font-weight: 400;
+    font-size: 7vw;
+    color: #FFF6D2;
+    margin-top: 20vw;
+ }
+
+
+
+
+
+
+
+
+
+#layer1content {
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    font-weight: 400;
+    font-size: 7vw;
+    color: #FFF6D2;
+    margin-top: 12vw;
+ }
+
+ #layer2content {
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    font-weight: 400;
+    font-size: 7vw;
+    color: #FFF6D2;
+    margin-top: 20vw;
+ }
+
+ #layer3content {
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    font-weight: 400;
+    font-size: 7vw;
+    color: #FFF6D2;
+    margin-top: 16vw;
+ }
+
+ #layer4content {
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    font-weight: 400;
+    font-size: 7vw;
+    color: #FFF6D2;
+    margin-top: 16vw;
+ }
+
+ #layer5content {
+    position: absolute;
+    text-align: center;
+    width: 100vw;
+    font-weight: 400;
+    font-size: 7vw;
+    color: #FFF6D2;
+    margin-top: 20vw;
+ }
+
+
