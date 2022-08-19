@@ -1,118 +1,139 @@
-body{
-    margin: 0;
-    background-color: black;
+body {
+  margin: 0;
+  background-color: black;
 }
 
-#Background{
-    position: relative;
+#Background {
+  pointer-events: none;
+  position: relative;
 }
 
 #Clouds {
-    position: absolute;
-    top: 10vw;
-    left: 5vw;
-    width: 80vw;
+  position: absolute;
+  top: 5vw;
+  left: 10vw;
+  width: 80vw;
 }
 
 #SkyGradient {
-    position: absolute;
-    top: 0;
-    width: 100vw;
-    left: 0;
-    z-index: -2;
+  position: absolute;
+  top: 0;
+  width: 100vw;
+  left: 0;
+  z-index: -2;
 }
 
-#LeftSideFar{
-    width: 49vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0;
-
+#LeftSideFar {
+  width: 49vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 0;
 }
-#RightSideFar{
-    width: 32.5vw;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 0;
-
+#RightSideFar {
+  width: 32.5vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 0;
 }
-#LeftSideNear{
-    width: 56.7vw;
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 2;
-
+#LeftSideNear {
+  width: 56.7vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
 }
-#RightSideNear{
-    width: 49.1vw;
-    position: absolute;
-    top: 0;
-    right: 0;
-    z-index: 2;
-
+#RightSideNear {
+  width: 49.1vw;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
 }
 
-#Bridge{
-    position: absolute;
-    top: 20vw;
-    width: 91vw;
-    left: 4.5vw;
-    z-index: 1;
+#Bridge {
+  position: absolute;
+  top: 20vw;
+  width: 91vw;
+  left: 4.5vw;
+  z-index: 1;
 }
-#LogoSign{
-    position: absolute;
-    top: 7vw;
-    left: 35vw;
-    width: 30vw;
-    z-index: 2;
-
-}
-
-#CanyonBottom{
-    position: absolute;
-    top: 407vw;
-    left: 0vw;
-    width: 100vw;
-    z-index: 4;
-
-}
-#Horizon{
-    position: absolute;
-    top: 363vw;
-    left: 12vw;
-    width: 78vw;
-    z-index: -1;
+#LogoSign {
+  position: absolute;
+  top: 5vw;
+  left: 33vw;
+  width: 35vw;
+  z-index: 2;
 }
 
-#ArrowSign{
-    position: absolute;
-    top: 40vw;
-    left: 80vw;
-    width: 12vw;
-    z-index: 4;
+#CanyonBottom {
+  position: absolute;
+  top: 407vw;
+  left: 0vw;
+  width: 100vw;
+  z-index: 4;
+}
+#Horizon {
+  position: absolute;
+  top: 363vw;
+  left: 12vw;
+  width: 78vw;
+  z-index: -1;
+}
+
+#ArrowSign {
+  position: absolute;
+  top: 40vw;
+  left: 82vw;
+  width: 12vw;
+  z-index: 4;
+}
+
+#MobileClouds {
+  display: none;
+}
+
+#MobileLeftSideFar {
+  display: none;
+}
+
+#MobileLeftSideNear {
+  display: none;
+}
+
+#MobileBridge {
+  display: none;
+}
+#MobileLogoSign {
+  display: none;
+}
+
+#MobileCanyonBottom {
+  display: none;
+}
+#MobileHorizon {
+  display: none;
 }
 
 .bounce {
-    animation: bounce 2s infinite;
-    animation-timing-function: linear;
-  }
+  animation: bounce 3s infinite;
+  animation-timing-function: linear;
+}
 @keyframes bounce {
-    0%, 100% {
-      transform: translate(0vw, 0vw);
-    }
-    50% {
-      transform: translate(4vw, -4vw);
-    }
-  
+  0%,
+  100% {
+    transform: rotate(-20deg);
   }
+  50% {
+    transform: rotate(20deg);
+  }
+}
 
-  #Sun{
-    position: absolute;
-    top: 345vw;
-    left: 12vw;
-    width: 78vw;
-    z-index: -1;
+#Sun {
+  position: absolute;
+  top: 345vw;
+  left: 12vw;
+  width: 78vw;
+  z-index: -1;
 }

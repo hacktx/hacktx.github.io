@@ -1,0 +1,103 @@
+@media screen and (max-width: 800px) {
+  #SkyGradient {
+    position: absolute;
+    top: 0;
+    width: 150vw;
+    left: 0;
+    z-index: -2;
+  }
+
+  #MobileClouds {
+    display: block;
+    position: absolute;
+    top: 5vw;
+    left: 10vw;
+    width: 80vw;
+  }
+
+  #MobileLeftSideFar {
+    display: block;
+    width: 75vw;
+    position: absolute;
+    top: 76vw;
+    left: 2vw;
+    z-index: 0;
+  }
+
+  #MobileLeftSideNear {
+    display: block;
+    width: 93vw;
+    position: absolute;
+    top: 65vw;
+    z-index: 2;
+  }
+
+  #MobileBridge {
+    display: block;
+    position: absolute;
+    top: 78vw;
+    width: 100vw;
+    z-index: 1;
+  }
+  #MobileLogoSign {
+    display: block;
+    position: absolute;
+    top: 30vw;
+    left: 4vw;
+    width: 58vw;
+    z-index: 3;
+  }
+
+  #MobileCanyonBottom {
+    display: block;
+    position: absolute;
+    top: 507vw;
+    left: 0vw;
+    width: 100vw;
+    z-index: 4;
+  }
+  #MobileHorizon {
+    display: block;
+    position: absolute;
+    top: 440vw;
+    left: 46vw;
+    width: 55vw;
+    z-index: -1;
+  }
+
+  #Clouds {
+    display: none;
+  }
+
+  #LeftSideFar {
+    display: none;
+  }
+
+  #LeftSideNear {
+    display: none;
+  }
+
+  #Bridge {
+    display: none;
+  }
+  #LogoSign {
+    display: none;
+  }
+
+  #CanyonBottom {
+    display: none;
+  }
+  #Horizon {
+    display: none;
+  }
+  #RightSideFar {
+    display: none;
+  }
+
+  #RightSideNear {
+    display: none;
+  }
+  #ArrowSign {
+    display: none;
+  }
+}
